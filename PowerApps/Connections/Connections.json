@@ -1,0 +1,76 @@
+{
+  "4e473aa7-56d6-4c5a-a04a-7f0578d2ae3c": {
+    "appActions": [],
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Usuarios de Office 365",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1677/1.0.1677.3637/office365users/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_office365users",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {},
+    "dataSources": [
+      "UsuariosdeOffice365"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "4e473aa7-56d6-4c5a-a04a-7f0578d2ae3c"
+  },
+  "ca1cf3f7-6d3a-4c5e-8bb9-a67f229df220": {
+    "appActions": [
+      "providers/PowerPlatform.Governance/Operations/Read",
+      "providers/PowerPlatform.Governance/Operations/Write",
+      "providers/PowerPlatform.Governance/Operations/Delete"
+    ],
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1682/1.0.1682.3675/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "https://partequipos2.sharepoint.com/sites/servicioposventa": {
+        "dataSources": {
+          "ListaHerramientas": {
+            "tableName": "43c622c6-2961-4e51-b269-88c2ca517ba1"
+          },
+          "ListaMantenimientoHerramientas": {
+            "tableName": "ded27a68-c0e1-4937-97df-16220ce709fb"
+          },
+          "ListaPrestamoHerramientas": {
+            "tableName": "a9eb7704-5001-4e43-99a3-426a2503b3c9"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "ListaHerramientas",
+      "ListaPrestamoHerramientas",
+      "ListaMantenimientoHerramientas"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "ca1cf3f7-6d3a-4c5e-8bb9-a67f229df220"
+  },
+  "f7091316-0988-4ac7-a771-29f9dc26801a": {
+    "appActions": [],
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Office\u00A0365 Outlook",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1677/1.0.1677.3637/office365/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_office365",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {},
+    "dataSources": [
+      "Office365Outlook"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "f7091316-0988-4ac7-a771-29f9dc26801a"
+  }
+}
