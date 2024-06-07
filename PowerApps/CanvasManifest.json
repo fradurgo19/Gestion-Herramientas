@@ -5,7 +5,7 @@
       "DataflowAnalysisEnabled": false,
       "DataflowAnalysisFlagStateToggledByUser": false
     },
-    "DocVersion": "1.341",
+    "DocVersion": "1.342",
     "MinVersionToLoad": "1.331",
     "MSAppStructureVersion": "2.0"
   },
@@ -35,6 +35,7 @@
       "disableruntimepolicies": false,
       "dynamicschema": false,
       "enableappembeddingux": false,
+      "enablecanvasappruntimecopilot": false,
       "enablechatbotfeature": true,
       "enablecomponentnamemaps": false,
       "enablecomponentscopeoldbehavior": false,
@@ -116,13 +117,13 @@
     "InstrumentationKey": "",
     "LocalDatabaseReferences": "",
     "ManualOfflineProfileId": "",
-    "Name": "Gestión de Herramientas",
+    "Name": "Inventario Partequipos",
     "OriginatingVersion": "1.336",
     "ParserErrorCount": 0,
     "ShowStatusBar": false
   },
   "PublishInfo": {
-    "AppName": "Gestión de Herramientas",
+    "AppName": "Inventario Partequipos",
     "BackgroundColor": "rgba(141, 198, 63, 1)",
     "IconColor": "RGBA(255,255,255,1)",
     "IconName": "Remote",

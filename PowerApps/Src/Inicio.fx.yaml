@@ -43,7 +43,7 @@ Inicio As screen:
         RadiusTopLeft: =40
         RadiusTopRight: =40
         Size: =24
-        Text: ="Herramientas"
+        Text: ="Inventario"
         VerticalAlign: =VerticalAlign.Bottom
         Width: =258
         X: =343
@@ -122,7 +122,7 @@ Inicio As screen:
         FontWeight: =FontWeight.Bold
         Height: =86
         Size: =30
-        Text: ="Gestión de Herramientas"
+        Text: ="Gestión de Inventarios"
         Width: =636
         X: =4
         Y: =424

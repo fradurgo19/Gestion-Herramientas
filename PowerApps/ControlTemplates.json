@@ -54,7 +54,7 @@
     "Name": "PowerApps_CoreControls_ButtonCanvas",
     "OverridableProperties": {},
     "TemplateDisplayName": "Botón",
-    "Version": "0.0.29"
+    "Version": "0.0.41"
   },
   "button": {
     "CustomGroupControlTemplateName": "",
@@ -138,7 +138,7 @@
     "LastModifiedTimestamp": "0",
     "Name": "formViewer",
     "OverridableProperties": {},
-    "Version": "2.3.3"
+    "Version": "2.3.4"
   },
   "gallery": {
     "CustomGroupControlTemplateName": "",
@@ -281,7 +281,7 @@
             }
           ]
         },
-        "Version": "1.341"
+        "Version": "1.342"
       }
     },
     "PCFDynamicSchemaForIRRetrieval": {
