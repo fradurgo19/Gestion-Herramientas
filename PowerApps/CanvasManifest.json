@@ -100,7 +100,7 @@
       "zeroalltabindexes": false
     },
     "Author": "",
-    "BindingErrorCount": 1097,
+    "BindingErrorCount": 1078,
     "ContainsThirdPartyPcfControls": false,
     "DefaultConnectedDataSourceMaxGetRowsCount": 500,
     "DocumentAppType": "Phone",
@@ -119,7 +119,7 @@
     "ManualOfflineProfileId": "",
     "Name": "Inventario Partequipos",
     "OriginatingVersion": "1.336",
-    "ParserErrorCount": 5,
+    "ParserErrorCount": 0,
     "ShowStatusBar": false
   },
   "PublishInfo": {

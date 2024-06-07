@@ -700,10 +700,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 11,
-                  "charOffset": 41,
+                  "charLength": 6,
+                  "charOffset": 210,
                   "snippet": {
-                    "text": "Inventarios"
+                    "text": ".Value"
                   }
                 }
               },
@@ -715,12 +715,56 @@
             }
           ],
           "message": {
+            "arguments": [
+              "Value"
+            ],
             "id": "issue"
           },
           "properties": {
             "level": "High"
           },
-          "ruleId": "app-ErrOperatorExpected",
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "BrowseScreen1.BrowseGallery1.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "BrowseScreen1.BrowseGallery1.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 188,
+                  "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "BrowseScreen1",
+                "type": "BrowseScreen1.BrowseGallery1"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Text",
+              "Error"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
           "ruleIndex": 2
         },
         {
@@ -737,47 +781,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 1,
-                  "charOffset": 52,
+                  "charLength": 6,
+                  "charOffset": 248,
                   "snippet": {
-                    "text": ";"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Items",
-                "module": "BrowseScreen1",
-                "type": "BrowseScreen1.BrowseGallery1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrBadToken",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "BrowseScreen1.BrowseGallery1.Items"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "BrowseScreen1.BrowseGallery1.Items",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 1,
-                  "charOffset": 62,
-                  "snippet": {
-                    "text": "("
+                    "text": ".Value"
                   }
                 }
               },
@@ -790,126 +797,7 @@
           ],
           "message": {
             "arguments": [
-              "ParenOpen",
-              "ParenClose"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrExpectedFound-Ex-Fnd",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "BrowseScreen1.BrowseGallery1.Items"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "BrowseScreen1.BrowseGallery1.Items",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 1,
-                  "charOffset": 62,
-                  "snippet": {
-                    "text": "("
-                  }
-                }
-              },
-              "properties": {
-                "member": "Items",
-                "module": "BrowseScreen1",
-                "type": "BrowseScreen1.BrowseGallery1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "ParenOpen",
-              "ParenClose"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrExpectedFound-Ex-Fnd",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "BrowseScreen1.BrowseGallery1.Items"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "BrowseScreen1.BrowseGallery1.Items",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 1,
-                  "charOffset": 62,
-                  "snippet": {
-                    "text": "("
-                  }
-                }
-              },
-              "properties": {
-                "member": "Items",
-                "module": "BrowseScreen1",
-                "type": "BrowseScreen1.BrowseGallery1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrBadToken",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "BrowseScreen1.BrowseGallery1.Items"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "BrowseScreen1.BrowseGallery1.Items",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 5,
-                  "charOffset": 35,
-                  "snippet": {
-                    "text": "Lista"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Items",
-                "module": "BrowseScreen1",
-                "type": "BrowseScreen1.BrowseGallery1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Lista"
+              "Value"
             ],
             "id": "issue"
           },
@@ -930,865 +818,26 @@
               "physicalLocation": {
                 "address": {
                   "fullyQualifiedName": "BrowseScreen1.BrowseGallery1.Items",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 11,
-                  "charOffset": 41,
-                  "snippet": {
-                    "text": "Inventarios"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Items",
-                "module": "BrowseScreen1",
-                "type": "BrowseScreen1.BrowseGallery1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrOperatorExpected",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "BrowseScreen1.BrowseGallery1.Items"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "BrowseScreen1.BrowseGallery1.Items",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 1,
-                  "charOffset": 25,
-                  "snippet": {
-                    "text": "("
-                  }
-                }
-              },
-              "properties": {
-                "member": "Items",
-                "module": "BrowseScreen1",
-                "type": "BrowseScreen1.BrowseGallery1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "1",
-              "2"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrBadArityMinimum",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "BrowseScreen1.BrowseGallery1.Items"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "BrowseScreen1.BrowseGallery1.Items",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 1,
-                  "charOffset": 13,
-                  "snippet": {
-                    "text": "("
-                  }
-                }
-              },
-              "properties": {
-                "member": "Items",
-                "module": "BrowseScreen1",
-                "type": "BrowseScreen1.BrowseGallery1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "1",
-              "2"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrBadArityMinimum",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "BrowseScreen1.BrowseGallery1.Rectangle1.Visible"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "BrowseScreen1.BrowseGallery1.Rectangle1.Visible",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 8,
-                  "charOffset": 0,
-                  "snippet": {
-                    "text": "ThisItem"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Visible",
-                "module": "BrowseScreen1",
-                "type": "BrowseScreen1.BrowseGallery1.Rectangle1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "ThisItem"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "BrowseScreen1.BrowseGallery1.Rectangle1.Visible"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "BrowseScreen1.BrowseGallery1.Rectangle1.Visible",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 11,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".IsSelected"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Visible",
-                "module": "BrowseScreen1",
-                "type": "BrowseScreen1.BrowseGallery1.Rectangle1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Error"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "BrowseScreen1.BrowseGallery1.Image1.Image"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "BrowseScreen1.BrowseGallery1.Image1.Image",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 8,
-                  "charOffset": 0,
-                  "snippet": {
-                    "text": "ThisItem"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Image",
-                "module": "BrowseScreen1",
-                "type": "BrowseScreen1.BrowseGallery1.Image1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "ThisItem"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "BrowseScreen1.BrowseGallery1.Image1.Image"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "BrowseScreen1.BrowseGallery1.Image1.Image",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 5,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".Foto"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Image",
-                "module": "BrowseScreen1",
-                "type": "BrowseScreen1.BrowseGallery1.Image1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Error"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "BrowseScreen1.BrowseGallery1.Title1.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "BrowseScreen1.BrowseGallery1.Title1.Text",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 8,
-                  "charOffset": 0,
-                  "snippet": {
-                    "text": "ThisItem"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "BrowseScreen1",
-                "type": "BrowseScreen1.BrowseGallery1.Title1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "ThisItem"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "BrowseScreen1.BrowseGallery1.Title1.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "BrowseScreen1.BrowseGallery1.Title1.Text",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 12,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".Descripcion"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "BrowseScreen1",
-                "type": "BrowseScreen1.BrowseGallery1.Title1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Error"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "BrowseScreen1.BrowseGallery1.Title1.FontWeight"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "BrowseScreen1.BrowseGallery1.Title1.FontWeight",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 8,
-                  "charOffset": 3,
-                  "snippet": {
-                    "text": "ThisItem"
-                  }
-                }
-              },
-              "properties": {
-                "member": "FontWeight",
-                "module": "BrowseScreen1",
-                "type": "BrowseScreen1.BrowseGallery1.Title1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "ThisItem"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "BrowseScreen1.BrowseGallery1.Title1.FontWeight"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "BrowseScreen1.BrowseGallery1.Title1.FontWeight",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 11,
-                  "charOffset": 11,
-                  "snippet": {
-                    "text": ".IsSelected"
-                  }
-                }
-              },
-              "properties": {
-                "member": "FontWeight",
-                "module": "BrowseScreen1",
-                "type": "BrowseScreen1.BrowseGallery1.Title1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Error"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "BrowseScreen1.BrowseGallery1.Title1.FontWeight"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "BrowseScreen1.BrowseGallery1.Title1.FontWeight",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 2,
-                  "charOffset": 0,
-                  "snippet": {
-                    "text": "If"
-                  }
-                }
-              },
-              "properties": {
-                "member": "FontWeight",
-                "module": "BrowseScreen1",
-                "type": "BrowseScreen1.BrowseGallery1.Title1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "If"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "BrowseScreen1.BrowseGallery1.Subtitle1.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "BrowseScreen1.BrowseGallery1.Subtitle1.Text",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 8,
-                  "charOffset": 0,
-                  "snippet": {
-                    "text": "ThisItem"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "BrowseScreen1",
-                "type": "BrowseScreen1.BrowseGallery1.Subtitle1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "ThisItem"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "BrowseScreen1.BrowseGallery1.Subtitle1.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "BrowseScreen1.BrowseGallery1.Subtitle1.Text",
                   "relativeAddress": 0
                 },
                 "region": {
                   "charLength": 7,
-                  "charOffset": 8,
+                  "charOffset": 220,
                   "snippet": {
-                    "text": ".Codigo"
+                    "text": "IsBlank"
                   }
                 }
               },
               "properties": {
-                "member": "Text",
+                "member": "Items",
                 "module": "BrowseScreen1",
-                "type": "BrowseScreen1.BrowseGallery1.Subtitle1"
+                "type": "BrowseScreen1.BrowseGallery1"
               }
             }
           ],
           "message": {
             "arguments": [
-              "Error"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "BrowseScreen1.BrowseGallery1.Subtitle1.FontWeight"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "BrowseScreen1.BrowseGallery1.Subtitle1.FontWeight",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 8,
-                  "charOffset": 3,
-                  "snippet": {
-                    "text": "ThisItem"
-                  }
-                }
-              },
-              "properties": {
-                "member": "FontWeight",
-                "module": "BrowseScreen1",
-                "type": "BrowseScreen1.BrowseGallery1.Subtitle1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "ThisItem"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "BrowseScreen1.BrowseGallery1.Subtitle1.FontWeight"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "BrowseScreen1.BrowseGallery1.Subtitle1.FontWeight",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 11,
-                  "charOffset": 11,
-                  "snippet": {
-                    "text": ".IsSelected"
-                  }
-                }
-              },
-              "properties": {
-                "member": "FontWeight",
-                "module": "BrowseScreen1",
-                "type": "BrowseScreen1.BrowseGallery1.Subtitle1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Error"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "BrowseScreen1.BrowseGallery1.Subtitle1.FontWeight"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "BrowseScreen1.BrowseGallery1.Subtitle1.FontWeight",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 2,
-                  "charOffset": 0,
-                  "snippet": {
-                    "text": "If"
-                  }
-                }
-              },
-              "properties": {
-                "member": "FontWeight",
-                "module": "BrowseScreen1",
-                "type": "BrowseScreen1.BrowseGallery1.Subtitle1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "If"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "BrowseScreen1.BrowseGallery1.Body1.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "BrowseScreen1.BrowseGallery1.Body1.Text",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 8,
-                  "charOffset": 0,
-                  "snippet": {
-                    "text": "ThisItem"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "BrowseScreen1",
-                "type": "BrowseScreen1.BrowseGallery1.Body1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "ThisItem"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "BrowseScreen1.BrowseGallery1.Body1.Text"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "BrowseScreen1.BrowseGallery1.Body1.Text",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 14,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".Codigodebarra"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Text",
-                "module": "BrowseScreen1",
-                "type": "BrowseScreen1.BrowseGallery1.Body1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Error"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "BrowseScreen1.BrowseGallery1.Body1.FontWeight"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "BrowseScreen1.BrowseGallery1.Body1.FontWeight",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 8,
-                  "charOffset": 3,
-                  "snippet": {
-                    "text": "ThisItem"
-                  }
-                }
-              },
-              "properties": {
-                "member": "FontWeight",
-                "module": "BrowseScreen1",
-                "type": "BrowseScreen1.BrowseGallery1.Body1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "ThisItem"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "BrowseScreen1.BrowseGallery1.Body1.FontWeight"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "BrowseScreen1.BrowseGallery1.Body1.FontWeight",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 11,
-                  "charOffset": 11,
-                  "snippet": {
-                    "text": ".IsSelected"
-                  }
-                }
-              },
-              "properties": {
-                "member": "FontWeight",
-                "module": "BrowseScreen1",
-                "type": "BrowseScreen1.BrowseGallery1.Body1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Error"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "BrowseScreen1.BrowseGallery1.Body1.FontWeight"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "BrowseScreen1.BrowseGallery1.Body1.FontWeight",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 2,
-                  "charOffset": 0,
-                  "snippet": {
-                    "text": "If"
-                  }
-                }
-              },
-              "properties": {
-                "member": "FontWeight",
-                "module": "BrowseScreen1",
-                "type": "BrowseScreen1.BrowseGallery1.Body1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "If"
+              "IsBlank"
             ],
             "id": "issue"
           },
@@ -2270,7 +1319,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -2350,7 +1399,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -2510,7 +1559,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -2590,7 +1639,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -2750,7 +1799,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -2870,7 +1919,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -2950,7 +1999,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -3070,7 +2119,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -3230,7 +2279,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -3310,7 +2359,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -3470,7 +2519,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -3550,7 +2599,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -3710,7 +2759,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -3790,7 +2839,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -3950,7 +2999,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -4030,7 +3079,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -4190,7 +3239,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -4270,7 +3319,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -4430,7 +3479,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -4590,7 +3639,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -4670,7 +3719,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -4830,7 +3879,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -4990,7 +4039,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -5070,7 +4119,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -5464,7 +4513,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -5544,7 +4593,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -5938,7 +4987,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -6018,7 +5067,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -6412,7 +5461,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -6492,7 +5541,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -6886,7 +5935,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -6966,7 +6015,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -7360,7 +6409,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -7440,7 +6489,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -7600,7 +6649,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -7760,7 +6809,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -7840,7 +6889,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -8315,7 +7364,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
-          "ruleIndex": 8
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -8476,7 +7525,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
-          "ruleIndex": 8
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -8713,7 +7762,7 @@
             "level": "Medium"
           },
           "ruleId": "app-ErrCollectionDoesNotAcceptThisType",
-          "ruleIndex": 9
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -9113,7 +8162,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -9193,7 +8242,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -9353,7 +8402,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -9433,7 +8482,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -9827,7 +8876,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -9907,7 +8956,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -10067,7 +9116,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -10147,7 +9196,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -10267,7 +9316,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -10347,7 +9396,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -10467,7 +9516,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -10547,7 +9596,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -10707,7 +9756,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -10787,7 +9836,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -10947,7 +9996,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -11027,7 +10076,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -11187,7 +10236,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -11267,7 +10316,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -11427,7 +10476,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -11507,7 +10556,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -11627,7 +10676,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -11707,7 +10756,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -11827,7 +10876,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -11987,7 +11036,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -12067,7 +11116,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -12227,7 +11276,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -12387,7 +11436,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -12467,7 +11516,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -12627,7 +11676,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -12707,7 +11756,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -13101,7 +12150,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -13181,7 +12230,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -13575,7 +12624,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -13655,7 +12704,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -14049,7 +13098,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -14129,7 +13178,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -14523,7 +13572,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -14603,7 +13652,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -14997,7 +14046,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -15077,7 +14126,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -15237,7 +14286,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -15397,7 +14446,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -15477,7 +14526,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -15637,7 +14686,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -15797,7 +14846,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -15877,7 +14926,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -16114,7 +15163,7 @@
             "level": "Medium"
           },
           "ruleId": "app-ErrCollectionDoesNotAcceptThisType",
-          "ruleIndex": 9
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -16394,7 +15443,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -16474,7 +15523,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -16634,7 +15683,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -16714,7 +15763,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -17108,7 +16157,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -17188,7 +16237,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -17582,7 +16631,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -17662,7 +16711,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -18056,7 +17105,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -18136,7 +17185,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -18530,7 +17579,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -18610,7 +17659,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -18964,7 +18013,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -19044,7 +18093,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -19204,7 +18253,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -19284,7 +18333,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -19444,7 +18493,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -19524,7 +18573,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -19804,7 +18853,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -19964,7 +19013,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -20125,7 +19174,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
-          "ruleIndex": 8
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -20286,7 +19335,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
-          "ruleIndex": 8
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -20406,7 +19455,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -20486,7 +19535,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -20646,7 +19695,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -20726,7 +19775,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -20886,7 +19935,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -20966,7 +20015,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -21126,7 +20175,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -21206,7 +20255,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -21326,7 +20375,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -21406,7 +20455,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -21526,7 +20575,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -21686,7 +20735,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -21766,7 +20815,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -21926,7 +20975,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -22086,7 +21135,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -22166,7 +21215,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -22326,7 +21375,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -22406,7 +21455,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -22566,7 +21615,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -22726,7 +21775,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -22806,7 +21855,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -22966,7 +22015,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -23126,7 +22175,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -23206,7 +22255,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -23366,7 +22415,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -23526,7 +22575,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -23606,7 +22655,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -23766,7 +22815,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -23926,7 +22975,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -24086,7 +23135,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -24166,7 +23215,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -24326,7 +23375,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -24406,7 +23455,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -24566,7 +23615,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -24766,7 +23815,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -24926,7 +23975,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -25087,7 +24136,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
-          "ruleIndex": 8
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -25248,7 +24297,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
-          "ruleIndex": 8
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -25368,7 +24417,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -25448,7 +24497,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -25608,7 +24657,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -25688,7 +24737,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -25848,7 +24897,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -25928,7 +24977,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -26088,7 +25137,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -26168,7 +25217,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -26288,7 +25337,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -26368,7 +25417,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -26488,7 +25537,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -26648,7 +25697,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -26728,7 +25777,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -26888,7 +25937,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -27048,7 +26097,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -27128,7 +26177,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -27288,7 +26337,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -27368,7 +26417,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -27528,7 +26577,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -27688,7 +26737,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -27768,7 +26817,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -27928,7 +26977,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -28088,7 +27137,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -28168,7 +27217,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -28328,7 +27377,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -28488,7 +27537,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -28568,7 +27617,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -28728,7 +27777,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -28888,7 +27937,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -29048,7 +28097,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -29128,7 +28177,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -29288,7 +28337,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -29368,7 +28417,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -29528,7 +28577,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -29728,7 +28777,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -29888,7 +28937,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -30049,7 +29098,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
-          "ruleIndex": 8
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -30210,7 +29259,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
-          "ruleIndex": 8
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -30330,7 +29379,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -30410,7 +29459,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -30570,7 +29619,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -30650,7 +29699,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -30810,7 +29859,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -30890,7 +29939,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -31050,7 +30099,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -31130,7 +30179,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -31250,7 +30299,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -31330,7 +30379,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -31450,7 +30499,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -31610,7 +30659,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -31690,7 +30739,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -31850,7 +30899,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -32010,7 +31059,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -32090,7 +31139,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -32250,7 +31299,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -32410,7 +31459,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -32490,7 +31539,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -32650,7 +31699,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -32810,7 +31859,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -32890,7 +31939,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -33050,7 +32099,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -33210,7 +32259,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -33290,7 +32339,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -33450,7 +32499,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -33610,7 +32659,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -33690,7 +32739,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -33850,7 +32899,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -34010,7 +33059,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -34090,7 +33139,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -34250,7 +33299,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -34330,7 +33379,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -34490,7 +33539,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -34690,7 +33739,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -34850,7 +33899,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -35011,7 +34060,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
-          "ruleIndex": 8
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -35172,7 +34221,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
-          "ruleIndex": 8
+          "ruleIndex": 2
         },
         {
           "locations": [
@@ -35292,7 +34341,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -35372,7 +34421,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -35532,7 +34581,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -35612,7 +34661,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -35772,7 +34821,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -35852,7 +34901,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -36012,7 +35061,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -36092,7 +35141,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -36212,7 +35261,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -36292,7 +35341,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -36412,7 +35461,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -36572,7 +35621,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -36652,7 +35701,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -36812,7 +35861,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -36972,7 +36021,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -37052,7 +36101,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -37212,7 +36261,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -37372,7 +36421,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -37452,7 +36501,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -37612,7 +36661,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -37772,7 +36821,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -37852,7 +36901,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -38012,7 +37061,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -38172,7 +37221,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -38252,7 +37301,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -38412,7 +37461,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -38572,7 +37621,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -38652,7 +37701,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -38812,7 +37861,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -38972,7 +38021,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -39052,7 +38101,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -39212,7 +38261,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -39292,7 +38341,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -39452,7 +38501,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -39689,7 +38738,7 @@
             "level": "Medium"
           },
           "ruleId": "app-ErrCollectionDoesNotAcceptThisType",
-          "ruleIndex": 9
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -39969,7 +39018,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -40049,7 +39098,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -40209,7 +39258,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -40289,7 +39338,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -40449,7 +39498,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -40529,7 +39578,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -40923,7 +39972,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -41003,7 +40052,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -41397,7 +40446,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -41477,7 +40526,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -41871,7 +40920,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -41951,7 +41000,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -42345,7 +41394,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -42425,7 +41474,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -42779,7 +41828,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -42859,7 +41908,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -43019,7 +42068,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -43099,7 +42148,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -43259,7 +42308,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -43339,7 +42388,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -43499,7 +42548,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -43579,7 +42628,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -43739,7 +42788,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -43819,7 +42868,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -43979,7 +43028,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrBadType-Type",
-          "ruleIndex": 7
+          "ruleIndex": 3
         },
         {
           "locations": [
@@ -44059,7 +43108,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 6
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -44089,7 +43138,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -44119,7 +43168,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -44149,7 +43198,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -44179,7 +43228,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 11
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -44209,7 +43258,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -44239,7 +43288,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -44269,7 +43318,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -44299,7 +43348,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 11
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -44329,7 +43378,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -44359,7 +43408,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -44388,7 +43437,7 @@
             "level": "Low"
           },
           "ruleId": "acc-AlternativeInputNeeded",
-          "ruleIndex": 12
+          "ruleIndex": 8
         },
         {
           "locations": [
@@ -44418,7 +43467,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -44448,7 +43497,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -44478,7 +43527,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 11
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -44508,7 +43557,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -44538,7 +43587,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 11
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -44568,7 +43617,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 13
+          "ruleIndex": 9
         },
         {
           "locations": [
@@ -44598,7 +43647,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 11
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -44628,7 +43677,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 13
+          "ruleIndex": 9
         },
         {
           "locations": [
@@ -44658,7 +43707,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 11
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -44688,7 +43737,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -44718,7 +43767,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -44748,7 +43797,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -44778,7 +43827,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -44808,7 +43857,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -44838,7 +43887,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -44868,7 +43917,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -44898,7 +43947,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -44928,7 +43977,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -44958,7 +44007,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -44988,7 +44037,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -45018,7 +44067,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -45048,7 +44097,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -45078,7 +44127,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -45108,7 +44157,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -45138,7 +44187,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -45168,7 +44217,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -45198,7 +44247,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -45228,7 +44277,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -45258,7 +44307,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -45288,7 +44337,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -45318,7 +44367,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 11
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -45348,7 +44397,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -45378,7 +44427,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -45408,7 +44457,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -45438,7 +44487,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -45468,7 +44517,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -45498,7 +44547,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -45528,7 +44577,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -45558,7 +44607,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -45588,7 +44637,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -45618,7 +44667,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -45648,7 +44697,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -45678,7 +44727,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -45708,7 +44757,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -45738,7 +44787,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -45768,7 +44817,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -45798,7 +44847,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -45828,7 +44877,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 11
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -45858,7 +44907,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -45888,7 +44937,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 11
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -45918,7 +44967,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -45948,7 +44997,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 11
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -45978,7 +45027,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -46008,7 +45057,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 11
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -46038,7 +45087,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -46068,7 +45117,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 11
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -46098,7 +45147,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 13
+          "ruleIndex": 9
         },
         {
           "locations": [
@@ -46128,7 +45177,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 11
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -46158,7 +45207,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -46188,7 +45237,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -46218,7 +45267,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -46248,7 +45297,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -46278,7 +45327,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -46308,7 +45357,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -46338,7 +45387,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -46368,7 +45417,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -46398,7 +45447,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -46428,7 +45477,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -46458,7 +45507,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -46488,7 +45537,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -46518,7 +45567,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -46548,7 +45597,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -46578,7 +45627,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -46608,7 +45657,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -46638,7 +45687,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -46668,7 +45717,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -46698,7 +45747,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -46728,7 +45777,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -46758,7 +45807,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -46788,7 +45837,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -46818,7 +45867,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -46848,7 +45897,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -46878,7 +45927,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -46908,7 +45957,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -46938,7 +45987,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -46968,7 +46017,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -46998,7 +46047,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -47028,7 +46077,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -47058,7 +46107,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -47088,7 +46137,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -47118,7 +46167,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -47148,7 +46197,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -47178,7 +46227,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -47208,7 +46257,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -47238,7 +46287,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -47268,7 +46317,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -47298,7 +46347,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -47328,7 +46377,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -47358,7 +46407,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -47388,7 +46437,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -47418,7 +46467,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -47448,7 +46497,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -47478,7 +46527,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -47508,7 +46557,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -47538,7 +46587,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -47568,7 +46617,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -47598,7 +46647,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -47628,7 +46677,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -47658,7 +46707,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -47688,7 +46737,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -47718,7 +46767,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -47748,7 +46797,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -47778,7 +46827,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -47808,7 +46857,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -47838,7 +46887,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -47868,7 +46917,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -47898,7 +46947,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -47928,7 +46977,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -47958,7 +47007,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -47988,7 +47037,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -48018,7 +47067,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 11
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -48048,7 +47097,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -48078,7 +47127,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 11
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -48108,7 +47157,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 13
+          "ruleIndex": 9
         },
         {
           "locations": [
@@ -48138,7 +47187,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 11
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -48168,7 +47217,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-FocusBorderShouldBeVisible",
-          "ruleIndex": 13
+          "ruleIndex": 9
         },
         {
           "locations": [
@@ -48198,7 +47247,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 11
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -48228,7 +47277,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -48258,7 +47307,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -48288,7 +47337,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -48318,7 +47367,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -48348,7 +47397,7 @@
             "level": "Medium"
           },
           "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 10
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -48378,7 +47427,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedVariables",
-          "ruleIndex": 14
+          "ruleIndex": 10
         },
         {
           "locations": [
@@ -48408,7 +47457,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedVariables",
-          "ruleIndex": 14
+          "ruleIndex": 10
         },
         {
           "locations": [
@@ -48438,7 +47487,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedVariables",
-          "ruleIndex": 14
+          "ruleIndex": 10
         },
         {
           "locations": [
@@ -48468,7 +47517,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedVariables",
-          "ruleIndex": 14
+          "ruleIndex": 10
         },
         {
           "locations": [
@@ -48498,7 +47547,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedVariables",
-          "ruleIndex": 14
+          "ruleIndex": 10
         },
         {
           "locations": [
@@ -48528,7 +47577,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedVariables",
-          "ruleIndex": 14
+          "ruleIndex": 10
         },
         {
           "locations": [
@@ -48558,7 +47607,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedVariables",
-          "ruleIndex": 14
+          "ruleIndex": 10
         },
         {
           "locations": [
@@ -48588,7 +47637,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 15
+          "ruleIndex": 11
         },
         {
           "locations": [
@@ -48618,7 +47667,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 15
+          "ruleIndex": 11
         },
         {
           "locations": [
@@ -48648,7 +47697,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 15
+          "ruleIndex": 11
         },
         {
           "locations": [
@@ -48678,7 +47727,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 15
+          "ruleIndex": 11
         },
         {
           "locations": [
@@ -48708,7 +47757,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 15
+          "ruleIndex": 11
         },
         {
           "locations": [
@@ -48738,7 +47787,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 15
+          "ruleIndex": 11
         },
         {
           "locations": [
@@ -48768,7 +47817,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 15
+          "ruleIndex": 11
         },
         {
           "locations": [
@@ -48798,7 +47847,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 15
+          "ruleIndex": 11
         },
         {
           "locations": [
@@ -48828,7 +47877,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedMediaResources",
-          "ruleIndex": 15
+          "ruleIndex": 11
         },
         {
           "locations": [
@@ -48858,7 +47907,7 @@
             "level": "Medium"
           },
           "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 16
+          "ruleIndex": 12
         },
         {
           "locations": [
@@ -48888,7 +47937,7 @@
             "level": "Medium"
           },
           "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 16
+          "ruleIndex": 12
         },
         {
           "locations": [
@@ -48918,7 +47967,7 @@
             "level": "Medium"
           },
           "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 16
+          "ruleIndex": 12
         },
         {
           "locations": [
@@ -48948,7 +47997,7 @@
             "level": "Medium"
           },
           "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 16
+          "ruleIndex": 12
         },
         {
           "locations": [
@@ -48978,7 +48027,7 @@
             "level": "Medium"
           },
           "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 16
+          "ruleIndex": 12
         },
         {
           "locations": [
@@ -49008,7 +48057,7 @@
             "level": "Medium"
           },
           "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 16
+          "ruleIndex": 12
         },
         {
           "locations": [
@@ -49038,7 +48087,7 @@
             "level": "Medium"
           },
           "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 16
+          "ruleIndex": 12
         },
         {
           "locations": [
@@ -49068,7 +48117,7 @@
             "level": "Medium"
           },
           "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 16
+          "ruleIndex": 12
         },
         {
           "locations": [
@@ -49098,7 +48147,7 @@
             "level": "Medium"
           },
           "ruleId": "app-InefficientDelayLoading",
-          "ruleIndex": 16
+          "ruleIndex": 12
         }
       ],
       "tool": {
@@ -49138,79 +48187,18 @@
               }
             },
             {
-              "id": "app-ErrOperatorExpected",
+              "id": "app-ErrIncompatibleTypesForEquality-Left-Right",
               "messageStrings": {
                 "issue": {
-                  "text": "Expected operator. We expect an operator such as +, *, or & at this point in the formula."
+                  "text": "Incompatible types for comparison. These types can't be compared: {0}, {1}."
                 }
               },
               "properties": {
                 "componentType": "app",
                 "howToFix": [
-                  "Edit your formula so that it includes an operator between the operands."
+                  "You might need to convert the value to be the same type, such as converting a date string (e.g., \"12/31/2018\") to a date value.",
+                  "If you’re comparing records or tables, the field or column types must match exactly."
                 ],
-                "level": "High",
-                "primaryCategory": "formula",
-                "whyFix": ""
-              }
-            },
-            {
-              "id": "app-ErrBadToken",
-              "messageStrings": {
-                "issue": {
-                  "text": "Unexpected characters. Characters are used in the formula in an unexpected way."
-                }
-              },
-              "properties": {
-                "componentType": "app",
-                "howToFix": [
-                  "Remove or replace the unexpected characters."
-                ],
-                "level": "High",
-                "primaryCategory": "formula",
-                "whyFix": ""
-              }
-            },
-            {
-              "id": "app-ErrExpectedFound-Ex-Fnd",
-              "messageStrings": {
-                "issue": {
-                  "text": "Unexpected characters. The formula contains '{0}' where '{1}' is expected."
-                }
-              },
-              "properties": {
-                "componentType": "app",
-                "howToFix": [
-                  "Remove or replace the unexpected characters with an expected character."
-                ],
-                "level": "High",
-                "primaryCategory": "formula",
-                "whyFix": ""
-              }
-            },
-            {
-              "id": "app-ErrBadArityMinimum",
-              "messageStrings": {
-                "issue": {
-                  "text": "Invalid number of arguments: received {0}, expected {1} or more."
-                }
-              },
-              "properties": {
-                "componentType": "app",
-                "level": "High",
-                "primaryCategory": "formula",
-                "whyFix": ""
-              }
-            },
-            {
-              "id": "app-ErrInvalidDot",
-              "messageStrings": {
-                "issue": {
-                  "text": "The '.' operator cannot be used on {0} values."
-                }
-              },
-              "properties": {
-                "componentType": "app",
                 "level": "High",
                 "primaryCategory": "formula",
                 "whyFix": ""
@@ -49231,18 +48219,14 @@
               }
             },
             {
-              "id": "app-ErrIncompatibleTypesForEquality-Left-Right",
+              "id": "app-ErrInvalidDot",
               "messageStrings": {
                 "issue": {
-                  "text": "Incompatible types for comparison. These types can't be compared: {0}, {1}."
+                  "text": "The '.' operator cannot be used on {0} values."
                 }
               },
               "properties": {
                 "componentType": "app",
-                "howToFix": [
-                  "You might need to convert the value to be the same type, such as converting a date string (e.g., \"12/31/2018\") to a date value.",
-                  "If you’re comparing records or tables, the field or column types must match exactly."
-                ],
                 "level": "High",
                 "primaryCategory": "formula",
                 "whyFix": ""
