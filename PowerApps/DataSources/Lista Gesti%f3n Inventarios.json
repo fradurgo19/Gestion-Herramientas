@@ -3,7 +3,7 @@
     "ApiId": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
     "CdpRevision": {
       "BaseUrl": "/",
-      "LastChangedTimeString": "2024-03-26T19:29:44.7510000Z",
+      "LastChangedTimeString": "2024-06-04T19:43:49.3880000Z",
       "RevisionNumber": 1
     },
     "ConnectedDataSourceInfoNameMapping": {
@@ -29,7 +29,7 @@
       "Created": "Creado",
       "Editor": "Modificado por",
       "Editor#Claims": "Modificado por Claims",
-      "FechaPrestamo": "Fecha",
+      "FechaPrestamo": "Fecha Prestamo",
       "field_0": "Codigo",
       "field_10": "Observaciones",
       "field_11": "Codigodebarra",
@@ -51,11 +51,11 @@
       "OData__ColorTag": "Etiqueta de color",
       "Title": "Descripcion"
     },
-    "DatasetName": "https://partequipos2.sharepoint.com/sites/servicioposventa",
+    "DatasetName": "https://partequipos2.sharepoint.com/sites/servicioposventa581",
     "EncodeDataset": true,
     "IsSampleData": false,
     "IsWritable": true,
-    "Name": "ListaPrestamoHerramientas",
+    "Name": "Lista Gestión Inventarios",
     "Type": "ConnectedDataSourceInfo"
   }
 ]

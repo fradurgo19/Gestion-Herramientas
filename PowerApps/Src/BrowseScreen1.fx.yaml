@@ -117,7 +117,7 @@
         Items: |
             =SortByColumns(
                 Filter(
-                    [@ListaHerramientasLocal],
+                    Lista Inventario,
                     (StartsWith(Descripcion, TextSearchBox1.Text) || StartsWith(Codigodebarra, TextSearchBox1.Text)) &&
                     (Sede.Value = ComboBox2_2.Selected.Value || IsBlank(ComboBox2_2.Selected.Value))
                 ),

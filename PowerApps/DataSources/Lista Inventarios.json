@@ -3,7 +3,7 @@
     "ApiId": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
     "CdpRevision": {
       "BaseUrl": "/",
-      "LastChangedTimeString": "2024-02-08T17:53:14.6720000Z",
+      "LastChangedTimeString": "2024-06-04T19:43:49.3880000Z",
       "RevisionNumber": 1
     },
     "ConnectedDataSourceInfoNameMapping": {
@@ -29,8 +29,7 @@
       "Created": "Creado",
       "Editor": "Modificado por",
       "Editor#Claims": "Modificado por Claims",
-      "Fechamantenimiento": "Fecha mantenimiento",
-      "Fechapr_x00f3_ximoMantenimiento": "Fecha próximo Mantenimiento",
+      "FechadeCompra": "Fecha de Compra",
       "field_0": "Codigo",
       "field_1": "Tipo",
       "field_1#Id": "Tipo Id",
@@ -52,14 +51,14 @@
       "Modified": "Modificado",
       "No_x002e_Factura": "No. Factura",
       "OData__ColorTag": "Etiqueta de color",
-      "Precio": "Precio Mantenimiento",
+      "Precio": "Precio",
       "Title": "Descripcion"
     },
-    "DatasetName": "https://partequipos2.sharepoint.com/sites/servicioposventa",
+    "DatasetName": "https://partequipos2.sharepoint.com/sites/servicioposventa581",
     "EncodeDataset": true,
     "IsSampleData": false,
     "IsWritable": true,
-    "Name": "ListaMantenimientoHerramientas",
+    "Name": "Lista Inventarios",
     "Type": "ConnectedDataSourceInfo"
   }
 ]
