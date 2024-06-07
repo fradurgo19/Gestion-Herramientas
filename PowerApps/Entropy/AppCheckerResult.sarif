@@ -700,10 +700,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 10,
+                  "charLength": 11,
                   "charOffset": 41,
                   "snippet": {
-                    "text": "Inventario"
+                    "text": "Inventarios"
                   }
                 }
               },
@@ -738,7 +738,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 51,
+                  "charOffset": 52,
                   "snippet": {
                     "text": ";"
                   }
@@ -775,7 +775,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 61,
+                  "charOffset": 62,
                   "snippet": {
                     "text": "("
                   }
@@ -816,7 +816,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 61,
+                  "charOffset": 62,
                   "snippet": {
                     "text": "("
                   }
@@ -857,7 +857,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 61,
+                  "charOffset": 62,
                   "snippet": {
                     "text": "("
                   }
@@ -933,10 +933,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 10,
+                  "charLength": 11,
                   "charOffset": 41,
                   "snippet": {
-                    "text": "Inventario"
+                    "text": "Inventarios"
                   }
                 }
               },
