@@ -1109,7 +1109,7 @@
         Height: =88
         Icon: =Icon.Reload
         OnSelect: |-
-            =Refresh(ListaPrestamoHerramientas);
+            =Refresh('Lista Gestión Inventarios');
             NewForm(Form2);
             ResetForm(Form2_1);
             ResetForm(Form2_2);

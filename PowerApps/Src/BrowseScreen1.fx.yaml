@@ -21,7 +21,7 @@
         Height: =88
         Icon: =Icon.Reload
         OnSelect: |-
-            =Refresh([@ListaHerramientas]);
+            =Refresh([@'Lista Inventarios']);
             Reset(TextSearchBox1);
             Reset(ComboBox2_2)
         PaddingBottom: =22
@@ -52,7 +52,7 @@
 
     IconNewItem1 As icon.Add:
         AccessibleLabel: =Self.Tooltip
-        DisplayMode: =If(DataSourceInfo([@ListaHerramientas], DataSourceInfo.CreatePermission), DisplayMode.Edit, DisplayMode.Disabled)
+        DisplayMode: =If(DataSourceInfo([@'Lista Inventarios'], DataSourceInfo.CreatePermission), DisplayMode.Edit, DisplayMode.Disabled)
         Height: =88
         Icon: =Icon.Add
         OnSelect: |-
@@ -249,7 +249,7 @@
         HoverFill: =RGBA(232, 244, 217, 1)
         InputTextPlaceholder: ="Seleccione Sede"
         IsSearchable: =false
-        Items: =Choices(ListaMantenimientoHerramientas.Sede)
+        Items: =Choices('Lista Inventarios'.Sede)
         NoSelectionText: ="Seleccione la Sede"
         PressedColor: =RGBA(0, 0, 0, 1)
         PressedFill: =RGBA(232, 244, 217, 1)

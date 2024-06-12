@@ -19,11 +19,11 @@
     ComboBox1 As combobox:
         BorderColor: =RGBA(99, 139, 44, 1)
         ChevronBackground: =RGBA(127, 178, 57, 1)
-        DisplayFields: =["Value"]
+        DisplayFields: =["ComplianceAssetId"]
         Height: =73
-        Items: =Choices([@ListaPrestamoHerramientas].TipoDePrestamo)
-        SearchFields: =["Value"]
-        SearchItems: =Choices(ListaPrestamoHerramientas.TipoDePrestamo,ComboBox1.SearchText)
+        Items: =Filter('Lista Gestión Inventarios', Value = ComboBox2_2.Selected.Value)
+        SearchFields: =["ComplianceAssetId"]
+        SearchItems: =Search('Lista Gestión Inventarios',ComboBox1.SearchText,ComplianceAssetId)
         SelectionFill: =RGBA(127, 178, 57, 1)
         SelectMultiple: =false
         Size: =18
@@ -60,7 +60,7 @@
         BorderColor: =RGBA(99, 139, 44, 1)
         Default: =""
         Height: =75
-        HintText: ="Nombre del Ténico"
+        HintText: ="Nombre de Usuario"
         Size: =18
         Width: =563
         X: =32
@@ -103,7 +103,7 @@
         Fill: =RGBA(127, 178, 57, 1)
         Height: =88
         Icon: =Icon.Reload
-        OnSelect: =Refresh(ListaPrestamoHerramientas); Reset(ComboBox1); Reset(TextInput2); Reset(PenInput1)
+        OnSelect: =Refresh('Lista Gestión Inventarios'); Reset(ComboBox1); Reset(TextInput2); Reset(PenInput1)
         PaddingBottom: =22
         PaddingLeft: =22
         PaddingRight: =22

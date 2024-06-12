@@ -20,7 +20,7 @@
 
     IconEdit1_2 As icon.Edit:
         AccessibleLabel: =Self.Tooltip
-        DisplayMode: =If(DataSourceInfo([@ListaHerramientas], DataSourceInfo.EditPermission), DisplayMode.Edit, DisplayMode.Disabled)
+        DisplayMode: =If(DataSourceInfo([@'Lista Inventarios'], DataSourceInfo.EditPermission), DisplayMode.Edit, DisplayMode.Disabled)
         Fill: =RGBA(127, 178, 57, 1)
         Height: =88
         Icon: =Icon.Edit
@@ -62,14 +62,14 @@
         Fill: =RGBA(127, 178, 57, 1)
         Height: =88
         Size: =27
-        Text: ="Herramienta"
+        Text: ="Inventario"
         Width: =Parent.Width - Self.X - IconDelete1_2.Width - IconEdit1_2.Width
         Wrap: =false
         X: =80
         ZIndex: =5
 
     DetailForm1_2 As formViewer:
-        DataSource: =ListaPrestamoHerramientas
+        DataSource: ='Lista Gestión Inventarios'
         Height: =Parent.Height - DetailForm1_2.Y
         Item: =BrowseGallery1_2.Selected
         Width: =Parent.Width
@@ -81,7 +81,7 @@
             DataField: ="field_11"
             Default: =ThisItem.Codigodebarra
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@ListaPrestamoHerramientas],DataSourceInfo.DisplayName,Codigodebarra)
+            DisplayName: =DataSourceInfo([@'Lista Gestión Inventarios'],DataSourceInfo.DisplayName,Codigodebarra)
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
@@ -119,7 +119,7 @@
             DataField: ="field_16"
             Default: =ThisItem.TipoDePrestamo
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@ListaPrestamoHerramientas],DataSourceInfo.DisplayName,TipoDePrestamo)
+            DisplayName: =DataSourceInfo([@'Lista Gestión Inventarios'],DataSourceInfo.DisplayName,TipoDePrestamo)
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             Required: =false
@@ -146,7 +146,7 @@
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
                 Height: =70
-                Items: =Choices([@ListaPrestamoHerramientas].TipoDePrestamo)
+                Items: =Choices([@'Lista Gestión Inventarios'].TipoDePrestamo)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 SearchFields: =["Value"]
                 SearchItems: =Choices(ListaPrestamoHerramientas.TipoDePrestamo,DataCardValue45.SearchText)
@@ -187,9 +187,9 @@
         Fecha_DataCard2 As typedDataCard.textualViewCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="FechaPrestamo"
-            Default: =ThisItem.Fecha
+            Default: =ThisItem.FechaPrestamo
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@ListaPrestamoHerramientas],DataSourceInfo.DisplayName,Fecha)
+            DisplayName: =DataSourceInfo([@'Lista Gestión Inventarios'],DataSourceInfo.DisplayName,FechaPrestamo)
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
@@ -227,7 +227,7 @@
             DataField: ="field_14"
             Default: =ThisItem.'Asignado A'
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@ListaPrestamoHerramientas],DataSourceInfo.DisplayName,'Asignado A')
+            DisplayName: =DataSourceInfo([@'Lista Gestión Inventarios'],DataSourceInfo.DisplayName,'Asignado A')
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
@@ -265,7 +265,7 @@
             DataField: ="field_10"
             Default: =ThisItem.Observaciones
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@ListaPrestamoHerramientas],DataSourceInfo.DisplayName,Observaciones)
+            DisplayName: =DataSourceInfo([@'Lista Gestión Inventarios'],DataSourceInfo.DisplayName,Observaciones)
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
@@ -303,7 +303,7 @@
             DataField: ="Foto"
             Default: =ThisItem.Foto
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@ListaPrestamoHerramientas],DataSourceInfo.DisplayName,Foto)
+            DisplayName: =DataSourceInfo([@'Lista Gestión Inventarios'],DataSourceInfo.DisplayName,Foto)
             Fill: =RGBA(0, 0, 0, 0)
             Height: =187
             Required: =false
@@ -337,7 +337,7 @@
             DataField: ="{Attachments}"
             Default: =ThisItem.'Datos adjuntos'
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@ListaPrestamoHerramientas],DataSourceInfo.DisplayName,'Datos adjuntos')
+            DisplayName: =DataSourceInfo([@'Lista Gestión Inventarios'],DataSourceInfo.DisplayName,'Datos adjuntos')
             Fill: =RGBA(0, 0, 0, 0)
             Height: =257
             Required: =false
@@ -405,7 +405,7 @@
             DataField: ="field_0"
             Default: =ThisItem.Codigo
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@ListaPrestamoHerramientas],DataSourceInfo.DisplayName,Codigo)
+            DisplayName: =DataSourceInfo([@'Lista Gestión Inventarios'],DataSourceInfo.DisplayName,Codigo)
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
@@ -443,7 +443,7 @@
             DataField: ="Title"
             Default: =ThisItem.Descripcion
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@ListaPrestamoHerramientas],DataSourceInfo.DisplayName,Descripcion)
+            DisplayName: =DataSourceInfo([@'Lista Gestión Inventarios'],DataSourceInfo.DisplayName,Descripcion)
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
