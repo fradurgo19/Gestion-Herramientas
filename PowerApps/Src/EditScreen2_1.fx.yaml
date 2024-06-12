@@ -1809,10 +1809,10 @@
             DataField: ="field_5"
             Default: =ThisItem.Ubicacion
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@ListaPrestamoHerramientas],DataSourceInfo.DisplayName,Ubicacion)
+            DisplayName: =DataSourceInfo([@'Lista Gestión Inventarios'],DataSourceInfo.DisplayName,Ubicacion)
             Fill: =RGBA(0, 0, 0, 0)
             Height: =69
-            MaxLength: =DataSourceInfo([@ListaPrestamoHerramientas], DataSourceInfo.MaxLength, Ubicacion)
+            MaxLength: =DataSourceInfo([@'Lista Gestión Inventarios'], DataSourceInfo.MaxLength, Ubicacion)
             Required: =false
             Update: =DataCardValue26.Text
             Visible: =false
