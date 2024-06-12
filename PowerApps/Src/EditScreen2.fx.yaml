@@ -19,11 +19,11 @@
     ComboBox1 As combobox:
         BorderColor: =RGBA(99, 139, 44, 1)
         ChevronBackground: =RGBA(127, 178, 57, 1)
-        DisplayFields: =["ComplianceAssetId"]
+        DisplayFields: =["Value"]
         Height: =73
-        Items: =Filter('Lista Gestión Inventarios', TipoDePrestamo = ComboBox2_2.Selected.Value)
-        SearchFields: =["ComplianceAssetId"]
-        SearchItems: =Search('Lista Gestión Inventarios',ComboBox1.SearchText,ComplianceAssetId)
+        Items: =Choices('Lista Gestión Inventarios'.field_16)
+        SearchFields: =["Value"]
+        SearchItems: =Choices('Lista Gestión Inventarios'.field_16,ComboBox1.SearchText)
         SelectionFill: =RGBA(127, 178, 57, 1)
         SelectMultiple: =false
         Size: =18

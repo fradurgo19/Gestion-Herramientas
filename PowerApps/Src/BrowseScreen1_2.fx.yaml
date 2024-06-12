@@ -384,7 +384,7 @@
         HoverFill: =RGBA(232, 244, 217, 1)
         InputTextPlaceholder: ="Seleccione Sede"
         IsSearchable: =false
-        Items: =Choices('Lista Gestión Inventarios'.)
+        Items: =Choices('Lista Gestión Inventarios'.field_4.Vaules)
         NoSelectionText: ="Seleccionar la Sede"
         PressedColor: =RGBA(0, 0, 0, 1)
         PressedFill: =RGBA(232, 244, 217, 1)
