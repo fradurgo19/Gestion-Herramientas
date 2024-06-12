@@ -2108,7 +2108,7 @@
             DisplayName: =DataSourceInfo([@'Lista Gestión Inventarios'],DataSourceInfo.DisplayName,Sede)
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
-            MaxLength: =DataSourceInfo([@'Lista Gestión Inventarios'], DataSourceInfo.MaxLength, Sede)
+            MaxLength: =DataSourceInfo([@'Lista Gestión Inventarios'], DataSourceInfo.MaxLength,Sede)
             Required: =false
             Update: =DataCardValue25.Text
             Visible: =false
