@@ -497,7 +497,7 @@
                   "charLength": 6,
                   "charOffset": 358,
                   "snippet": {
-                    "text": ".Value"
+                    "text": ".Vaule"
                   }
                 }
               },
@@ -510,7 +510,7 @@
           ],
           "message": {
             "arguments": [
-              "Value"
+              "Vaule"
             ],
             "id": "issue"
           },
