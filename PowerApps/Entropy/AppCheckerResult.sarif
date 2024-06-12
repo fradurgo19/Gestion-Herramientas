@@ -11108,10 +11108,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 117,
+                  "charLength": 118,
                   "charOffset": 122,
                   "snippet": {
-                    "text": "{\n        TipoDePrestamo: ComboBox1.Selected;\n        'Asignado A': TextInput2.Text;\n        Foto: Image3.Image\n    }"
+                    "text": "{\n        TipoDePrestamo: ComboBox1.Selected;\n        'Asignado A': TextInput2.Text;\n        Foto : Image3.Image\n    }"
                   }
                 }
               },
@@ -11148,10 +11148,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 117,
+                  "charLength": 118,
                   "charOffset": 122,
                   "snippet": {
-                    "text": "{\n        TipoDePrestamo: ComboBox1.Selected;\n        'Asignado A': TextInput2.Text;\n        Foto: Image3.Image\n    }"
+                    "text": "{\n        TipoDePrestamo: ComboBox1.Selected;\n        'Asignado A': TextInput2.Text;\n        Foto : Image3.Image\n    }"
                   }
                 }
               },

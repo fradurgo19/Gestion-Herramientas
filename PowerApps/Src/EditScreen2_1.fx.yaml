@@ -3295,7 +3295,7 @@
                 {
                     TipoDePrestamo: ComboBox1.Selected,
                     'Asignado A': TextInput2.Text,
-                    Foto: Image3.Image
+                    Foto : Image3.Image
                 }
             
             );
