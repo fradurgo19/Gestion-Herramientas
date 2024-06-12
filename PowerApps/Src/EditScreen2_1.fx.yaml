@@ -116,7 +116,7 @@
                     
                     
                     //Set(Datosvar1;LookUp(ListaHerramientas; Codigodebarra = DataCardValue33.EnableSpellCheck))
-                OnSelect: =Set(Datosvar1,LookUp(ListaHerramientas, Codigodebarra = DataCardValue33_1.Text))
+                OnSelect: =Set(Datosvar1,LookUp('Lista Inventarios', Codigodebarra = DataCardValue33_1.Text))
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
@@ -1267,7 +1267,7 @@
             DataField: ="field_0"
             Default: =ThisItem.Codigo
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@ListaPrestamoHerramientas],DataSourceInfo.DisplayName,Codigo)
+            DisplayName: =DataSourceInfo([@'Lista Gestión Inventarios'],DataSourceInfo.DisplayName,Codigo)
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             Required: =false
@@ -1338,9 +1338,9 @@
         Fecha_DataCard1 As typedDataCard.dateEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="FechaPrestamo"
-            Default: =ThisItem.Fecha
+            Default: =ThisItem.'Fecha Prestamo'
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo(['Lista Gestión Inventarios'],DataSourceInfo.DisplayName,field_16)
+            DisplayName: =DataSourceInfo([@'Lista Gestión Inventarios'],DataSourceInfo.DisplayName,field_16)
             Fill: =RGBA(0, 0, 0, 0)
             Height: =30
             Required: =false
@@ -1398,7 +1398,7 @@
             DataField: ="field_9"
             Default: =ThisItem.FrecuenciadeRevision
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@ListaPrestamoHerramientas],DataSourceInfo.DisplayName,FrecuenciadeRevision)
+            DisplayName: =DataSourceInfo([@'Lista Gestión Inventarios'],DataSourceInfo.DisplayName,FrecuenciadeRevision)
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             Required: =false
@@ -1471,7 +1471,7 @@
             DataField: ="field_15"
             Default: =ThisItem.Cantidad
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@ListaPrestamoHerramientas],DataSourceInfo.DisplayName,Cantidad)
+            DisplayName: =DataSourceInfo([@'Lista Gestión Inventarios'],DataSourceInfo.DisplayName,Cantidad)
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             Required: =false
@@ -1544,10 +1544,10 @@
             DataField: ="Title"
             Default: =ThisItem.Descripcion
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@ListaPrestamoHerramientas],DataSourceInfo.DisplayName,Descripcion)
+            DisplayName: =DataSourceInfo([@'Lista Gestión Inventarios'],DataSourceInfo.DisplayName,Descripcion)
             Fill: =RGBA(0, 0, 0, 0)
             Height: =54
-            MaxLength: =DataSourceInfo([@ListaPrestamoHerramientas], DataSourceInfo.MaxLength, Descripcion)
+            MaxLength: =DataSourceInfo([@'Lista Gestión Inventarios'], DataSourceInfo.MaxLength, Descripcion)
             Required: =false
             Update: =DataCardValue36.Text
             Width: =304
@@ -1615,10 +1615,10 @@
             DataField: ="field_10"
             Default: =ThisItem.Observaciones
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@ListaPrestamoHerramientas],DataSourceInfo.DisplayName,Observaciones)
+            DisplayName: =DataSourceInfo([@'Lista Gestión Inventarios'],DataSourceInfo.DisplayName,Observaciones)
             Fill: =RGBA(0, 0, 0, 0)
             Height: =94
-            MaxLength: =DataSourceInfo([@ListaPrestamoHerramientas], DataSourceInfo.MaxLength, Observaciones)
+            MaxLength: =DataSourceInfo([@'Lista Gestión Inventarios'], DataSourceInfo.MaxLength, Observaciones)
             Required: =false
             Update: =DataCardValue17.Text
             Width: =305
@@ -1676,7 +1676,7 @@
             DataField: ="{Attachments}"
             Default: =ThisItem.'Datos adjuntos'
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@ListaPrestamoHerramientas],DataSourceInfo.DisplayName,'Datos adjuntos')
+            DisplayName: =DataSourceInfo([@'Lista Gestión Inventarios'],DataSourceInfo.DisplayName,'Datos adjuntos')
             Fill: =RGBA(0, 0, 0, 0)
             Height: =87
             Required: =false
@@ -1957,7 +1957,7 @@
             DataField: ="field_7"
             Default: =ThisItem.Estado
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@ListaPrestamoHerramientas],DataSourceInfo.DisplayName,Estado)
+            DisplayName: =DataSourceInfo([@'Lista Gestión Inventarios'],DataSourceInfo.DisplayName,Estado)
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             MaxLength: =DataSourceInfo([@ListaPrestamoHerramientas], DataSourceInfo.MaxLength, Estado)
@@ -2031,10 +2031,10 @@
             DataField: ="field_3"
             Default: =ThisItem.Tipo
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@ListaPrestamoHerramientas],DataSourceInfo.DisplayName,Tipo)
+            DisplayName: =DataSourceInfo([@'Lista Gestión Inventarios'],DataSourceInfo.DisplayName,Tipo)
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
-            MaxLength: =DataSourceInfo([@ListaPrestamoHerramientas], DataSourceInfo.MaxLength, Tipo)
+            MaxLength: =DataSourceInfo([@'Lista Gestión Inventarios'], DataSourceInfo.MaxLength, Tipo)
             Required: =false
             Update: =DataCardValue24.Text
             Visible: =false
@@ -2105,10 +2105,10 @@
             DataField: ="field_8"
             Default: =ThisItem.Proveedor
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@ListaPrestamoHerramientas],DataSourceInfo.DisplayName,Proveedor)
+            DisplayName: =DataSourceInfo([@'Lista Gestión Inventarios'],DataSourceInfo.DisplayName,Proveedor)
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
-            MaxLength: =DataSourceInfo([@ListaPrestamoHerramientas], DataSourceInfo.MaxLength, Proveedor)
+            MaxLength: =DataSourceInfo([@'Lista Gestión Inventarios'], DataSourceInfo.MaxLength, Proveedor)
             Required: =false
             Update: =DataCardValue29.Text
             Visible: =false
