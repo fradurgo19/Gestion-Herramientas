@@ -124,8 +124,8 @@
                     (StartsWith(Descripcion, TextSearchBox1_2.Text) || IsBlank(TextSearchBox1_2.Text))||(StartsWith(Codigodebarra, TextSearchBox1_2.Text) || IsBlank(TextSearchBox1_2.Text))||(StartsWith(Codigo, TextSearchBox1_2.Text) || IsBlank(TextSearchBox1_2.Text))&&
                     (Sede = ComboBox2_1.Selected.Value || IsBlank(ComboBox2_1.Selected.Value)) &&
                     (TipoDePrestamo.Value = ComboBox2.Selected.Value || IsBlank(ComboBox2.Selected.Value)) &&
-                    (Fecha >= DatePicker1.SelectedDate || IsBlank(DatePicker1.SelectedDate)) &&
-                    (Fecha <= DatePicker1_1.SelectedDate || IsBlank(DatePicker1_1.SelectedDate))
+                    ('Fecha Prestamo' >= DatePicker1.SelectedDate || IsBlank(DatePicker1.SelectedDate)) &&
+                    ('Fecha Prestamo' <= DatePicker1_1.SelectedDate || IsBlank(DatePicker1_1.SelectedDate))
                 ),
                 "Modified",
                 If(SortDescending1, SortOrder.Descending, SortOrder.Ascending)
@@ -384,7 +384,7 @@
         HoverFill: =RGBA(232, 244, 217, 1)
         InputTextPlaceholder: ="Seleccione Sede"
         IsSearchable: =false
-        Items: =Choices('Lista Gestión Inventarios'.Sede.Vaules)
+        Items: =Choices('Lista Gestión Inventarios'.field_4)
         NoSelectionText: ="Seleccionar la Sede"
         PressedColor: =RGBA(0, 0, 0, 1)
         PressedFill: =RGBA(232, 244, 217, 1)
