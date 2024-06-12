@@ -1735,7 +1735,7 @@
             DataField: ="field_4"
             Default: =ThisItem.Sede
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@ListaPrestamoHerramientas],DataSourceInfo.DisplayName,Sede)
+            DisplayName: =DataSourceInfo([@'Lista Gestión Inventarios'],DataSourceInfo.DisplayName,Sede)
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             MaxLength: =DataSourceInfo([@ListaPrestamoHerramientas], DataSourceInfo.MaxLength, Sede)
