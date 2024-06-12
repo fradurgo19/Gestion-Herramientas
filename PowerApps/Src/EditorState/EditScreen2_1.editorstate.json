@@ -852,8 +852,8 @@
         },
         {
           "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": true,
-          "AutoRuleBindingString": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "DataSourceInfo([@ListaPrestamoHerramientas],DataSourceInfo.DisplayName,Bodega)",
           "InvariantPropertyName": "DisplayName",
           "IsLockable": true,
           "NameMapSourceSchema": "?"
@@ -892,8 +892,8 @@
         },
         {
           "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": true,
-          "AutoRuleBindingString": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "DataSourceInfo([@ListaPrestamoHerramientas], DataSourceInfo.MaxLength, Bodega)",
           "InvariantPropertyName": "MaxLength",
           "IsLockable": true,
           "NameMapSourceSchema": "?"
@@ -937,7 +937,7 @@
         {
           "Category": "Data",
           "PropertyName": "MaxLength",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Data",
@@ -957,7 +957,7 @@
         {
           "Category": "Data",
           "PropertyName": "DisplayName",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Design",
@@ -51774,8 +51774,8 @@
         },
         {
           "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": true,
-          "AutoRuleBindingString": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "DataSourceInfo([@ListaPrestamoHerramientas], DataSourceInfo.MaxLength, Estado)",
           "InvariantPropertyName": "MaxLength",
           "IsLockable": true,
           "NameMapSourceSchema": "?"
@@ -51819,7 +51819,7 @@
         {
           "Category": "Data",
           "PropertyName": "MaxLength",
-          "RuleProviderType": "Unknown"
+          "RuleProviderType": "User"
         },
         {
           "Category": "Data",

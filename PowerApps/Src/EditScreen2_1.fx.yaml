@@ -1143,8 +1143,8 @@
                 'Lista Gestión Inventarios',
                 Last(colUltimo),
                 {
-                    TipoDePrestamo: ComboBox1.Selected,
-                    'Asignado A': TextInput2.Text,
+                    field_16: ComboBox1.Selected,
+                    field_14: TextInput2.Text,
                     Foto: Image3.Image
                 }
             
@@ -1883,10 +1883,10 @@
             DataField: ="field_6"
             Default: =ThisItem.Bodega
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@ListaPrestamoHerramientas],DataSourceInfo.DisplayName,Bodega)
+            DisplayName: =DataSourceInfo([@'Lista Gestión Inventarios'],DataSourceInfo.DisplayName,Bodega)
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
-            MaxLength: =DataSourceInfo([@ListaPrestamoHerramientas], DataSourceInfo.MaxLength, Bodega)
+            MaxLength: =DataSourceInfo([@'Lista Gestión Inventarios'], DataSourceInfo.MaxLength, Bodega)
             Required: =false
             Update: =DataCardValue27.Text
             Visible: =false
@@ -1960,7 +1960,7 @@
             DisplayName: =DataSourceInfo([@'Lista Gestión Inventarios'],DataSourceInfo.DisplayName,Estado)
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
-            MaxLength: =DataSourceInfo([@ListaPrestamoHerramientas], DataSourceInfo.MaxLength, Estado)
+            MaxLength: =DataSourceInfo([@'Lista Gestión Inventarios'], DataSourceInfo.MaxLength, Estado)
             Required: =false
             Update: =DataCardValue28.Text
             Visible: =false
