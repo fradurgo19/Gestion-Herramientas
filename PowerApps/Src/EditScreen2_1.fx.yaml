@@ -70,7 +70,7 @@
             );
             
             Patch(
-                ListaPrestamoHerramientas,
+                'Lista Gestión Inventarios',
                 Last(colUltimo),
                 {
                     TipoDePrestamo: ComboBox1.Selected,
@@ -2220,7 +2220,7 @@
         AcceptsFocus: =false
         BorderColor: =RGBA(127, 178, 57, 1)
         BorderThickness: =2
-        DataSource: =ListaPrestamoHerramientas
+        DataSource: ='Lista Gestión Inventarios'
         DefaultMode: =FormMode.New
         Fill: =RGBA(255, 255, 255, 1)
         Height: =395
@@ -2232,7 +2232,7 @@
             );
             
             Patch(
-                ListaPrestamoHerramientas,
+                'Lista Gestión Inventarios',
                 Last(colUltimo),
                 {
                     TipoDePrestamo: ComboBox1.Selected,
