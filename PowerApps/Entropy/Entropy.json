@@ -505,7 +505,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "06/12/2024 20:26:42",
+  "HeaderLastSavedDateTimeUTC": "06/12/2024 20:35:57",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "4e473aa7-56d6-4c5a-a04a-7f0578d2ae3c": "\"/providers/microsoft.powerapps/apis/shared_office365users/connections/shared-office365user-9e42227b-397b-4a6f-9054-8ba723d77e62\"",
@@ -514,6 +514,7 @@
   },
   "LocalDatabaseReferencesAsEmpty": true,
   "LocalResourceFileNames": {
+    "157580562": "9a987b9a-906a-4654-ac36-f58d7ef8eb06.jpg",
     "bajo-construccion": "33bf6639-7e4b-4046-812e-b6b3b5e503d7.gif",
     "codigo-de-barras": "a3521892-ac51-42c2-a178-a095df6b004f.gif",
     "entregar": "980932d6-83d4-4e55-b745-c78217d4cb13.gif",
@@ -536,6 +537,7 @@
     "salida": "cb786d26-3a18-496a-b0d6-fe329935ffc2.gif"
   },
   "LocalResourceRootPaths": {
+    "157580562": "https://cdn.hubblecontent.osi.office.net/m365content/publish/d33cab93-aac1-4047-8c20-e7c937fa302a/157580562.jpg",
     "bajo-construccion": "https://docserverpwaprodsbr.blob.core.windows.net/a5115f1b-bf2d-4a9e-82e4-f298882ea348-1/resource/Assets0Images033bf6639-7e4b-4046-812e-b6b3b5e503d7.gif?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2024-06-12T17%3A17%3A10Z&ske=2024-06-13T17%3A32%3A10Z&sks=b&skv=2023-01-03&sv=2023-01-03&spr=https&se=2024-06-13T17%3A32%3A10Z&sr=b&sp=r&sig=4jhF5RzyC9B4oaGvx7YKx0IET0Xxcsn4dNomekqxn3s%3D",
     "codigo-de-barras": "https://docserverpwaprodsbr.blob.core.windows.net/a5115f1b-bf2d-4a9e-82e4-f298882ea348-1/resource/Assets0Images0a3521892-ac51-42c2-a178-a095df6b004f.gif?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2024-06-12T17%3A17%3A10Z&ske=2024-06-13T17%3A32%3A10Z&sks=b&skv=2023-01-03&sv=2023-01-03&spr=https&se=2024-06-13T17%3A32%3A10Z&sr=b&sp=r&sig=6amCJtrrMaBBY7AJHgKGuDiVcd2eyXOSr7cMUHeIN4s%3D",
     "entregar": "https://docserverpwaprodsbr.blob.core.windows.net/a5115f1b-bf2d-4a9e-82e4-f298882ea348-1/resource/Assets0Images0980932d6-83d4-4e55-b745-c78217d4cb13.gif?skoid=58690ece-ec83-4ce2-9ce8-883d4d6a54ee&sktid=975f013f-7f24-47e8-a7d3-abc4752bf346&skt=2024-06-12T17%3A17%3A10Z&ske=2024-06-13T17%3A32%3A10Z&sks=b&skv=2023-01-03&sv=2023-01-03&spr=https&se=2024-06-13T17%3A32%3A10Z&sr=b&sp=r&sig=zxmq6O9FsjuvsJBNj%2B0GdsRM%2FbZ%2FW7RNUC4YzZhzzHo%3D",
@@ -1907,6 +1909,7 @@
     "Ubicacion_DataCard3_3": 578
   },
   "ResourcesJsonIndices": {
+    "Image-157580562": 21,
     "Image-bajo-construccion": 11,
     "Image-codigo-de-barras": 14,
     "Image-entregar": 16,

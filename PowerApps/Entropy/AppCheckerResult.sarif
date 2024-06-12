@@ -657,10 +657,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 8,
+                  "charLength": 5,
                   "charOffset": 35,
                   "snippet": {
-                    "text": ".field_4"
+                    "text": ".Sede"
                   }
                 }
               },
@@ -695,7 +695,7 @@
                 },
                 "region": {
                   "charLength": 7,
-                  "charOffset": 43,
+                  "charOffset": 40,
                   "snippet": {
                     "text": ".Vaules"
                   }
@@ -5233,6 +5233,36 @@
               },
               "properties": {
                 "member": "progress",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedMediaResources",
+          "ruleIndex": 11
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.157580562"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.157580562",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "157580562",
                 "module": "App",
                 "type": "App"
               }
