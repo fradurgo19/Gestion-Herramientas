@@ -2,16 +2,12 @@ App As appinfo:
     BackEnabled: =true
     OnStart: |-
         =ClearCollect(
-            ListaHerramientasLocal,
-            ListaHerramientas
+            ListaInventarioLocal,
+            'Lista Inventarios'
         );
         ClearCollect(
-            ListaMantenimientoHerramientasLocal,
-            ListaMantenimientoHerramientas
-        );
-        ClearCollect(
-            ListaPrestamoHerramientasLocal,
-            ListaPrestamoHerramientas
+            ListaGestionLocal,
+            'Lista Gestión Inventarios'
         )
     Theme: =PowerAppsTheme
 
