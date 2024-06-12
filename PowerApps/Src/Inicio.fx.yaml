@@ -1,11 +1,17 @@
 Inicio As screen:
+    LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
 
     Button1 As button:
         BorderColor: =RGBA(127, 178, 57, 1)
         BorderThickness: =5
         Color: =RGBA(0, 0, 0, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
         Fill: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Semibold
         Height: =196
+        HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =RGBA(187, 221, 140, 1)
         OnSelect: |-
             =Navigate(
@@ -29,8 +35,13 @@ Inicio As screen:
         BorderColor: =Color.DarkRed
         BorderThickness: =5
         Color: =RGBA(0, 0, 0, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
         Fill: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Semibold
         Height: =196
+        HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =RGBA(250, 155, 112, 1)
         OnSelect: |-
             =Navigate(
@@ -54,9 +65,14 @@ Inicio As screen:
         BorderColor: =RGBA(127, 178, 57, 1)
         BorderThickness: =5
         Color: =RGBA(0, 0, 0, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
         Fill: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Semibold
         Height: =196
         HoverBorderColor: =Color.Green
+        HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =RGBA(209, 232, 178, 1)
         OnSelect: |-
             =Navigate(
@@ -77,6 +93,9 @@ Inicio As screen:
         ZIndex: =3
 
     Image2 As image:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
         Height: =113
         Image: =Logo
         ImagePosition: =ImagePosition.Fill
@@ -85,6 +104,9 @@ Inicio As screen:
         ZIndex: =5
 
     Image7 As image:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
         Height: =292
         Image: ='pngwing.com (5)'
         Width: =635
@@ -94,6 +116,9 @@ Inicio As screen:
 
     Label1 As label:
         Align: =Align.Center
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
         FontWeight: =FontWeight.Bold
         Height: =86
         Size: =30
@@ -104,6 +129,9 @@ Inicio As screen:
         ZIndex: =11
 
     Label2 As label:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
         Height: =57
         OnSelect: =Exit()
         Size: =21
@@ -114,6 +142,9 @@ Inicio As screen:
         ZIndex: =13
 
     Image4 As image:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
         Height: =105
         Image: =excavador
         OnSelect: |-
@@ -127,6 +158,9 @@ Inicio As screen:
         ZIndex: =14
 
     Image11 As image:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
         Height: =90
         Image: =salida
         OnSelect: =Exit()
@@ -135,6 +169,9 @@ Inicio As screen:
         ZIndex: =17
 
     Image12 As image:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
         Height: =82
         Image: ='bajo-construccion'
         OnSelect: |-
@@ -148,6 +185,9 @@ Inicio As screen:
         ZIndex: =18
 
     Image14 As image:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
         Height: =116
         Image: ='codigo-de-barras'
         OnSelect: |-

@@ -1,6 +1,10 @@
 Inicio_1 As screen:
+    LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
 
     Image19 As image:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
         Height: =963
         Image: =giphy3
         Visible: =varCargar
@@ -8,6 +12,9 @@ Inicio_1 As screen:
         ZIndex: =1
 
     Image2_1 As image:
+        BorderColor: =RGBA(32, 54, 71, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
         Height: =113
         Image: =Logo
         ImagePosition: =ImagePosition.Fill
@@ -17,8 +24,9 @@ Inicio_1 As screen:
 
     Label1_1 As label:
         Align: =Align.Center
-        BorderColor: =RGBA(101, 128, 187, 1)
-        DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
         FontWeight: =FontWeight.Bold
         Height: =76
         Size: =30
@@ -47,12 +55,11 @@ Inicio_1 As screen:
 
     Timer1 As timer:
         AutoStart: =varTiempo
-        Color: =RGBA(255,255,255,1)
         Duration: =6000
-        Fill: =RGBA(62,96,170,1)
+        Fill: =RGBA(100, 118, 132, 1)
         Height: =70
-        HoverColor: =Self.Color
-        HoverFill: =ColorFade(Self.Fill, 20%)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(100, 118, 132, 1), -20%)
         OnTimerEnd: =Set(varCargar,false);Navigate(Inicio,ScreenTransition.Fade)
         Visible: =false
         Width: =280

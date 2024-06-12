@@ -1,6 +1,8 @@
 "DetailScreen1 As screen.'phoneDetailViewLayout_ver3.0'":
+    LoadingSpinnerColor: =RGBA(100, 118, 132, 1)
 
     RectQuickActionBar2 As rectangle:
+        BorderColor: =RGBA(32, 54, 71, 1)
         Fill: =RGBA(203, 102, 102, 1)
         Height: =88
         Width: =Parent.Width
@@ -8,6 +10,10 @@
 
     IconBackarrow1 As icon.ChevronLeft:
         AccessibleLabel: =Self.Tooltip
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
         Fill: =RGBA(203, 102, 102, 1)
         Height: =88
         Icon: =Icon.ChevronLeft
@@ -16,6 +22,7 @@
         PaddingLeft: =24
         PaddingRight: =24
         PaddingTop: =24
+        PressedFill: =RGBA(255, 255, 255, 0.3)
         TabIndex: =0
         Tooltip: ="Volver a la lista"
         Width: =88
@@ -23,6 +30,10 @@
 
     IconEdit1 As icon.Edit:
         AccessibleLabel: =Self.Tooltip
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
         DisplayMode: =If(DataSourceInfo([@'Lista Inventarios'], DataSourceInfo.EditPermission), DisplayMode.Edit, DisplayMode.Disabled)
         Fill: =RGBA(203, 102, 102, 1)
         Height: =88
@@ -32,6 +43,7 @@
         PaddingLeft: =24
         PaddingRight: =24
         PaddingTop: =24
+        PressedFill: =RGBA(255, 255, 255, 0.3)
         TabIndex: =0
         Tooltip: ="Editar este elemento"
         Visible: =false
@@ -41,6 +53,10 @@
 
     IconDelete1 As icon.Trash:
         AccessibleLabel: =Self.Tooltip
+        BorderColor: =RGBA(32, 54, 71, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(244, 244, 244, 1)
         DisplayMode: =If(!IsBlank(BrowseGallery1.Selected) && DataSourceInfo([@'Lista Inventarios'], DataSourceInfo.DeletePermission), DisplayMode.Edit, DisplayMode.Disabled)
         Fill: =RGBA(203, 102, 102, 1)
         Height: =88
@@ -50,6 +66,7 @@
         PaddingLeft: =24
         PaddingRight: =24
         PaddingTop: =24
+        PressedFill: =RGBA(255, 255, 255, 0.3)
         TabIndex: =0
         Tooltip: ="Eliminar este elemento"
         Visible: =false
@@ -59,6 +76,8 @@
 
     LblAppName2 As label:
         Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
         Fill: =RGBA(203, 102, 102, 1)
         Height: =88
         Size: =27
@@ -69,6 +88,7 @@
         ZIndex: =5
 
     DetailForm1 As formViewer:
+        BorderColor: =RGBA(32, 54, 71, 1)
         DataSource: ='Lista Inventarios'
         Height: =Parent.Height - DetailForm1.Y
         Item: =BrowseGallery1.Selected
@@ -77,6 +97,7 @@
         ZIndex: =6
 
         Codigodebarra_DataCard4 As typedDataCard.textualViewCard:
+            BorderColor: =RGBA(32, 54, 71, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="field_10"
             Default: =ThisItem.Codigodebarra
@@ -92,6 +113,8 @@
 
             DataCardKey1 As label:
                 AutoHeight: =true
+                Color: =RGBA(32, 54, 71, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =48
                 Size: =21
                 Text: =Parent.DisplayName
@@ -103,6 +126,9 @@
 
             DataCardValue1 As label:
                 AutoHeight: =true
+                BorderColor: =RGBA(32, 54, 71, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
                 PaddingLeft: =0
                 PaddingRight: =0
@@ -115,6 +141,7 @@
                 ZIndex: =2
 
         Codigo_DataCard1 As typedDataCard.textualViewCard:
+            BorderColor: =RGBA(32, 54, 71, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="field_0"
             Default: =ThisItem.Codigo
@@ -130,6 +157,8 @@
 
             DataCardKey2 As label:
                 AutoHeight: =true
+                Color: =RGBA(32, 54, 71, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =48
                 Size: =21
                 Text: =Parent.DisplayName
@@ -141,6 +170,9 @@
 
             DataCardValue2 As label:
                 AutoHeight: =true
+                BorderColor: =RGBA(32, 54, 71, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
                 PaddingLeft: =0
                 PaddingRight: =0
@@ -153,6 +185,7 @@
                 ZIndex: =2
 
         Tipo_DataCard1 As typedDataCard.comboBoxViewCard:
+            BorderColor: =RGBA(32, 54, 71, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="field_1"
             Default: =ThisItem.Tipo
@@ -169,6 +202,8 @@
 
             DataCardKey3 As label:
                 AutoHeight: =true
+                Color: =RGBA(32, 54, 71, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =48
                 Size: =21
                 Text: =Parent.DisplayName
@@ -180,14 +215,27 @@
 
             DataCardValue3 As combobox:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                ChevronBackground: =RGBA(100, 118, 132, 1)
+                ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+                ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+                ChevronHoverBackground: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+                ChevronHoverFill: =RGBA(255, 255, 255, 1)
                 DefaultSelectedItems: =Parent.Default
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
                 Height: =70
+                HoverColor: =RGBA(0, 0, 0, 1)
+                HoverFill: =RGBA(205, 209, 213, 1)
                 Items: =Choices([@'Lista Inventarios'].field_1)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PressedColor: =RGBA(255, 255, 255, 1)
+                PressedFill: =RGBA(32, 54, 71, 1)
                 SearchFields: =["Value"]
                 SearchItems: =Choices('Lista Inventarios'.field_1,DataCardValue3.SearchText)
+                SelectionFill: =RGBA(100, 118, 132, 1)
                 SelectMultiple: =false
                 Size: =21
                 Width: =Parent.Width - 60
@@ -197,6 +245,9 @@
 
             ErrorMessage1 As label:
                 AutoHeight: =true
+                Color: =RGBA(168, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FontWeight: =FontWeight.Semibold
                 Height: =10
                 Live: =Live.Assertive
                 PaddingBottom: =0
@@ -213,6 +264,8 @@
 
             StarVisible1 As label:
                 Align: =Align.Center
+                Color: =RGBA(32, 54, 71, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =DataCardKey3.Height
                 Size: =21
                 Text: ="*"
@@ -223,6 +276,7 @@
                 ZIndex: =4
 
         Sede_DataCard1 As typedDataCard.comboBoxViewCard:
+            BorderColor: =RGBA(32, 54, 71, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="field_2"
             Default: =ThisItem.Sede
@@ -239,6 +293,8 @@
 
             DataCardKey4 As label:
                 AutoHeight: =true
+                Color: =RGBA(32, 54, 71, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =48
                 Size: =21
                 Text: =Parent.DisplayName
@@ -250,14 +306,27 @@
 
             DataCardValue4 As combobox:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                ChevronBackground: =RGBA(100, 118, 132, 1)
+                ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+                ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+                ChevronHoverBackground: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+                ChevronHoverFill: =RGBA(255, 255, 255, 1)
                 DefaultSelectedItems: =Parent.Default
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
                 Height: =70
+                HoverColor: =RGBA(0, 0, 0, 1)
+                HoverFill: =RGBA(205, 209, 213, 1)
                 Items: =Choices([@'Lista Inventarios'].field_2)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PressedColor: =RGBA(255, 255, 255, 1)
+                PressedFill: =RGBA(32, 54, 71, 1)
                 SearchFields: =["Value"]
                 SearchItems: =Choices('Lista Inventarios'.field_2,DataCardValue4.SearchText)
+                SelectionFill: =RGBA(100, 118, 132, 1)
                 SelectMultiple: =false
                 Size: =21
                 Width: =Parent.Width - 60
@@ -267,6 +336,9 @@
 
             ErrorMessage2 As label:
                 AutoHeight: =true
+                Color: =RGBA(168, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FontWeight: =FontWeight.Semibold
                 Height: =10
                 Live: =Live.Assertive
                 PaddingBottom: =0
@@ -283,6 +355,8 @@
 
             StarVisible2 As label:
                 Align: =Align.Center
+                Color: =RGBA(32, 54, 71, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =DataCardKey4.Height
                 Size: =21
                 Text: ="*"
@@ -293,6 +367,7 @@
                 ZIndex: =4
 
         Ubicacion_DataCard1 As typedDataCard.comboBoxViewCard:
+            BorderColor: =RGBA(32, 54, 71, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="field_3"
             Default: =ThisItem.Ubicacion
@@ -309,6 +384,8 @@
 
             DataCardKey5 As label:
                 AutoHeight: =true
+                Color: =RGBA(32, 54, 71, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =48
                 Size: =21
                 Text: =Parent.DisplayName
@@ -320,14 +397,27 @@
 
             DataCardValue5 As combobox:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                ChevronBackground: =RGBA(100, 118, 132, 1)
+                ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+                ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+                ChevronHoverBackground: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+                ChevronHoverFill: =RGBA(255, 255, 255, 1)
                 DefaultSelectedItems: =Parent.Default
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
                 Height: =70
+                HoverColor: =RGBA(0, 0, 0, 1)
+                HoverFill: =RGBA(205, 209, 213, 1)
                 Items: =Choices([@'Lista Inventarios'].field_3)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PressedColor: =RGBA(255, 255, 255, 1)
+                PressedFill: =RGBA(32, 54, 71, 1)
                 SearchFields: =["Value"]
                 SearchItems: =Choices('Lista Inventarios'.field_3,DataCardValue5.SearchText)
+                SelectionFill: =RGBA(100, 118, 132, 1)
                 SelectMultiple: =false
                 Size: =21
                 Width: =Parent.Width - 60
@@ -337,6 +427,9 @@
 
             ErrorMessage3 As label:
                 AutoHeight: =true
+                Color: =RGBA(168, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FontWeight: =FontWeight.Semibold
                 Height: =10
                 Live: =Live.Assertive
                 PaddingBottom: =0
@@ -353,6 +446,8 @@
 
             StarVisible3 As label:
                 Align: =Align.Center
+                Color: =RGBA(32, 54, 71, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =DataCardKey5.Height
                 Size: =21
                 Text: ="*"
@@ -363,6 +458,7 @@
                 ZIndex: =4
 
         Bodega_DataCard1 As typedDataCard.comboBoxViewCard:
+            BorderColor: =RGBA(32, 54, 71, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="field_4"
             Default: =ThisItem.Bodega
@@ -379,6 +475,8 @@
 
             DataCardKey6 As label:
                 AutoHeight: =true
+                Color: =RGBA(32, 54, 71, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =48
                 Size: =21
                 Text: =Parent.DisplayName
@@ -390,14 +488,27 @@
 
             DataCardValue6 As combobox:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                ChevronBackground: =RGBA(100, 118, 132, 1)
+                ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+                ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+                ChevronHoverBackground: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+                ChevronHoverFill: =RGBA(255, 255, 255, 1)
                 DefaultSelectedItems: =Parent.Default
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
                 Height: =70
+                HoverColor: =RGBA(0, 0, 0, 1)
+                HoverFill: =RGBA(205, 209, 213, 1)
                 Items: =Choices([@'Lista Inventarios'].field_4)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PressedColor: =RGBA(255, 255, 255, 1)
+                PressedFill: =RGBA(32, 54, 71, 1)
                 SearchFields: =["Value"]
                 SearchItems: =Choices('Lista Inventarios'.field_4,DataCardValue6.SearchText)
+                SelectionFill: =RGBA(100, 118, 132, 1)
                 SelectMultiple: =false
                 Size: =21
                 Width: =Parent.Width - 60
@@ -407,6 +518,9 @@
 
             ErrorMessage4 As label:
                 AutoHeight: =true
+                Color: =RGBA(168, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FontWeight: =FontWeight.Semibold
                 Height: =10
                 Live: =Live.Assertive
                 PaddingBottom: =0
@@ -423,6 +537,8 @@
 
             StarVisible4 As label:
                 Align: =Align.Center
+                Color: =RGBA(32, 54, 71, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =DataCardKey6.Height
                 Size: =21
                 Text: ="*"
@@ -433,6 +549,7 @@
                 ZIndex: =4
 
         Estado_DataCard1 As typedDataCard.comboBoxViewCard:
+            BorderColor: =RGBA(32, 54, 71, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="field_5"
             Default: =ThisItem.Estado
@@ -449,6 +566,8 @@
 
             DataCardKey7 As label:
                 AutoHeight: =true
+                Color: =RGBA(32, 54, 71, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =48
                 Size: =21
                 Text: =Parent.DisplayName
@@ -460,14 +579,27 @@
 
             DataCardValue7 As combobox:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                ChevronBackground: =RGBA(100, 118, 132, 1)
+                ChevronDisabledBackground: =RGBA(166, 166, 166, 1)
+                ChevronDisabledFill: =RGBA(244, 244, 244, 1)
+                ChevronHoverBackground: =ColorFade(RGBA(100, 118, 132, 1), -20%)
+                ChevronHoverFill: =RGBA(255, 255, 255, 1)
                 DefaultSelectedItems: =Parent.Default
+                DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                DisabledFill: =RGBA(244, 244, 244, 1)
                 DisplayFields: =["Value"]
                 DisplayMode: =Parent.DisplayMode
                 Height: =70
+                HoverColor: =RGBA(0, 0, 0, 1)
+                HoverFill: =RGBA(205, 209, 213, 1)
                 Items: =Choices([@'Lista Inventarios'].field_5)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                PressedColor: =RGBA(255, 255, 255, 1)
+                PressedFill: =RGBA(32, 54, 71, 1)
                 SearchFields: =["Value"]
                 SearchItems: =Choices('Lista Inventarios'.field_5,DataCardValue7.SearchText)
+                SelectionFill: =RGBA(100, 118, 132, 1)
                 SelectMultiple: =false
                 Size: =21
                 Width: =Parent.Width - 60
@@ -477,6 +609,9 @@
 
             ErrorMessage5 As label:
                 AutoHeight: =true
+                Color: =RGBA(168, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
+                FontWeight: =FontWeight.Semibold
                 Height: =10
                 Live: =Live.Assertive
                 PaddingBottom: =0
@@ -493,6 +628,8 @@
 
             StarVisible5 As label:
                 Align: =Align.Center
+                Color: =RGBA(32, 54, 71, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =DataCardKey7.Height
                 Size: =21
                 Text: ="*"
@@ -503,6 +640,7 @@
                 ZIndex: =4
 
         Descripcion_DataCard1 As typedDataCard.textualViewCard:
+            BorderColor: =RGBA(32, 54, 71, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="Title"
             Default: =ThisItem.Descripcion
@@ -518,6 +656,8 @@
 
             DataCardKey8 As label:
                 AutoHeight: =true
+                Color: =RGBA(32, 54, 71, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
                 Height: =48
                 Size: =21
                 Text: =Parent.DisplayName
@@ -529,6 +669,9 @@
 
             DataCardValue8 As label:
                 AutoHeight: =true
+                BorderColor: =RGBA(32, 54, 71, 1)
+                Color: =RGBA(0, 0, 0, 1)
+                DisabledColor: =RGBA(166, 166, 166, 1)
                 DisplayMode: =Parent.DisplayMode
                 PaddingLeft: =0
                 PaddingRight: =0
