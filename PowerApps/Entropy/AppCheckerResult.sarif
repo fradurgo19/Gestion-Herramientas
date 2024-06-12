@@ -494,167 +494,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_1.Codigodebarra_DataCard2_1.DataCardValue33_1.OnChange"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_1.Codigodebarra_DataCard2_1.DataCardValue33_1.OnChange",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 17,
-                  "charOffset": 21,
-                  "snippet": {
-                    "text": "ListaHerramientas"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnChange",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_1.Codigodebarra_DataCard2_1.DataCardValue33_1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "ListaHerramientas"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_1.Codigodebarra_DataCard2_1.DataCardValue33_1.OnChange"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_1.Codigodebarra_DataCard2_1.DataCardValue33_1.OnChange",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 6,
-                  "charOffset": 14,
-                  "snippet": {
-                    "text": "LookUp"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnChange",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_1.Codigodebarra_DataCard2_1.DataCardValue33_1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "LookUp"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_1.Codigodebarra_DataCard2_1.DataCardValue33_1.OnChange"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_1.Codigodebarra_DataCard2_1.DataCardValue33_1.OnChange",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 13,
-                  "charOffset": 40,
-                  "snippet": {
-                    "text": "Codigodebarra"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnChange",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_1.Codigodebarra_DataCard2_1.DataCardValue33_1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Codigodebarra"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_1.Codigodebarra_DataCard2_1.DataCardValue33_1.OnChange"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_1.Codigodebarra_DataCard2_1.DataCardValue33_1.OnChange",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 1,
-                  "charOffset": 54,
-                  "snippet": {
-                    "text": "="
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnChange",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_1.Codigodebarra_DataCard2_1.DataCardValue33_1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Error",
-              "Text"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "EditScreen2_1.Form2_1.Codigodebarra_DataCard2_1.DataCardValue33_1.OnSelect"
                 }
               ],
@@ -810,167 +649,6 @@
           },
           "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
           "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_1.Codigodebarra_DataCard2_1.BarcodeReader1_1.OnScan"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_1.Codigodebarra_DataCard2_1.BarcodeReader1_1.OnScan",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 13,
-                  "charOffset": 101,
-                  "snippet": {
-                    "text": "Codigodebarra"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnScan",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_1.Codigodebarra_DataCard2_1.BarcodeReader1_1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Codigodebarra"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_1.Codigodebarra_DataCard2_1.BarcodeReader1_1.OnScan"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_1.Codigodebarra_DataCard2_1.BarcodeReader1_1.OnScan",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 1,
-                  "charOffset": 115,
-                  "snippet": {
-                    "text": "="
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnScan",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_1.Codigodebarra_DataCard2_1.BarcodeReader1_1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Error",
-              "Text"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_1.Codigodebarra_DataCard2_1.BarcodeReader1_1.OnScan"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_1.Codigodebarra_DataCard2_1.BarcodeReader1_1.OnScan",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 7,
-                  "charOffset": 166,
-                  "snippet": {
-                    "text": ".Codigo"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnScan",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_1.Codigodebarra_DataCard2_1.BarcodeReader1_1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Codigo"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_1.Codigodebarra_DataCard2_1.BarcodeReader1_1.OnScan"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_1.Codigodebarra_DataCard2_1.BarcodeReader1_1.OnScan",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 12,
-                  "charOffset": 204,
-                  "snippet": {
-                    "text": ".Descripcion"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnScan",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_1.Codigodebarra_DataCard2_1.BarcodeReader1_1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Descripcion"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
         },
         {
           "locations": [
@@ -1091,46 +769,6 @@
           },
           "ruleId": "app-ErrBadType-Type",
           "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_1.Codigo_DataCard3_1.DataCardValue22_1.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_1.Codigo_DataCard3_1.DataCardValue22_1.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 7,
-                  "charOffset": 9,
-                  "snippet": {
-                    "text": ".Codigo"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_1.Codigo_DataCard3_1.DataCardValue22_1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Codigo"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
         },
         {
           "locations": [
@@ -1497,46 +1135,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_1.FrecuenciadeRevision_DataCard1_1.DataCardValue34_1.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_1.FrecuenciadeRevision_DataCard1_1.DataCardValue34_1.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 21,
-                  "charOffset": 9,
-                  "snippet": {
-                    "text": ".FrecuenciadeRevision"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_1.FrecuenciadeRevision_DataCard1_1.DataCardValue34_1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "FrecuenciadeRevision"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "EditScreen2_1.Form2_1.Cantidad_DataCard1_1.DisplayName"
                 }
               ],
@@ -1691,46 +1289,6 @@
           },
           "ruleId": "app-ErrBadType-Type",
           "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_1.Cantidad_DataCard1_1.DataCardValue35_1.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_1.Cantidad_DataCard1_1.DataCardValue35_1.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 9,
-                  "charOffset": 9,
-                  "snippet": {
-                    "text": ".Cantidad"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_1.Cantidad_DataCard1_1.DataCardValue35_1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Cantidad"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
         },
         {
           "locations": [
@@ -1971,46 +1529,6 @@
           },
           "ruleId": "app-ErrBadType-Type",
           "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_1.Descripcion_DataCard5_1.DataCardValue36_1.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_1.Descripcion_DataCard5_1.DataCardValue36_1.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 12,
-                  "charOffset": 9,
-                  "snippet": {
-                    "text": ".Descripcion"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_1.Descripcion_DataCard5_1.DataCardValue36_1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Descripcion"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
         },
         {
           "locations": [
@@ -2817,86 +2335,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_1.Sede_DataCard3_1.DataCardValue25_1.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_1.Sede_DataCard3_1.DataCardValue25_1.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 5,
-                  "charOffset": 9,
-                  "snippet": {
-                    "text": ".Sede"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_1.Sede_DataCard3_1.DataCardValue25_1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Sede"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_1.Sede_DataCard3_1.DataCardValue25_1.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_1.Sede_DataCard3_1.DataCardValue25_1.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 6,
-                  "charOffset": 14,
-                  "snippet": {
-                    "text": ".Value"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_1.Sede_DataCard3_1.DataCardValue25_1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Error"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "EditScreen2_1.Form2_1.Ubicacion_DataCard3_1.MaxLength"
                 }
               ],
@@ -3211,86 +2649,6 @@
           },
           "ruleId": "app-ErrBadType-Type",
           "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_1.Ubicacion_DataCard3_1.DataCardValue26_1.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_1.Ubicacion_DataCard3_1.DataCardValue26_1.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 10,
-                  "charOffset": 9,
-                  "snippet": {
-                    "text": ".Ubicacion"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_1.Ubicacion_DataCard3_1.DataCardValue26_1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Ubicacion"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_1.Ubicacion_DataCard3_1.DataCardValue26_1.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_1.Ubicacion_DataCard3_1.DataCardValue26_1.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 6,
-                  "charOffset": 19,
-                  "snippet": {
-                    "text": ".Value"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_1.Ubicacion_DataCard3_1.DataCardValue26_1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Error"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 4
         },
         {
           "locations": [
@@ -3617,86 +2975,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_1.Bodega_DataCard3_1.DataCardValue27_1.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_1.Bodega_DataCard3_1.DataCardValue27_1.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 7,
-                  "charOffset": 9,
-                  "snippet": {
-                    "text": ".Bodega"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_1.Bodega_DataCard3_1.DataCardValue27_1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Bodega"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_1.Bodega_DataCard3_1.DataCardValue27_1.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_1.Bodega_DataCard3_1.DataCardValue27_1.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 6,
-                  "charOffset": 16,
-                  "snippet": {
-                    "text": ".Value"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_1.Bodega_DataCard3_1.DataCardValue27_1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Error"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "EditScreen2_1.Form2_1.Estado_DataCard3_1.MaxLength"
                 }
               ],
@@ -4011,86 +3289,6 @@
           },
           "ruleId": "app-ErrBadType-Type",
           "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_1.Estado_DataCard3_1.DataCardValue28_1.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_1.Estado_DataCard3_1.DataCardValue28_1.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 7,
-                  "charOffset": 9,
-                  "snippet": {
-                    "text": ".Estado"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_1.Estado_DataCard3_1.DataCardValue28_1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Estado"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_1.Estado_DataCard3_1.DataCardValue28_1.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_1.Estado_DataCard3_1.DataCardValue28_1.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 6,
-                  "charOffset": 16,
-                  "snippet": {
-                    "text": ".Value"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_1.Estado_DataCard3_1.DataCardValue28_1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Error"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 4
         },
         {
           "locations": [
@@ -4417,86 +3615,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_1.Tipo_DataCard3_1.DataCardValue24_1.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_1.Tipo_DataCard3_1.DataCardValue24_1.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 5,
-                  "charOffset": 9,
-                  "snippet": {
-                    "text": ".Tipo"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_1.Tipo_DataCard3_1.DataCardValue24_1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Tipo"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_1.Tipo_DataCard3_1.DataCardValue24_1.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_1.Tipo_DataCard3_1.DataCardValue24_1.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 6,
-                  "charOffset": 14,
-                  "snippet": {
-                    "text": ".Value"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_1.Tipo_DataCard3_1.DataCardValue24_1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Error"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "EditScreen2_1.Form2_1.Proveedor_DataCard3_1.MaxLength"
                 }
               ],
@@ -4817,46 +3935,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_1.Proveedor_DataCard3_1.DataCardValue29_1.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_1.Proveedor_DataCard3_1.DataCardValue29_1.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 10,
-                  "charOffset": 9,
-                  "snippet": {
-                    "text": ".Proveedor"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_1.Proveedor_DataCard3_1.DataCardValue29_1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Proveedor"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "EditScreen2_1.Form2.OnSuccess"
                 }
               ],
@@ -4906,10 +3984,10 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 117,
+                  "charLength": 122,
                   "charOffset": 120,
                   "snippet": {
-                    "text": "{\n        TipoDePrestamo: ComboBox1.Selected;\n        'Asignado A': TextInput2.Text;\n        Foto: Image3.Image\n    }"
+                    "text": "{\n        TipoDePrestamo: ComboBox1.SelectedItems;\n        'Asignado A': TextInput2.Text;\n        Foto: Image3.Image\n    }"
                   }
                 }
               },
@@ -4922,56 +4000,17 @@
           ],
           "message": {
             "arguments": [
-              "Record"
+              "field_16",
+              "Record",
+              "Table"
             ],
             "id": "issue"
           },
           "properties": {
             "level": "High"
           },
-          "ruleId": "app-ErrBadSchema-ExpectedType",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2.OnSuccess"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2.OnSuccess",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 117,
-                  "charOffset": 120,
-                  "snippet": {
-                    "text": "{\n        TipoDePrestamo: ComboBox1.Selected;\n        'Asignado A': TextInput2.Text;\n        Foto: Image3.Image\n    }"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSuccess",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Value",
-              "Text"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrColumnMissing-ColName-ExpectedType",
-          "ruleIndex": 6
+          "ruleId": "app-ErrTypeError-Arg-Expected-Found",
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -5138,563 +4177,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditScreen2_1.Form2.Codigodebarra_DataCard2.DataCardValue33.OnChange"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2.Codigodebarra_DataCard2.DataCardValue33.OnChange",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 17,
-                  "charOffset": 20,
-                  "snippet": {
-                    "text": "ListaHerramientas"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnChange",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2.Codigodebarra_DataCard2.DataCardValue33"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "ListaHerramientas"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2.Codigodebarra_DataCard2.DataCardValue33.OnChange"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2.Codigodebarra_DataCard2.DataCardValue33.OnChange",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 6,
-                  "charOffset": 13,
-                  "snippet": {
-                    "text": "LookUp"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnChange",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2.Codigodebarra_DataCard2.DataCardValue33"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "LookUp"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2.Codigodebarra_DataCard2.DataCardValue33.OnChange"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2.Codigodebarra_DataCard2.DataCardValue33.OnChange",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 13,
-                  "charOffset": 39,
-                  "snippet": {
-                    "text": "Codigodebarra"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnChange",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2.Codigodebarra_DataCard2.DataCardValue33"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Codigodebarra"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2.Codigodebarra_DataCard2.DataCardValue33.OnChange"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2.Codigodebarra_DataCard2.DataCardValue33.OnChange",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 1,
-                  "charOffset": 53,
-                  "snippet": {
-                    "text": "="
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnChange",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2.Codigodebarra_DataCard2.DataCardValue33"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Error",
-              "Text"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2.Codigodebarra_DataCard2.DataCardValue33.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2.Codigodebarra_DataCard2.DataCardValue33.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 17,
-                  "charOffset": 20,
-                  "snippet": {
-                    "text": "ListaHerramientas"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2.Codigodebarra_DataCard2.DataCardValue33"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "ListaHerramientas"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2.Codigodebarra_DataCard2.DataCardValue33.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2.Codigodebarra_DataCard2.DataCardValue33.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 6,
-                  "charOffset": 13,
-                  "snippet": {
-                    "text": "LookUp"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2.Codigodebarra_DataCard2.DataCardValue33"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "LookUp"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2.Codigodebarra_DataCard2.DataCardValue33.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2.Codigodebarra_DataCard2.DataCardValue33.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 13,
-                  "charOffset": 39,
-                  "snippet": {
-                    "text": "Codigodebarra"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2.Codigodebarra_DataCard2.DataCardValue33"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Codigodebarra"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2.Codigodebarra_DataCard2.DataCardValue33.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2.Codigodebarra_DataCard2.DataCardValue33.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 1,
-                  "charOffset": 53,
-                  "snippet": {
-                    "text": "="
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2.Codigodebarra_DataCard2.DataCardValue33"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Error",
-              "Text"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2.Codigodebarra_DataCard2.BarcodeReader1.OnScan"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2.Codigodebarra_DataCard2.BarcodeReader1.OnScan",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 13,
-                  "charOffset": 97,
-                  "snippet": {
-                    "text": "Codigodebarra"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnScan",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2.Codigodebarra_DataCard2.BarcodeReader1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Codigodebarra"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2.Codigodebarra_DataCard2.BarcodeReader1.OnScan"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2.Codigodebarra_DataCard2.BarcodeReader1.OnScan",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 1,
-                  "charOffset": 111,
-                  "snippet": {
-                    "text": "="
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnScan",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2.Codigodebarra_DataCard2.BarcodeReader1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Error",
-              "Text"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2.Codigodebarra_DataCard2.BarcodeReader1.OnScan"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2.Codigodebarra_DataCard2.BarcodeReader1.OnScan",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 7,
-                  "charOffset": 158,
-                  "snippet": {
-                    "text": ".Codigo"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnScan",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2.Codigodebarra_DataCard2.BarcodeReader1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Codigo"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2.Codigodebarra_DataCard2.BarcodeReader1.OnScan"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2.Codigodebarra_DataCard2.BarcodeReader1.OnScan",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 12,
-                  "charOffset": 194,
-                  "snippet": {
-                    "text": ".Descripcion"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnScan",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2.Codigodebarra_DataCard2.BarcodeReader1"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Descripcion"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2.Codigodebarra_DataCard2.BarcodeReader1.OnScan"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2.Codigodebarra_DataCard2.BarcodeReader1.OnScan",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 28,
-                  "charOffset": 138,
-                  "snippet": {
-                    "text": "Set(Codigo; Datosvar.Codigo)"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnScan",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2.Codigodebarra_DataCard2.BarcodeReader1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrIncompatibleCtxtVariableTypes",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2.Codigodebarra_DataCard2.BarcodeReader1.OnScan"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2.Codigodebarra_DataCard2.BarcodeReader1.OnScan",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 38,
-                  "charOffset": 169,
-                  "snippet": {
-                    "text": "Set(Descripcion; Datosvar.Descripcion)"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnScan",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2.Codigodebarra_DataCard2.BarcodeReader1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrIncompatibleCtxtVariableTypes",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "EditScreen2_1.Form2.Codigo_DataCard3.DisplayName"
                 }
               ],
@@ -5809,46 +4291,6 @@
           },
           "ruleId": "app-ErrBadType-Type",
           "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2.Codigo_DataCard3.DataCardValue22.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2.Codigo_DataCard3.DataCardValue22.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 7,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".Codigo"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2.Codigo_DataCard3.DataCardValue22"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Codigo"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
         },
         {
           "locations": [
@@ -6215,46 +4657,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditScreen2_1.Form2.FrecuenciadeRevision_DataCard1.DataCardValue34.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2.FrecuenciadeRevision_DataCard1.DataCardValue34.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 21,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".FrecuenciadeRevision"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2.FrecuenciadeRevision_DataCard1.DataCardValue34"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "FrecuenciadeRevision"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "EditScreen2_1.Form2.Cantidad_DataCard1.DisplayName"
                 }
               ],
@@ -6409,46 +4811,6 @@
           },
           "ruleId": "app-ErrBadType-Type",
           "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2.Cantidad_DataCard1.DataCardValue35.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2.Cantidad_DataCard1.DataCardValue35.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 9,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".Cantidad"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2.Cantidad_DataCard1.DataCardValue35"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Cantidad"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
         },
         {
           "locations": [
@@ -6689,46 +5051,6 @@
           },
           "ruleId": "app-ErrBadType-Type",
           "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2.Descripcion_DataCard5.DataCardValue36.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2.Descripcion_DataCard5.DataCardValue36.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 12,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".Descripcion"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2.Descripcion_DataCard5.DataCardValue36"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Descripcion"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
         },
         {
           "locations": [
@@ -7535,86 +5857,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditScreen2_1.Form2.Sede_DataCard3.DataCardValue25.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2.Sede_DataCard3.DataCardValue25.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 5,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".Sede"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2.Sede_DataCard3.DataCardValue25"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Sede"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2.Sede_DataCard3.DataCardValue25.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2.Sede_DataCard3.DataCardValue25.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 6,
-                  "charOffset": 13,
-                  "snippet": {
-                    "text": ".Value"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2.Sede_DataCard3.DataCardValue25"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Error"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "EditScreen2_1.Form2.Ubicacion_DataCard3.MaxLength"
                 }
               ],
@@ -7929,86 +6171,6 @@
           },
           "ruleId": "app-ErrBadType-Type",
           "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2.Ubicacion_DataCard3.DataCardValue26.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2.Ubicacion_DataCard3.DataCardValue26.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 10,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".Ubicacion"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2.Ubicacion_DataCard3.DataCardValue26"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Ubicacion"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2.Ubicacion_DataCard3.DataCardValue26.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2.Ubicacion_DataCard3.DataCardValue26.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 6,
-                  "charOffset": 18,
-                  "snippet": {
-                    "text": ".Value"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2.Ubicacion_DataCard3.DataCardValue26"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Error"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 4
         },
         {
           "locations": [
@@ -8335,86 +6497,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditScreen2_1.Form2.Bodega_DataCard3.DataCardValue27.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2.Bodega_DataCard3.DataCardValue27.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 7,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".Bodega"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2.Bodega_DataCard3.DataCardValue27"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Bodega"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2.Bodega_DataCard3.DataCardValue27.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2.Bodega_DataCard3.DataCardValue27.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 6,
-                  "charOffset": 15,
-                  "snippet": {
-                    "text": ".Value"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2.Bodega_DataCard3.DataCardValue27"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Error"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "EditScreen2_1.Form2.Estado_DataCard3.MaxLength"
                 }
               ],
@@ -8729,86 +6811,6 @@
           },
           "ruleId": "app-ErrBadType-Type",
           "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2.Estado_DataCard3.DataCardValue28.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2.Estado_DataCard3.DataCardValue28.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 7,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".Estado"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2.Estado_DataCard3.DataCardValue28"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Estado"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2.Estado_DataCard3.DataCardValue28.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2.Estado_DataCard3.DataCardValue28.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 6,
-                  "charOffset": 15,
-                  "snippet": {
-                    "text": ".Value"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2.Estado_DataCard3.DataCardValue28"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Error"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 4
         },
         {
           "locations": [
@@ -9135,86 +7137,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditScreen2_1.Form2.Tipo_DataCard3.DataCardValue24.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2.Tipo_DataCard3.DataCardValue24.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 5,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".Tipo"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2.Tipo_DataCard3.DataCardValue24"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Tipo"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2.Tipo_DataCard3.DataCardValue24.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2.Tipo_DataCard3.DataCardValue24.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 6,
-                  "charOffset": 13,
-                  "snippet": {
-                    "text": ".Value"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2.Tipo_DataCard3.DataCardValue24"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Error"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "EditScreen2_1.Form2.Proveedor_DataCard3.MaxLength"
                 }
               ],
@@ -9529,46 +7451,6 @@
           },
           "ruleId": "app-ErrBadType-Type",
           "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2.Proveedor_DataCard3.DataCardValue29.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2.Proveedor_DataCard3.DataCardValue29.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 10,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".Proveedor"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2.Proveedor_DataCard3.DataCardValue29"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Proveedor"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
         },
         {
           "locations": [
@@ -9768,7 +7650,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 4
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -9929,563 +7811,6 @@
           },
           "ruleId": "app-ErrBadType-Type",
           "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_2.Codigodebarra_DataCard2_2.DataCardValue33_2.OnChange"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_2.Codigodebarra_DataCard2_2.DataCardValue33_2.OnChange",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 17,
-                  "charOffset": 21,
-                  "snippet": {
-                    "text": "ListaHerramientas"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnChange",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_2.Codigodebarra_DataCard2_2.DataCardValue33_2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "ListaHerramientas"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_2.Codigodebarra_DataCard2_2.DataCardValue33_2.OnChange"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_2.Codigodebarra_DataCard2_2.DataCardValue33_2.OnChange",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 6,
-                  "charOffset": 14,
-                  "snippet": {
-                    "text": "LookUp"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnChange",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_2.Codigodebarra_DataCard2_2.DataCardValue33_2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "LookUp"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_2.Codigodebarra_DataCard2_2.DataCardValue33_2.OnChange"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_2.Codigodebarra_DataCard2_2.DataCardValue33_2.OnChange",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 13,
-                  "charOffset": 40,
-                  "snippet": {
-                    "text": "Codigodebarra"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnChange",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_2.Codigodebarra_DataCard2_2.DataCardValue33_2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Codigodebarra"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_2.Codigodebarra_DataCard2_2.DataCardValue33_2.OnChange"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_2.Codigodebarra_DataCard2_2.DataCardValue33_2.OnChange",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 1,
-                  "charOffset": 54,
-                  "snippet": {
-                    "text": "="
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnChange",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_2.Codigodebarra_DataCard2_2.DataCardValue33_2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Error",
-              "Text"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_2.Codigodebarra_DataCard2_2.DataCardValue33_2.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_2.Codigodebarra_DataCard2_2.DataCardValue33_2.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 17,
-                  "charOffset": 21,
-                  "snippet": {
-                    "text": "ListaHerramientas"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_2.Codigodebarra_DataCard2_2.DataCardValue33_2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "ListaHerramientas"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_2.Codigodebarra_DataCard2_2.DataCardValue33_2.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_2.Codigodebarra_DataCard2_2.DataCardValue33_2.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 6,
-                  "charOffset": 14,
-                  "snippet": {
-                    "text": "LookUp"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_2.Codigodebarra_DataCard2_2.DataCardValue33_2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "LookUp"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_2.Codigodebarra_DataCard2_2.DataCardValue33_2.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_2.Codigodebarra_DataCard2_2.DataCardValue33_2.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 13,
-                  "charOffset": 40,
-                  "snippet": {
-                    "text": "Codigodebarra"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_2.Codigodebarra_DataCard2_2.DataCardValue33_2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Codigodebarra"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_2.Codigodebarra_DataCard2_2.DataCardValue33_2.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_2.Codigodebarra_DataCard2_2.DataCardValue33_2.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 1,
-                  "charOffset": 54,
-                  "snippet": {
-                    "text": "="
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_2.Codigodebarra_DataCard2_2.DataCardValue33_2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Error",
-              "Text"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_2.Codigodebarra_DataCard2_2.BarcodeReader1_2.OnScan"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_2.Codigodebarra_DataCard2_2.BarcodeReader1_2.OnScan",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 13,
-                  "charOffset": 101,
-                  "snippet": {
-                    "text": "Codigodebarra"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnScan",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_2.Codigodebarra_DataCard2_2.BarcodeReader1_2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Codigodebarra"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_2.Codigodebarra_DataCard2_2.BarcodeReader1_2.OnScan"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_2.Codigodebarra_DataCard2_2.BarcodeReader1_2.OnScan",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 1,
-                  "charOffset": 115,
-                  "snippet": {
-                    "text": "="
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnScan",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_2.Codigodebarra_DataCard2_2.BarcodeReader1_2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Error",
-              "Text"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_2.Codigodebarra_DataCard2_2.BarcodeReader1_2.OnScan"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_2.Codigodebarra_DataCard2_2.BarcodeReader1_2.OnScan",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 7,
-                  "charOffset": 166,
-                  "snippet": {
-                    "text": ".Codigo"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnScan",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_2.Codigodebarra_DataCard2_2.BarcodeReader1_2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Codigo"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_2.Codigodebarra_DataCard2_2.BarcodeReader1_2.OnScan"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_2.Codigodebarra_DataCard2_2.BarcodeReader1_2.OnScan",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 12,
-                  "charOffset": 204,
-                  "snippet": {
-                    "text": ".Descripcion"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnScan",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_2.Codigodebarra_DataCard2_2.BarcodeReader1_2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Descripcion"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_2.Codigodebarra_DataCard2_2.BarcodeReader1_2.OnScan"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_2.Codigodebarra_DataCard2_2.BarcodeReader1_2.OnScan",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 30,
-                  "charOffset": 144,
-                  "snippet": {
-                    "text": "Set(Codigo2; Datosvar2.Codigo)"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnScan",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_2.Codigodebarra_DataCard2_2.BarcodeReader1_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrIncompatibleCtxtVariableTypes",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_2.Codigodebarra_DataCard2_2.BarcodeReader1_2.OnScan"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_2.Codigodebarra_DataCard2_2.BarcodeReader1_2.OnScan",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 40,
-                  "charOffset": 177,
-                  "snippet": {
-                    "text": "Set(Descripcion2; Datosvar2.Descripcion)"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnScan",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_2.Codigodebarra_DataCard2_2.BarcodeReader1_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrIncompatibleCtxtVariableTypes",
-          "ruleIndex": 7
         },
         {
           "locations": [
@@ -10685,47 +8010,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_2.Codigo_DataCard3_2.DataCardValue22_2.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_2.Codigo_DataCard3_2.DataCardValue22_2.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 7,
-                  "charOffset": 9,
-                  "snippet": {
-                    "text": ".Codigo"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_2.Codigo_DataCard3_2.DataCardValue22_2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Codigo"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -10965,7 +8250,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 4
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -11205,47 +8490,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_2.FrecuenciadeRevision_DataCard1_2.DataCardValue34_2.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_2.FrecuenciadeRevision_DataCard1_2.DataCardValue34_2.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 21,
-                  "charOffset": 9,
-                  "snippet": {
-                    "text": ".FrecuenciadeRevision"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_2.FrecuenciadeRevision_DataCard1_2.DataCardValue34_2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "FrecuenciadeRevision"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -11485,47 +8730,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_2.Cantidad_DataCard1_2.DataCardValue35_2.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_2.Cantidad_DataCard1_2.DataCardValue35_2.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 9,
-                  "charOffset": 9,
-                  "snippet": {
-                    "text": ".Cantidad"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_2.Cantidad_DataCard1_2.DataCardValue35_2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Cantidad"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -11725,7 +8930,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 4
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -11846,46 +9051,6 @@
           },
           "ruleId": "app-ErrBadType-Type",
           "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_2.Descripcion_DataCard5_2.DataCardValue36_2.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_2.Descripcion_DataCard5_2.DataCardValue36_2.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 12,
-                  "charOffset": 9,
-                  "snippet": {
-                    "text": ".Descripcion"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_2.Descripcion_DataCard5_2.DataCardValue36_2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Descripcion"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
         },
         {
           "locations": [
@@ -12125,7 +9290,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 4
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -12525,7 +9690,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 4
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -12686,86 +9851,6 @@
           },
           "ruleId": "app-ErrBadType-Type",
           "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_2.Sede_DataCard3_2.DataCardValue25_2.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_2.Sede_DataCard3_2.DataCardValue25_2.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 5,
-                  "charOffset": 9,
-                  "snippet": {
-                    "text": ".Sede"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_2.Sede_DataCard3_2.DataCardValue25_2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Sede"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_2.Sede_DataCard3_2.DataCardValue25_2.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_2.Sede_DataCard3_2.DataCardValue25_2.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 6,
-                  "charOffset": 14,
-                  "snippet": {
-                    "text": ".Value"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_2.Sede_DataCard3_2.DataCardValue25_2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Error"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 4
         },
         {
           "locations": [
@@ -13005,7 +10090,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 4
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -13166,86 +10251,6 @@
           },
           "ruleId": "app-ErrBadType-Type",
           "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_2.Ubicacion_DataCard3_2.DataCardValue26_2.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_2.Ubicacion_DataCard3_2.DataCardValue26_2.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 10,
-                  "charOffset": 9,
-                  "snippet": {
-                    "text": ".Ubicacion"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_2.Ubicacion_DataCard3_2.DataCardValue26_2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Ubicacion"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_2.Ubicacion_DataCard3_2.DataCardValue26_2.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_2.Ubicacion_DataCard3_2.DataCardValue26_2.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 6,
-                  "charOffset": 19,
-                  "snippet": {
-                    "text": ".Value"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_2.Ubicacion_DataCard3_2.DataCardValue26_2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Error"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 4
         },
         {
           "locations": [
@@ -13485,7 +10490,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 4
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -13646,86 +10651,6 @@
           },
           "ruleId": "app-ErrBadType-Type",
           "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_2.Bodega_DataCard3_2.DataCardValue27_2.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_2.Bodega_DataCard3_2.DataCardValue27_2.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 7,
-                  "charOffset": 9,
-                  "snippet": {
-                    "text": ".Bodega"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_2.Bodega_DataCard3_2.DataCardValue27_2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Bodega"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_2.Bodega_DataCard3_2.DataCardValue27_2.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_2.Bodega_DataCard3_2.DataCardValue27_2.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 6,
-                  "charOffset": 16,
-                  "snippet": {
-                    "text": ".Value"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_2.Bodega_DataCard3_2.DataCardValue27_2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Error"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 4
         },
         {
           "locations": [
@@ -13965,7 +10890,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 4
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -14126,86 +11051,6 @@
           },
           "ruleId": "app-ErrBadType-Type",
           "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_2.Estado_DataCard3_2.DataCardValue28_2.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_2.Estado_DataCard3_2.DataCardValue28_2.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 7,
-                  "charOffset": 9,
-                  "snippet": {
-                    "text": ".Estado"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_2.Estado_DataCard3_2.DataCardValue28_2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Estado"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_2.Estado_DataCard3_2.DataCardValue28_2.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_2.Estado_DataCard3_2.DataCardValue28_2.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 6,
-                  "charOffset": 16,
-                  "snippet": {
-                    "text": ".Value"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_2.Estado_DataCard3_2.DataCardValue28_2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Error"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 4
         },
         {
           "locations": [
@@ -14445,7 +11290,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 4
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -14845,87 +11690,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_2.Tipo_DataCard3_2.DataCardValue24_2.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_2.Tipo_DataCard3_2.DataCardValue24_2.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 5,
-                  "charOffset": 9,
-                  "snippet": {
-                    "text": ".Tipo"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_2.Tipo_DataCard3_2.DataCardValue24_2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Tipo"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_2.Tipo_DataCard3_2.DataCardValue24_2.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_2.Tipo_DataCard3_2.DataCardValue24_2.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 6,
-                  "charOffset": 14,
-                  "snippet": {
-                    "text": ".Value"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_2.Tipo_DataCard3_2.DataCardValue24_2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Error"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 4
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -15165,7 +11930,7 @@
             "level": "High"
           },
           "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 4
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -15326,126 +12091,6 @@
           },
           "ruleId": "app-ErrBadType-Type",
           "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_2.Proveedor_DataCard3_2.DataCardValue29_2.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_2.Proveedor_DataCard3_2.DataCardValue29_2.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 10,
-                  "charOffset": 9,
-                  "snippet": {
-                    "text": ".Proveedor"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_2.Proveedor_DataCard3_2.DataCardValue29_2"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Proveedor"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.DataSource"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.DataSource",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 25,
-                  "charOffset": 0,
-                  "snippet": {
-                    "text": "ListaPrestamoHerramientas"
-                  }
-                }
-              },
-              "properties": {
-                "member": "DataSource",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_3"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "ListaPrestamoHerramientas"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.OnSuccess"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.OnSuccess",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 25,
-                  "charOffset": 68,
-                  "snippet": {
-                    "text": "ListaPrestamoHerramientas"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSuccess",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_3"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "ListaPrestamoHerramientas"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
         },
         {
           "locations": [
@@ -15492,80 +12137,81 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Codigodebarra_DataCard2_3.Default"
+                  "fullyQualifiedName": "EditScreen2_1.Form2_3.OnSuccess"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Codigodebarra_DataCard2_3.Default",
+                  "fullyQualifiedName": "EditScreen2_1.Form2_3.OnSuccess",
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 8,
-                  "charOffset": 0,
+                  "charLength": 117,
+                  "charOffset": 122,
                   "snippet": {
-                    "text": "ThisItem"
+                    "text": "{\n        TipoDePrestamo: ComboBox1.Selected;\n        'Asignado A': TextInput2.Text;\n        Foto: Image3.Image\n    }"
                   }
                 }
               },
               "properties": {
-                "member": "Default",
+                "member": "OnSuccess",
                 "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_3.Codigodebarra_DataCard2_3"
+                "type": "EditScreen2_1.Form2_3"
               }
             }
           ],
           "message": {
             "arguments": [
-              "ThisItem"
+              "Record"
             ],
             "id": "issue"
           },
           "properties": {
             "level": "High"
           },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
+          "ruleId": "app-ErrBadSchema-ExpectedType",
+          "ruleIndex": 6
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Codigodebarra_DataCard2_3.Default"
+                  "fullyQualifiedName": "EditScreen2_1.Form2_3.OnSuccess"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Codigodebarra_DataCard2_3.Default",
+                  "fullyQualifiedName": "EditScreen2_1.Form2_3.OnSuccess",
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 14,
-                  "charOffset": 8,
+                  "charLength": 117,
+                  "charOffset": 122,
                   "snippet": {
-                    "text": ".Codigodebarra"
+                    "text": "{\n        TipoDePrestamo: ComboBox1.Selected;\n        'Asignado A': TextInput2.Text;\n        Foto: Image3.Image\n    }"
                   }
                 }
               },
               "properties": {
-                "member": "Default",
+                "member": "OnSuccess",
                 "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_3.Codigodebarra_DataCard2_3"
+                "type": "EditScreen2_1.Form2_3"
               }
             }
           ],
           "message": {
             "arguments": [
-              "Error"
+              "Value",
+              "Text"
             ],
             "id": "issue"
           },
           "properties": {
             "level": "High"
           },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 4
+          "ruleId": "app-ErrColumnMissing-ColName-ExpectedType",
+          "ruleIndex": 7
         },
         {
           "locations": [
@@ -15732,563 +12378,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Codigodebarra_DataCard2_3.DataCardValue33_3.OnChange"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Codigodebarra_DataCard2_3.DataCardValue33_3.OnChange",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 17,
-                  "charOffset": 21,
-                  "snippet": {
-                    "text": "ListaHerramientas"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnChange",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_3.Codigodebarra_DataCard2_3.DataCardValue33_3"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "ListaHerramientas"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Codigodebarra_DataCard2_3.DataCardValue33_3.OnChange"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Codigodebarra_DataCard2_3.DataCardValue33_3.OnChange",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 6,
-                  "charOffset": 14,
-                  "snippet": {
-                    "text": "LookUp"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnChange",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_3.Codigodebarra_DataCard2_3.DataCardValue33_3"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "LookUp"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Codigodebarra_DataCard2_3.DataCardValue33_3.OnChange"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Codigodebarra_DataCard2_3.DataCardValue33_3.OnChange",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 13,
-                  "charOffset": 40,
-                  "snippet": {
-                    "text": "Codigodebarra"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnChange",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_3.Codigodebarra_DataCard2_3.DataCardValue33_3"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Codigodebarra"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Codigodebarra_DataCard2_3.DataCardValue33_3.OnChange"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Codigodebarra_DataCard2_3.DataCardValue33_3.OnChange",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 1,
-                  "charOffset": 54,
-                  "snippet": {
-                    "text": "="
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnChange",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_3.Codigodebarra_DataCard2_3.DataCardValue33_3"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Error",
-              "Text"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Codigodebarra_DataCard2_3.DataCardValue33_3.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Codigodebarra_DataCard2_3.DataCardValue33_3.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 17,
-                  "charOffset": 21,
-                  "snippet": {
-                    "text": "ListaHerramientas"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_3.Codigodebarra_DataCard2_3.DataCardValue33_3"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "ListaHerramientas"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Codigodebarra_DataCard2_3.DataCardValue33_3.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Codigodebarra_DataCard2_3.DataCardValue33_3.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 6,
-                  "charOffset": 14,
-                  "snippet": {
-                    "text": "LookUp"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_3.Codigodebarra_DataCard2_3.DataCardValue33_3"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "LookUp"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidArgs-Func",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Codigodebarra_DataCard2_3.DataCardValue33_3.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Codigodebarra_DataCard2_3.DataCardValue33_3.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 13,
-                  "charOffset": 40,
-                  "snippet": {
-                    "text": "Codigodebarra"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_3.Codigodebarra_DataCard2_3.DataCardValue33_3"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Codigodebarra"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Codigodebarra_DataCard2_3.DataCardValue33_3.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Codigodebarra_DataCard2_3.DataCardValue33_3.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 1,
-                  "charOffset": 54,
-                  "snippet": {
-                    "text": "="
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_3.Codigodebarra_DataCard2_3.DataCardValue33_3"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Error",
-              "Text"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Codigodebarra_DataCard2_3.BarcodeReader1_3.OnScan"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Codigodebarra_DataCard2_3.BarcodeReader1_3.OnScan",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 13,
-                  "charOffset": 101,
-                  "snippet": {
-                    "text": "Codigodebarra"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnScan",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_3.Codigodebarra_DataCard2_3.BarcodeReader1_3"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Codigodebarra"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Codigodebarra_DataCard2_3.BarcodeReader1_3.OnScan"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Codigodebarra_DataCard2_3.BarcodeReader1_3.OnScan",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 1,
-                  "charOffset": 115,
-                  "snippet": {
-                    "text": "="
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnScan",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_3.Codigodebarra_DataCard2_3.BarcodeReader1_3"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Error",
-              "Text"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrIncompatibleTypesForEquality-Left-Right",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Codigodebarra_DataCard2_3.BarcodeReader1_3.OnScan"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Codigodebarra_DataCard2_3.BarcodeReader1_3.OnScan",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 7,
-                  "charOffset": 166,
-                  "snippet": {
-                    "text": ".Codigo"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnScan",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_3.Codigodebarra_DataCard2_3.BarcodeReader1_3"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Codigo"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Codigodebarra_DataCard2_3.BarcodeReader1_3.OnScan"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Codigodebarra_DataCard2_3.BarcodeReader1_3.OnScan",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 12,
-                  "charOffset": 204,
-                  "snippet": {
-                    "text": ".Descripcion"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnScan",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_3.Codigodebarra_DataCard2_3.BarcodeReader1_3"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Descripcion"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Codigodebarra_DataCard2_3.BarcodeReader1_3.OnScan"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Codigodebarra_DataCard2_3.BarcodeReader1_3.OnScan",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 30,
-                  "charOffset": 144,
-                  "snippet": {
-                    "text": "Set(Codigo3; Datosvar3.Codigo)"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnScan",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_3.Codigodebarra_DataCard2_3.BarcodeReader1_3"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrIncompatibleCtxtVariableTypes",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Codigodebarra_DataCard2_3.BarcodeReader1_3.OnScan"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Codigodebarra_DataCard2_3.BarcodeReader1_3.OnScan",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 40,
-                  "charOffset": 177,
-                  "snippet": {
-                    "text": "Set(Descripcion3; Datosvar3.Descripcion)"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnScan",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_3.Codigodebarra_DataCard2_3.BarcodeReader1_3"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrIncompatibleCtxtVariableTypes",
-          "ruleIndex": 7
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "EditScreen2_1.Form2_3.Codigo_DataCard3_3.DisplayName"
                 }
               ],
@@ -16403,126 +12492,6 @@
           },
           "ruleId": "app-ErrBadType-Type",
           "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Codigo_DataCard3_3.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Codigo_DataCard3_3.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 8,
-                  "charOffset": 0,
-                  "snippet": {
-                    "text": "ThisItem"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_3.Codigo_DataCard3_3"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "ThisItem"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Codigo_DataCard3_3.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Codigo_DataCard3_3.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 7,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".Codigo"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_3.Codigo_DataCard3_3"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Error"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Codigo_DataCard3_3.DataCardValue22_3.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Codigo_DataCard3_3.DataCardValue22_3.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 7,
-                  "charOffset": 9,
-                  "snippet": {
-                    "text": ".Codigo"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_3.Codigo_DataCard3_3.DataCardValue22_3"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Codigo"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
         },
         {
           "locations": [
@@ -16698,46 +12667,6 @@
                   "relativeAddress": 0
                 },
                 "region": {
-                  "charLength": 8,
-                  "charOffset": 0,
-                  "snippet": {
-                    "text": "ThisItem"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_3.Fecha_DataCard1_3"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "ThisItem"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Fecha_DataCard1_3.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Fecha_DataCard1_3.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
                   "charLength": 6,
                   "charOffset": 8,
                   "snippet": {
@@ -16754,15 +12683,15 @@
           ],
           "message": {
             "arguments": [
-              "Error"
+              "Fecha"
             ],
             "id": "issue"
           },
           "properties": {
             "level": "High"
           },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 4
+          "ruleId": "app-ErrInvalidName",
+          "ruleIndex": 0
         },
         {
           "locations": [
@@ -16929,126 +12858,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.FrecuenciadeRevision_DataCard1_3.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.FrecuenciadeRevision_DataCard1_3.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 8,
-                  "charOffset": 0,
-                  "snippet": {
-                    "text": "ThisItem"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_3.FrecuenciadeRevision_DataCard1_3"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "ThisItem"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.FrecuenciadeRevision_DataCard1_3.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.FrecuenciadeRevision_DataCard1_3.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 21,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".FrecuenciadeRevision"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_3.FrecuenciadeRevision_DataCard1_3"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Error"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.FrecuenciadeRevision_DataCard1_3.DataCardValue34_3.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.FrecuenciadeRevision_DataCard1_3.DataCardValue34_3.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 21,
-                  "charOffset": 9,
-                  "snippet": {
-                    "text": ".FrecuenciadeRevision"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_3.FrecuenciadeRevision_DataCard1_3.DataCardValue34_3"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "FrecuenciadeRevision"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "EditScreen2_1.Form2_3.Cantidad_DataCard1_3.DisplayName"
                 }
               ],
@@ -17209,126 +13018,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Cantidad_DataCard1_3.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Cantidad_DataCard1_3.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 8,
-                  "charOffset": 0,
-                  "snippet": {
-                    "text": "ThisItem"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_3.Cantidad_DataCard1_3"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "ThisItem"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Cantidad_DataCard1_3.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Cantidad_DataCard1_3.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 9,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".Cantidad"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_3.Cantidad_DataCard1_3"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Error"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Cantidad_DataCard1_3.DataCardValue35_3.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Cantidad_DataCard1_3.DataCardValue35_3.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 9,
-                  "charOffset": 9,
-                  "snippet": {
-                    "text": ".Cantidad"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_3.Cantidad_DataCard1_3.DataCardValue35_3"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Cantidad"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "EditScreen2_1.Form2_3.Descripcion_DataCard5_3.DisplayName"
                 }
               ],
@@ -17449,86 +13138,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Descripcion_DataCard5_3.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Descripcion_DataCard5_3.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 8,
-                  "charOffset": 0,
-                  "snippet": {
-                    "text": "ThisItem"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_3.Descripcion_DataCard5_3"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "ThisItem"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Descripcion_DataCard5_3.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Descripcion_DataCard5_3.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 12,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".Descripcion"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_3.Descripcion_DataCard5_3"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Error"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "EditScreen2_1.Form2_3.Descripcion_DataCard5_3.MaxLength"
                 }
               ],
@@ -17643,46 +13252,6 @@
           },
           "ruleId": "app-ErrBadType-Type",
           "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Descripcion_DataCard5_3.DataCardValue36_3.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Descripcion_DataCard5_3.DataCardValue36_3.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 12,
-                  "charOffset": 9,
-                  "snippet": {
-                    "text": ".Descripcion"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_3.Descripcion_DataCard5_3.DataCardValue36_3"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Descripcion"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
         },
         {
           "locations": [
@@ -17843,86 +13412,6 @@
           },
           "ruleId": "app-ErrBadType-Type",
           "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Observaciones_DataCard1_3.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Observaciones_DataCard1_3.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 8,
-                  "charOffset": 0,
-                  "snippet": {
-                    "text": "ThisItem"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_3.Observaciones_DataCard1_3"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "ThisItem"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Observaciones_DataCard1_3.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Observaciones_DataCard1_3.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 14,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".Observaciones"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_3.Observaciones_DataCard1_3"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Error"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 4
         },
         {
           "locations": [
@@ -18249,86 +13738,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Sede_DataCard3_3.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Sede_DataCard3_3.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 8,
-                  "charOffset": 0,
-                  "snippet": {
-                    "text": "ThisItem"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_3.Sede_DataCard3_3"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "ThisItem"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Sede_DataCard3_3.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Sede_DataCard3_3.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 5,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".Sede"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_3.Sede_DataCard3_3"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Error"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "EditScreen2_1.Form2_3.Sede_DataCard3_3.DisplayName"
                 }
               ],
@@ -18483,86 +13892,6 @@
           },
           "ruleId": "app-ErrBadType-Type",
           "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Sede_DataCard3_3.DataCardValue25_3.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Sede_DataCard3_3.DataCardValue25_3.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 5,
-                  "charOffset": 9,
-                  "snippet": {
-                    "text": ".Sede"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_3.Sede_DataCard3_3.DataCardValue25_3"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Sede"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Sede_DataCard3_3.DataCardValue25_3.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Sede_DataCard3_3.DataCardValue25_3.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 6,
-                  "charOffset": 14,
-                  "snippet": {
-                    "text": ".Value"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_3.Sede_DataCard3_3.DataCardValue25_3"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Error"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 4
         },
         {
           "locations": [
@@ -18729,86 +14058,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Ubicacion_DataCard3_3.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Ubicacion_DataCard3_3.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 8,
-                  "charOffset": 0,
-                  "snippet": {
-                    "text": "ThisItem"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_3.Ubicacion_DataCard3_3"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "ThisItem"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Ubicacion_DataCard3_3.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Ubicacion_DataCard3_3.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 10,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".Ubicacion"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_3.Ubicacion_DataCard3_3"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Error"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "EditScreen2_1.Form2_3.Ubicacion_DataCard3_3.DisplayName"
                 }
               ],
@@ -18963,86 +14212,6 @@
           },
           "ruleId": "app-ErrBadType-Type",
           "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Ubicacion_DataCard3_3.DataCardValue26_3.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Ubicacion_DataCard3_3.DataCardValue26_3.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 10,
-                  "charOffset": 9,
-                  "snippet": {
-                    "text": ".Ubicacion"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_3.Ubicacion_DataCard3_3.DataCardValue26_3"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Ubicacion"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Ubicacion_DataCard3_3.DataCardValue26_3.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Ubicacion_DataCard3_3.DataCardValue26_3.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 6,
-                  "charOffset": 19,
-                  "snippet": {
-                    "text": ".Value"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_3.Ubicacion_DataCard3_3.DataCardValue26_3"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Error"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 4
         },
         {
           "locations": [
@@ -19209,86 +14378,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Bodega_DataCard3_3.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Bodega_DataCard3_3.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 8,
-                  "charOffset": 0,
-                  "snippet": {
-                    "text": "ThisItem"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_3.Bodega_DataCard3_3"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "ThisItem"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Bodega_DataCard3_3.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Bodega_DataCard3_3.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 7,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".Bodega"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_3.Bodega_DataCard3_3"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Error"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "EditScreen2_1.Form2_3.Bodega_DataCard3_3.DisplayName"
                 }
               ],
@@ -19443,86 +14532,6 @@
           },
           "ruleId": "app-ErrBadType-Type",
           "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Bodega_DataCard3_3.DataCardValue27_3.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Bodega_DataCard3_3.DataCardValue27_3.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 7,
-                  "charOffset": 9,
-                  "snippet": {
-                    "text": ".Bodega"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_3.Bodega_DataCard3_3.DataCardValue27_3"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Bodega"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Bodega_DataCard3_3.DataCardValue27_3.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Bodega_DataCard3_3.DataCardValue27_3.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 6,
-                  "charOffset": 16,
-                  "snippet": {
-                    "text": ".Value"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_3.Bodega_DataCard3_3.DataCardValue27_3"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Error"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 4
         },
         {
           "locations": [
@@ -19689,86 +14698,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Estado_DataCard3_3.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Estado_DataCard3_3.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 8,
-                  "charOffset": 0,
-                  "snippet": {
-                    "text": "ThisItem"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_3.Estado_DataCard3_3"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "ThisItem"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Estado_DataCard3_3.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Estado_DataCard3_3.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 7,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".Estado"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_3.Estado_DataCard3_3"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Error"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "EditScreen2_1.Form2_3.Estado_DataCard3_3.DisplayName"
                 }
               ],
@@ -19929,86 +14858,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Estado_DataCard3_3.DataCardValue28_3.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Estado_DataCard3_3.DataCardValue28_3.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 7,
-                  "charOffset": 9,
-                  "snippet": {
-                    "text": ".Estado"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_3.Estado_DataCard3_3.DataCardValue28_3"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Estado"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Estado_DataCard3_3.DataCardValue28_3.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Estado_DataCard3_3.DataCardValue28_3.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 6,
-                  "charOffset": 16,
-                  "snippet": {
-                    "text": ".Value"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_3.Estado_DataCard3_3.DataCardValue28_3"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Error"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "EditScreen2_1.Form2_3.'Datos adjuntos_DataCard1_3'.DisplayName"
                 }
               ],
@@ -20163,86 +15012,6 @@
           },
           "ruleId": "app-ErrBadType-Type",
           "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.'Datos adjuntos_DataCard1_3'.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.'Datos adjuntos_DataCard1_3'.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 8,
-                  "charOffset": 0,
-                  "snippet": {
-                    "text": "ThisItem"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_3.'Datos adjuntos_DataCard1_3'"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "ThisItem"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.'Datos adjuntos_DataCard1_3'.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.'Datos adjuntos_DataCard1_3'.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 17,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".'Datos adjuntos'"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_3.'Datos adjuntos_DataCard1_3'"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Error"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 4
         },
         {
           "locations": [
@@ -20569,166 +15338,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Tipo_DataCard3_3.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Tipo_DataCard3_3.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 8,
-                  "charOffset": 0,
-                  "snippet": {
-                    "text": "ThisItem"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_3.Tipo_DataCard3_3"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "ThisItem"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Tipo_DataCard3_3.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Tipo_DataCard3_3.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 5,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".Tipo"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_3.Tipo_DataCard3_3"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Error"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Tipo_DataCard3_3.DataCardValue24_3.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Tipo_DataCard3_3.DataCardValue24_3.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 5,
-                  "charOffset": 9,
-                  "snippet": {
-                    "text": ".Tipo"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_3.Tipo_DataCard3_3.DataCardValue24_3"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Tipo"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Tipo_DataCard3_3.DataCardValue24_3.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Tipo_DataCard3_3.DataCardValue24_3.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 6,
-                  "charOffset": 14,
-                  "snippet": {
-                    "text": ".Value"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_3.Tipo_DataCard3_3.DataCardValue24_3"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Error"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "EditScreen2_1.Form2_3.Proveedor_DataCard3_3.MaxLength"
                 }
               ],
@@ -20889,86 +15498,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Proveedor_DataCard3_3.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Proveedor_DataCard3_3.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 8,
-                  "charOffset": 0,
-                  "snippet": {
-                    "text": "ThisItem"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_3.Proveedor_DataCard3_3"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "ThisItem"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Proveedor_DataCard3_3.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Proveedor_DataCard3_3.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 10,
-                  "charOffset": 8,
-                  "snippet": {
-                    "text": ".Proveedor"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_3.Proveedor_DataCard3_3"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Error"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidDot",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "EditScreen2_1.Form2_3.Proveedor_DataCard3_3.DisplayName"
                 }
               ],
@@ -21123,46 +15652,6 @@
           },
           "ruleId": "app-ErrBadType-Type",
           "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Proveedor_DataCard3_3.DataCardValue29_3.Default"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "EditScreen2_1.Form2_3.Proveedor_DataCard3_3.DataCardValue29_3.Default",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 10,
-                  "charOffset": 9,
-                  "snippet": {
-                    "text": ".Proveedor"
-                  }
-                }
-              },
-              "properties": {
-                "member": "Default",
-                "module": "EditScreen2_1",
-                "type": "EditScreen2_1.Form2_3.Proveedor_DataCard3_3.DataCardValue29_3"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Proveedor"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
         },
         {
           "locations": [
@@ -25722,36 +20211,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.Codigo1"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.Codigo1",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "Codigo1",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 16
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "App.Descripcion1"
                 }
               ],
@@ -25782,17 +20241,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.Codigo2"
+                  "fullyQualifiedName": "App.Codigo1"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.Codigo2",
+                  "fullyQualifiedName": "App.Codigo1",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "Codigo2",
+                "member": "Codigo1",
                 "module": "App",
                 "type": "App"
               }
@@ -25842,17 +20301,17 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.Codigo3"
+                  "fullyQualifiedName": "App.Codigo2"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "App.Codigo3",
+                  "fullyQualifiedName": "App.Codigo2",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "Codigo3",
+                "member": "Codigo2",
                 "module": "App",
                 "type": "App"
               }
@@ -25883,6 +20342,36 @@
               },
               "properties": {
                 "member": "Descripcion3",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 16
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.Codigo3"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.Codigo3",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Codigo3",
                 "module": "App",
                 "type": "App"
               }
@@ -26477,6 +20966,20 @@
               }
             },
             {
+              "id": "app-ErrTypeError-Arg-Expected-Found",
+              "messageStrings": {
+                "issue": {
+                  "text": "The type of this argument '{0}' does not match the expected type '{1}'. Found type '{2}'."
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "level": "High",
+                "primaryCategory": "formula",
+                "whyFix": ""
+              }
+            },
+            {
               "id": "app-ErrInvalidDot",
               "messageStrings": {
                 "issue": {
@@ -26515,23 +21018,6 @@
                 "componentType": "app",
                 "howToFix": [
                   "Add a column to your formula."
-                ],
-                "level": "High",
-                "primaryCategory": "formula",
-                "whyFix": ""
-              }
-            },
-            {
-              "id": "app-ErrIncompatibleCtxtVariableTypes",
-              "messageStrings": {
-                "issue": {
-                  "text": "Incompatible type. We can't evaluate your formula because the context variable types are incompatible with the types of values in other places in your app."
-                }
-              },
-              "properties": {
-                "componentType": "app",
-                "howToFix": [
-                  "Look at places where you use a context variable and make sure that the type (e.g., text, number, date, record, table) is compatible."
                 ],
                 "level": "High",
                 "primaryCategory": "formula",

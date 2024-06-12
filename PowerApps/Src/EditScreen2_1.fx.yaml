@@ -112,7 +112,7 @@
                 HintText: ="Vuelva a Escanear"
                 HoverFill: =RGBA(232, 244, 217, 1)
                 OnChange: |-
-                    =Set(Datosvar1,LookUp(ListaHerramientas, Codigodebarra = DataCardValue33_1.Text));
+                    =Set(Datosvar1,LookUp('Lista Inventarios', Codigodebarra = DataCardValue33_1.Text));
                     
                     
                     //Set(Datosvar1;LookUp(ListaHerramientas; Codigodebarra = DataCardValue33.EnableSpellCheck))
@@ -169,7 +169,7 @@
                 OnCancel: =false
                 OnScan: |-
                     =Set(varScan1,First(BarcodeReader1_1.Barcodes).Value);
-                    Set(Datosvar1, LookUp(ListaHerramientasLocal, Codigodebarra = DataCardValue33_1.Text));
+                    Set(Datosvar1, LookUp('Lista Inventarios', Codigodebarra = DataCardValue33_1.Text));
                     Set(Codigo1, Datosvar1.Codigo);
                     Set(Descripcion1, Datosvar1.Descripcion);
                     
@@ -1143,7 +1143,7 @@
                 'Lista Gestión Inventarios',
                 Last(colUltimo),
                 {
-                    TipoDePrestamo: ComboBox1.Selected,
+                    TipoDePrestamo: ComboBox1.SelectedItems,
                     'Asignado A': TextInput2.Text,
                     Foto: Image3.Image
                 }
@@ -1183,11 +1183,11 @@
                 HintText: ="Vuelva a Escanear"
                 HoverFill: =RGBA(232, 244, 217, 1)
                 OnChange: |-
-                    =Set(Datosvar,LookUp(ListaHerramientas, Codigodebarra = DataCardValue33.Text));
+                    =Set(Datosvar,LookUp('Lista Inventarios', Codigodebarra = DataCardValue33.Text));
                     
                     
                     //Set(Datosvar1;LookUp(ListaHerramientas; Codigodebarra = DataCardValue33.EnableSpellCheck))
-                OnSelect: =Set(Datosvar,LookUp(ListaHerramientas, Codigodebarra = DataCardValue33.Text))
+                OnSelect: =Set(Datosvar,LookUp('Lista Inventarios', Codigodebarra = DataCardValue33.Text))
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
@@ -1241,7 +1241,7 @@
                 OnCancel: =false
                 OnScan: |-
                     =Set(varScan,First(BarcodeReader1.Barcodes).Value);
-                    Set(Datosvar, LookUp(ListaHerramientasLocal, Codigodebarra = DataCardValue33.Text));
+                    Set(Datosvar, LookUp('Lista Inventarios', Codigodebarra = DataCardValue33.Text));
                     Set(Codigo, Datosvar.Codigo);
                     Set(Descripcion, Datosvar.Descripcion);
                     
@@ -2273,11 +2273,11 @@
                 HintText: ="Vuelva a Escanear"
                 HoverFill: =RGBA(232, 244, 217, 1)
                 OnChange: |-
-                    =Set(Datosvar2,LookUp(ListaHerramientas, Codigodebarra = DataCardValue33_2.Text));
+                    =Set(Datosvar2,LookUp('Lista Inventarios', Codigodebarra = DataCardValue33_2.Text));
                     
                     
                     //Set(Datosvar1;LookUp(ListaHerramientas; Codigodebarra = DataCardValue33.EnableSpellCheck))
-                OnSelect: =Set(Datosvar2,LookUp(ListaHerramientas, Codigodebarra = DataCardValue33_2.Text))
+                OnSelect: =Set(Datosvar2,LookUp('Lista Inventarios', Codigodebarra = DataCardValue33_2.Text))
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
@@ -2331,7 +2331,7 @@
                 OnCancel: =false
                 OnScan: |-
                     =Set(varScan2,First(BarcodeReader1_2.Barcodes).Value);
-                    Set(Datosvar2, LookUp(ListaHerramientasLocal, Codigodebarra = DataCardValue33_2.Text));
+                    Set(Datosvar2, LookUp('Lista Inventarios', Codigodebarra = DataCardValue33_2.Text));
                     Set(Codigo2, Datosvar2.Codigo);
                     Set(Descripcion2, Datosvar2.Descripcion);
                     
@@ -3278,7 +3278,7 @@
         AcceptsFocus: =false
         BorderColor: =RGBA(127, 178, 57, 1)
         BorderThickness: =2
-        DataSource: =ListaPrestamoHerramientas
+        DataSource: ='Lista Gestión Inventarios'
         DefaultMode: =FormMode.New
         Fill: =RGBA(255, 255, 255, 1)
         Height: =388
@@ -3290,7 +3290,7 @@
             );
             
             Patch(
-                ListaPrestamoHerramientas,
+                'Lista Gestión Inventarios',
                 Last(colUltimo),
                 {
                     TipoDePrestamo: ComboBox1.Selected,
@@ -3333,11 +3333,11 @@
                 HintText: ="Vuelva a Escanear"
                 HoverFill: =RGBA(232, 244, 217, 1)
                 OnChange: |-
-                    =Set(Datosvar3,LookUp(ListaHerramientas, Codigodebarra = DataCardValue33_3.Text));
+                    =Set(Datosvar3,LookUp('Lista Inventarios', Codigodebarra = DataCardValue33_3.Text));
                     
                     
                     //Set(Datosvar1;LookUp(ListaHerramientas; Codigodebarra = DataCardValue33.EnableSpellCheck))
-                OnSelect: =Set(Datosvar3,LookUp(ListaHerramientas, Codigodebarra = DataCardValue33_3.Text))
+                OnSelect: =Set(Datosvar3,LookUp('Lista Inventarios', Codigodebarra = DataCardValue33_3.Text))
                 PaddingLeft: =5
                 RadiusBottomLeft: =0
                 RadiusBottomRight: =0
@@ -3391,7 +3391,7 @@
                 OnCancel: =false
                 OnScan: |-
                     =Set(varScan3,First(BarcodeReader1_3.Barcodes).Value);
-                    Set(Datosvar3, LookUp(ListaHerramientasLocal, Codigodebarra = DataCardValue33_3.Text));
+                    Set(Datosvar3, LookUp('Lista Inventarios', Codigodebarra = DataCardValue33_3.Text));
                     Set(Codigo3, Datosvar3.Codigo);
                     Set(Descripcion3, Datosvar3.Descripcion);
                     
