@@ -294,7 +294,7 @@
             PaddingRight: =0
             PaddingTop: =0
             Size: =12
-            Text: =ThisItem.FechaPrestamo
+            Text: =ThisItem.'Fecha Prestamo'
             VerticalAlign: =VerticalAlign.Top
             Width: =128
             X: =256
