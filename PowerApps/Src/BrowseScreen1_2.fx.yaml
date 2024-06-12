@@ -153,7 +153,7 @@
                 Filter(
                     'Lista Gestión Inventarios',
                     (StartsWith(Title, TextSearchBox1_2.Text) || IsBlank(TextSearchBox1_2.Text))||(StartsWith(Codigodebarra, TextSearchBox1_2.Text) || IsBlank(TextSearchBox1_2.Text))||(StartsWith(Codigo, TextSearchBox1_2.Text) || IsBlank(TextSearchBox1_2.Text))&&
-                    (Sede = ComboBox2_1.Selected.Value || IsBlank(ComboBox2_1.Selected.Value)) &&
+                    (field_4 = ComboBox2_1.Selected.Value || IsBlank(ComboBox2_1.Selected.Value)) &&
                     (TipoDePrestamo.Value = ComboBox2.Selected.Value || IsBlank(ComboBox2.Selected.Value)) &&
                     ('Fecha Prestamo' >= DatePicker1.SelectedDate || IsBlank(DatePicker1.SelectedDate)) &&
                     ('Fecha Prestamo' <= DatePicker1_1.SelectedDate || IsBlank(DatePicker1_1.SelectedDate))
