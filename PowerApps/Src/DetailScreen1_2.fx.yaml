@@ -235,9 +235,9 @@
             BorderColor: =RGBA(32, 54, 71, 1)
             BorderStyle: =BorderStyle.Solid
             DataField: ="FechaPrestamo"
-            Default: =ThisItem.FechaPrestamo
+            Default: =ThisItem.'Fecha Prestamo'
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@'Lista Gestión Inventarios'],DataSourceInfo.DisplayName,FechaPrestamo)
+            DisplayName: =DataSourceInfo([@'Lista Gestión Inventarios'],DataSourceInfo.DisplayName,'Fecha Prestamo')
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false

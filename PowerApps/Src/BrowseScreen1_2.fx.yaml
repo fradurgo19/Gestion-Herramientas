@@ -152,8 +152,8 @@
             =SortByColumns(
                 Filter(
                     'Lista Gestión Inventarios',
-                    (StartsWith(Descripcion, TextSearchBox1_2.Text) || IsBlank(TextSearchBox1_2.Text))||(StartsWith(Codigodebarra, TextSearchBox1_2.Text) || IsBlank(TextSearchBox1_2.Text))||(StartsWith(Codigo, TextSearchBox1_2.Text) || IsBlank(TextSearchBox1_2.Text))&&
-                    (Sede = ComboBox2_1.Selected.Vaule || IsBlank(ComboBox2_1.Selected.Value)) &&
+                    (StartsWith(Title, TextSearchBox1_2.Text) || IsBlank(TextSearchBox1_2.Text))||(StartsWith(Codigodebarra, TextSearchBox1_2.Text) || IsBlank(TextSearchBox1_2.Text))||(StartsWith(Codigo, TextSearchBox1_2.Text) || IsBlank(TextSearchBox1_2.Text))&&
+                    (Sede = ComboBox2_1.Selected.Value || IsBlank(ComboBox2_1.Selected.Value)) &&
                     (TipoDePrestamo.Value = ComboBox2.Selected.Value || IsBlank(ComboBox2.Selected.Value)) &&
                     ('Fecha Prestamo' >= DatePicker1.SelectedDate || IsBlank(DatePicker1.SelectedDate)) &&
                     ('Fecha Prestamo' <= DatePicker1_1.SelectedDate || IsBlank(DatePicker1_1.SelectedDate))
@@ -294,7 +294,7 @@
             PaddingRight: =0
             PaddingTop: =0
             Size: =12
-            Text: =ThisItem.'Fecha Prestamo'
+            Text: =ThisItem.FechaPrestamo
             VerticalAlign: =VerticalAlign.Top
             Width: =128
             X: =256
@@ -465,7 +465,7 @@
         HoverFill: =RGBA(232, 244, 217, 1)
         InputTextPlaceholder: ="Seleccione Sede"
         IsSearchable: =false
-        Items: =Choices('Lista Gestión Inventarios'.field_4)
+        Items: =Choices('Lista Gestión Inventarios'.Sede)
         NoSelectionText: ="Seleccionar la Sede"
         PressedColor: =RGBA(0, 0, 0, 1)
         PressedFill: =RGBA(232, 244, 217, 1)

@@ -81,7 +81,7 @@
                 'Lista Gestión Inventarios',
                 Last(colUltimo),
                 {
-                    field_16: ComboBox1.Selected,
+                    TipoDePrestamo: ComboBox1.Selected,
                     'Asignado A': TextInput2.Text,
                     Foto: Image3.Image
                 }
@@ -307,7 +307,7 @@
             DataField: ="FechaPrestamo"
             Default: =ThisItem.'Fecha Prestamo'
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@'Lista Gestión Inventarios'],DataSourceInfo.DisplayName,FechaPrestamo)
+            DisplayName: =DataSourceInfo([@'Lista Gestión Inventarios'],DataSourceInfo.DisplayName,'Fecha Prestamo')
             Fill: =RGBA(0, 0, 0, 0)
             Height: =30
             Required: =false
@@ -1385,8 +1385,8 @@
                 'Lista Gestión Inventarios',
                 Last(colUltimo),
                 {
-                    field_16: ComboBox1.Selected,
-                    field_14: TextInput2.Text,
+                    TipoDePrestamo: ComboBox1.Selected,
+                    'Asignado A': TextInput2.Text,
                     Foto: Image3.Image
                 }
             
@@ -1613,7 +1613,7 @@
             DataField: ="FechaPrestamo"
             Default: =ThisItem.'Fecha Prestamo'
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@'Lista Gestión Inventarios'],DataSourceInfo.DisplayName,field_16)
+            DisplayName: =DataSourceInfo([@'Lista Gestión Inventarios'],DataSourceInfo.DisplayName,TipoDePrestamo)
             Fill: =RGBA(0, 0, 0, 0)
             Height: =30
             Required: =false
@@ -2943,7 +2943,7 @@
             DataField: ="FechaPrestamo"
             Default: =ThisItem.'Fecha Prestamo'
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@'Lista Gestión Inventarios'],DataSourceInfo.DisplayName,FechaPrestamo)
+            DisplayName: =DataSourceInfo([@'Lista Gestión Inventarios'],DataSourceInfo.DisplayName,'Fecha Prestamo')
             Fill: =RGBA(0, 0, 0, 0)
             Height: =30
             Required: =false
@@ -4237,7 +4237,7 @@
             DataField: ="FechaPrestamo"
             Default: =ThisItem.'Fecha Prestamo'
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@'Lista Gestión Inventarios'],DataSourceInfo.DisplayName,FechaPrestamo)
+            DisplayName: =DataSourceInfo([@'Lista Gestión Inventarios'],DataSourceInfo.DisplayName,'Fecha Prestamo')
             Fill: =RGBA(0, 0, 0, 0)
             Height: =30
             Required: =false

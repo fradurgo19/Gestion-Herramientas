@@ -34,11 +34,11 @@
         Height: =73
         HoverColor: =RGBA(0, 0, 0, 1)
         HoverFill: =RGBA(205, 209, 213, 1)
-        Items: =Choices('Lista Gestión Inventarios'.field_16)
+        Items: =Choices('Lista Gestión Inventarios'.TipoDePrestamo)
         PressedColor: =RGBA(255, 255, 255, 1)
         PressedFill: =RGBA(32, 54, 71, 1)
         SearchFields: =["Value"]
-        SearchItems: =Choices('Lista Gestión Inventarios'.field_16,ComboBox1.SearchText)
+        SearchItems: =Choices('Lista Gestión Inventarios'.TipoDePrestamo,ComboBox1.SearchText)
         SelectionFill: =RGBA(127, 178, 57, 1)
         SelectMultiple: =false
         Size: =18

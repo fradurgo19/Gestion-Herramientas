@@ -102,7 +102,7 @@
             DataField: ="field_10"
             Default: =ThisItem.Codigodebarra
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@'Lista Inventarios'],DataSourceInfo.DisplayName,field_10)
+            DisplayName: =DataSourceInfo([@'Lista Inventarios'],DataSourceInfo.DisplayName,Codigodebarra)
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
@@ -146,7 +146,7 @@
             DataField: ="field_0"
             Default: =ThisItem.Codigo
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@'Lista Inventarios'],DataSourceInfo.DisplayName,field_0)
+            DisplayName: =DataSourceInfo([@'Lista Inventarios'],DataSourceInfo.DisplayName,Codigo)
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
@@ -190,7 +190,7 @@
             DataField: ="field_1"
             Default: =ThisItem.Tipo
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@'Lista Inventarios'],DataSourceInfo.DisplayName,field_1)
+            DisplayName: =DataSourceInfo([@'Lista Inventarios'],DataSourceInfo.DisplayName,Tipo)
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             Required: =false
@@ -229,12 +229,12 @@
                 Height: =70
                 HoverColor: =RGBA(0, 0, 0, 1)
                 HoverFill: =RGBA(205, 209, 213, 1)
-                Items: =Choices([@'Lista Inventarios'].field_1)
+                Items: =Choices([@'Lista Inventarios'].Tipo)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 PressedColor: =RGBA(255, 255, 255, 1)
                 PressedFill: =RGBA(32, 54, 71, 1)
                 SearchFields: =["Value"]
-                SearchItems: =Choices('Lista Inventarios'.field_1,DataCardValue3.SearchText)
+                SearchItems: =Choices('Lista Inventarios'.Tipo,DataCardValue3.SearchText)
                 SelectionFill: =RGBA(100, 118, 132, 1)
                 SelectMultiple: =false
                 Size: =21
@@ -281,7 +281,7 @@
             DataField: ="field_2"
             Default: =ThisItem.Sede
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@'Lista Inventarios'],DataSourceInfo.DisplayName,field_2)
+            DisplayName: =DataSourceInfo([@'Lista Inventarios'],DataSourceInfo.DisplayName,Sede)
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             Required: =false
@@ -320,12 +320,12 @@
                 Height: =70
                 HoverColor: =RGBA(0, 0, 0, 1)
                 HoverFill: =RGBA(205, 209, 213, 1)
-                Items: =Choices([@'Lista Inventarios'].field_2)
+                Items: =Choices([@'Lista Inventarios'].Sede)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 PressedColor: =RGBA(255, 255, 255, 1)
                 PressedFill: =RGBA(32, 54, 71, 1)
                 SearchFields: =["Value"]
-                SearchItems: =Choices('Lista Inventarios'.field_2,DataCardValue4.SearchText)
+                SearchItems: =Choices('Lista Inventarios'.Sede,DataCardValue4.SearchText)
                 SelectionFill: =RGBA(100, 118, 132, 1)
                 SelectMultiple: =false
                 Size: =21
@@ -372,7 +372,7 @@
             DataField: ="field_3"
             Default: =ThisItem.Ubicacion
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@'Lista Inventarios'],DataSourceInfo.DisplayName,field_3)
+            DisplayName: =DataSourceInfo([@'Lista Inventarios'],DataSourceInfo.DisplayName,Ubicacion)
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             Required: =false
@@ -411,12 +411,12 @@
                 Height: =70
                 HoverColor: =RGBA(0, 0, 0, 1)
                 HoverFill: =RGBA(205, 209, 213, 1)
-                Items: =Choices([@'Lista Inventarios'].field_3)
+                Items: =Choices([@'Lista Inventarios'].Ubicacion)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 PressedColor: =RGBA(255, 255, 255, 1)
                 PressedFill: =RGBA(32, 54, 71, 1)
                 SearchFields: =["Value"]
-                SearchItems: =Choices('Lista Inventarios'.field_3,DataCardValue5.SearchText)
+                SearchItems: =Choices('Lista Inventarios'.Ubicacion,DataCardValue5.SearchText)
                 SelectionFill: =RGBA(100, 118, 132, 1)
                 SelectMultiple: =false
                 Size: =21
@@ -463,7 +463,7 @@
             DataField: ="field_4"
             Default: =ThisItem.Bodega
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@'Lista Inventarios'],DataSourceInfo.DisplayName,field_4)
+            DisplayName: =DataSourceInfo([@'Lista Inventarios'],DataSourceInfo.DisplayName,Bodega)
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             Required: =false
@@ -502,12 +502,12 @@
                 Height: =70
                 HoverColor: =RGBA(0, 0, 0, 1)
                 HoverFill: =RGBA(205, 209, 213, 1)
-                Items: =Choices([@'Lista Inventarios'].field_4)
+                Items: =Choices([@'Lista Inventarios'].Bodega)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 PressedColor: =RGBA(255, 255, 255, 1)
                 PressedFill: =RGBA(32, 54, 71, 1)
                 SearchFields: =["Value"]
-                SearchItems: =Choices('Lista Inventarios'.field_4,DataCardValue6.SearchText)
+                SearchItems: =Choices('Lista Inventarios'.Bodega,DataCardValue6.SearchText)
                 SelectionFill: =RGBA(100, 118, 132, 1)
                 SelectMultiple: =false
                 Size: =21
@@ -554,7 +554,7 @@
             DataField: ="field_5"
             Default: =ThisItem.Estado
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@'Lista Inventarios'],DataSourceInfo.DisplayName,field_5)
+            DisplayName: =DataSourceInfo([@'Lista Inventarios'],DataSourceInfo.DisplayName,Estado)
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             Required: =false
@@ -593,12 +593,12 @@
                 Height: =70
                 HoverColor: =RGBA(0, 0, 0, 1)
                 HoverFill: =RGBA(205, 209, 213, 1)
-                Items: =Choices([@'Lista Inventarios'].field_5)
+                Items: =Choices([@'Lista Inventarios'].Estado)
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 PressedColor: =RGBA(255, 255, 255, 1)
                 PressedFill: =RGBA(32, 54, 71, 1)
                 SearchFields: =["Value"]
-                SearchItems: =Choices('Lista Inventarios'.field_5,DataCardValue7.SearchText)
+                SearchItems: =Choices('Lista Inventarios'.Estado,DataCardValue7.SearchText)
                 SelectionFill: =RGBA(100, 118, 132, 1)
                 SelectMultiple: =false
                 Size: =21
@@ -645,7 +645,7 @@
             DataField: ="Title"
             Default: =ThisItem.Descripcion
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@'Lista Inventarios'],DataSourceInfo.DisplayName,Title)
+            DisplayName: =DataSourceInfo([@'Lista Inventarios'],DataSourceInfo.DisplayName,Descripcion)
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false
