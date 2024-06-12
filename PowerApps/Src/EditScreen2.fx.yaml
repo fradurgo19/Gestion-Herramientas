@@ -21,7 +21,7 @@
         ChevronBackground: =RGBA(127, 178, 57, 1)
         DisplayFields: =["ComplianceAssetId"]
         Height: =73
-        Items: =Filter('Lista Gestión Inventarios', Value = ComboBox2_2.Selected.Value)
+        Items: =Filter('Lista Gestión Inventarios', TipoDePrestamo = ComboBox2_2.Selected.Value)
         SearchFields: =["ComplianceAssetId"]
         SearchItems: =Search('Lista Gestión Inventarios',ComboBox1.SearchText,ComplianceAssetId)
         SelectionFill: =RGBA(127, 178, 57, 1)
