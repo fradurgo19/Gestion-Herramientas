@@ -254,86 +254,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Inicio.Button1_3.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Inicio.Button1_3.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 15,
-                  "charOffset": 14,
-                  "snippet": {
-                    "text": "BrowseScreen1_1"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "Inicio",
-                "type": "Inicio.Button1_3"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "BrowseScreen1_1"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "Inicio.Image10.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Inicio.Image10.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 15,
-                  "charOffset": 14,
-                  "snippet": {
-                    "text": "BrowseScreen1_1"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "Inicio",
-                "type": "Inicio.Image10"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "BrowseScreen1_1"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "High"
-          },
-          "ruleId": "app-ErrInvalidName",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "EditScreen2_1.Form2_1.OnSuccess"
                 }
               ],
@@ -26143,6 +26063,36 @@
               },
               "properties": {
                 "member": "paquete",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedMediaResources",
+          "ruleIndex": 17
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "App.mecanico"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.mecanico",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "mecanico",
                 "module": "App",
                 "type": "App"
               }
