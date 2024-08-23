@@ -1,0 +1,63 @@
+Inicio_1 As screen:
+
+    Image19 As image:
+        Height: =963
+        Image: =giphy3
+        Visible: =varCargar
+        Width: =640
+        ZIndex: =1
+
+    Image2_1 As image:
+        Height: =113
+        Image: =Logo
+        ImagePosition: =ImagePosition.Fill
+        Width: =636
+        X: =4
+        ZIndex: =2
+
+    Label1_1 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(101, 128, 187, 1)
+        DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
+        FontWeight: =FontWeight.Bold
+        Height: =76
+        Size: =30
+        Text: ="Bienvenido a la App"
+        Width: =640
+        Y: =196
+        ZIndex: =3
+
+    ButtonCanvas3 As Botón:
+        Align: =""
+        BasePaletteColor: =RGBA(249, 83, 109, 1)
+        BorderStyle: =""
+        DisplayMode: =DisplayMode.Edit
+        FontColor: =
+        Height: =80
+        Icon: =""
+        IconRotation: =0
+        IconStyle: ="Outline"
+        Layout: ="Icon before"
+        OnSelect: =Set(varCargar, true);Set(varTiempo, true)
+        Text: ="Ingresar"
+        VerticalAlign: =""
+        Width: =208
+        X: =216
+        Y: =810
+        ZIndex: =4
+
+    Timer1 As timer:
+        AutoStart: =varTiempo
+        Color: =RGBA(255,255,255,1)
+        Duration: =6000
+        Fill: =RGBA(62,96,170,1)
+        Height: =70
+        HoverColor: =Self.Color
+        HoverFill: =ColorFade(Self.Fill, 20%)
+        OnTimerEnd: =Set(varCargar,false);Navigate(Inicio,ScreenTransition.Fade)
+        Visible: =false
+        Width: =280
+        X: =180
+        Y: =990
+        ZIndex: =5
+

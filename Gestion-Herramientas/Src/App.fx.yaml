@@ -1,0 +1,24 @@
+App As appinfo:
+    BackEnabled: =true
+    OnStart: |-
+        =ClearCollect(
+            ListaHerramientasLocal,
+            ListaHerramientas
+        );
+        ClearCollect(
+            ListaMantenimientoHerramientasLocal,
+            ListaMantenimientoHerramientas
+        );
+        ClearCollect(
+            ListaPrestamoHerramientasLocal,
+            ListaPrestamoHerramientas
+        )
+    Theme: =PowerAppsTheme
+
+    Host As hostControl.DefaultHostControlVariant:
+        OnCancel: =false
+        OnEdit: =false
+        OnNew: =false
+        OnSave: =false
+        OnView: =false
+
