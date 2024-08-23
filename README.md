@@ -40,7 +40,8 @@ I am particularly passionate about Data Science and continuously seek to expand 
 
 ### Technical Skills
 
-<img src="https://img.shields.io/badge/-Power%20Apps-2F6C8F?style=flat&logo=powerapps&logoColor=white"> <br /> Power Automate <img src="PowerApps/Assets/Images/Captura%20de%20pantalla%202024-08-23%20141325.png" width="50%" />
+<img src="https://img.shields.io/badge/-Power%20Apps-2F6C8F?style=flat&logo=powerapps&logoColor=white"> 
+<img src="https://img.shields.io/badge/-Power%20Automate-0078D4?style=flat&logo=powerautomate&logoColor=white">
 <img src="https://img.shields.io/badge/-Power%20BI-F2C811?style=flat&logo=powerbi&logoColor=black"> <br />
 <img src="https://img.shields.io/badge/-Python%203-black?style=flat&logo=python&logoColor=white"> <br />
 <img src="https://img.shields.io/badge/-VBA-8A2C2A?style=flat&logo=visualstudiocode&logoColor=white"> <br />
