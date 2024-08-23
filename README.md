@@ -8,23 +8,25 @@ Con módulos especializados en lista de herramientas, préstamos y mantenimiento
 
 Organiza y accede fácilmente a todas tus herramientas en un solo lugar.
 
-![Captura de Pantalla](PowerApps/Assets/Images/Captura%20de%20pantalla%202024-08-23%20122458.png)
+<img src="Gestion-Herramientas/Assets/Images/Captura de pantalla 2024-08-23 144201.png" width="15%" />
 
 ### 🔄 Préstamos Eficientes
 
 Controla los préstamos de herramientas de manera intuitiva y sin complicaciones.
 
-![Captura de Pantalla](PowerApps/Assets/Images/Captura%20de%20pantalla%202024-08-23%20122616.png)
+<img src="Gestion-Herramientas/Assets/Images/Captura de pantalla 2024-08-23 144232.png" width="15%" />
 
 ### 🔧 Mantenimiento Proactivo
 
 Programa y realiza mantenimientos preventivos para garantizar el rendimiento óptimo de tus herramientas.
 
-![Captura de Pantalla](PowerApps/Assets/Images/Captura%20de%20pantalla%202024-08-23%20122510.png)
+<img src="Gestion-Herramientas/Assets/Images/Captura de pantalla 2024-08-23 144251.png" width="15%" />
 
 ## 💼 Optimiza tu Flujo de Trabajo
 
 Mejora la eficiencia y asegura un manejo impecable de tus herramientas. ¡Descarga nuestra aplicación ahora y eleva tu gestión de herramientas al siguiente nivel! 🚀
+
+<img src="Gestion-Herramientas/Assets/Images/Captura de pantalla 2024-08-23 144312.png" width="15%" />
 
 ---
 
