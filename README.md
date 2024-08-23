@@ -8,7 +8,7 @@ Con módulos especializados en lista de herramientas, préstamos y mantenimiento
 
 Organiza y accede fácilmente a todas tus herramientas en un solo lugar.
 
-![Captura de Pantalla](PowerApps/Assets/Images/Captura%20de%20pantalla%202024-08-23%20122458.png)
+<img src="Gestion-Herramientas/Assets/Images/Captura de pantalla 2024-08-23 144201.png" width="15%" />
 
 ### 🔄 Préstamos Eficientes
 
