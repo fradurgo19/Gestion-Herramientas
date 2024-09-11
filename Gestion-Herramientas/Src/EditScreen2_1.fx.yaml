@@ -1134,17 +1134,17 @@
         Height: =375
         NumberOfColumns: =1
         OnSuccess: |-
-            =Set(
-                CamposObligatoriosVacios,
-                IsBlank(ComboBox1.Selected) || IsBlank(TextInput2.Text) || IsBlank(PenInput1.Image)
-            );
-            ClearCollect(
+            =ClearCollect(
                 colUltimo,
                 Form2.LastSubmit
             );
+            Set(
+                CamposObligatoriosVacios,
+                IsBlank(ComboBox1.Selected) || IsBlank(TextInput2.Text) || IsBlank(PenInput1.Image)
+            );
             If(
                 CamposObligatoriosVacios,
-                Notify("No se envio la gestión, vuelva a diligenciar, por favor complete todos los campos obligatorios antes de enviar.", NotificationType.Error),
+                Notify("Vuelva a diligenciar, No se envio la gestión, Por favor complete todos los campos obligatorios antes de enviar.", NotificationType.Error),
                 
                 // Si todos los campos están llenos, realizar el Patch
                 Patch(
