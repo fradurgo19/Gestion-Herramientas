@@ -201,33 +201,28 @@
     Image16 As image:
         Height: =103
         Image: =entregar
-        OnSelect: |-
-            =// Verificar si los campos obligatorios no están vacíos antes de enviar cada formulario
-            If(
-                !IsBlank(DataCardValue17.Text) && !IsBlank(ComboBox1.Selected) && !IsBlank(TextInput2.Text) && !IsBlank(PenInput1.Image),
-                SubmitForm(Form2),
-                Notify("Por favor, complete todos los campos obligatorios en Scanner1", NotificationType.Error)
+        OnSelect: |
+            =If(
+                !IsBlank(DataCardValue17.Text),
+                SubmitForm(Form2)
             );
             
             If(
-                !IsBlank(DataCardValue17_1.Text) && !IsBlank(ComboBox1.Selected) && !IsBlank(TextInput2.Text) && !IsBlank(PenInput1.Image),
-                SubmitForm(Form2_1),
-                Notify("Por favor, complete todos los campos obligatorios en Scanner2", NotificationType.Error)
+                !IsBlank(DataCardValue17_1.Text),
+                SubmitForm(Form2_1)
             );
             
             If(
-                !IsBlank(DataCardValue17_2.Text) && !IsBlank(ComboBox1.Selected) && !IsBlank(TextInput2.Text) && !IsBlank(PenInput1.Image),
-                SubmitForm(Form2_2),
-                Notify("Por favor, complete todos los campos obligatorios en Scanner3", NotificationType.Error)
+                !IsBlank(DataCardValue17_2.Text),
+                SubmitForm(Form2_2)
             );
             
             If(
-                !IsBlank(DataCardValue17_3.Text) && !IsBlank(ComboBox1.Selected) && !IsBlank(TextInput2.Text) && !IsBlank(PenInput1.Image),
-                SubmitForm(Form2_3),
-                Notify("Por favor, complete todos los campos obligatorios", NotificationType.Error)
+                !IsBlank(DataCardValue17_3.Text),
+                SubmitForm(Form2_3)
             );
             
-            // Si todo es correcto, realiza el resto de las acciones
+            //SubmitForm(Form2);;SubmitForm(Form2_1);;SubmitForm(Form2_2);;SubmitForm(Form2_3);;
             Set(
                 varimagen,
                 JSON(
