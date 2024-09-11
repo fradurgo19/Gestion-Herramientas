@@ -202,10 +202,20 @@
         Height: =103
         Image: =entregar
         OnSelect: |-
-            =// Check if any mandatory fields are empty
+            =
+            // Check if any mandatory fields are empty
             Set(
                 CamposObligatoriosVacios,
                 IsBlank(ComboBox1.Selected) || IsBlank(TextInput2.Text) || IsBlank(PenInput1.Image)
+            );
+            
+            // Capture PenInput image to a variable
+            Set(
+                varImagen,
+                JSON(
+                    PenInput1.Image,
+                    JSONFormat.IncludeBinaryData
+                )
             );
             
             // If mandatory fields are missing, show an error notification and stop submission
@@ -228,15 +238,7 @@
                 If(
                     !IsBlank(DataCardValue17_3.Text), SubmitForm(Form2_3)
                 ),
-                
-                // Capture PenInput image to a variable
-                Set(
-                    varImagen,
-                    JSON(
-                        PenInput1.Image,
-                        JSONFormat.IncludeBinaryData
-                    )
-                );
+            
                 
                 // Navigate to "Inicio" after submission
                 Navigate(Inicio, ScreenTransition.None)
