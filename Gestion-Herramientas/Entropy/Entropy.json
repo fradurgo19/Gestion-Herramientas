@@ -694,7 +694,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "09/11/2024 14:37:13",
+  "HeaderLastSavedDateTimeUTC": "09/11/2024 14:58:51",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "4e473aa7-56d6-4c5a-a04a-7f0578d2ae3c": "\"/providers/microsoft.powerapps/apis/shared_office365users/connections/shared-office365user-9e42227b-397b-4a6f-9054-8ba723d77e62\"",
@@ -2523,7 +2523,7 @@
       "BarcodeReader": 4,
       "button": 4,
       "checkbox": 4,
-      "combobox": 26,
+      "combobox": 27,
       "datepicker": 8,
       "form": 6,
       "formViewer": 3,

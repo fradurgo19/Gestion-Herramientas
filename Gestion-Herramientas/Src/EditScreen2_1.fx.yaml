@@ -1154,7 +1154,8 @@
                         TipoDePrestamo: ComboBox1.Selected,
                         'Asignado A': TextInput2.Text,
                         Foto: PenInput1.Image
-                    }
+                    },
+                    Form2.Updates
                 )
             );
             
