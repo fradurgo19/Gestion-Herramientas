@@ -272,7 +272,7 @@
       "StyleName": "defaultImageStyle",
       "Type": "ControlInfo"
     },
-    "Image20": {
+    "Image21_1": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "Image",
@@ -314,7 +314,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "Image20",
+      "Name": "Image21_1",
       "OptimizeForDevices": "Off",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
@@ -468,7 +468,7 @@
       "StyleName": "defaultImageStyle",
       "Type": "ControlInfo"
     },
-    "Label1_3": {
+    "Label1_4": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "Live",
@@ -562,7 +562,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "Label1_3",
+      "Name": "Label1_4",
       "OptimizeForDevices": "Off",
       "ParentIndex": 2,
       "PersistMetaDataIDKey": false,

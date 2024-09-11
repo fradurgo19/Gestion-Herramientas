@@ -8,20 +8,6 @@ Correcto As screen:
         X: =4
         ZIndex: =2
 
-    Label1_3 As label:
-        Align: =Align.Center
-        BorderColor: =RGBA(101, 128, 187, 1)
-        Color: =RGBA(141, 198, 63, 1)
-        DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
-        Font: =Font.Arial
-        FontWeight: =FontWeight.Bold
-        Height: =284
-        Size: =30
-        Text: ="Exitoso"
-        Width: =640
-        Y: =712
-        ZIndex: =3
-
     NewExpenseConfirmTimer_2 As timer:
         AutoStart: =true
         BorderColor: =ColorFade(NewExpenseConfirmTimer_2.Fill, -15%)
@@ -48,11 +34,27 @@ Correcto As screen:
         Y: =189
         ZIndex: =4
 
-    Image20 As image:
-        Height: =152
-        Image: ='icons8-de-acuerdo (1)'
-        Width: =190
-        X: =225
-        Y: =380
+    Label1_4 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(101, 128, 187, 1)
+        Color: =RGBA(246, 88, 16, 1)
+        DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
+        Font: =Font.Arial
+        FontWeight: =FontWeight.Bold
+        Height: =284
+        Size: =30
+        Text: |-
+            ="1. Verifique el registro en Gestión prestamos
+            2. Si se notifica error vuelva a ingresar los datos."
+        Width: =640
+        Y: =662
         ZIndex: =5
+
+    Image21_1 As image:
+        Height: =142
+        Image: ='icons8-cargador-de-rombos'
+        Width: =205
+        X: =217
+        Y: =307
+        ZIndex: =6
 
