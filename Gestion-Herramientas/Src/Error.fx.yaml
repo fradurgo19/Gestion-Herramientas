@@ -17,7 +17,9 @@ Error As screen:
         FontWeight: =FontWeight.Bold
         Height: =284
         Size: =30
-        Text: ="Vuelva a diligenciar, No se envió la gestión. Por favor complete todos los campos obligatorios antes de enviar."
+        Text: |-
+            ="1. Verifique el registro en Gestión prestamos
+            2. Si se notifica error vuelva a ingresar los datos."
         Width: =640
         Y: =712
         ZIndex: =3
@@ -48,11 +50,11 @@ Error As screen:
         Y: =189
         ZIndex: =5
 
-    Image18 As image:
-        Height: =155
-        Image: ='icons8-error'
-        Width: =199
-        X: =220
-        Y: =361
+    Image21 As image:
+        Height: =142
+        Image: ='icons8-cargador-de-rombos'
+        Width: =205
+        X: =217
+        Y: =357
         ZIndex: =6
 
