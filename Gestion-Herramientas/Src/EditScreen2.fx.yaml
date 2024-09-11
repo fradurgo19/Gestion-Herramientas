@@ -241,8 +241,10 @@
             
                 
                 // Navigate to "Inicio" after submission
-                Navigate(Inicio, ScreenTransition.None)
-            )
+                Navigate(Correcto, ScreenTransition.None)
+            );
+            
+            Navigate(Inicio, ScreenTransition.None)
         Width: =128
         X: =470
         Y: =938
