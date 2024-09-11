@@ -1,6 +1,6 @@
 Correcto As screen:
 
-    Image2_2 As image:
+    Image2_3 As image:
         Height: =113
         Image: =Logo
         ImagePosition: =ImagePosition.Fill
@@ -8,52 +8,51 @@ Correcto As screen:
         X: =4
         ZIndex: =2
 
-    Label1_2 As label:
+    Label1_3 As label:
         Align: =Align.Center
         BorderColor: =RGBA(101, 128, 187, 1)
-        Color: =RGBA(246, 88, 16, 1)
+        Color: =RGBA(141, 198, 63, 1)
         DisabledColor: =ColorFade(RGBA(47, 41, 43, 1), 70%)
+        Font: =Font.Arial
         FontWeight: =FontWeight.Bold
         Height: =284
         Size: =30
-        Text: |-
-            ="1. Verifique el registro en Gestión prestamos.
-            2. Si se notifica error vuelva a ingresar los datos."
+        Text: ="Exitoso"
         Width: =640
         Y: =712
         ZIndex: =3
 
-    NewExpenseConfirmTimer_1 As timer:
+    NewExpenseConfirmTimer_2 As timer:
         AutoStart: =true
-        BorderColor: =ColorFade(NewExpenseConfirmTimer_1.Fill, -15%)
+        BorderColor: =ColorFade(NewExpenseConfirmTimer_2.Fill, -15%)
         Color: =RGBA(255,255,255,1)
-        DisabledBorderColor: =ColorFade(NewExpenseConfirmTimer_1.BorderColor, 70%)
-        DisabledColor: =ColorFade(NewExpenseConfirmTimer_1.Fill, 90%)
-        DisabledFill: =ColorFade(NewExpenseConfirmTimer_1.Fill, 70%)
+        DisabledBorderColor: =ColorFade(NewExpenseConfirmTimer_2.BorderColor, 70%)
+        DisabledColor: =ColorFade(NewExpenseConfirmTimer_2.Fill, 90%)
+        DisabledFill: =ColorFade(NewExpenseConfirmTimer_2.Fill, 70%)
         Duration: =4000
         Fill: =RGBA(62,96,170,1)
-        FocusedBorderColor: =NewExpenseConfirmTimer_1.BorderColor
+        FocusedBorderColor: =NewExpenseConfirmTimer_2.BorderColor
         Height: =70
-        HoverBorderColor: =ColorFade(NewExpenseConfirmTimer_1.BorderColor, 20%)
-        HoverColor: =NewExpenseConfirmTimer_1.Color
-        HoverFill: =ColorFade(NewExpenseConfirmTimer_1.Fill, 20%)
+        HoverBorderColor: =ColorFade(NewExpenseConfirmTimer_2.BorderColor, 20%)
+        HoverColor: =NewExpenseConfirmTimer_2.Color
+        HoverFill: =ColorFade(NewExpenseConfirmTimer_2.Fill, 20%)
         OnTimerEnd: =Navigate(Inicio,ScreenTransition.None)
-        PressedBorderColor: =NewExpenseConfirmTimer_1.Fill
-        PressedColor: =NewExpenseConfirmTimer_1.Fill
-        PressedFill: =NewExpenseConfirmTimer_1.Color
+        PressedBorderColor: =NewExpenseConfirmTimer_2.Fill
+        PressedColor: =NewExpenseConfirmTimer_2.Fill
+        PressedFill: =NewExpenseConfirmTimer_2.Color
         Text: |-
-            =Text(Time(0, 0, NewExpenseConfirmTimer_1.Value/1000), "hh:mm:ss")
+            =Text(Time(0, 0, NewExpenseConfirmTimer_2.Value/1000), "hh:mm:ss")
         Visible: =false
         Width: =280
         X: =33
         Y: =189
-        ZIndex: =5
+        ZIndex: =4
 
-    Image9 As image:
-        Height: =128
-        Image: ='icons8-cargador-de-rombos'
-        Width: =196
-        X: =222
-        Y: =394
-        ZIndex: =6
+    Image20 As image:
+        Height: =152
+        Image: ='icons8-de-acuerdo (1)'
+        Width: =190
+        X: =225
+        Y: =380
+        ZIndex: =5
 

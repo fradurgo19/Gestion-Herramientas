@@ -155,55 +155,9 @@
         Align: =Align.Center
         Color: =RGBA(255, 255, 255, 1)
         Fill: =RGBA(127, 178, 57, 1)
-        Height: =38
-        OnSelect: |+
-            =If(
-                !IsBlank(DataCardValue17.Text),
-                SubmitForm(Form2)
-            );
-            
-            If(
-                !IsBlank(DataCardValue17_1.Text),
-                SubmitForm(Form2_1)
-            );
-            
-            If(
-                !IsBlank(DataCardValue17_2.Text),
-                SubmitForm(Form2_2)
-            );
-            
-            If(
-                !IsBlank(DataCardValue17_3.Text),
-                SubmitForm(Form2_3)
-            );
-            
-            //SubmitForm(Form2);;SubmitForm(Form2_1);;SubmitForm(Form2_2);;SubmitForm(Form2_3);;
-            Set(
-                varimagen,
-                JSON(
-                    PenInput1.Image,
-                    JSONFormat.IncludeBinaryData
-                )
-            );
-            Navigate(
-                Inicio,
-                ScreenTransition.None
-            )
-            
-            
-        Size: =18
-        Text: ="Enviar"
-        Width: =128
-        X: =470
-        Y: =1041
-        ZIndex: =14
-
-    Image16 As image:
-        Height: =103
-        Image: =entregar
-        OnSelect: |-
-            =
-            // Check if any mandatory fields are empty
+        Height: =68
+        OnSelect: |
+            =// Check if any mandatory fields are empty
             Set(
                 CamposObligatoriosVacios,
                 IsBlank(ComboBox1.Selected) || IsBlank(TextInput2.Text) || IsBlank(PenInput1.Image)
@@ -241,10 +195,63 @@
             
                 
                 // Navigate to "Inicio" after submission
-                Navigate(Correcto, ScreenTransition.None)
+                Navigate(Error, ScreenTransition.None)
             );
             
-            Navigate(Inicio, ScreenTransition.None)
+            Navigate(Correcto, ScreenTransition.None)
+        Size: =18
+        Text: ="Enviar"
+        Width: =128
+        X: =470
+        Y: =1041
+        ZIndex: =14
+
+    Image16 As image:
+        Height: =103
+        Image: =entregar
+        OnSelect: |-
+            =// Check if any mandatory fields are empty
+            Set(
+                CamposObligatoriosVacios,
+                IsBlank(ComboBox1.Selected) || IsBlank(TextInput2.Text) || IsBlank(PenInput1.Image)
+            );
+            
+            // Capture PenInput image to a variable
+            Set(
+                varImagen,
+                JSON(
+                    PenInput1.Image,
+                    JSONFormat.IncludeBinaryData
+                )
+            );
+            
+            // If mandatory fields are missing, show an error notification and stop submission
+            If(
+                CamposObligatoriosVacios,
+                Notify(
+                    "Vuelva a diligenciar, No se envió la gestión. Por favor complete todos los campos obligatorios antes de enviar.",
+                    NotificationType.Error
+                ),
+                // If all mandatory fields are filled, check the individual DataCardValue fields for each form
+                If(
+                    !IsBlank(DataCardValue17.Text), SubmitForm(Form2)
+                ),
+                If(
+                    !IsBlank(DataCardValue17_1.Text), SubmitForm(Form2_1)
+                ),
+                If(
+                    !IsBlank(DataCardValue17_2.Text), SubmitForm(Form2_2)
+                ),
+                If(
+                    !IsBlank(DataCardValue17_3.Text), SubmitForm(Form2_3)
+                ),
+            
+                
+                // Navigate to "Inicio" after submission
+                Navigate(Error, ScreenTransition.None)
+            );
+            
+            Navigate(Correcto, ScreenTransition.None)
         Width: =128
         X: =470
         Y: =938
