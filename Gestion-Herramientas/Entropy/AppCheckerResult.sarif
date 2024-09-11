@@ -4573,36 +4573,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "App.CamposObligatoriosVacios"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "App.CamposObligatoriosVacios",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "CamposObligatoriosVacios",
-                "module": "App",
-                "type": "App"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 4
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "App.Captura de pantalla 2024-08-23 144201"
                 }
               ],
