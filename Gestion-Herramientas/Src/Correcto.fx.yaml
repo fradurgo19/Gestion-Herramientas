@@ -17,7 +17,7 @@ Correcto As screen:
         Height: =284
         Size: =30
         Text: |-
-            ="1. Verifique el registro en la Gestión prestamos.
+            ="1. Verifique el registro en Gestión prestamos.
             2. Si se notifica error vuelva a ingresar los datos."
         Width: =640
         Y: =712
@@ -48,4 +48,12 @@ Correcto As screen:
         X: =33
         Y: =189
         ZIndex: =5
+
+    Image9 As image:
+        Height: =128
+        Image: ='icons8-cargador-de-rombos'
+        Width: =196
+        X: =222
+        Y: =394
+        ZIndex: =6
 
