@@ -68,7 +68,6 @@
                 colUltimo,
                 Form2_1.LastSubmit
             );
-            
             Patch(
                 ListaPrestamoHerramientas,
                 Last(colUltimo),
@@ -1138,26 +1137,16 @@
                 colUltimo,
                 Form2.LastSubmit
             );
-            Set(
-                CamposObligatoriosVacios,
-                IsBlank(ComboBox1.Selected) || IsBlank(TextInput2.Text) || IsBlank(PenInput1.Image)
-            );
-            If(
-                CamposObligatoriosVacios,
-                Notify("Vuelva a diligenciar, No se envio la gestión, Por favor complete todos los campos obligatorios antes de enviar.", NotificationType.Error),
-                
-                // Si todos los campos están llenos, realizar el Patch
-                Patch(
-                    ListaPrestamoHerramientas,
-                    Last(colUltimo),
-                    {
-                        TipoDePrestamo: ComboBox1.Selected,
-                        'Asignado A': TextInput2.Text,
-                        Foto: PenInput1.Image
-                      }
-                )
-            );
+            Patch(
+                ListaPrestamoHerramientas,
+                Last(colUltimo),
+                {
+                    TipoDePrestamo: ComboBox1.Selected,
+                    'Asignado A': TextInput2.Text,
+                    Foto: Image3.Image
+                }
             
+            );
             NewForm(Form2)
         Visible: =VisibleForm2
         Width: =306
