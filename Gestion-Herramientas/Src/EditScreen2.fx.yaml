@@ -201,38 +201,45 @@
     Image16 As image:
         Height: =103
         Image: =entregar
-        OnSelect: |
-            =If(
-                !IsBlank(DataCardValue17.Text),
-                SubmitForm(Form2)
-            );
-            
-            If(
-                !IsBlank(DataCardValue17_1.Text),
-                SubmitForm(Form2_1)
-            );
-            
-            If(
-                !IsBlank(DataCardValue17_2.Text),
-                SubmitForm(Form2_2)
-            );
-            
-            If(
-                !IsBlank(DataCardValue17_3.Text),
-                SubmitForm(Form2_3)
-            );
-            
-            //SubmitForm(Form2);;SubmitForm(Form2_1);;SubmitForm(Form2_2);;SubmitForm(Form2_3);;
+        OnSelect: |-
+            =// Check if any mandatory fields are empty
             Set(
-                varimagen,
-                JSON(
-                    PenInput1.Image,
-                    JSONFormat.IncludeBinaryData
-                )
+                CamposObligatoriosVacios,
+                IsBlank(ComboBox1.Selected) || IsBlank(TextInput2.Text) || IsBlank(PenInput1.Image)
             );
-            Navigate(
-                Inicio,
-                ScreenTransition.None
+            
+            // If mandatory fields are missing, show an error notification and stop submission
+            If(
+                CamposObligatoriosVacios,
+                Notify(
+                    "Vuelva a diligenciar, No se envió la gestión. Por favor complete todos los campos obligatorios antes de enviar.",
+                    NotificationType.Error
+                ),
+                // If all mandatory fields are filled, check the individual DataCardValue fields for each form
+                If(
+                    !IsBlank(DataCardValue17.Text), SubmitForm(Form2)
+                ),
+                If(
+                    !IsBlank(DataCardValue17_1.Text), SubmitForm(Form2_1)
+                ),
+                If(
+                    !IsBlank(DataCardValue17_2.Text), SubmitForm(Form2_2)
+                ),
+                If(
+                    !IsBlank(DataCardValue17_3.Text), SubmitForm(Form2_3)
+                ),
+                
+                // Capture PenInput image to a variable
+                Set(
+                    varImagen,
+                    JSON(
+                        PenInput1.Image,
+                        JSONFormat.IncludeBinaryData
+                    )
+                );
+                
+                // Navigate to "Inicio" after submission
+                Navigate(Inicio, ScreenTransition.None)
             )
         Width: =128
         X: =470

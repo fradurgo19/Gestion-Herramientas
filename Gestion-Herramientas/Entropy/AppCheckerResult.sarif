@@ -4573,6 +4573,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "App.varImagen"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.varImagen",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "varImagen",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 4
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.Captura de pantalla 2024-08-23 144201"
                 }
               ],
