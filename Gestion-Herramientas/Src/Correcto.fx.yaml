@@ -23,14 +23,6 @@ Correcto As screen:
         Y: =712
         ZIndex: =3
 
-    Icon1 As icon.CancelBadge:
-        Height: =116
-        Icon: =Icon.CancelBadge
-        Width: =134
-        X: =255
-        Y: =452
-        ZIndex: =4
-
     NewExpenseConfirmTimer_1 As timer:
         AutoStart: =true
         BorderColor: =ColorFade(NewExpenseConfirmTimer_1.Fill, -15%)
