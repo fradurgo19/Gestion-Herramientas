@@ -1134,10 +1134,15 @@
         Height: =375
         NumberOfColumns: =1
         OnSuccess: |-
-            =ClearCollect(
+            =Set(
+                CamposObligatoriosVacios,
+                IsBlank(ComboBox1.Selected) || IsBlank(TextInput2.Text) || IsBlank(PenInput1.Image)
+            );
+            ClearCollect(
                 colUltimo,
                 Form2.LastSubmit
             );
+            
             
             Patch(
                 ListaPrestamoHerramientas,
