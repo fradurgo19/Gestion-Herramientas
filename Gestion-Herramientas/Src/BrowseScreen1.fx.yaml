@@ -156,6 +156,7 @@
             PaddingLeft: =0
             PaddingRight: =0
             PaddingTop: =0
+            Size: =13
             Text: =ThisItem.Descripcion
             VerticalAlign: =VerticalAlign.Top
             Width: =Parent.TemplateWidth - 185

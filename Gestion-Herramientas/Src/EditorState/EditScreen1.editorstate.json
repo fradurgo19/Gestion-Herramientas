@@ -286,7 +286,7 @@
       "MetaDataIDKey": "%field_4.ID%",
       "Name": "Bodega_DataCard2",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 6,
+      "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -742,7 +742,7 @@
       "MetaDataIDKey": "",
       "Name": "CodigodeBarraAuto_DataCard1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 11,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -12293,7 +12293,7 @@
       "MetaDataIDKey": "%field_5.ID%",
       "Name": "Estado_DataCard2",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 7,
+      "ParentIndex": 9,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -12441,7 +12441,7 @@
       "MetaDataIDKey": "",
       "Name": "Foto_DataCard2",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 12,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -13497,7 +13497,7 @@
       "MetaDataIDKey": "",
       "Name": "No. Factura_DataCard3",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 9,
+      "ParentIndex": 11,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -13650,7 +13650,7 @@
       "MetaDataIDKey": "",
       "Name": "Precio_DataCard2",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 10,
+      "ParentIndex": 12,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -13813,7 +13813,7 @@
       "MetaDataIDKey": "%field_7.ID%",
       "Name": "Proveedor_DataCard2",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 8,
+      "ParentIndex": 10,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -14087,7 +14087,7 @@
       "MetaDataIDKey": "%field_2.ID%",
       "Name": "Sede_DataCard2",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 4,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -17626,7 +17626,7 @@
       "MetaDataIDKey": "%field_1.ID%",
       "Name": "Tipo_DataCard2",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 3,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -17781,7 +17781,7 @@
       "MetaDataIDKey": "%field_3.ID%",
       "Name": "Ubicacion_DataCard2",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 5,
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
