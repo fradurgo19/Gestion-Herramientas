@@ -34,7 +34,6 @@
         PaddingTop: =24
         TabIndex: =0
         Tooltip: ="Editar este elemento"
-        Visible: =false
         Width: =88
         X: =Parent.Width - Self.Width
         ZIndex: =3
@@ -75,6 +74,44 @@
         Width: =Parent.Width
         Y: =RectQuickActionBar2.Y + RectQuickActionBar2.Height
         ZIndex: =6
+
+        CodigodeBarraAuto_DataCard2 As typedDataCard.textualViewCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="CodigoBarrasAuto"
+            Default: =ThisItem.CodigodeBarraAuto
+            DisplayMode: =DisplayMode.View
+            DisplayName: =DataSourceInfo([@ListaHerramientas],DataSourceInfo.DisplayName,CodigoBarrasAuto)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =40
+            Required: =false
+            Width: =640
+            X: =0
+            Y: =2
+            ZIndex: =1
+
+            DataCardKey52 As label:
+                AutoHeight: =true
+                Height: =48
+                Size: =21
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue55 As label:
+                AutoHeight: =true
+                DisplayMode: =Parent.DisplayMode
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =21
+                Text: =Parent.Default
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey52.Y + DataCardKey52.Height + 5
+                ZIndex: =2
 
         Codigo_DataCard1 As typedDataCard.textualViewCard:
             BorderStyle: =BorderStyle.Solid
@@ -164,7 +201,7 @@
             Update: =DataCardValue2.Selected
             Width: =640
             X: =0
-            Y: =2
+            Y: =3
             ZIndex: =1
 
             DataCardKey2 As label:
@@ -234,7 +271,7 @@
             Update: =DataCardValue3.Selected
             Width: =640
             X: =0
-            Y: =3
+            Y: =4
             ZIndex: =1
 
             DataCardKey3 As label:
@@ -304,7 +341,7 @@
             Update: =DataCardValue4.Selected
             Width: =640
             X: =0
-            Y: =4
+            Y: =5
             ZIndex: =1
 
             DataCardKey4 As label:
@@ -374,7 +411,7 @@
             Update: =DataCardValue5.Selected
             Width: =640
             X: =0
-            Y: =5
+            Y: =6
             ZIndex: =1
 
             DataCardKey5 As label:
@@ -444,7 +481,7 @@
             Update: =DataCardValue6.Selected
             Width: =640
             X: =0
-            Y: =6
+            Y: =7
             ZIndex: =1
 
             DataCardKey6 As label:
@@ -513,7 +550,7 @@
             Required: =false
             Width: =640
             X: =0
-            Y: =7
+            Y: =8
             ZIndex: =1
 
             DataCardKey7 As label:
@@ -551,7 +588,7 @@
             Required: =false
             Width: =640
             X: =0
-            Y: =8
+            Y: =9
             ZIndex: =1
 
             DataCardKey8 As label:
@@ -589,7 +626,7 @@
             Required: =false
             Width: =640
             X: =0
-            Y: =9
+            Y: =10
             ZIndex: =1
 
             DataCardKey23 As label:
@@ -627,7 +664,7 @@
             Required: =false
             Width: =640
             X: =0
-            Y: =10
+            Y: =11
             ZIndex: =1
 
             DataCardKey25 As label:
@@ -665,7 +702,7 @@
             Required: =false
             Width: =640
             X: =0
-            Y: =11
+            Y: =12
             ZIndex: =1
 
             DataCardKey26 As label:
@@ -703,7 +740,7 @@
             Required: =false
             Width: =640
             X: =0
-            Y: =12
+            Y: =13
             ZIndex: =1
 
             DataCardKey21 As label:
