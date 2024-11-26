@@ -118,7 +118,7 @@
             =SortByColumns(
                 Filter(
                     ListaHerramientas,
-                    (StartsWith(Descripcion, TextSearchBox1.Text) || StartsWith(Codigodebarra, TextSearchBox1.Text)) &&
+                    TextSearchBox1.Text in Descripcion ||  TextSearchBox1.Text in Codigodebarra ||  TextSearchBox1.Text in Codigo  &&
                     (Sede.Value = ComboBox2_2.Selected.Value || IsBlank(ComboBox2_2.Selected.Value))
                 ),
                 "Created",
