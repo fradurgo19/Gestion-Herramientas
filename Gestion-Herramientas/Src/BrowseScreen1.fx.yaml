@@ -91,7 +91,8 @@
         ZIndex: =6
 
     SearchIcon1 As icon.Search:
-        Color: =RGBA(191, 190, 190, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        Fill: =RGBA(203, 102, 102, 1)
         Height: =Self.Width
         Icon: =Icon.Search
         PaddingBottom: =14
@@ -100,7 +101,7 @@
         PaddingTop: =14
         Tooltip: ="Buscar"
         Width: =TextSearchBox1.Height
-        X: =TextSearchBox1.X
+        X: =258
         Y: =TextSearchBox1.Y
         ZIndex: =7
 
