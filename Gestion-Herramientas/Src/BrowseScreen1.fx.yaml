@@ -121,8 +121,8 @@
                     (StartsWith(Descripcion, TextSearchBox1.Text) || StartsWith(Codigodebarra, TextSearchBox1.Text)) &&
                     (Sede.Value = ComboBox2_2.Selected.Value || IsBlank(ComboBox2_2.Selected.Value))
                 ),
-                "Title",
-                If(SortDescending1, SortOrder.Descending, SortOrder.Ascending)
+                "Created",
+                If(SortDescending1, SortOrder.Ascending, SortOrder.Descending)
             )
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
