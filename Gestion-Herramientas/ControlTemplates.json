@@ -54,7 +54,7 @@
     "Name": "PowerApps_CoreControls_ButtonCanvas",
     "OverridableProperties": {},
     "TemplateDisplayName": "Botón",
-    "Version": "0.0.42"
+    "Version": "0.0.43"
   },
   "button": {
     "CustomGroupControlTemplateName": "",
