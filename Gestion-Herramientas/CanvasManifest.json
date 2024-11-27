@@ -115,7 +115,7 @@
     "DocumentLayoutLockOrientation": false,
     "DocumentLayoutMaintainAspectRatio": false,
     "DocumentLayoutOrientation": "portrait",
-    "DocumentLayoutScaleToFit": false,
+    "DocumentLayoutScaleToFit": true,
     "DocumentLayoutWidth": 640,
     "DocumentType": "App",
     "EnableInstrumentation": false,
@@ -127,7 +127,7 @@
     "Name": "Gestión de Herramientas",
     "OriginatingVersion": "1.336",
     "ParserErrorCount": 0,
-    "ShowStatusBar": true
+    "ShowStatusBar": false
   },
   "PublishInfo": {
     "AppName": "Gestión de Herramientas",
