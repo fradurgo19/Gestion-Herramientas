@@ -161,7 +161,7 @@
             VerticalAlign: =VerticalAlign.Top
             Width: =Parent.TemplateWidth - 185
             X: =115
-            Y: =(Parent.TemplateHeight - (Self.Size*1.8 + Subtitle1.Size*1.8 + 2 + Body1.Size*1.8)) / 2
+            Y: =16
             ZIndex: =2
 
         Subtitle1 As label:
@@ -176,7 +176,7 @@
             VerticalAlign: =VerticalAlign.Top
             Width: =Title1.Width
             X: =Title1.X
-            Y: =Title1.Y + Title1.Height
+            Y: =48
             ZIndex: =3
 
         Body1 As label:
@@ -191,7 +191,7 @@
             VerticalAlign: =VerticalAlign.Top
             Width: =Subtitle1.Width
             X: =Title1.X
-            Y: =Subtitle1.Y + Subtitle1.Height
+            Y: =79
             ZIndex: =4
 
         NextArrow1 As icon.ChevronRight:
