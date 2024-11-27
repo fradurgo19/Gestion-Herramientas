@@ -974,19 +974,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Inicio_1.ButtonCanvas3.AccessibleLabel"
+                  "fullyQualifiedName": "Inicio_1.Container1.Container4.ButtonCanvas3.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "Inicio_1.ButtonCanvas3.AccessibleLabel",
+                  "fullyQualifiedName": "Inicio_1.Container1.Container4.ButtonCanvas3.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "Inicio_1",
-                "type": "Inicio_1.ButtonCanvas3"
+                "type": "Inicio_1.Container1.Container4.ButtonCanvas3"
               }
             }
           ],
