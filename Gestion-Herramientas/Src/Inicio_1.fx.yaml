@@ -13,8 +13,7 @@ Inicio_1 As screen:
             Image2_1 As image:
                 Height: =79
                 Image: =Logo
-                ImagePosition: =ImagePosition.Fill
-                Width: =600
+                Width: =640
                 ZIndex: =1
 
         Container3 As groupContainer.manualLayoutContainer:
