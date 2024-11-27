@@ -3,7 +3,6 @@ Error As screen:
     Image2_2 As image:
         Height: =113
         Image: =Logo
-        ImagePosition: =ImagePosition.Fill
         Width: =636
         X: =4
         ZIndex: =2

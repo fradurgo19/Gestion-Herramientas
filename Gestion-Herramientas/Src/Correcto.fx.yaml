@@ -3,7 +3,6 @@ Correcto As screen:
     Image2_3 As image:
         Height: =113
         Image: =Logo
-        ImagePosition: =ImagePosition.Fill
         Width: =636
         X: =4
         ZIndex: =2

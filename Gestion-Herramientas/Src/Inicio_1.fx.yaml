@@ -75,10 +75,9 @@ Inicio_1 As screen:
                 ZIndex: =2
 
         Image19 As image:
-            Height: =963
+            Height: =1130
             Image: =giphy3
             Visible: =varCargar
             Width: =640
-            Y: =40
             ZIndex: =4
 
