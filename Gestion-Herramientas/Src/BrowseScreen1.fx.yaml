@@ -196,8 +196,8 @@
 
         NextArrow1 As icon.ChevronRight:
             AccessibleLabel: =Self.Tooltip
-            Color: =RGBA(166, 166, 166, 1)
-            Height: =50
+            Color: =RGBA(0, 0, 0, 1)
+            Height: =84
             Icon: =Icon.ChevronRight
             OnSelect: =Select(Parent)
             PaddingBottom: =16
@@ -207,7 +207,7 @@
             Tooltip: ="Ver los detalles del elemento"
             Width: =50
             X: =Parent.TemplateWidth - Self.Width - 12
-            Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            Y: =16
             ZIndex: =5
 
         Separator1 As rectangle:
