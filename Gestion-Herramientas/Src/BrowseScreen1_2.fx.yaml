@@ -123,7 +123,7 @@
                 Filter(
                     ListaPrestamoHerramientas,
                     (
-                        (TextSearchBox1_2.Text in Descripcion || TextSearchBox1_2.Text in Codigo || IsBlank(TextSearchBox1_2.Text)) &&
+                        (TextSearchBox1_2.Text in Descripcion || TextSearchBox1_2.Text in Codigo || TextSearchBox1_2.Text in Codigodebarra || IsBlank(TextSearchBox1_2.Text)) &&
                         (Sede = ComboBox2_1.Selected.Value || IsBlank(ComboBox2_1.Selected.Value)) &&
                         (TipoDePrestamo.Value = ComboBox2.Selected.Value || IsBlank(ComboBox2.Selected.Value)) &&
                         (Fecha >= DatePicker1.SelectedDate || IsBlank(DatePicker1.SelectedDate)) &&

@@ -264,7 +264,47 @@
                 },
                 "region": {
                   "charLength": 2,
-                  "charOffset": 183,
+                  "charOffset": 190,
+                  "snippet": {
+                    "text": "||"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "BrowseScreen1_2",
+                "type": "BrowseScreen1_2.BrowseGallery1_2"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Filter"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "BrowseScreen1_2.BrowseGallery1_2.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "BrowseScreen1_2.BrowseGallery1_2.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 2,
+                  "charOffset": 225,
                   "snippet": {
                     "text": "&&"
                   }
@@ -304,7 +344,7 @@
                 },
                 "region": {
                   "charLength": 2,
-                  "charOffset": 273,
+                  "charOffset": 315,
                   "snippet": {
                     "text": "&&"
                   }
@@ -344,7 +384,7 @@
                 },
                 "region": {
                   "charLength": 2,
-                  "charOffset": 375,
+                  "charOffset": 417,
                   "snippet": {
                     "text": "&&"
                   }
@@ -384,7 +424,7 @@
                 },
                 "region": {
                   "charLength": 2,
-                  "charOffset": 463,
+                  "charOffset": 505,
                   "snippet": {
                     "text": "&&"
                   }
