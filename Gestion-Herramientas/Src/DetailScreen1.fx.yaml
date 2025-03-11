@@ -158,7 +158,7 @@
             DataField: ="CodigoBarrasAuto"
             Default: =ThisItem.CodigodeBarraAuto
             DisplayMode: =DisplayMode.View
-            DisplayName: =DataSourceInfo([@ListaHerramientas],DataSourceInfo.DisplayName,CodigoBarrasAuto)
+            DisplayName: =DataSourceInfo([@ListaHerramientas],DataSourceInfo.DisplayName,CodigodeBarraAuto)
             Fill: =RGBA(0, 0, 0, 0)
             Height: =40
             Required: =false

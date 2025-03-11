@@ -115,16 +115,20 @@
         '#CopilotOverlayLabel': ="Filtrada"
         DelayItemLoading: =true
         Height: =Parent.Height - Self.Y
-        Items: |
+        Items: |+
             =SortByColumns(
                 Filter(
                     ListaHerramientas,
-                    TextSearchBox1.Text in Descripcion ||  TextSearchBox1.Text in Codigodebarra ||  TextSearchBox1.Text in Codigo  &&
-                    (Sede.Value = ComboBox2_2.Selected.Value || IsBlank(ComboBox2_2.Selected.Value))
+                    (TextSearchBox1.Text in Descripcion ||  
+                     TextSearchBox1.Text in Codigodebarra ||  
+                     TextSearchBox1.Text in Codigo) &&
+                    (IsBlank(ComboBox2_2.Selected.Value) || Sede.Value = ComboBox2_2.Selected.Value)
                 ),
                 "Created",
                 If(SortDescending1, SortOrder.Ascending, SortOrder.Descending)
             )
+            
+            
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         OnSelect: =Navigate(DetailScreen1, ScreenTransition.None)

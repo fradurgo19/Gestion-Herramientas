@@ -1,0 +1,545 @@
+# ************************************************************************************************
+# Warning: YAML source code for Canvas Apps is in preview. The schema is being actively developed.
+# Content may be incomplete and subject to change.
+# This file is read-only and should only be used to review changes made within Power Apps Studio.
+# This file isn't used when loading the app. External editing, merging and conflict resolution are
+# not supported.
+# 
+# For more information, visit https://go.microsoft.com/fwlink/?linkid=2292623
+# ************************************************************************************************
+Screens:
+  DetailScreen1_2:
+    Properties:
+      LoadingSpinnerColor: =RGBA(56, 96, 178, 1)
+    Children:
+      - IconDelete1_2:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            AccessibleLabel: =Self.Tooltip
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisplayMode: =If(!IsBlank(BrowseGallery1.Selected) && DataSourceInfo([@ListaHerramientas], DataSourceInfo.DeletePermission), DisplayMode.Edit, DisplayMode.Disabled)
+            Fill: =RGBA(127, 178, 57, 1)
+            Height: =88
+            Icon: =Icon.Trash
+            OnSelect: =Remove([@ListaHerramientas], BrowseGallery1.Selected); If (IsEmpty(Errors([@ListaHerramientas], BrowseGallery1.Selected)), Back())
+            PaddingBottom: =24
+            PaddingLeft: =24
+            PaddingRight: =24
+            PaddingTop: =24
+            PressedFill: =RGBA(255, 255, 255, 0.3)
+            TabIndex: =0
+            Tooltip: ="Eliminar este elemento"
+            Visible: =false
+            Width: =88
+            X: =Parent.Width - IconEdit1_2.Width - Self.Width
+      - IconEdit1_2:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            AccessibleLabel: =Self.Tooltip
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisplayMode: =If(DataSourceInfo([@ListaHerramientas], DataSourceInfo.EditPermission), DisplayMode.Edit, DisplayMode.Disabled)
+            Fill: =RGBA(127, 178, 57, 1)
+            Height: =88
+            Icon: =Icon.Edit
+            OnSelect: =EditForm(EditForm1);Navigate(EditScreen1, ScreenTransition.None)
+            PaddingBottom: =24
+            PaddingLeft: =24
+            PaddingRight: =24
+            PaddingTop: =24
+            PressedFill: =RGBA(255, 255, 255, 0.3)
+            TabIndex: =0
+            Tooltip: ="Editar este elemento"
+            Visible: =false
+            Width: =88
+            X: =Parent.Width - Self.Width
+      - RectQuickActionBar2_2:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(127, 178, 57, 1)
+            Height: =88
+            Width: =Parent.Width
+      - IconBackarrow1_6:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            AccessibleLabel: =Self.Tooltip
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(127, 178, 57, 1)
+            Height: =88
+            Icon: =Icon.ChevronLeft
+            OnSelect: =Navigate(BrowseScreen1_2, ScreenTransition.None)
+            PaddingBottom: =24
+            PaddingLeft: =24
+            PaddingRight: =24
+            PaddingTop: =24
+            PressedFill: =RGBA(255, 255, 255, 0.3)
+            TabIndex: =0
+            Tooltip: ="Volver a la lista"
+            Width: =88
+      - LblAppName2_2:
+          Control: Label@2.5.1
+          Properties:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 0, 0, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(127, 178, 57, 1)
+            Font: =Font.'Open Sans'
+            Height: =88
+            Size: =27
+            Text: ="Herramienta"
+            Width: =Parent.Width - Self.X - IconDelete1_2.Width - IconEdit1_2.Width
+            Wrap: =false
+            X: =80
+      - DetailForm1_2:
+          Control: FormViewer@2.3.4
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            DataSource: =ListaPrestamoHerramientas
+            Height: =Parent.Height - DetailForm1_2.Y
+            Item: =BrowseGallery1_2.Selected
+            Width: =Parent.Width
+            Y: =RectQuickActionBar2_2.Y + RectQuickActionBar2_2.Height
+          Children:
+            - Codigodebarra_DataCard3:
+                Control: TypedDataCard@1.0.6
+                Variant: ClassicTextualView
+                IsLocked: true
+                Properties:
+                  BorderColor: =RGBA(0, 18, 107, 1)
+                  DataField: ="field_11"
+                  Default: =ThisItem.Codigodebarra
+                  DisplayName: =DataSourceInfo([@ListaPrestamoHerramientas],DataSourceInfo.DisplayName,Codigodebarra)
+                  Required: =false
+                  Y: =0
+                Children:
+                  - DataCardKey40:
+                      Control: Label@2.5.1
+                      Properties:
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        Color: =RGBA(0, 18, 107, 1)
+                        Font: =Font.'Open Sans'
+                        Height: =48
+                        Text: =Parent.DisplayName
+                        Width: =Parent.Width - 60
+                        Wrap: =false
+                        X: =30
+                        Y: =10
+                  - DataCardValue44:
+                      Control: Label@2.5.1
+                      Properties:
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        DisplayMode: =Parent.DisplayMode
+                        Font: =Font.'Open Sans'
+                        Height: =40
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Text: =Parent.Default
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardKey40.Y + DataCardKey40.Height + 5
+            - TipoDePrestamo_DataCard1:
+                Control: TypedDataCard@1.0.6
+                Variant: ClassicComboBoxView
+                IsLocked: true
+                Properties:
+                  BorderColor: =RGBA(0, 18, 107, 1)
+                  DataField: ="field_16"
+                  Default: =ThisItem.TipoDePrestamo
+                  DisplayName: =DataSourceInfo([@ListaPrestamoHerramientas],DataSourceInfo.DisplayName,TipoDePrestamo)
+                  Required: =false
+                  Update: =DataCardValue45.Selected
+                  Y: =1
+                Children:
+                  - DataCardKey41:
+                      Control: Label@2.5.1
+                      Properties:
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        Color: =RGBA(0, 18, 107, 1)
+                        Font: =Font.'Open Sans'
+                        Height: =48
+                        Text: =Parent.DisplayName
+                        Width: =Parent.Width - 60
+                        Wrap: =false
+                        X: =30
+                        Y: =10
+                  - DataCardValue45:
+                      Control: Classic/ComboBox@2.4.0
+                      Properties:
+                        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                        ChevronBackground: =RGBA(56, 96, 178, 1)
+                        ChevronFill: =RGBA(255, 255, 255, 1)
+                        ChevronHoverBackground: =ColorFade(RGBA(56, 96, 178, 1), -20%)
+                        ChevronHoverFill: =RGBA(255, 255, 255, 1)
+                        DefaultSelectedItems: =Parent.Default
+                        DisplayFields: =["Value"]
+                        DisplayMode: =Parent.DisplayMode
+                        Font: =Font.'Open Sans'
+                        HoverFill: =RGBA(186, 202, 226, 1)
+                        Items: =Choices([@ListaPrestamoHerramientas].TipoDePrestamo)
+                        PaddingBottom: =5
+                        PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                        PaddingRight: =5
+                        PaddingTop: =5
+                        PressedColor: =RGBA(255, 255, 255, 1)
+                        PressedFill: =RGBA(0, 18, 107, 1)
+                        SearchFields: =["Value"]
+                        SelectMultiple: =false
+                        SelectionColor: =RGBA(255, 255, 255, 1)
+                        SelectionFill: =RGBA(56, 96, 178, 1)
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardKey41.Y + DataCardKey41.Height + 5
+                  - ErrorMessage20:
+                      Control: Label@2.5.1
+                      Properties:
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        Color: =RGBA(168, 0, 0, 1)
+                        Font: =Font.'Open Sans'
+                        FontWeight: =FontWeight.Semibold
+                        Height: =10
+                        Live: =Live.Assertive
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Size: =24
+                        Text: =Parent.Error
+                        Visible: =Parent.DisplayMode=DisplayMode.Edit
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardValue45.Y + DataCardValue45.Height
+                  - StarVisible20:
+                      Control: Label@2.5.1
+                      Properties:
+                        Align: =Align.Center
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        Color: =RGBA(0, 18, 107, 1)
+                        Font: =Font.'Open Sans'
+                        Height: =DataCardKey41.Height
+                        Text: ="*"
+                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =30
+                        Wrap: =false
+                        Y: =DataCardKey41.Y
+            - Fecha_DataCard2:
+                Control: TypedDataCard@1.0.6
+                Variant: ClassicTextualView
+                IsLocked: true
+                Properties:
+                  BorderColor: =RGBA(0, 18, 107, 1)
+                  DataField: ="FechaPrestamo"
+                  Default: =ThisItem.Fecha
+                  DisplayName: =DataSourceInfo([@ListaPrestamoHerramientas],DataSourceInfo.DisplayName,Fecha)
+                  Required: =false
+                  Y: =2
+                Children:
+                  - DataCardKey20:
+                      Control: Label@2.5.1
+                      Properties:
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        Color: =RGBA(0, 18, 107, 1)
+                        Font: =Font.'Open Sans'
+                        Height: =48
+                        Text: =Parent.DisplayName
+                        Width: =Parent.Width - 60
+                        Wrap: =false
+                        X: =30
+                        Y: =10
+                  - DataCardValue31:
+                      Control: Label@2.5.1
+                      Properties:
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        DisplayMode: =Parent.DisplayMode
+                        Font: =Font.'Open Sans'
+                        Height: =40
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Text: =Parent.Default
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardKey20.Y + DataCardKey20.Height + 5
+            - Asignado A_DataCard1:
+                Control: TypedDataCard@1.0.6
+                Variant: ClassicTextualView
+                IsLocked: true
+                Properties:
+                  BorderColor: =RGBA(0, 18, 107, 1)
+                  DataField: ="field_14"
+                  Default: =ThisItem.'Asignado A'
+                  DisplayName: =DataSourceInfo([@ListaPrestamoHerramientas],DataSourceInfo.DisplayName,'Asignado A')
+                  Required: =false
+                  Y: =3
+                Children:
+                  - DataCardKey35:
+                      Control: Label@2.5.1
+                      Properties:
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        Color: =RGBA(0, 18, 107, 1)
+                        Font: =Font.'Open Sans'
+                        Height: =48
+                        Text: =Parent.DisplayName
+                        Width: =Parent.Width - 60
+                        Wrap: =false
+                        X: =30
+                        Y: =10
+                  - DataCardValue41:
+                      Control: Label@2.5.1
+                      Properties:
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        DisplayMode: =Parent.DisplayMode
+                        Font: =Font.'Open Sans'
+                        Height: =40
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Text: =Parent.Default
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardKey35.Y + DataCardKey35.Height + 5
+            - Observaciones_DataCard3:
+                Control: TypedDataCard@1.0.6
+                Variant: ClassicTextualView
+                IsLocked: true
+                Properties:
+                  BorderColor: =RGBA(0, 18, 107, 1)
+                  DataField: ="field_10"
+                  Default: =ThisItem.Observaciones
+                  DisplayName: =DataSourceInfo([@ListaPrestamoHerramientas],DataSourceInfo.DisplayName,Observaciones)
+                  Required: =false
+                  Y: =6
+                Children:
+                  - DataCardKey44:
+                      Control: Label@2.5.1
+                      Properties:
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        Color: =RGBA(0, 18, 107, 1)
+                        Font: =Font.'Open Sans'
+                        Height: =48
+                        Text: =Parent.DisplayName
+                        Width: =Parent.Width - 60
+                        Wrap: =false
+                        X: =30
+                        Y: =10
+                  - DataCardValue47:
+                      Control: Label@2.5.1
+                      Properties:
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        DisplayMode: =Parent.DisplayMode
+                        Font: =Font.'Open Sans'
+                        Height: =40
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Text: =Parent.Default
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardKey44.Y + DataCardKey44.Height + 5
+            - Foto_DataCard3:
+                Control: TypedDataCard@1.0.6
+                Variant: ClassicLargeImageView
+                Properties:
+                  BorderColor: =RGBA(0, 18, 107, 1)
+                  DataField: ="Foto"
+                  Default: =ThisItem.Foto
+                  DisplayName: =DataSourceInfo([@ListaPrestamoHerramientas],DataSourceInfo.DisplayName,Foto)
+                  Height: =187
+                  Required: =false
+                  Y: =7
+                Children:
+                  - DataCardKey37:
+                      Control: Label@2.5.1
+                      Properties:
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        Color: =RGBA(0, 18, 107, 1)
+                        Font: =Font.'Open Sans'
+                        Height: =48
+                        Text: ="Firma"
+                        Width: =Parent.Width - 60
+                        Wrap: =false
+                        X: =30
+                        Y: =10
+                  - DataCardValue43:
+                      Control: Image@2.2.3
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        DisplayMode: =Parent.DisplayMode
+                        Height: =150
+                        Image: =Parent.Default
+                        Width: =510
+                        X: =30
+                        Y: =DataCardKey37.Y + DataCardKey37.Height + 5
+            - Datos adjuntos_DataCard2:
+                Control: TypedDataCard@1.0.6
+                Variant: ClassicAttachmentsView
+                Properties:
+                  BorderColor: =RGBA(0, 18, 107, 1)
+                  DataField: ="{Attachments}"
+                  Default: =ThisItem.'Datos adjuntos'
+                  DisplayName: =DataSourceInfo([@ListaPrestamoHerramientas],DataSourceInfo.DisplayName,'Datos adjuntos')
+                  Height: =257
+                  Required: =false
+                  Update: =DataCardValue42.Attachments
+                  Y: =8
+                Children:
+                  - DataCardKey36:
+                      Control: Label@2.5.1
+                      Properties:
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        Color: =RGBA(0, 18, 107, 1)
+                        Font: =Font.'Open Sans'
+                        Height: =48
+                        Text: =Parent.DisplayName
+                        Width: =Parent.Width - 60
+                        Wrap: =false
+                        X: =30
+                        Y: =10
+                  - DataCardValue42:
+                      Control: Attachments@2.3.0
+                      Properties:
+                        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                        DisplayMode: =Parent.DisplayMode
+                        Font: =Font.'Open Sans'
+                        Height: =177
+                        HoverFill: =RGBA(186, 202, 226, 1)
+                        ItemColor: =RGBA(255, 255, 255, 1)
+                        ItemFill: =RGBA(56, 96, 178, 1)
+                        ItemHoverFill: =RGBA(186, 202, 226, 1)
+                        Items: =Parent.Default
+                        PaddingBottom: =5
+                        PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                        PaddingRight: =5
+                        PaddingTop: =5
+                        PressedColor: =RGBA(255, 255, 255, 1)
+                        PressedFill: =RGBA(0, 18, 107, 1)
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardKey36.Y + DataCardKey36.Height + 5
+                  - ErrorMessage19:
+                      Control: Label@2.5.1
+                      Properties:
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        Color: =RGBA(168, 0, 0, 1)
+                        Font: =Font.'Open Sans'
+                        FontWeight: =FontWeight.Semibold
+                        Height: =10
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Size: =24
+                        Text: =Parent.Error
+                        Visible: =Parent.DisplayMode=DisplayMode.Edit
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardValue42.Y + DataCardValue42.Height
+                  - StarVisible19:
+                      Control: Label@2.5.1
+                      Properties:
+                        Align: =Align.Center
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        Color: =RGBA(0, 18, 107, 1)
+                        Font: =Font.'Open Sans'
+                        Height: =DataCardKey36.Height
+                        Text: ="*"
+                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =30
+                        Wrap: =false
+                        Y: =DataCardKey36.Y
+            - Codigo_DataCard4:
+                Control: TypedDataCard@1.0.6
+                Variant: ClassicTextualView
+                IsLocked: true
+                Properties:
+                  BorderColor: =RGBA(0, 18, 107, 1)
+                  DataField: ="field_0"
+                  Default: =ThisItem.Codigo
+                  DisplayName: =DataSourceInfo([@ListaPrestamoHerramientas],DataSourceInfo.DisplayName,Codigo)
+                  Required: =false
+                  Y: =4
+                Children:
+                  - DataCardKey17:
+                      Control: Label@2.5.1
+                      Properties:
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        Color: =RGBA(0, 18, 107, 1)
+                        Font: =Font.'Open Sans'
+                        Height: =48
+                        Text: =Parent.DisplayName
+                        Width: =Parent.Width - 60
+                        Wrap: =false
+                        X: =30
+                        Y: =10
+                  - DataCardValue18:
+                      Control: Label@2.5.1
+                      Properties:
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        DisplayMode: =Parent.DisplayMode
+                        Font: =Font.'Open Sans'
+                        Height: =40
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Text: =Parent.Default
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardKey17.Y + DataCardKey17.Height + 5
+            - Descripcion_DataCard3:
+                Control: TypedDataCard@1.0.6
+                Variant: ClassicTextualView
+                IsLocked: true
+                Properties:
+                  BorderColor: =RGBA(0, 18, 107, 1)
+                  DataField: ="Title"
+                  Default: =ThisItem.Descripcion
+                  DisplayName: =DataSourceInfo([@ListaPrestamoHerramientas],DataSourceInfo.DisplayName,Descripcion)
+                  Required: =false
+                  Y: =5
+                Children:
+                  - DataCardKey19:
+                      Control: Label@2.5.1
+                      Properties:
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        Color: =RGBA(0, 18, 107, 1)
+                        Font: =Font.'Open Sans'
+                        Height: =48
+                        Text: =Parent.DisplayName
+                        Width: =Parent.Width - 60
+                        Wrap: =false
+                        X: =30
+                        Y: =10
+                  - DataCardValue30:
+                      Control: Label@2.5.1
+                      Properties:
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        DisplayMode: =Parent.DisplayMode
+                        Font: =Font.'Open Sans'
+                        Height: =40
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Text: =Parent.Default
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardKey19.Y + DataCardKey19.Height + 5

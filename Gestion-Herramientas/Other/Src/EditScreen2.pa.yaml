@@ -1,0 +1,237 @@
+# ************************************************************************************************
+# Warning: YAML source code for Canvas Apps is in preview. The schema is being actively developed.
+# Content may be incomplete and subject to change.
+# This file is read-only and should only be used to review changes made within Power Apps Studio.
+# This file isn't used when loading the app. External editing, merging and conflict resolution are
+# not supported.
+# 
+# For more information, visit https://go.microsoft.com/fwlink/?linkid=2292623
+# ************************************************************************************************
+Screens:
+  EditScreen2:
+    Properties:
+      LoadingSpinnerColor: =RGBA(56, 96, 178, 1)
+    Children:
+      - Image3:
+          Control: Image@2.2.3
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Height: =312
+            Image: =Substitute(PenInput1.Image,"""","")
+            Visible: =false
+            Width: =546
+            X: =39
+            Y: =541
+      - RectQuickActionBar3_2:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(203, 102, 102, 1)
+            Fill: =RGBA(127, 178, 57, 1)
+            Height: =88
+            Width: =Parent.Width
+      - ComboBox1:
+          Control: Classic/ComboBox@2.4.0
+          Properties:
+            BorderColor: =RGBA(99, 139, 44, 1)
+            ChevronBackground: =RGBA(127, 178, 57, 1)
+            ChevronFill: =RGBA(255, 255, 255, 1)
+            ChevronHoverBackground: =ColorFade(RGBA(56, 96, 178, 1), -20%)
+            ChevronHoverFill: =RGBA(255, 255, 255, 1)
+            DisplayFields: =["Value"]
+            Font: =Font.'Open Sans'
+            Height: =73
+            HoverFill: =RGBA(186, 202, 226, 1)
+            Items: =Choices([@ListaPrestamoHerramientas].TipoDePrestamo)
+            PressedColor: =RGBA(255, 255, 255, 1)
+            PressedFill: =RGBA(0, 18, 107, 1)
+            SearchFields: =["Value"]
+            SelectMultiple: =false
+            SelectionColor: =RGBA(255, 255, 255, 1)
+            SelectionFill: =RGBA(127, 178, 57, 1)
+            Size: =18
+            Width: =563
+            X: =32
+            Y: =184
+      - Label3:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(127, 178, 57, 1)
+            Font: =Font.'Open Sans'
+            Height: =49
+            Size: =18
+            Text: ="Tipo:"
+            Width: =563
+            X: =32
+            Y: =135
+      - Label3_1:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(127, 178, 57, 1)
+            Font: =Font.'Open Sans'
+            Height: =55
+            Size: =18
+            Text: ="Asignado A:"
+            Width: =563
+            X: =32
+            Y: =302
+      - TextInput2:
+          Control: Classic/TextInput@2.3.2
+          Properties:
+            BorderColor: =RGBA(99, 139, 44, 1)
+            Default: =""
+            Font: =Font.'Open Sans'
+            Height: =75
+            HintText: ="Nombre del Ténico"
+            HoverBorderColor: =RGBA(0, 18, 107, 1)
+            HoverFill: =RGBA(186, 202, 226, 1)
+            Size: =18
+            Width: =563
+            X: =32
+            Y: =355
+      - Label3_2:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(127, 178, 57, 1)
+            Font: =Font.'Open Sans'
+            Height: =55
+            Size: =18
+            Text: ="Firma:"
+            X: =33
+            Y: =485
+      - PenInput1:
+          Control: PenInput@2.3.0
+          Properties:
+            BorderColor: =RGBA(99, 139, 44, 1)
+            Height: =343
+            Width: =557
+            X: =35
+            Y: =541
+      - LblAppName3_5:
+          Control: Label@2.5.1
+          Properties:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 0, 0, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(127, 178, 57, 1)
+            Font: =Font.'Open Sans'
+            Height: =88
+            Size: =27
+            Text: ="Datos Personales y Tipo"
+            Width: =640
+            Wrap: =false
+      - IconRefresh1_2:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            AccessibleLabel: =Self.Tooltip
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(127, 178, 57, 1)
+            Fill: =RGBA(127, 178, 57, 1)
+            Height: =88
+            Icon: =Icon.Reload
+            OnSelect: =Refresh(ListaPrestamoHerramientas); Reset(ComboBox1); Reset(TextInput2); Reset(PenInput1)
+            PaddingBottom: =22
+            PaddingLeft: =22
+            PaddingRight: =22
+            PaddingTop: =22
+            PressedFill: =RGBA(255, 255, 255, 0.3)
+            TabIndex: =0
+            Tooltip: ="Actualizar lista"
+            Width: =88
+            X: =552
+      - IconCancel1_1:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            AccessibleLabel: =Self.Tooltip
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(127, 178, 57, 1)
+            Height: =88
+            Icon: =Icon.Cancel
+            OnSelect: =Navigate(Inicio, ScreenTransition.None)
+            PaddingBottom: =22
+            PaddingLeft: =22
+            PaddingRight: =22
+            PaddingTop: =22
+            PressedFill: =RGBA(255, 255, 255, 0.3)
+            TabIndex: =0
+            Tooltip: ="Cancelar elemento"
+            Width: =88
+      - Image15:
+          Control: Image@2.2.3
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Height: =81
+            Image: ='flecha-izquierda'
+            OnSelect: =Navigate(EditScreen2_1, ScreenTransition.None)
+            Width: =109
+            X: =44
+            Y: =964
+      - Label3_4:
+          Control: Label@2.5.1
+          Properties:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(127, 178, 57, 1)
+            Font: =Font.'Open Sans'
+            Height: =68
+            OnSelect: =Navigate(EditScreen2_1, ScreenTransition.None)
+            Size: =18
+            Text: ="Atras"
+            Width: =121
+            X: =32
+            Y: =1041
+      - Label3_7:
+          Control: Label@2.5.1
+          Properties:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(127, 178, 57, 1)
+            Font: =Font.'Open Sans'
+            Height: =68
+            OnSelect: "=// Check if any mandatory fields are empty\nSet(\n    CamposObligatoriosVacios,\n    IsBlank(ComboBox1.Selected) || IsBlank(TextInput2.Text) || IsBlank(PenInput1.Image)\n);\n\n// Capture PenInput image to a variable\nSet(\n    varImagen,\n    JSON(\n        PenInput1.Image,\n        JSONFormat.IncludeBinaryData\n    )\n);\n\n// If mandatory fields are missing, show an error notification and stop submission\nIf(\n    CamposObligatoriosVacios,\n    Notify(\n        \"Vuelva a diligenciar, No se envió la gestión. Por favor complete todos los campos obligatorios antes de enviar.\",\n        NotificationType.Error\n    ),\n    // If all mandatory fields are filled, check the individual DataCardValue fields for each form\n    If(\n        !IsBlank(DataCardValue17.Text), SubmitForm(Form2)\n    ),\n    If(\n        !IsBlank(DataCardValue17_1.Text), SubmitForm(Form2_1)\n    ),\n    If(\n        !IsBlank(DataCardValue17_2.Text), SubmitForm(Form2_2)\n    ),\n    If(\n        !IsBlank(DataCardValue17_3.Text), SubmitForm(Form2_3)\n    ),\n\n    \n    // Navigate to \"Inicio\" after submission\n    Navigate(Error, ScreenTransition.None)\n);\n\n\n\nNavigate(Correcto, ScreenTransition.None)\n"
+            Size: =18
+            Text: ="Enviar"
+            Width: =128
+            X: =470
+            Y: =1041
+      - Image16:
+          Control: Image@2.2.3
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Height: =103
+            Image: =entregar
+            OnSelect: "=// Check if any mandatory fields are empty\nSet(\n    CamposObligatoriosVacios,\n    IsBlank(ComboBox1.Selected) || IsBlank(TextInput2.Text) || IsBlank(PenInput1.Image)\n);\n\n// Capture PenInput image to a variable\nSet(\n    varImagen,\n    JSON(\n        PenInput1.Image,\n        JSONFormat.IncludeBinaryData\n    )\n);\n\n// If mandatory fields are missing, show an error notification and stop submission\nIf(\n    CamposObligatoriosVacios,\n    Notify(\n        \"Vuelva a diligenciar, No se envió la gestión. Por favor complete todos los campos obligatorios antes de enviar.\",\n        NotificationType.Error\n    ),\n    // If all mandatory fields are filled, check the individual DataCardValue fields for each form\n    If(\n        !IsBlank(DataCardValue17.Text), SubmitForm(Form2)\n    ),\n    If(\n        !IsBlank(DataCardValue17_1.Text), SubmitForm(Form2_1)\n    ),\n    If(\n        !IsBlank(DataCardValue17_2.Text), SubmitForm(Form2_2)\n    ),\n    If(\n        !IsBlank(DataCardValue17_3.Text), SubmitForm(Form2_3)\n    ),\n\n    \n    // Navigate to \"Inicio\" after submission\n    Navigate(Error, ScreenTransition.None)\n);\n\n\n\nNavigate(Correcto, ScreenTransition.None)"
+            Width: =128
+            X: =470
+            Y: =938
+      - Label3_6:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(253, 222, 207, 1)
+            Font: =Font.'Open Sans'
+            Height: =20
+            Size: =11
+            Text: ="Este Ítem es Obligatorio"
+            X: =32
+            Y: =257
+      - Label3_8:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(253, 222, 207, 1)
+            Font: =Font.'Open Sans'
+            Height: =20
+            Size: =11
+            Text: ="Este Ítem es Obligatorio"
+            X: =33
+            Y: =430
