@@ -5,7 +5,7 @@
       "DataflowAnalysisEnabled": true,
       "DataflowAnalysisFlagStateToggledByUser": true
     },
-    "DocVersion": "1.345",
+    "DocVersion": "1.346",
     "MinVersionToLoad": "1.331",
     "MSAppStructureVersion": "2.4.0"
   },
@@ -13,6 +13,7 @@
     "AppCreationSource": "AppFromSharePoint",
     "AppDescription": "¡Descubre nuestra revolucionaria aplicación en Power Apps para la gestión de herramientas! \uD83D\uDEE0️ Con módulos especializados en lista de herramientas, préstamos y mantenimiento, simplificamos tu vida laboral.\n\n✨ Características destacadas:\n\uD83D\uDCCB Lista de Herramientas: Organiza y accede fácilmente a todas tus herramientas en un solo lugar.\n\uD83D\uDD04 Préstamos Eficientes: Controla los préstamos de herramientas de manera intuitiva y sin complicaciones.\n\uD83D\uDD27 Mantenimiento Proactivo: Programa y realiza mantenimientos preventivos para garantizar el rendimiento óptimo de tus herramientas.\n\n\uD83D\uDCBC Optimiza tu flujo de trabajo, mejora la eficiencia y asegura un manejo impecable de tus herramientas. ¡Descarga nuestra aplicación ahora y eleva tu gestión de herramientas al siguiente nivel! \uD83D\uDE80 #GestiónHerramientas #PowerAppsInnovador #EficienciaLaboral",
     "AppPreviewFlagsMap": {
+      "adaptivepaging": false,
       "aibuilderserviceenrollment": false,
       "allowmultiplescreensincanvaspages": false,
       "appinsightserrortracing": false,
@@ -32,7 +33,6 @@
       "delayloadscreens": true,
       "disablebehaviorreturntypecheck": false,
       "disablecdsfileandlargeimage": false,
-      "disabledeferloadingunusedscreenswithstartscreen": false,
       "disablefallbacktopayamlv2": false,
       "disableloadcomponentdefinitionsondemand": false,
       "disableruntimepolicies": false,
@@ -78,6 +78,7 @@
       "offlineprofilegenerationemitscolumns": false,
       "onegrid": false,
       "optimizedforteamsmeeting": false,
+      "optimizestartscreenpublishedappload": true,
       "packagemodernruntime": false,
       "pdffunction": false,
       "powerfxdecimal": false,

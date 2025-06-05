@@ -2483,7 +2483,7 @@
       "IsControlSpecific": false,
       "LoadingOrder": 10,
       "ModifiedPath": "",
-      "Path": "{\"Id\":\"PowerAppsControlInfo\",\"Data\":{\"TemplateVersion\":1,\"Version\":\"1.0.23\",\"IsFirstParty\":true}}",
+      "Path": "{\"Id\":\"PowerAppsControlInfo\",\"Data\":{\"TemplateVersion\":1,\"Version\":\"1.0.24\",\"IsFirstParty\":true}}",
       "Type": 3
     },
     {
@@ -2835,10 +2835,24 @@
       "ModifiedPath": "",
       "Path": "/PCF/fluentui-react.js",
       "Type": 0
+    },
+    {
+      "IsControlSpecific": false,
+      "LoadingOrder": 0,
+      "ModifiedPath": "",
+      "Path": "React/16.14.0/16.14.0",
+      "Type": 4
+    },
+    {
+      "IsControlSpecific": false,
+      "LoadingOrder": 0,
+      "ModifiedPath": "",
+      "Path": "Fluent/8.121.1/8.121.1",
+      "Type": 4
     }
   ],
   "SubscribedFunctionalities": {
     "sharedTemplate": "false"
   },
-  "Version": "1.0.23"
+  "Version": "1.0.24"
 }

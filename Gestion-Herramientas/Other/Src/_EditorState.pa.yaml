@@ -6,19 +6,19 @@
 # 
 # For more information, visit https://go.microsoft.com/fwlink/?linkid=2292623
 # ************************************************************************************************
-App:
-  Properties:
-    OnStart: |-
-      =ClearCollect(
-          ListaHerramientasLocal,
-          ListaHerramientas
-      );
-      ClearCollect(
-          ListaMantenimientoHerramientasLocal,
-          ListaMantenimientoHerramientas
-      );
-      ClearCollect(
-          ListaPrestamoHerramientasLocal,
-          ListaPrestamoHerramientas
-      )
-    Theme: =PowerAppsTheme
+EditorState:
+  ScreensOrder:
+    - Inicio_1
+    - Inicio
+    - BrowseScreen1
+    - DetailScreen1
+    - EditScreen1
+    - BrowseScreen1_1
+    - DetailScreen1_1
+    - EditScreen1_1
+    - EditScreen2
+    - EditScreen2_1
+    - BrowseScreen1_2
+    - DetailScreen1_2
+    - Error
+    - Correcto

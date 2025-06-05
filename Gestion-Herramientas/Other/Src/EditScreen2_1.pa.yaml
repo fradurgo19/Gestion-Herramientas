@@ -1,9 +1,8 @@
 # ************************************************************************************************
-# Warning: YAML source code for Canvas Apps is in preview. The schema is being actively developed.
-# Content may be incomplete and subject to change.
-# This file is read-only and should only be used to review changes made within Power Apps Studio.
-# This file isn't used when loading the app. External editing, merging and conflict resolution are
-# not supported.
+# Warning: YAML source code for Canvas Apps should only be used to review changes made within Power Apps Studio and for minor edits (Preview).
+# Use the maker portal to create and edit your Power Apps.
+# 
+# The schema file for Canvas Apps is available at https://go.microsoft.com/fwlink/?linkid=2304907
 # 
 # For more information, visit https://go.microsoft.com/fwlink/?linkid=2292623
 # ************************************************************************************************
@@ -73,7 +72,7 @@ Screens:
             Wrap: =false
             X: =88
       - Form2_1:
-          Control: Form@2.4.2
+          Control: Form@2.4.3
           Variant: Classic
           Layout: Horizontal
           Properties:
@@ -105,7 +104,7 @@ Screens:
             Y: =130
           Children:
             - Codigodebarra_DataCard2_1:
-                Control: TypedDataCard@1.0.6
+                Control: TypedDataCard@1.0.7
                 Variant: ClassicNumberEdit
                 Properties:
                   BorderColor: =RGBA(0, 18, 107, 1)
@@ -116,10 +115,12 @@ Screens:
                   Required: =false
                   Update: =Value(DataCardValue33_1.Text)
                   Width: =304
+                  X: =0
                   Y: =0
                 Children:
                   - DataCardValue33_1:
                       Control: Classic/TextInput@2.3.2
+                      MetadataKey: FieldValue
                       Properties:
                         BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                         Default: |
@@ -150,6 +151,7 @@ Screens:
                         Y: =10
                   - ErrorMessage31_1:
                       Control: Label@2.5.1
+                      MetadataKey: ErrorMessage
                       Properties:
                         BorderColor: =RGBA(0, 0, 0, 1)
                         Color: =RGBA(168, 0, 0, 1)
@@ -168,6 +170,7 @@ Screens:
                         Y: =DataCardValue33_1.Y + DataCardValue33_1.Height
                   - StarVisible31_1:
                       Control: Label@2.5.1
+                      MetadataKey: FieldRequired
                       Properties:
                         Align: =Align.Center
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -180,7 +183,7 @@ Screens:
                         Wrap: =false
                         Y: =
                   - BarcodeReader1_1:
-                      Control: BarcodeReader@1.0.23
+                      Control: BarcodeReader@1.0.24
                       Properties:
                         BarcodeType: ='BarcodeReader.BarcodeType'.Auto
                         FillColor: =RGBA(127, 178, 57, 1)
@@ -203,7 +206,7 @@ Screens:
                         X: =195
                         Y: =10
             - Codigo_DataCard3_1:
-                Control: TypedDataCard@1.0.6
+                Control: TypedDataCard@1.0.7
                 Variant: ClassicNumberEdit
                 Properties:
                   BorderColor: =RGBA(0, 18, 107, 1)
@@ -214,10 +217,12 @@ Screens:
                   Update: =Value(DataCardValue22_1.Text)
                   Visible: =false
                   Width: =304
+                  X: =0
                   Y: =1
                 Children:
                   - DataCardKey18_1:
                       Control: Label@2.5.1
+                      MetadataKey: FieldName
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -232,6 +237,7 @@ Screens:
                         Y: =10 + (DataCardValue22_1.Height / 2) - (Self.Height / 2)
                   - DataCardValue22_1:
                       Control: Classic/TextInput@2.3.2
+                      MetadataKey: FieldValue
                       Properties:
                         BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                         Default: =Datosvar1.Codigo
@@ -253,6 +259,7 @@ Screens:
                         Y: =10
                   - ErrorMessage15_1:
                       Control: Label@2.5.1
+                      MetadataKey: ErrorMessage
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -273,6 +280,7 @@ Screens:
                         Y: =DataCardValue22_1.Y + DataCardValue22_1.Height
                   - StarVisible15_1:
                       Control: Label@2.5.1
+                      MetadataKey: FieldRequired
                       Properties:
                         Align: =Align.Center
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -284,8 +292,79 @@ Screens:
                         Width: =30
                         Wrap: =false
                         Y: =DataCardKey18_1.Y
+            - Fecha_DataCard1_1:
+                Control: TypedDataCard@1.0.7
+                Variant: ClassicDateEdit
+                Properties:
+                  BorderColor: =RGBA(0, 18, 107, 1)
+                  DataField: ="FechaPrestamo"
+                  Default: =ThisItem.Fecha
+                  DisplayMode: =DisplayMode.View
+                  DisplayName: =DataSourceInfo([@ListaPrestamoHerramientas],DataSourceInfo.DisplayName,Fecha)
+                  Height: =30
+                  Required: =false
+                  Update: =DataCardValue23_1.SelectedDate
+                  Width: =305
+                  X: =0
+                  Y: =2
+                Children:
+                  - DataCardValue23_1:
+                      Control: Classic/DatePicker@2.6.0
+                      MetadataKey: FieldValue
+                      Properties:
+                        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                        DisplayMode: =Parent.DisplayMode
+                        EndYear: =Year(Today())+100
+                        Font: =Font.'Open Sans'
+                        Height: =33
+                        IconBackground: =RGBA(56, 96, 178, 1)
+                        IconFill: =RGBA(255, 255, 255, 1)
+                        IsEditable: =true
+                        PaddingBottom: =0
+                        PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                        Size: =15
+                        StartYear: =1899
+                        Tooltip: =Parent.DisplayName
+                        Width: =217
+                        X: =
+                        Y: =10
+                  - ErrorMessage17_1:
+                      Control: Label@2.5.1
+                      MetadataKey: ErrorMessage
+                      Properties:
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        Color: =RGBA(168, 0, 0, 1)
+                        Font: =Font.'Open Sans'
+                        FontWeight: =FontWeight.Semibold
+                        Height: =10
+                        Live: =Live.Assertive
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Size: =24
+                        Text: =Parent.Error
+                        Visible: =Parent.DisplayMode=DisplayMode.Edit
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardValue23_1.Y + DataCardValue23_1.Height
+                  - StarVisible17_1:
+                      Control: Label@2.5.1
+                      MetadataKey: FieldRequired
+                      Properties:
+                        Align: =Align.Center
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        Color: =RGBA(0, 18, 107, 1)
+                        Font: =Font.'Open Sans'
+                        Height: =
+                        Text: ="*"
+                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =30
+                        Wrap: =false
+                        Y: =
             - FrecuenciadeRevision_DataCard1_1:
-                Control: TypedDataCard@1.0.6
+                Control: TypedDataCard@1.0.7
                 Variant: ClassicNumberEdit
                 Properties:
                   BorderColor: =RGBA(0, 18, 107, 1)
@@ -296,10 +375,12 @@ Screens:
                   Update: =Value(DataCardValue34_1.Text)
                   Visible: =false
                   Width: =304
+                  X: =0
                   Y: =3
                 Children:
                   - DataCardKey38_1:
                       Control: Label@2.5.1
+                      MetadataKey: FieldName
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -313,6 +394,7 @@ Screens:
                         Y: =10 + (DataCardValue34_1.Height / 2) - (Self.Height / 2)
                   - DataCardValue34_1:
                       Control: Classic/TextInput@2.3.2
+                      MetadataKey: FieldValue
                       Properties:
                         BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                         Default: =Datosvar1.FrecuenciadeRevision
@@ -333,6 +415,7 @@ Screens:
                         Y: =10
                   - ErrorMessage34_1:
                       Control: Label@2.5.1
+                      MetadataKey: ErrorMessage
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -353,6 +436,7 @@ Screens:
                         Y: =DataCardValue34_1.Y + DataCardValue34_1.Height
                   - StarVisible34_1:
                       Control: Label@2.5.1
+                      MetadataKey: FieldRequired
                       Properties:
                         Align: =Align.Center
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -365,7 +449,7 @@ Screens:
                         Wrap: =false
                         Y: =DataCardKey38_1.Y
             - Cantidad_DataCard1_1:
-                Control: TypedDataCard@1.0.6
+                Control: TypedDataCard@1.0.7
                 Variant: ClassicNumberEdit
                 Properties:
                   BorderColor: =RGBA(0, 18, 107, 1)
@@ -376,10 +460,12 @@ Screens:
                   Update: =Value(DataCardValue35_1.Text)
                   Visible: =false
                   Width: =304
+                  X: =0
                   Y: =4
                 Children:
                   - DataCardKey39_1:
                       Control: Label@2.5.1
+                      MetadataKey: FieldName
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -393,6 +479,7 @@ Screens:
                         Y: =10 + (DataCardValue35_1.Height / 2) - (Self.Height / 2)
                   - DataCardValue35_1:
                       Control: Classic/TextInput@2.3.2
+                      MetadataKey: FieldValue
                       Properties:
                         BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                         Default: =Datosvar1.Cantidad
@@ -413,6 +500,7 @@ Screens:
                         Y: =10
                   - ErrorMessage35_1:
                       Control: Label@2.5.1
+                      MetadataKey: ErrorMessage
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -433,6 +521,7 @@ Screens:
                         Y: =DataCardValue35_1.Y + DataCardValue35_1.Height
                   - StarVisible35_1:
                       Control: Label@2.5.1
+                      MetadataKey: FieldRequired
                       Properties:
                         Align: =Align.Center
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -445,7 +534,7 @@ Screens:
                         Wrap: =false
                         Y: =DataCardKey39_1.Y
             - Descripcion_DataCard5_1:
-                Control: TypedDataCard@1.0.6
+                Control: TypedDataCard@1.0.7
                 Variant: ClassicTextualEdit
                 Properties:
                   BorderColor: =RGBA(0, 18, 107, 1)
@@ -457,10 +546,12 @@ Screens:
                   Required: =false
                   Update: =DataCardValue36_1.Text
                   Width: =304
+                  X: =0
                   Y: =5
                 Children:
                   - DataCardKey42_1:
                       Control: Label@2.5.1
+                      MetadataKey: FieldName
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -475,6 +566,7 @@ Screens:
                         Y: =10 + (DataCardValue36_1.Height / 2) - (Self.Height / 2)
                   - DataCardValue36_1:
                       Control: Classic/TextInput@2.3.2
+                      MetadataKey: FieldValue
                       Properties:
                         BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                         Default: =Datosvar1.Descripcion
@@ -497,6 +589,7 @@ Screens:
                         Y: =10
                   - ErrorMessage38_1:
                       Control: Label@2.5.1
+                      MetadataKey: ErrorMessage
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -517,6 +610,7 @@ Screens:
                         Y: =DataCardValue36_1.Y + DataCardValue36_1.Height
                   - StarVisible38_1:
                       Control: Label@2.5.1
+                      MetadataKey: FieldRequired
                       Properties:
                         Align: =Align.Center
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -529,7 +623,7 @@ Screens:
                         Wrap: =false
                         Y: =DataCardKey42_1.Y
             - Observaciones_DataCard1_1:
-                Control: TypedDataCard@1.0.6
+                Control: TypedDataCard@1.0.7
                 Variant: ClassicTextualEdit
                 Properties:
                   BorderColor: =RGBA(0, 18, 107, 1)
@@ -541,10 +635,12 @@ Screens:
                   Required: =false
                   Update: =DataCardValue17_1.Text
                   Width: =305
+                  X: =0
                   Y: =6
                 Children:
                   - DataCardValue17_1:
                       Control: Classic/TextInput@2.3.2
+                      MetadataKey: FieldValue
                       Properties:
                         BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                         Default: =Parent.Default
@@ -568,6 +664,7 @@ Screens:
                         Y: =18
                   - ErrorMessage14_1:
                       Control: Label@2.5.1
+                      MetadataKey: ErrorMessage
                       Properties:
                         BorderColor: =RGBA(0, 0, 0, 1)
                         Color: =RGBA(168, 0, 0, 1)
@@ -586,6 +683,7 @@ Screens:
                         Y: =DataCardValue17_1.Y + DataCardValue17_1.Height
                   - StarVisible14_1:
                       Control: Label@2.5.1
+                      MetadataKey: FieldRequired
                       Properties:
                         Align: =Align.Center
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -598,7 +696,7 @@ Screens:
                         Wrap: =false
                         Y: =
             - Datos adjuntos_DataCard1_1:
-                Control: TypedDataCard@1.0.6
+                Control: TypedDataCard@1.0.7
                 Variant: ClassicAttachmentsEdit
                 Properties:
                   BorderColor: =RGBA(0, 18, 107, 1)
@@ -609,10 +707,12 @@ Screens:
                   Required: =false
                   Update: =DataCardValue20_1.Attachments
                   Width: =305
+                  X: =0
                   Y: =7
                 Children:
                   - DataCardValue20_1:
                       Control: Attachments@2.3.0
+                      MetadataKey: FieldValue
                       Properties:
                         BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                         DisplayMode: =Parent.DisplayMode
@@ -634,6 +734,7 @@ Screens:
                         Width: =261
                   - ErrorMessage30_1:
                       Control: Label@2.5.1
+                      MetadataKey: ErrorMessage
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -654,6 +755,7 @@ Screens:
                         Y: =DataCardValue20_1.Y + DataCardValue20_1.Height
                   - StarVisible30_1:
                       Control: Label@2.5.1
+                      MetadataKey: FieldRequired
                       Properties:
                         Align: =Align.Center
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -666,7 +768,7 @@ Screens:
                         Wrap: =false
                         Y: =
             - Sede_DataCard3_1:
-                Control: TypedDataCard@1.0.6
+                Control: TypedDataCard@1.0.7
                 Variant: ClassicTextualEdit
                 Properties:
                   BorderColor: =RGBA(0, 18, 107, 1)
@@ -678,10 +780,12 @@ Screens:
                   Update: =DataCardValue25_1.Text
                   Visible: =false
                   Width: =304
+                  X: =0
                   Y: =8
                 Children:
                   - DataCardKey28_1:
                       Control: Label@2.5.1
+                      MetadataKey: FieldName
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -695,6 +799,7 @@ Screens:
                         Y: =10 + (DataCardValue25_1.Height / 2) - (Self.Height / 2)
                   - DataCardValue25_1:
                       Control: Classic/TextInput@2.3.2
+                      MetadataKey: FieldValue
                       Properties:
                         BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                         Default: =Datosvar1.Sede.Value
@@ -715,6 +820,7 @@ Screens:
                         Y: =10
                   - ErrorMessage22_1:
                       Control: Label@2.5.1
+                      MetadataKey: ErrorMessage
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -735,6 +841,7 @@ Screens:
                         Y: =DataCardValue25_1.Y + DataCardValue25_1.Height
                   - StarVisible22_1:
                       Control: Label@2.5.1
+                      MetadataKey: FieldRequired
                       Properties:
                         Align: =Align.Center
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -747,7 +854,7 @@ Screens:
                         Wrap: =false
                         Y: =DataCardKey28_1.Y
             - Ubicacion_DataCard3_1:
-                Control: TypedDataCard@1.0.6
+                Control: TypedDataCard@1.0.7
                 Variant: ClassicTextualEdit
                 Properties:
                   BorderColor: =RGBA(0, 18, 107, 1)
@@ -760,10 +867,12 @@ Screens:
                   Update: =DataCardValue26_1.Text
                   Visible: =false
                   Width: =304
+                  X: =0
                   Y: =9
                 Children:
                   - DataCardKey29_1:
                       Control: Label@2.5.1
+                      MetadataKey: FieldName
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -777,6 +886,7 @@ Screens:
                         Y: =10 + (DataCardValue26_1.Height / 2) - (Self.Height / 2)
                   - DataCardValue26_1:
                       Control: Classic/TextInput@2.3.2
+                      MetadataKey: FieldValue
                       Properties:
                         BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                         Default: =Datosvar1.Ubicacion.Value
@@ -797,6 +907,7 @@ Screens:
                         Y: =10
                   - ErrorMessage23_1:
                       Control: Label@2.5.1
+                      MetadataKey: ErrorMessage
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -817,6 +928,7 @@ Screens:
                         Y: =DataCardValue26_1.Y + DataCardValue26_1.Height
                   - StarVisible23_1:
                       Control: Label@2.5.1
+                      MetadataKey: FieldRequired
                       Properties:
                         Align: =Align.Center
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -829,7 +941,7 @@ Screens:
                         Wrap: =false
                         Y: =DataCardKey29_1.Y
             - Bodega_DataCard3_1:
-                Control: TypedDataCard@1.0.6
+                Control: TypedDataCard@1.0.7
                 Variant: ClassicTextualEdit
                 Properties:
                   BorderColor: =RGBA(0, 18, 107, 1)
@@ -841,10 +953,12 @@ Screens:
                   Update: =DataCardValue27_1.Text
                   Visible: =false
                   Width: =304
+                  X: =0
                   Y: =10
                 Children:
                   - DataCardKey30_1:
                       Control: Label@2.5.1
+                      MetadataKey: FieldName
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -858,6 +972,7 @@ Screens:
                         Y: =10 + (DataCardValue27_1.Height / 2) - (Self.Height / 2)
                   - DataCardValue27_1:
                       Control: Classic/TextInput@2.3.2
+                      MetadataKey: FieldValue
                       Properties:
                         BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                         Default: =Datosvar1.Bodega.Value
@@ -878,6 +993,7 @@ Screens:
                         Y: =10
                   - ErrorMessage24_1:
                       Control: Label@2.5.1
+                      MetadataKey: ErrorMessage
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -898,6 +1014,7 @@ Screens:
                         Y: =DataCardValue27_1.Y + DataCardValue27_1.Height
                   - StarVisible24_1:
                       Control: Label@2.5.1
+                      MetadataKey: FieldRequired
                       Properties:
                         Align: =Align.Center
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -910,7 +1027,7 @@ Screens:
                         Wrap: =false
                         Y: =DataCardKey30_1.Y
             - Estado_DataCard3_1:
-                Control: TypedDataCard@1.0.6
+                Control: TypedDataCard@1.0.7
                 Variant: ClassicTextualEdit
                 Properties:
                   BorderColor: =RGBA(0, 18, 107, 1)
@@ -922,10 +1039,12 @@ Screens:
                   Update: =DataCardValue28_1.Text
                   Visible: =false
                   Width: =304
+                  X: =0
                   Y: =11
                 Children:
                   - DataCardKey31_1:
                       Control: Label@2.5.1
+                      MetadataKey: FieldName
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -939,6 +1058,7 @@ Screens:
                         Y: =10 + (DataCardValue28_1.Height / 2) - (Self.Height / 2)
                   - DataCardValue28_1:
                       Control: Classic/TextInput@2.3.2
+                      MetadataKey: FieldValue
                       Properties:
                         BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                         Default: =Datosvar1.Estado.Value
@@ -959,6 +1079,7 @@ Screens:
                         Y: =10
                   - ErrorMessage25_1:
                       Control: Label@2.5.1
+                      MetadataKey: ErrorMessage
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -979,6 +1100,7 @@ Screens:
                         Y: =DataCardValue28_1.Y + DataCardValue28_1.Height
                   - StarVisible25_1:
                       Control: Label@2.5.1
+                      MetadataKey: FieldRequired
                       Properties:
                         Align: =Align.Center
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -991,7 +1113,7 @@ Screens:
                         Wrap: =false
                         Y: =DataCardKey31_1.Y
             - Tipo_DataCard3_1:
-                Control: TypedDataCard@1.0.6
+                Control: TypedDataCard@1.0.7
                 Variant: ClassicTextualEdit
                 Properties:
                   BorderColor: =RGBA(0, 18, 107, 1)
@@ -1003,10 +1125,12 @@ Screens:
                   Update: =DataCardValue24_1.Text
                   Visible: =false
                   Width: =304
+                  X: =0
                   Y: =12
                 Children:
                   - DataCardKey27_1:
                       Control: Label@2.5.1
+                      MetadataKey: FieldName
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -1020,6 +1144,7 @@ Screens:
                         Y: =10 + (DataCardValue24_1.Height / 2) - (Self.Height / 2)
                   - DataCardValue24_1:
                       Control: Classic/TextInput@2.3.2
+                      MetadataKey: FieldValue
                       Properties:
                         BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                         Default: =Datosvar1.Tipo.Value
@@ -1040,6 +1165,7 @@ Screens:
                         Y: =10
                   - ErrorMessage21_1:
                       Control: Label@2.5.1
+                      MetadataKey: ErrorMessage
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -1060,6 +1186,7 @@ Screens:
                         Y: =DataCardValue24_1.Y + DataCardValue24_1.Height
                   - StarVisible21_1:
                       Control: Label@2.5.1
+                      MetadataKey: FieldRequired
                       Properties:
                         Align: =Align.Center
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -1072,7 +1199,7 @@ Screens:
                         Wrap: =false
                         Y: =DataCardKey27_1.Y
             - Proveedor_DataCard3_1:
-                Control: TypedDataCard@1.0.6
+                Control: TypedDataCard@1.0.7
                 Variant: ClassicTextualEdit
                 Properties:
                   BorderColor: =RGBA(0, 18, 107, 1)
@@ -1084,10 +1211,12 @@ Screens:
                   Update: =DataCardValue29_1.Text
                   Visible: =false
                   Width: =304
+                  X: =0
                   Y: =13
                 Children:
                   - DataCardKey32_1:
                       Control: Label@2.5.1
+                      MetadataKey: FieldName
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -1101,6 +1230,7 @@ Screens:
                         Y: =10 + (DataCardValue29_1.Height / 2) - (Self.Height / 2)
                   - DataCardValue29_1:
                       Control: Classic/TextInput@2.3.2
+                      MetadataKey: FieldValue
                       Properties:
                         BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                         Default: =Datosvar1.Proveedor
@@ -1121,6 +1251,7 @@ Screens:
                         Y: =10
                   - ErrorMessage26_1:
                       Control: Label@2.5.1
+                      MetadataKey: ErrorMessage
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -1141,6 +1272,7 @@ Screens:
                         Y: =DataCardValue29_1.Y + DataCardValue29_1.Height
                   - StarVisible26_1:
                       Control: Label@2.5.1
+                      MetadataKey: FieldRequired
                       Properties:
                         Align: =Align.Center
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -1176,7 +1308,7 @@ Screens:
             Width: =88
             X: =551
       - Form2:
-          Control: Form@2.4.2
+          Control: Form@2.4.3
           Variant: Classic
           Layout: Horizontal
           Properties:
@@ -1207,7 +1339,7 @@ Screens:
             Y: =133
           Children:
             - Codigodebarra_DataCard2:
-                Control: TypedDataCard@1.0.6
+                Control: TypedDataCard@1.0.7
                 Variant: ClassicNumberEdit
                 Properties:
                   BorderColor: =RGBA(0, 18, 107, 1)
@@ -1218,10 +1350,12 @@ Screens:
                   Required: =false
                   Update: =Value(DataCardValue33.Text)
                   Width: =304
+                  X: =0
                   Y: =0
                 Children:
                   - DataCardValue33:
                       Control: Classic/TextInput@2.3.2
+                      MetadataKey: FieldValue
                       Properties:
                         BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                         Default: |+
@@ -1254,6 +1388,7 @@ Screens:
                         Y: =10
                   - ErrorMessage31:
                       Control: Label@2.5.1
+                      MetadataKey: ErrorMessage
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -1273,6 +1408,7 @@ Screens:
                         Y: =DataCardValue33.Y + DataCardValue33.Height
                   - StarVisible31:
                       Control: Label@2.5.1
+                      MetadataKey: FieldRequired
                       Properties:
                         Align: =Align.Center
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -1285,7 +1421,7 @@ Screens:
                         Wrap: =false
                         Y: =
                   - BarcodeReader1:
-                      Control: BarcodeReader@1.0.23
+                      Control: BarcodeReader@1.0.24
                       Properties:
                         BarcodeType: ='BarcodeReader.BarcodeType'.Auto
                         FillColor: =RGBA(127, 178, 57, 1)
@@ -1308,7 +1444,7 @@ Screens:
                         X: =189
                         Y: =10
             - Codigo_DataCard3:
-                Control: TypedDataCard@1.0.6
+                Control: TypedDataCard@1.0.7
                 Variant: ClassicNumberEdit
                 Properties:
                   BorderColor: =RGBA(0, 18, 107, 1)
@@ -1319,10 +1455,12 @@ Screens:
                   Update: =Value(DataCardValue22.Text)
                   Visible: =false
                   Width: =304
+                  X: =0
                   Y: =1
                 Children:
                   - DataCardKey18:
                       Control: Label@2.5.1
+                      MetadataKey: FieldName
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -1337,6 +1475,7 @@ Screens:
                         Y: =10 + (DataCardValue22.Height / 2) - (Self.Height / 2)
                   - DataCardValue22:
                       Control: Classic/TextInput@2.3.2
+                      MetadataKey: FieldValue
                       Properties:
                         BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                         Default: =Datosvar.Codigo
@@ -1358,6 +1497,7 @@ Screens:
                         Y: =10
                   - ErrorMessage15:
                       Control: Label@2.5.1
+                      MetadataKey: ErrorMessage
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -1378,6 +1518,7 @@ Screens:
                         Y: =DataCardValue22.Y + DataCardValue22.Height
                   - StarVisible15:
                       Control: Label@2.5.1
+                      MetadataKey: FieldRequired
                       Properties:
                         Align: =Align.Center
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -1389,8 +1530,79 @@ Screens:
                         Width: =30
                         Wrap: =false
                         Y: =DataCardKey18.Y
+            - Fecha_DataCard1:
+                Control: TypedDataCard@1.0.7
+                Variant: ClassicDateEdit
+                Properties:
+                  BorderColor: =RGBA(0, 18, 107, 1)
+                  DataField: ="FechaPrestamo"
+                  Default: =ThisItem.Fecha
+                  DisplayMode: =DisplayMode.View
+                  DisplayName: =DataSourceInfo([@ListaPrestamoHerramientas],DataSourceInfo.DisplayName,Fecha)
+                  Height: =30
+                  Required: =false
+                  Update: =DataCardValue23.SelectedDate
+                  Width: =305
+                  X: =0
+                  Y: =2
+                Children:
+                  - DataCardValue23:
+                      Control: Classic/DatePicker@2.6.0
+                      MetadataKey: FieldValue
+                      Properties:
+                        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                        DisplayMode: =Parent.DisplayMode
+                        EndYear: =Year(Today())+100
+                        Font: =Font.'Open Sans'
+                        Height: =33
+                        IconBackground: =RGBA(56, 96, 178, 1)
+                        IconFill: =RGBA(255, 255, 255, 1)
+                        IsEditable: =true
+                        PaddingBottom: =0
+                        PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                        Size: =15
+                        StartYear: =1899
+                        Tooltip: =Parent.DisplayName
+                        Width: =286
+                        X: =
+                        Y: =10
+                  - ErrorMessage17:
+                      Control: Label@2.5.1
+                      MetadataKey: ErrorMessage
+                      Properties:
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        Color: =RGBA(168, 0, 0, 1)
+                        Font: =Font.'Open Sans'
+                        FontWeight: =FontWeight.Semibold
+                        Height: =10
+                        Live: =Live.Assertive
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Size: =24
+                        Text: =Parent.Error
+                        Visible: =Parent.DisplayMode=DisplayMode.Edit
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardValue23.Y + DataCardValue23.Height
+                  - StarVisible17:
+                      Control: Label@2.5.1
+                      MetadataKey: FieldRequired
+                      Properties:
+                        Align: =Align.Center
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        Color: =RGBA(0, 18, 107, 1)
+                        Font: =Font.'Open Sans'
+                        Height: =
+                        Text: ="*"
+                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =30
+                        Wrap: =false
+                        Y: =
             - FrecuenciadeRevision_DataCard1:
-                Control: TypedDataCard@1.0.6
+                Control: TypedDataCard@1.0.7
                 Variant: ClassicNumberEdit
                 Properties:
                   BorderColor: =RGBA(0, 18, 107, 1)
@@ -1401,10 +1613,12 @@ Screens:
                   Update: =Value(DataCardValue34.Text)
                   Visible: =false
                   Width: =304
+                  X: =0
                   Y: =3
                 Children:
                   - DataCardKey38:
                       Control: Label@2.5.1
+                      MetadataKey: FieldName
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -1418,6 +1632,7 @@ Screens:
                         Y: =10 + (DataCardValue34.Height / 2) - (Self.Height / 2)
                   - DataCardValue34:
                       Control: Classic/TextInput@2.3.2
+                      MetadataKey: FieldValue
                       Properties:
                         BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                         Default: =Datosvar.FrecuenciadeRevision
@@ -1438,6 +1653,7 @@ Screens:
                         Y: =10
                   - ErrorMessage34:
                       Control: Label@2.5.1
+                      MetadataKey: ErrorMessage
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -1458,6 +1674,7 @@ Screens:
                         Y: =DataCardValue34.Y + DataCardValue34.Height
                   - StarVisible34:
                       Control: Label@2.5.1
+                      MetadataKey: FieldRequired
                       Properties:
                         Align: =Align.Center
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -1470,7 +1687,7 @@ Screens:
                         Wrap: =false
                         Y: =DataCardKey38.Y
             - Cantidad_DataCard1:
-                Control: TypedDataCard@1.0.6
+                Control: TypedDataCard@1.0.7
                 Variant: ClassicNumberEdit
                 Properties:
                   BorderColor: =RGBA(0, 18, 107, 1)
@@ -1481,10 +1698,12 @@ Screens:
                   Update: =Value(DataCardValue35.Text)
                   Visible: =false
                   Width: =304
+                  X: =0
                   Y: =4
                 Children:
                   - DataCardKey39:
                       Control: Label@2.5.1
+                      MetadataKey: FieldName
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -1498,6 +1717,7 @@ Screens:
                         Y: =10 + (DataCardValue35.Height / 2) - (Self.Height / 2)
                   - DataCardValue35:
                       Control: Classic/TextInput@2.3.2
+                      MetadataKey: FieldValue
                       Properties:
                         BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                         Default: =Datosvar.Cantidad
@@ -1518,6 +1738,7 @@ Screens:
                         Y: =10
                   - ErrorMessage35:
                       Control: Label@2.5.1
+                      MetadataKey: ErrorMessage
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -1538,6 +1759,7 @@ Screens:
                         Y: =DataCardValue35.Y + DataCardValue35.Height
                   - StarVisible35:
                       Control: Label@2.5.1
+                      MetadataKey: FieldRequired
                       Properties:
                         Align: =Align.Center
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -1550,7 +1772,7 @@ Screens:
                         Wrap: =false
                         Y: =DataCardKey39.Y
             - Descripcion_DataCard5:
-                Control: TypedDataCard@1.0.6
+                Control: TypedDataCard@1.0.7
                 Variant: ClassicTextualEdit
                 Properties:
                   BorderColor: =RGBA(0, 18, 107, 1)
@@ -1563,10 +1785,12 @@ Screens:
                   Required: =false
                   Update: =DataCardValue36.Text
                   Width: =304
+                  X: =0
                   Y: =5
                 Children:
                   - DataCardKey42:
                       Control: Label@2.5.1
+                      MetadataKey: FieldName
                       Properties:
                         BorderColor: =RGBA(0, 0, 0, 1)
                         Color: =RGBA(0, 18, 107, 1)
@@ -1579,6 +1803,7 @@ Screens:
                         Y: =10 + (DataCardValue36.Height / 2) - (Self.Height / 2)
                   - DataCardValue36:
                       Control: Classic/TextInput@2.3.2
+                      MetadataKey: FieldValue
                       Properties:
                         BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                         Default: =Datosvar.Descripcion
@@ -1601,6 +1826,7 @@ Screens:
                         Y: =10
                   - ErrorMessage38:
                       Control: Label@2.5.1
+                      MetadataKey: ErrorMessage
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -1621,6 +1847,7 @@ Screens:
                         Y: =DataCardValue36.Y + DataCardValue36.Height
                   - StarVisible38:
                       Control: Label@2.5.1
+                      MetadataKey: FieldRequired
                       Properties:
                         Align: =Align.Center
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -1633,7 +1860,7 @@ Screens:
                         Wrap: =false
                         Y: =DataCardKey42.Y
             - Observaciones_DataCard1:
-                Control: TypedDataCard@1.0.6
+                Control: TypedDataCard@1.0.7
                 Variant: ClassicTextualEdit
                 Properties:
                   BorderColor: =RGBA(0, 18, 107, 1)
@@ -1645,10 +1872,12 @@ Screens:
                   Required: =false
                   Update: =DataCardValue17.Text
                   Width: =305
+                  X: =0
                   Y: =6
                 Children:
                   - DataCardValue17:
                       Control: Classic/TextInput@2.3.2
+                      MetadataKey: FieldValue
                       Properties:
                         BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                         Default: =Parent.Default
@@ -1671,6 +1900,7 @@ Screens:
                         Y: =10
                   - ErrorMessage14:
                       Control: Label@2.5.1
+                      MetadataKey: ErrorMessage
                       Properties:
                         BorderColor: =RGBA(0, 0, 0, 1)
                         Color: =RGBA(168, 0, 0, 1)
@@ -1689,6 +1919,7 @@ Screens:
                         Y: =DataCardValue17.Y + DataCardValue17.Height
                   - StarVisible14:
                       Control: Label@2.5.1
+                      MetadataKey: FieldRequired
                       Properties:
                         Align: =Align.Center
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -1701,7 +1932,7 @@ Screens:
                         Wrap: =false
                         Y: =
             - Datos adjuntos_DataCard1:
-                Control: TypedDataCard@1.0.6
+                Control: TypedDataCard@1.0.7
                 Variant: ClassicAttachmentsEdit
                 Properties:
                   BorderColor: =RGBA(0, 18, 107, 1)
@@ -1712,10 +1943,12 @@ Screens:
                   Required: =false
                   Update: =DataCardValue20.Attachments
                   Width: =305
+                  X: =0
                   Y: =7
                 Children:
                   - DataCardValue20:
                       Control: Attachments@2.3.0
+                      MetadataKey: FieldValue
                       Properties:
                         BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                         DisplayMode: =Parent.DisplayMode
@@ -1738,6 +1971,7 @@ Screens:
                         X: =
                   - ErrorMessage30:
                       Control: Label@2.5.1
+                      MetadataKey: ErrorMessage
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -1758,6 +1992,7 @@ Screens:
                         Y: =DataCardValue20.Y + DataCardValue20.Height
                   - StarVisible30:
                       Control: Label@2.5.1
+                      MetadataKey: FieldRequired
                       Properties:
                         Align: =Align.Center
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -1770,7 +2005,7 @@ Screens:
                         Wrap: =false
                         Y: =
             - Sede_DataCard3:
-                Control: TypedDataCard@1.0.6
+                Control: TypedDataCard@1.0.7
                 Variant: ClassicTextualEdit
                 Properties:
                   BorderColor: =RGBA(0, 18, 107, 1)
@@ -1782,10 +2017,12 @@ Screens:
                   Update: =DataCardValue25.Text
                   Visible: =false
                   Width: =304
+                  X: =0
                   Y: =8
                 Children:
                   - DataCardKey28:
                       Control: Label@2.5.1
+                      MetadataKey: FieldName
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -1799,6 +2036,7 @@ Screens:
                         Y: =10 + (DataCardValue25.Height / 2) - (Self.Height / 2)
                   - DataCardValue25:
                       Control: Classic/TextInput@2.3.2
+                      MetadataKey: FieldValue
                       Properties:
                         BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                         Default: =Datosvar.Sede.Value
@@ -1819,6 +2057,7 @@ Screens:
                         Y: =10
                   - ErrorMessage22:
                       Control: Label@2.5.1
+                      MetadataKey: ErrorMessage
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -1839,6 +2078,7 @@ Screens:
                         Y: =DataCardValue25.Y + DataCardValue25.Height
                   - StarVisible22:
                       Control: Label@2.5.1
+                      MetadataKey: FieldRequired
                       Properties:
                         Align: =Align.Center
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -1851,7 +2091,7 @@ Screens:
                         Wrap: =false
                         Y: =DataCardKey28.Y
             - Ubicacion_DataCard3:
-                Control: TypedDataCard@1.0.6
+                Control: TypedDataCard@1.0.7
                 Variant: ClassicTextualEdit
                 Properties:
                   BorderColor: =RGBA(0, 18, 107, 1)
@@ -1864,10 +2104,12 @@ Screens:
                   Update: =DataCardValue26.Text
                   Visible: =false
                   Width: =304
+                  X: =0
                   Y: =9
                 Children:
                   - DataCardKey29:
                       Control: Label@2.5.1
+                      MetadataKey: FieldName
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -1881,6 +2123,7 @@ Screens:
                         Y: =10 + (DataCardValue26.Height / 2) - (Self.Height / 2)
                   - DataCardValue26:
                       Control: Classic/TextInput@2.3.2
+                      MetadataKey: FieldValue
                       Properties:
                         BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                         Default: =Datosvar.Ubicacion.Value
@@ -1901,6 +2144,7 @@ Screens:
                         Y: =10
                   - ErrorMessage23:
                       Control: Label@2.5.1
+                      MetadataKey: ErrorMessage
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -1921,6 +2165,7 @@ Screens:
                         Y: =DataCardValue26.Y + DataCardValue26.Height
                   - StarVisible23:
                       Control: Label@2.5.1
+                      MetadataKey: FieldRequired
                       Properties:
                         Align: =Align.Center
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -1933,7 +2178,7 @@ Screens:
                         Wrap: =false
                         Y: =DataCardKey29.Y
             - Bodega_DataCard3:
-                Control: TypedDataCard@1.0.6
+                Control: TypedDataCard@1.0.7
                 Variant: ClassicTextualEdit
                 Properties:
                   BorderColor: =RGBA(0, 18, 107, 1)
@@ -1945,10 +2190,12 @@ Screens:
                   Update: =DataCardValue27.Text
                   Visible: =false
                   Width: =304
+                  X: =0
                   Y: =10
                 Children:
                   - DataCardKey30:
                       Control: Label@2.5.1
+                      MetadataKey: FieldName
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -1962,6 +2209,7 @@ Screens:
                         Y: =10 + (DataCardValue27.Height / 2) - (Self.Height / 2)
                   - DataCardValue27:
                       Control: Classic/TextInput@2.3.2
+                      MetadataKey: FieldValue
                       Properties:
                         BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                         Default: =Datosvar.Bodega.Value
@@ -1982,6 +2230,7 @@ Screens:
                         Y: =10
                   - ErrorMessage24:
                       Control: Label@2.5.1
+                      MetadataKey: ErrorMessage
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -2002,6 +2251,7 @@ Screens:
                         Y: =DataCardValue27.Y + DataCardValue27.Height
                   - StarVisible24:
                       Control: Label@2.5.1
+                      MetadataKey: FieldRequired
                       Properties:
                         Align: =Align.Center
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -2014,7 +2264,7 @@ Screens:
                         Wrap: =false
                         Y: =DataCardKey30.Y
             - Estado_DataCard3:
-                Control: TypedDataCard@1.0.6
+                Control: TypedDataCard@1.0.7
                 Variant: ClassicTextualEdit
                 Properties:
                   BorderColor: =RGBA(0, 18, 107, 1)
@@ -2026,10 +2276,12 @@ Screens:
                   Update: =DataCardValue28.Text
                   Visible: =false
                   Width: =304
+                  X: =0
                   Y: =11
                 Children:
                   - DataCardKey31:
                       Control: Label@2.5.1
+                      MetadataKey: FieldName
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -2043,6 +2295,7 @@ Screens:
                         Y: =10 + (DataCardValue28.Height / 2) - (Self.Height / 2)
                   - DataCardValue28:
                       Control: Classic/TextInput@2.3.2
+                      MetadataKey: FieldValue
                       Properties:
                         BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                         Default: =Datosvar.Estado.Value
@@ -2063,6 +2316,7 @@ Screens:
                         Y: =10
                   - ErrorMessage25:
                       Control: Label@2.5.1
+                      MetadataKey: ErrorMessage
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -2083,6 +2337,7 @@ Screens:
                         Y: =DataCardValue28.Y + DataCardValue28.Height
                   - StarVisible25:
                       Control: Label@2.5.1
+                      MetadataKey: FieldRequired
                       Properties:
                         Align: =Align.Center
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -2095,7 +2350,7 @@ Screens:
                         Wrap: =false
                         Y: =DataCardKey31.Y
             - Tipo_DataCard3:
-                Control: TypedDataCard@1.0.6
+                Control: TypedDataCard@1.0.7
                 Variant: ClassicTextualEdit
                 Properties:
                   BorderColor: =RGBA(0, 18, 107, 1)
@@ -2107,10 +2362,12 @@ Screens:
                   Update: =DataCardValue24.Text
                   Visible: =false
                   Width: =304
+                  X: =0
                   Y: =12
                 Children:
                   - DataCardKey27:
                       Control: Label@2.5.1
+                      MetadataKey: FieldName
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -2124,6 +2381,7 @@ Screens:
                         Y: =10 + (DataCardValue24.Height / 2) - (Self.Height / 2)
                   - DataCardValue24:
                       Control: Classic/TextInput@2.3.2
+                      MetadataKey: FieldValue
                       Properties:
                         BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                         Default: =Datosvar.Tipo.Value
@@ -2144,6 +2402,7 @@ Screens:
                         Y: =10
                   - ErrorMessage21:
                       Control: Label@2.5.1
+                      MetadataKey: ErrorMessage
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -2164,6 +2423,7 @@ Screens:
                         Y: =DataCardValue24.Y + DataCardValue24.Height
                   - StarVisible21:
                       Control: Label@2.5.1
+                      MetadataKey: FieldRequired
                       Properties:
                         Align: =Align.Center
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -2176,7 +2436,7 @@ Screens:
                         Wrap: =false
                         Y: =DataCardKey27.Y
             - Proveedor_DataCard3:
-                Control: TypedDataCard@1.0.6
+                Control: TypedDataCard@1.0.7
                 Variant: ClassicTextualEdit
                 Properties:
                   BorderColor: =RGBA(0, 18, 107, 1)
@@ -2188,10 +2448,12 @@ Screens:
                   Update: =DataCardValue29.Text
                   Visible: =false
                   Width: =304
+                  X: =0
                   Y: =13
                 Children:
                   - DataCardKey32:
                       Control: Label@2.5.1
+                      MetadataKey: FieldName
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -2205,6 +2467,7 @@ Screens:
                         Y: =10 + (DataCardValue29.Height / 2) - (Self.Height / 2)
                   - DataCardValue29:
                       Control: Classic/TextInput@2.3.2
+                      MetadataKey: FieldValue
                       Properties:
                         BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                         Default: =Datosvar.Proveedor
@@ -2225,6 +2488,7 @@ Screens:
                         Y: =10
                   - ErrorMessage26:
                       Control: Label@2.5.1
+                      MetadataKey: ErrorMessage
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -2245,6 +2509,7 @@ Screens:
                         Y: =DataCardValue29.Y + DataCardValue29.Height
                   - StarVisible26:
                       Control: Label@2.5.1
+                      MetadataKey: FieldRequired
                       Properties:
                         Align: =Align.Center
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -2304,7 +2569,7 @@ Screens:
             X: =390
             Y: =92
       - Form2_2:
-          Control: Form@2.4.2
+          Control: Form@2.4.3
           Variant: Classic
           Layout: Horizontal
           Properties:
@@ -2336,7 +2601,7 @@ Screens:
             Y: =554
           Children:
             - Codigodebarra_DataCard2_2:
-                Control: TypedDataCard@1.0.6
+                Control: TypedDataCard@1.0.7
                 Variant: ClassicNumberEdit
                 Properties:
                   BorderColor: =RGBA(0, 18, 107, 1)
@@ -2347,10 +2612,12 @@ Screens:
                   Required: =false
                   Update: =Value(DataCardValue33_2.Text)
                   Width: =304
+                  X: =0
                   Y: =0
                 Children:
                   - DataCardValue33_2:
                       Control: Classic/TextInput@2.3.2
+                      MetadataKey: FieldValue
                       Properties:
                         BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                         Default: |
@@ -2381,6 +2648,7 @@ Screens:
                         Y: =10
                   - ErrorMessage31_2:
                       Control: Label@2.5.1
+                      MetadataKey: ErrorMessage
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -2400,6 +2668,7 @@ Screens:
                         Y: =DataCardValue33_2.Y + DataCardValue33_2.Height
                   - StarVisible31_2:
                       Control: Label@2.5.1
+                      MetadataKey: FieldRequired
                       Properties:
                         Align: =Align.Center
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -2412,7 +2681,7 @@ Screens:
                         Wrap: =false
                         Y: =
                   - BarcodeReader1_2:
-                      Control: BarcodeReader@1.0.23
+                      Control: BarcodeReader@1.0.24
                       Properties:
                         BarcodeType: ='BarcodeReader.BarcodeType'.Auto
                         FillColor: =RGBA(127, 178, 57, 1)
@@ -2435,7 +2704,7 @@ Screens:
                         X: =195
                         Y: =10
             - Codigo_DataCard3_2:
-                Control: TypedDataCard@1.0.6
+                Control: TypedDataCard@1.0.7
                 Variant: ClassicNumberEdit
                 Properties:
                   BorderColor: =RGBA(0, 18, 107, 1)
@@ -2446,10 +2715,12 @@ Screens:
                   Update: =Value(DataCardValue22_2.Text)
                   Visible: =false
                   Width: =304
+                  X: =0
                   Y: =1
                 Children:
                   - DataCardKey18_2:
                       Control: Label@2.5.1
+                      MetadataKey: FieldName
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -2464,6 +2735,7 @@ Screens:
                         Y: =10 + (DataCardValue22_2.Height / 2) - (Self.Height / 2)
                   - DataCardValue22_2:
                       Control: Classic/TextInput@2.3.2
+                      MetadataKey: FieldValue
                       Properties:
                         BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                         Default: =Datosvar2.Codigo
@@ -2485,6 +2757,7 @@ Screens:
                         Y: =10
                   - ErrorMessage15_2:
                       Control: Label@2.5.1
+                      MetadataKey: ErrorMessage
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -2505,6 +2778,7 @@ Screens:
                         Y: =DataCardValue22_2.Y + DataCardValue22_2.Height
                   - StarVisible15_2:
                       Control: Label@2.5.1
+                      MetadataKey: FieldRequired
                       Properties:
                         Align: =Align.Center
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -2516,8 +2790,79 @@ Screens:
                         Width: =30
                         Wrap: =false
                         Y: =DataCardKey18_2.Y
+            - Fecha_DataCard1_2:
+                Control: TypedDataCard@1.0.7
+                Variant: ClassicDateEdit
+                Properties:
+                  BorderColor: =RGBA(0, 18, 107, 1)
+                  DataField: ="FechaPrestamo"
+                  Default: =ThisItem.Fecha
+                  DisplayMode: =DisplayMode.View
+                  DisplayName: =DataSourceInfo([@ListaPrestamoHerramientas],DataSourceInfo.DisplayName,Fecha)
+                  Height: =30
+                  Required: =false
+                  Update: =DataCardValue23_2.SelectedDate
+                  Width: =304
+                  X: =0
+                  Y: =2
+                Children:
+                  - DataCardValue23_2:
+                      Control: Classic/DatePicker@2.6.0
+                      MetadataKey: FieldValue
+                      Properties:
+                        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                        DisplayMode: =Parent.DisplayMode
+                        EndYear: =Year(Today())+100
+                        Font: =Font.'Open Sans'
+                        Height: =33
+                        IconBackground: =RGBA(56, 96, 178, 1)
+                        IconFill: =RGBA(255, 255, 255, 1)
+                        IsEditable: =true
+                        PaddingBottom: =0
+                        PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                        Size: =15
+                        StartYear: =1899
+                        Tooltip: =Parent.DisplayName
+                        Width: =286
+                        X: =
+                        Y: =10
+                  - ErrorMessage17_2:
+                      Control: Label@2.5.1
+                      MetadataKey: ErrorMessage
+                      Properties:
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        Color: =RGBA(168, 0, 0, 1)
+                        Font: =Font.'Open Sans'
+                        FontWeight: =FontWeight.Semibold
+                        Height: =10
+                        Live: =Live.Assertive
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Size: =24
+                        Text: =Parent.Error
+                        Visible: =Parent.DisplayMode=DisplayMode.Edit
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardValue23_2.Y + DataCardValue23_2.Height
+                  - StarVisible17_2:
+                      Control: Label@2.5.1
+                      MetadataKey: FieldRequired
+                      Properties:
+                        Align: =Align.Center
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        Color: =RGBA(0, 18, 107, 1)
+                        Font: =Font.'Open Sans'
+                        Height: =
+                        Text: ="*"
+                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =30
+                        Wrap: =false
+                        Y: =
             - FrecuenciadeRevision_DataCard1_2:
-                Control: TypedDataCard@1.0.6
+                Control: TypedDataCard@1.0.7
                 Variant: ClassicNumberEdit
                 Properties:
                   BorderColor: =RGBA(0, 18, 107, 1)
@@ -2528,10 +2873,12 @@ Screens:
                   Update: =Value(DataCardValue34_2.Text)
                   Visible: =false
                   Width: =304
+                  X: =0
                   Y: =3
                 Children:
                   - DataCardKey38_2:
                       Control: Label@2.5.1
+                      MetadataKey: FieldName
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -2545,6 +2892,7 @@ Screens:
                         Y: =10 + (DataCardValue34_2.Height / 2) - (Self.Height / 2)
                   - DataCardValue34_2:
                       Control: Classic/TextInput@2.3.2
+                      MetadataKey: FieldValue
                       Properties:
                         BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                         Default: =Datosvar2.FrecuenciadeRevision
@@ -2565,6 +2913,7 @@ Screens:
                         Y: =10
                   - ErrorMessage34_2:
                       Control: Label@2.5.1
+                      MetadataKey: ErrorMessage
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -2585,6 +2934,7 @@ Screens:
                         Y: =DataCardValue34_2.Y + DataCardValue34_2.Height
                   - StarVisible34_2:
                       Control: Label@2.5.1
+                      MetadataKey: FieldRequired
                       Properties:
                         Align: =Align.Center
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -2597,7 +2947,7 @@ Screens:
                         Wrap: =false
                         Y: =DataCardKey38_2.Y
             - Cantidad_DataCard1_2:
-                Control: TypedDataCard@1.0.6
+                Control: TypedDataCard@1.0.7
                 Variant: ClassicNumberEdit
                 Properties:
                   BorderColor: =RGBA(0, 18, 107, 1)
@@ -2608,10 +2958,12 @@ Screens:
                   Update: =Value(DataCardValue35_2.Text)
                   Visible: =false
                   Width: =304
+                  X: =0
                   Y: =4
                 Children:
                   - DataCardKey39_2:
                       Control: Label@2.5.1
+                      MetadataKey: FieldName
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -2625,6 +2977,7 @@ Screens:
                         Y: =10 + (DataCardValue35_2.Height / 2) - (Self.Height / 2)
                   - DataCardValue35_2:
                       Control: Classic/TextInput@2.3.2
+                      MetadataKey: FieldValue
                       Properties:
                         BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                         Default: =Datosvar2.Cantidad
@@ -2645,6 +2998,7 @@ Screens:
                         Y: =10
                   - ErrorMessage35_2:
                       Control: Label@2.5.1
+                      MetadataKey: ErrorMessage
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -2665,6 +3019,7 @@ Screens:
                         Y: =DataCardValue35_2.Y + DataCardValue35_2.Height
                   - StarVisible35_2:
                       Control: Label@2.5.1
+                      MetadataKey: FieldRequired
                       Properties:
                         Align: =Align.Center
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -2677,7 +3032,7 @@ Screens:
                         Wrap: =false
                         Y: =DataCardKey39_2.Y
             - Descripcion_DataCard5_2:
-                Control: TypedDataCard@1.0.6
+                Control: TypedDataCard@1.0.7
                 Variant: ClassicTextualEdit
                 Properties:
                   BorderColor: =RGBA(0, 18, 107, 1)
@@ -2690,10 +3045,12 @@ Screens:
                   Required: =false
                   Update: =DataCardValue36_2.Text
                   Width: =304
+                  X: =0
                   Y: =5
                 Children:
                   - DataCardKey42_2:
                       Control: Label@2.5.1
+                      MetadataKey: FieldName
                       Properties:
                         BorderColor: =RGBA(0, 0, 0, 1)
                         Color: =RGBA(0, 18, 107, 1)
@@ -2706,6 +3063,7 @@ Screens:
                         Y: =10 + (DataCardValue36_2.Height / 2) - (Self.Height / 2)
                   - DataCardValue36_2:
                       Control: Classic/TextInput@2.3.2
+                      MetadataKey: FieldValue
                       Properties:
                         BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                         Default: =Datosvar2.Descripcion
@@ -2728,6 +3086,7 @@ Screens:
                         Y: =10
                   - ErrorMessage38_2:
                       Control: Label@2.5.1
+                      MetadataKey: ErrorMessage
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -2748,6 +3107,7 @@ Screens:
                         Y: =DataCardValue36_2.Y + DataCardValue36_2.Height
                   - StarVisible38_2:
                       Control: Label@2.5.1
+                      MetadataKey: FieldRequired
                       Properties:
                         Align: =Align.Center
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -2760,7 +3120,7 @@ Screens:
                         Wrap: =false
                         Y: =DataCardKey42_2.Y
             - Observaciones_DataCard1_2:
-                Control: TypedDataCard@1.0.6
+                Control: TypedDataCard@1.0.7
                 Variant: ClassicTextualEdit
                 Properties:
                   BorderColor: =RGBA(0, 18, 107, 1)
@@ -2772,10 +3132,12 @@ Screens:
                   Required: =false
                   Update: =DataCardValue17_2.Text
                   Width: =304
+                  X: =0
                   Y: =6
                 Children:
                   - DataCardValue17_2:
                       Control: Classic/TextInput@2.3.2
+                      MetadataKey: FieldValue
                       Properties:
                         BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                         Default: =Parent.Default
@@ -2798,6 +3160,7 @@ Screens:
                         Y: =10
                   - ErrorMessage14_2:
                       Control: Label@2.5.1
+                      MetadataKey: ErrorMessage
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -2817,6 +3180,7 @@ Screens:
                         Y: =DataCardValue17_2.Y + DataCardValue17_2.Height
                   - StarVisible14_2:
                       Control: Label@2.5.1
+                      MetadataKey: FieldRequired
                       Properties:
                         Align: =Align.Center
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -2828,8 +3192,353 @@ Screens:
                         Width: =30
                         Wrap: =false
                         Y: =
+            - Sede_DataCard3_2:
+                Control: TypedDataCard@1.0.7
+                Variant: ClassicTextualEdit
+                Properties:
+                  BorderColor: =RGBA(0, 18, 107, 1)
+                  DataField: ="field_4"
+                  Default: =ThisItem.Sede
+                  DisplayName: =DataSourceInfo([@ListaPrestamoHerramientas],DataSourceInfo.DisplayName,Sede)
+                  MaxLength: =DataSourceInfo([@ListaPrestamoHerramientas], DataSourceInfo.MaxLength, Sede)
+                  Required: =false
+                  Update: =DataCardValue25_2.Text
+                  Visible: =false
+                  Width: =304
+                  X: =0
+                  Y: =7
+                Children:
+                  - DataCardKey28_2:
+                      Control: Label@2.5.1
+                      MetadataKey: FieldName
+                      Properties:
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        Color: =RGBA(0, 18, 107, 1)
+                        Font: =Font.'Open Sans'
+                        Height: =48
+                        Text: =Parent.DisplayName
+                        Width: =(Parent.Width - 60) * 0.4
+                        Wrap: =false
+                        X: =30
+                        Y: =10 + (DataCardValue25_2.Height / 2) - (Self.Height / 2)
+                  - DataCardValue25_2:
+                      Control: Classic/TextInput@2.3.2
+                      MetadataKey: FieldValue
+                      Properties:
+                        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                        Default: =Datosvar2.Sede.Value
+                        DelayOutput: =true
+                        DisplayMode: =Parent.DisplayMode
+                        Font: =Font.'Open Sans'
+                        HoverBorderColor: =RGBA(0, 18, 107, 1)
+                        HoverFill: =RGBA(186, 202, 226, 1)
+                        MaxLength: =Parent.MaxLength
+                        PaddingLeft: =5
+                        RadiusBottomLeft: =0
+                        RadiusBottomRight: =0
+                        RadiusTopLeft: =0
+                        RadiusTopRight: =0
+                        Tooltip: =Parent.DisplayName
+                        Width: =(Parent.Width - 60) * 0.6
+                        X: =DataCardKey28_2.X + DataCardKey28_2.Width
+                        Y: =10
+                  - ErrorMessage22_2:
+                      Control: Label@2.5.1
+                      MetadataKey: ErrorMessage
+                      Properties:
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        Color: =RGBA(168, 0, 0, 1)
+                        Font: =Font.'Open Sans'
+                        FontWeight: =FontWeight.Semibold
+                        Height: =10
+                        Live: =Live.Assertive
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Size: =24
+                        Text: =Parent.Error
+                        Visible: =Parent.DisplayMode=DisplayMode.Edit
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardValue25_2.Y + DataCardValue25_2.Height
+                  - StarVisible22_2:
+                      Control: Label@2.5.1
+                      MetadataKey: FieldRequired
+                      Properties:
+                        Align: =Align.Center
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        Color: =RGBA(0, 18, 107, 1)
+                        Font: =Font.'Open Sans'
+                        Height: =DataCardKey28_2.Height
+                        Text: ="*"
+                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =30
+                        Wrap: =false
+                        Y: =DataCardKey28_2.Y
+            - Ubicacion_DataCard3_2:
+                Control: TypedDataCard@1.0.7
+                Variant: ClassicTextualEdit
+                Properties:
+                  BorderColor: =RGBA(0, 18, 107, 1)
+                  DataField: ="field_5"
+                  Default: =ThisItem.Ubicacion
+                  DisplayName: =DataSourceInfo([@ListaPrestamoHerramientas],DataSourceInfo.DisplayName,Ubicacion)
+                  Height: =69
+                  MaxLength: =DataSourceInfo([@ListaPrestamoHerramientas], DataSourceInfo.MaxLength, Ubicacion)
+                  Required: =false
+                  Update: =DataCardValue26_2.Text
+                  Visible: =false
+                  Width: =304
+                  X: =0
+                  Y: =8
+                Children:
+                  - DataCardKey29_2:
+                      Control: Label@2.5.1
+                      MetadataKey: FieldName
+                      Properties:
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        Color: =RGBA(0, 18, 107, 1)
+                        Font: =Font.'Open Sans'
+                        Height: =48
+                        Text: =Parent.DisplayName
+                        Width: =(Parent.Width - 60) * 0.4
+                        Wrap: =false
+                        X: =30
+                        Y: =10 + (DataCardValue26_2.Height / 2) - (Self.Height / 2)
+                  - DataCardValue26_2:
+                      Control: Classic/TextInput@2.3.2
+                      MetadataKey: FieldValue
+                      Properties:
+                        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                        Default: =Datosvar2.Ubicacion.Value
+                        DelayOutput: =true
+                        DisplayMode: =Parent.DisplayMode
+                        Font: =Font.'Open Sans'
+                        HoverBorderColor: =RGBA(0, 18, 107, 1)
+                        HoverFill: =RGBA(186, 202, 226, 1)
+                        MaxLength: =Parent.MaxLength
+                        PaddingLeft: =5
+                        RadiusBottomLeft: =0
+                        RadiusBottomRight: =0
+                        RadiusTopLeft: =0
+                        RadiusTopRight: =0
+                        Tooltip: =Parent.DisplayName
+                        Width: =(Parent.Width - 60) * 0.6
+                        X: =DataCardKey29_2.X + DataCardKey29_2.Width
+                        Y: =10
+                  - ErrorMessage23_2:
+                      Control: Label@2.5.1
+                      MetadataKey: ErrorMessage
+                      Properties:
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        Color: =RGBA(168, 0, 0, 1)
+                        Font: =Font.'Open Sans'
+                        FontWeight: =FontWeight.Semibold
+                        Height: =10
+                        Live: =Live.Assertive
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Size: =24
+                        Text: =Parent.Error
+                        Visible: =Parent.DisplayMode=DisplayMode.Edit
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardValue26_2.Y + DataCardValue26_2.Height
+                  - StarVisible23_2:
+                      Control: Label@2.5.1
+                      MetadataKey: FieldRequired
+                      Properties:
+                        Align: =Align.Center
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        Color: =RGBA(0, 18, 107, 1)
+                        Font: =Font.'Open Sans'
+                        Height: =DataCardKey29_2.Height
+                        Text: ="*"
+                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =30
+                        Wrap: =false
+                        Y: =DataCardKey29_2.Y
+            - Bodega_DataCard3_2:
+                Control: TypedDataCard@1.0.7
+                Variant: ClassicTextualEdit
+                Properties:
+                  BorderColor: =RGBA(0, 18, 107, 1)
+                  DataField: ="field_6"
+                  Default: =ThisItem.Bodega
+                  DisplayName: =DataSourceInfo([@ListaPrestamoHerramientas],DataSourceInfo.DisplayName,Bodega)
+                  MaxLength: =DataSourceInfo([@ListaPrestamoHerramientas], DataSourceInfo.MaxLength, Bodega)
+                  Required: =false
+                  Update: =DataCardValue27_2.Text
+                  Visible: =false
+                  Width: =304
+                  X: =0
+                  Y: =9
+                Children:
+                  - DataCardKey30_2:
+                      Control: Label@2.5.1
+                      MetadataKey: FieldName
+                      Properties:
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        Color: =RGBA(0, 18, 107, 1)
+                        Font: =Font.'Open Sans'
+                        Height: =48
+                        Text: =Parent.DisplayName
+                        Width: =(Parent.Width - 60) * 0.4
+                        Wrap: =false
+                        X: =30
+                        Y: =10 + (DataCardValue27_2.Height / 2) - (Self.Height / 2)
+                  - DataCardValue27_2:
+                      Control: Classic/TextInput@2.3.2
+                      MetadataKey: FieldValue
+                      Properties:
+                        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                        Default: =Datosvar2.Bodega.Value
+                        DelayOutput: =true
+                        DisplayMode: =Parent.DisplayMode
+                        Font: =Font.'Open Sans'
+                        HoverBorderColor: =RGBA(0, 18, 107, 1)
+                        HoverFill: =RGBA(186, 202, 226, 1)
+                        MaxLength: =Parent.MaxLength
+                        PaddingLeft: =5
+                        RadiusBottomLeft: =0
+                        RadiusBottomRight: =0
+                        RadiusTopLeft: =0
+                        RadiusTopRight: =0
+                        Tooltip: =Parent.DisplayName
+                        Width: =(Parent.Width - 60) * 0.6
+                        X: =DataCardKey30_2.X + DataCardKey30_2.Width
+                        Y: =10
+                  - ErrorMessage24_2:
+                      Control: Label@2.5.1
+                      MetadataKey: ErrorMessage
+                      Properties:
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        Color: =RGBA(168, 0, 0, 1)
+                        Font: =Font.'Open Sans'
+                        FontWeight: =FontWeight.Semibold
+                        Height: =10
+                        Live: =Live.Assertive
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Size: =24
+                        Text: =Parent.Error
+                        Visible: =Parent.DisplayMode=DisplayMode.Edit
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardValue27_2.Y + DataCardValue27_2.Height
+                  - StarVisible24_2:
+                      Control: Label@2.5.1
+                      MetadataKey: FieldRequired
+                      Properties:
+                        Align: =Align.Center
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        Color: =RGBA(0, 18, 107, 1)
+                        Font: =Font.'Open Sans'
+                        Height: =DataCardKey30_2.Height
+                        Text: ="*"
+                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =30
+                        Wrap: =false
+                        Y: =DataCardKey30_2.Y
+            - Estado_DataCard3_2:
+                Control: TypedDataCard@1.0.7
+                Variant: ClassicTextualEdit
+                Properties:
+                  BorderColor: =RGBA(0, 18, 107, 1)
+                  DataField: ="field_7"
+                  Default: =ThisItem.Estado
+                  DisplayName: =DataSourceInfo([@ListaPrestamoHerramientas],DataSourceInfo.DisplayName,Estado)
+                  MaxLength: =DataSourceInfo([@ListaPrestamoHerramientas], DataSourceInfo.MaxLength, Estado)
+                  Required: =false
+                  Update: =DataCardValue28_2.Text
+                  Visible: =false
+                  Width: =304
+                  X: =0
+                  Y: =10
+                Children:
+                  - DataCardKey31_2:
+                      Control: Label@2.5.1
+                      MetadataKey: FieldName
+                      Properties:
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        Color: =RGBA(0, 18, 107, 1)
+                        Font: =Font.'Open Sans'
+                        Height: =48
+                        Text: =Parent.DisplayName
+                        Width: =(Parent.Width - 60) * 0.4
+                        Wrap: =false
+                        X: =30
+                        Y: =10 + (DataCardValue28_2.Height / 2) - (Self.Height / 2)
+                  - DataCardValue28_2:
+                      Control: Classic/TextInput@2.3.2
+                      MetadataKey: FieldValue
+                      Properties:
+                        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                        Default: =Datosvar2.Estado.Value
+                        DelayOutput: =true
+                        DisplayMode: =Parent.DisplayMode
+                        Font: =Font.'Open Sans'
+                        HoverBorderColor: =RGBA(0, 18, 107, 1)
+                        HoverFill: =RGBA(186, 202, 226, 1)
+                        MaxLength: =Parent.MaxLength
+                        PaddingLeft: =5
+                        RadiusBottomLeft: =0
+                        RadiusBottomRight: =0
+                        RadiusTopLeft: =0
+                        RadiusTopRight: =0
+                        Tooltip: =Parent.DisplayName
+                        Width: =(Parent.Width - 60) * 0.6
+                        X: =DataCardKey31_2.X + DataCardKey31_2.Width
+                        Y: =10
+                  - ErrorMessage25_2:
+                      Control: Label@2.5.1
+                      MetadataKey: ErrorMessage
+                      Properties:
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        Color: =RGBA(168, 0, 0, 1)
+                        Font: =Font.'Open Sans'
+                        FontWeight: =FontWeight.Semibold
+                        Height: =10
+                        Live: =Live.Assertive
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Size: =24
+                        Text: =Parent.Error
+                        Visible: =Parent.DisplayMode=DisplayMode.Edit
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardValue28_2.Y + DataCardValue28_2.Height
+                  - StarVisible25_2:
+                      Control: Label@2.5.1
+                      MetadataKey: FieldRequired
+                      Properties:
+                        Align: =Align.Center
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        Color: =RGBA(0, 18, 107, 1)
+                        Font: =Font.'Open Sans'
+                        Height: =DataCardKey31_2.Height
+                        Text: ="*"
+                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =30
+                        Wrap: =false
+                        Y: =DataCardKey31_2.Y
             - Datos adjuntos_DataCard1_2:
-                Control: TypedDataCard@1.0.6
+                Control: TypedDataCard@1.0.7
                 Variant: ClassicAttachmentsEdit
                 Properties:
                   BorderColor: =RGBA(0, 18, 107, 1)
@@ -2840,10 +3549,12 @@ Screens:
                   Required: =false
                   Update: =DataCardValue20_2.Attachments
                   Width: =304
+                  X: =0
                   Y: =11
                 Children:
                   - DataCardValue20_2:
                       Control: Attachments@2.3.0
+                      MetadataKey: FieldValue
                       Properties:
                         BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                         DisplayMode: =Parent.DisplayMode
@@ -2867,6 +3578,7 @@ Screens:
                         Y: =10
                   - ErrorMessage30_2:
                       Control: Label@2.5.1
+                      MetadataKey: ErrorMessage
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -2887,6 +3599,7 @@ Screens:
                         Y: =DataCardValue20_2.Y + DataCardValue20_2.Height
                   - StarVisible30_2:
                       Control: Label@2.5.1
+                      MetadataKey: FieldRequired
                       Properties:
                         Align: =Align.Center
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -2898,333 +3611,8 @@ Screens:
                         Width: =30
                         Wrap: =false
                         Y: =
-            - Sede_DataCard3_2:
-                Control: TypedDataCard@1.0.6
-                Variant: ClassicTextualEdit
-                Properties:
-                  BorderColor: =RGBA(0, 18, 107, 1)
-                  DataField: ="field_4"
-                  Default: =ThisItem.Sede
-                  DisplayName: =DataSourceInfo([@ListaPrestamoHerramientas],DataSourceInfo.DisplayName,Sede)
-                  MaxLength: =DataSourceInfo([@ListaPrestamoHerramientas], DataSourceInfo.MaxLength, Sede)
-                  Required: =false
-                  Update: =DataCardValue25_2.Text
-                  Visible: =false
-                  Width: =304
-                  Y: =7
-                Children:
-                  - DataCardKey28_2:
-                      Control: Label@2.5.1
-                      Properties:
-                        AutoHeight: =true
-                        BorderColor: =RGBA(0, 0, 0, 1)
-                        Color: =RGBA(0, 18, 107, 1)
-                        Font: =Font.'Open Sans'
-                        Height: =48
-                        Text: =Parent.DisplayName
-                        Width: =(Parent.Width - 60) * 0.4
-                        Wrap: =false
-                        X: =30
-                        Y: =10 + (DataCardValue25_2.Height / 2) - (Self.Height / 2)
-                  - DataCardValue25_2:
-                      Control: Classic/TextInput@2.3.2
-                      Properties:
-                        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                        Default: =Datosvar2.Sede.Value
-                        DelayOutput: =true
-                        DisplayMode: =Parent.DisplayMode
-                        Font: =Font.'Open Sans'
-                        HoverBorderColor: =RGBA(0, 18, 107, 1)
-                        HoverFill: =RGBA(186, 202, 226, 1)
-                        MaxLength: =Parent.MaxLength
-                        PaddingLeft: =5
-                        RadiusBottomLeft: =0
-                        RadiusBottomRight: =0
-                        RadiusTopLeft: =0
-                        RadiusTopRight: =0
-                        Tooltip: =Parent.DisplayName
-                        Width: =(Parent.Width - 60) * 0.6
-                        X: =DataCardKey28_2.X + DataCardKey28_2.Width
-                        Y: =10
-                  - ErrorMessage22_2:
-                      Control: Label@2.5.1
-                      Properties:
-                        AutoHeight: =true
-                        BorderColor: =RGBA(0, 0, 0, 1)
-                        Color: =RGBA(168, 0, 0, 1)
-                        Font: =Font.'Open Sans'
-                        FontWeight: =FontWeight.Semibold
-                        Height: =10
-                        Live: =Live.Assertive
-                        PaddingBottom: =0
-                        PaddingLeft: =0
-                        PaddingRight: =0
-                        PaddingTop: =0
-                        Size: =24
-                        Text: =Parent.Error
-                        Visible: =Parent.DisplayMode=DisplayMode.Edit
-                        Width: =Parent.Width - 60
-                        X: =30
-                        Y: =DataCardValue25_2.Y + DataCardValue25_2.Height
-                  - StarVisible22_2:
-                      Control: Label@2.5.1
-                      Properties:
-                        Align: =Align.Center
-                        BorderColor: =RGBA(0, 0, 0, 1)
-                        Color: =RGBA(0, 18, 107, 1)
-                        Font: =Font.'Open Sans'
-                        Height: =DataCardKey28_2.Height
-                        Text: ="*"
-                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                        Width: =30
-                        Wrap: =false
-                        Y: =DataCardKey28_2.Y
-            - Ubicacion_DataCard3_2:
-                Control: TypedDataCard@1.0.6
-                Variant: ClassicTextualEdit
-                Properties:
-                  BorderColor: =RGBA(0, 18, 107, 1)
-                  DataField: ="field_5"
-                  Default: =ThisItem.Ubicacion
-                  DisplayName: =DataSourceInfo([@ListaPrestamoHerramientas],DataSourceInfo.DisplayName,Ubicacion)
-                  Height: =69
-                  MaxLength: =DataSourceInfo([@ListaPrestamoHerramientas], DataSourceInfo.MaxLength, Ubicacion)
-                  Required: =false
-                  Update: =DataCardValue26_2.Text
-                  Visible: =false
-                  Width: =304
-                  Y: =8
-                Children:
-                  - DataCardKey29_2:
-                      Control: Label@2.5.1
-                      Properties:
-                        AutoHeight: =true
-                        BorderColor: =RGBA(0, 0, 0, 1)
-                        Color: =RGBA(0, 18, 107, 1)
-                        Font: =Font.'Open Sans'
-                        Height: =48
-                        Text: =Parent.DisplayName
-                        Width: =(Parent.Width - 60) * 0.4
-                        Wrap: =false
-                        X: =30
-                        Y: =10 + (DataCardValue26_2.Height / 2) - (Self.Height / 2)
-                  - DataCardValue26_2:
-                      Control: Classic/TextInput@2.3.2
-                      Properties:
-                        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                        Default: =Datosvar2.Ubicacion.Value
-                        DelayOutput: =true
-                        DisplayMode: =Parent.DisplayMode
-                        Font: =Font.'Open Sans'
-                        HoverBorderColor: =RGBA(0, 18, 107, 1)
-                        HoverFill: =RGBA(186, 202, 226, 1)
-                        MaxLength: =Parent.MaxLength
-                        PaddingLeft: =5
-                        RadiusBottomLeft: =0
-                        RadiusBottomRight: =0
-                        RadiusTopLeft: =0
-                        RadiusTopRight: =0
-                        Tooltip: =Parent.DisplayName
-                        Width: =(Parent.Width - 60) * 0.6
-                        X: =DataCardKey29_2.X + DataCardKey29_2.Width
-                        Y: =10
-                  - ErrorMessage23_2:
-                      Control: Label@2.5.1
-                      Properties:
-                        AutoHeight: =true
-                        BorderColor: =RGBA(0, 0, 0, 1)
-                        Color: =RGBA(168, 0, 0, 1)
-                        Font: =Font.'Open Sans'
-                        FontWeight: =FontWeight.Semibold
-                        Height: =10
-                        Live: =Live.Assertive
-                        PaddingBottom: =0
-                        PaddingLeft: =0
-                        PaddingRight: =0
-                        PaddingTop: =0
-                        Size: =24
-                        Text: =Parent.Error
-                        Visible: =Parent.DisplayMode=DisplayMode.Edit
-                        Width: =Parent.Width - 60
-                        X: =30
-                        Y: =DataCardValue26_2.Y + DataCardValue26_2.Height
-                  - StarVisible23_2:
-                      Control: Label@2.5.1
-                      Properties:
-                        Align: =Align.Center
-                        BorderColor: =RGBA(0, 0, 0, 1)
-                        Color: =RGBA(0, 18, 107, 1)
-                        Font: =Font.'Open Sans'
-                        Height: =DataCardKey29_2.Height
-                        Text: ="*"
-                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                        Width: =30
-                        Wrap: =false
-                        Y: =DataCardKey29_2.Y
-            - Bodega_DataCard3_2:
-                Control: TypedDataCard@1.0.6
-                Variant: ClassicTextualEdit
-                Properties:
-                  BorderColor: =RGBA(0, 18, 107, 1)
-                  DataField: ="field_6"
-                  Default: =ThisItem.Bodega
-                  DisplayName: =DataSourceInfo([@ListaPrestamoHerramientas],DataSourceInfo.DisplayName,Bodega)
-                  MaxLength: =DataSourceInfo([@ListaPrestamoHerramientas], DataSourceInfo.MaxLength, Bodega)
-                  Required: =false
-                  Update: =DataCardValue27_2.Text
-                  Visible: =false
-                  Width: =304
-                  Y: =9
-                Children:
-                  - DataCardKey30_2:
-                      Control: Label@2.5.1
-                      Properties:
-                        AutoHeight: =true
-                        BorderColor: =RGBA(0, 0, 0, 1)
-                        Color: =RGBA(0, 18, 107, 1)
-                        Font: =Font.'Open Sans'
-                        Height: =48
-                        Text: =Parent.DisplayName
-                        Width: =(Parent.Width - 60) * 0.4
-                        Wrap: =false
-                        X: =30
-                        Y: =10 + (DataCardValue27_2.Height / 2) - (Self.Height / 2)
-                  - DataCardValue27_2:
-                      Control: Classic/TextInput@2.3.2
-                      Properties:
-                        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                        Default: =Datosvar2.Bodega.Value
-                        DelayOutput: =true
-                        DisplayMode: =Parent.DisplayMode
-                        Font: =Font.'Open Sans'
-                        HoverBorderColor: =RGBA(0, 18, 107, 1)
-                        HoverFill: =RGBA(186, 202, 226, 1)
-                        MaxLength: =Parent.MaxLength
-                        PaddingLeft: =5
-                        RadiusBottomLeft: =0
-                        RadiusBottomRight: =0
-                        RadiusTopLeft: =0
-                        RadiusTopRight: =0
-                        Tooltip: =Parent.DisplayName
-                        Width: =(Parent.Width - 60) * 0.6
-                        X: =DataCardKey30_2.X + DataCardKey30_2.Width
-                        Y: =10
-                  - ErrorMessage24_2:
-                      Control: Label@2.5.1
-                      Properties:
-                        AutoHeight: =true
-                        BorderColor: =RGBA(0, 0, 0, 1)
-                        Color: =RGBA(168, 0, 0, 1)
-                        Font: =Font.'Open Sans'
-                        FontWeight: =FontWeight.Semibold
-                        Height: =10
-                        Live: =Live.Assertive
-                        PaddingBottom: =0
-                        PaddingLeft: =0
-                        PaddingRight: =0
-                        PaddingTop: =0
-                        Size: =24
-                        Text: =Parent.Error
-                        Visible: =Parent.DisplayMode=DisplayMode.Edit
-                        Width: =Parent.Width - 60
-                        X: =30
-                        Y: =DataCardValue27_2.Y + DataCardValue27_2.Height
-                  - StarVisible24_2:
-                      Control: Label@2.5.1
-                      Properties:
-                        Align: =Align.Center
-                        BorderColor: =RGBA(0, 0, 0, 1)
-                        Color: =RGBA(0, 18, 107, 1)
-                        Font: =Font.'Open Sans'
-                        Height: =DataCardKey30_2.Height
-                        Text: ="*"
-                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                        Width: =30
-                        Wrap: =false
-                        Y: =DataCardKey30_2.Y
-            - Estado_DataCard3_2:
-                Control: TypedDataCard@1.0.6
-                Variant: ClassicTextualEdit
-                Properties:
-                  BorderColor: =RGBA(0, 18, 107, 1)
-                  DataField: ="field_7"
-                  Default: =ThisItem.Estado
-                  DisplayName: =DataSourceInfo([@ListaPrestamoHerramientas],DataSourceInfo.DisplayName,Estado)
-                  MaxLength: =DataSourceInfo([@ListaPrestamoHerramientas], DataSourceInfo.MaxLength, Estado)
-                  Required: =false
-                  Update: =DataCardValue28_2.Text
-                  Visible: =false
-                  Width: =304
-                  Y: =10
-                Children:
-                  - DataCardKey31_2:
-                      Control: Label@2.5.1
-                      Properties:
-                        AutoHeight: =true
-                        BorderColor: =RGBA(0, 0, 0, 1)
-                        Color: =RGBA(0, 18, 107, 1)
-                        Font: =Font.'Open Sans'
-                        Height: =48
-                        Text: =Parent.DisplayName
-                        Width: =(Parent.Width - 60) * 0.4
-                        Wrap: =false
-                        X: =30
-                        Y: =10 + (DataCardValue28_2.Height / 2) - (Self.Height / 2)
-                  - DataCardValue28_2:
-                      Control: Classic/TextInput@2.3.2
-                      Properties:
-                        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                        Default: =Datosvar2.Estado.Value
-                        DelayOutput: =true
-                        DisplayMode: =Parent.DisplayMode
-                        Font: =Font.'Open Sans'
-                        HoverBorderColor: =RGBA(0, 18, 107, 1)
-                        HoverFill: =RGBA(186, 202, 226, 1)
-                        MaxLength: =Parent.MaxLength
-                        PaddingLeft: =5
-                        RadiusBottomLeft: =0
-                        RadiusBottomRight: =0
-                        RadiusTopLeft: =0
-                        RadiusTopRight: =0
-                        Tooltip: =Parent.DisplayName
-                        Width: =(Parent.Width - 60) * 0.6
-                        X: =DataCardKey31_2.X + DataCardKey31_2.Width
-                        Y: =10
-                  - ErrorMessage25_2:
-                      Control: Label@2.5.1
-                      Properties:
-                        AutoHeight: =true
-                        BorderColor: =RGBA(0, 0, 0, 1)
-                        Color: =RGBA(168, 0, 0, 1)
-                        Font: =Font.'Open Sans'
-                        FontWeight: =FontWeight.Semibold
-                        Height: =10
-                        Live: =Live.Assertive
-                        PaddingBottom: =0
-                        PaddingLeft: =0
-                        PaddingRight: =0
-                        PaddingTop: =0
-                        Size: =24
-                        Text: =Parent.Error
-                        Visible: =Parent.DisplayMode=DisplayMode.Edit
-                        Width: =Parent.Width - 60
-                        X: =30
-                        Y: =DataCardValue28_2.Y + DataCardValue28_2.Height
-                  - StarVisible25_2:
-                      Control: Label@2.5.1
-                      Properties:
-                        Align: =Align.Center
-                        BorderColor: =RGBA(0, 0, 0, 1)
-                        Color: =RGBA(0, 18, 107, 1)
-                        Font: =Font.'Open Sans'
-                        Height: =DataCardKey31_2.Height
-                        Text: ="*"
-                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                        Width: =30
-                        Wrap: =false
-                        Y: =DataCardKey31_2.Y
             - Tipo_DataCard3_2:
-                Control: TypedDataCard@1.0.6
+                Control: TypedDataCard@1.0.7
                 Variant: ClassicTextualEdit
                 Properties:
                   BorderColor: =RGBA(0, 18, 107, 1)
@@ -3236,10 +3624,12 @@ Screens:
                   Update: =DataCardValue24_2.Text
                   Visible: =false
                   Width: =304
+                  X: =0
                   Y: =12
                 Children:
                   - DataCardKey27_2:
                       Control: Label@2.5.1
+                      MetadataKey: FieldName
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -3253,6 +3643,7 @@ Screens:
                         Y: =10 + (DataCardValue24_2.Height / 2) - (Self.Height / 2)
                   - DataCardValue24_2:
                       Control: Classic/TextInput@2.3.2
+                      MetadataKey: FieldValue
                       Properties:
                         BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                         Default: =Datosvar2.Tipo.Value
@@ -3273,6 +3664,7 @@ Screens:
                         Y: =10
                   - ErrorMessage21_2:
                       Control: Label@2.5.1
+                      MetadataKey: ErrorMessage
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -3293,6 +3685,7 @@ Screens:
                         Y: =DataCardValue24_2.Y + DataCardValue24_2.Height
                   - StarVisible21_2:
                       Control: Label@2.5.1
+                      MetadataKey: FieldRequired
                       Properties:
                         Align: =Align.Center
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -3305,7 +3698,7 @@ Screens:
                         Wrap: =false
                         Y: =DataCardKey27_2.Y
             - Proveedor_DataCard3_2:
-                Control: TypedDataCard@1.0.6
+                Control: TypedDataCard@1.0.7
                 Variant: ClassicTextualEdit
                 Properties:
                   BorderColor: =RGBA(0, 18, 107, 1)
@@ -3317,10 +3710,12 @@ Screens:
                   Update: =DataCardValue29_2.Text
                   Visible: =false
                   Width: =304
+                  X: =0
                   Y: =13
                 Children:
                   - DataCardKey32_2:
                       Control: Label@2.5.1
+                      MetadataKey: FieldName
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -3334,6 +3729,7 @@ Screens:
                         Y: =10 + (DataCardValue29_2.Height / 2) - (Self.Height / 2)
                   - DataCardValue29_2:
                       Control: Classic/TextInput@2.3.2
+                      MetadataKey: FieldValue
                       Properties:
                         BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                         Default: =Datosvar2.Proveedor
@@ -3354,6 +3750,7 @@ Screens:
                         Y: =10
                   - ErrorMessage26_2:
                       Control: Label@2.5.1
+                      MetadataKey: ErrorMessage
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -3374,6 +3771,7 @@ Screens:
                         Y: =DataCardValue29_2.Y + DataCardValue29_2.Height
                   - StarVisible26_2:
                       Control: Label@2.5.1
+                      MetadataKey: FieldRequired
                       Properties:
                         Align: =Align.Center
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -3397,7 +3795,7 @@ Screens:
             X: =41
             Y: =512
       - Form2_3:
-          Control: Form@2.4.2
+          Control: Form@2.4.3
           Variant: Classic
           Layout: Horizontal
           Properties:
@@ -3431,7 +3829,7 @@ Screens:
             Y: =557
           Children:
             - Codigodebarra_DataCard2_3:
-                Control: TypedDataCard@1.0.6
+                Control: TypedDataCard@1.0.7
                 Variant: ClassicNumberEdit
                 Properties:
                   BorderColor: =RGBA(0, 18, 107, 1)
@@ -3442,10 +3840,12 @@ Screens:
                   Required: =false
                   Update: =Value(DataCardValue33_3.Text)
                   Width: =304
+                  X: =0
                   Y: =0
                 Children:
                   - DataCardValue33_3:
                       Control: Classic/TextInput@2.3.2
+                      MetadataKey: FieldValue
                       Properties:
                         BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                         Default: |
@@ -3476,6 +3876,7 @@ Screens:
                         Y: =10
                   - ErrorMessage31_3:
                       Control: Label@2.5.1
+                      MetadataKey: ErrorMessage
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -3495,6 +3896,7 @@ Screens:
                         Y: =DataCardValue33_3.Y + DataCardValue33_3.Height
                   - StarVisible31_3:
                       Control: Label@2.5.1
+                      MetadataKey: FieldRequired
                       Properties:
                         Align: =Align.Center
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -3507,7 +3909,7 @@ Screens:
                         Wrap: =false
                         Y: =
                   - BarcodeReader1_3:
-                      Control: BarcodeReader@1.0.23
+                      Control: BarcodeReader@1.0.24
                       Properties:
                         BarcodeType: ='BarcodeReader.BarcodeType'.Auto
                         FillColor: =RGBA(127, 178, 57, 1)
@@ -3530,7 +3932,7 @@ Screens:
                         X: =189
                         Y: =10
             - Codigo_DataCard3_3:
-                Control: TypedDataCard@1.0.6
+                Control: TypedDataCard@1.0.7
                 Variant: ClassicNumberEdit
                 Properties:
                   BorderColor: =RGBA(0, 18, 107, 1)
@@ -3541,10 +3943,12 @@ Screens:
                   Update: =Value(DataCardValue22_3.Text)
                   Visible: =false
                   Width: =304
+                  X: =0
                   Y: =1
                 Children:
                   - DataCardKey18_3:
                       Control: Label@2.5.1
+                      MetadataKey: FieldName
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -3559,6 +3963,7 @@ Screens:
                         Y: =10 + (DataCardValue22_3.Height / 2) - (Self.Height / 2)
                   - DataCardValue22_3:
                       Control: Classic/TextInput@2.3.2
+                      MetadataKey: FieldValue
                       Properties:
                         BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                         Default: =Datosvar3.Codigo
@@ -3580,6 +3985,7 @@ Screens:
                         Y: =10
                   - ErrorMessage15_3:
                       Control: Label@2.5.1
+                      MetadataKey: ErrorMessage
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -3600,6 +4006,7 @@ Screens:
                         Y: =DataCardValue22_3.Y + DataCardValue22_3.Height
                   - StarVisible15_3:
                       Control: Label@2.5.1
+                      MetadataKey: FieldRequired
                       Properties:
                         Align: =Align.Center
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -3611,8 +4018,79 @@ Screens:
                         Width: =30
                         Wrap: =false
                         Y: =DataCardKey18_3.Y
+            - Fecha_DataCard1_3:
+                Control: TypedDataCard@1.0.7
+                Variant: ClassicDateEdit
+                Properties:
+                  BorderColor: =RGBA(0, 18, 107, 1)
+                  DataField: ="FechaPrestamo"
+                  Default: =ThisItem.Fecha
+                  DisplayMode: =DisplayMode.View
+                  DisplayName: =DataSourceInfo([@ListaPrestamoHerramientas],DataSourceInfo.DisplayName,Fecha)
+                  Height: =30
+                  Required: =false
+                  Update: =DataCardValue23_3.SelectedDate
+                  Width: =304
+                  X: =0
+                  Y: =2
+                Children:
+                  - DataCardValue23_3:
+                      Control: Classic/DatePicker@2.6.0
+                      MetadataKey: FieldValue
+                      Properties:
+                        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                        DisplayMode: =Parent.DisplayMode
+                        EndYear: =Year(Today())+100
+                        Font: =Font.'Open Sans'
+                        Height: =33
+                        IconBackground: =RGBA(56, 96, 178, 1)
+                        IconFill: =RGBA(255, 255, 255, 1)
+                        IsEditable: =true
+                        PaddingBottom: =0
+                        PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                        Size: =15
+                        StartYear: =1899
+                        Tooltip: =Parent.DisplayName
+                        Width: =286
+                        X: =
+                        Y: =10
+                  - ErrorMessage17_3:
+                      Control: Label@2.5.1
+                      MetadataKey: ErrorMessage
+                      Properties:
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        Color: =RGBA(168, 0, 0, 1)
+                        Font: =Font.'Open Sans'
+                        FontWeight: =FontWeight.Semibold
+                        Height: =10
+                        Live: =Live.Assertive
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Size: =24
+                        Text: =Parent.Error
+                        Visible: =Parent.DisplayMode=DisplayMode.Edit
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardValue23_3.Y + DataCardValue23_3.Height
+                  - StarVisible17_3:
+                      Control: Label@2.5.1
+                      MetadataKey: FieldRequired
+                      Properties:
+                        Align: =Align.Center
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        Color: =RGBA(0, 18, 107, 1)
+                        Font: =Font.'Open Sans'
+                        Height: =
+                        Text: ="*"
+                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =30
+                        Wrap: =false
+                        Y: =
             - FrecuenciadeRevision_DataCard1_3:
-                Control: TypedDataCard@1.0.6
+                Control: TypedDataCard@1.0.7
                 Variant: ClassicNumberEdit
                 Properties:
                   BorderColor: =RGBA(0, 18, 107, 1)
@@ -3623,10 +4101,12 @@ Screens:
                   Update: =Value(DataCardValue34_3.Text)
                   Visible: =false
                   Width: =304
+                  X: =0
                   Y: =3
                 Children:
                   - DataCardKey38_3:
                       Control: Label@2.5.1
+                      MetadataKey: FieldName
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -3640,6 +4120,7 @@ Screens:
                         Y: =10 + (DataCardValue34_3.Height / 2) - (Self.Height / 2)
                   - DataCardValue34_3:
                       Control: Classic/TextInput@2.3.2
+                      MetadataKey: FieldValue
                       Properties:
                         BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                         Default: =Datosvar3.FrecuenciadeRevision
@@ -3660,6 +4141,7 @@ Screens:
                         Y: =10
                   - ErrorMessage34_3:
                       Control: Label@2.5.1
+                      MetadataKey: ErrorMessage
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -3680,6 +4162,7 @@ Screens:
                         Y: =DataCardValue34_3.Y + DataCardValue34_3.Height
                   - StarVisible34_3:
                       Control: Label@2.5.1
+                      MetadataKey: FieldRequired
                       Properties:
                         Align: =Align.Center
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -3692,7 +4175,7 @@ Screens:
                         Wrap: =false
                         Y: =DataCardKey38_3.Y
             - Cantidad_DataCard1_3:
-                Control: TypedDataCard@1.0.6
+                Control: TypedDataCard@1.0.7
                 Variant: ClassicNumberEdit
                 Properties:
                   BorderColor: =RGBA(0, 18, 107, 1)
@@ -3703,10 +4186,12 @@ Screens:
                   Update: =Value(DataCardValue35_3.Text)
                   Visible: =false
                   Width: =304
+                  X: =0
                   Y: =4
                 Children:
                   - DataCardKey39_3:
                       Control: Label@2.5.1
+                      MetadataKey: FieldName
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -3720,6 +4205,7 @@ Screens:
                         Y: =10 + (DataCardValue35_3.Height / 2) - (Self.Height / 2)
                   - DataCardValue35_3:
                       Control: Classic/TextInput@2.3.2
+                      MetadataKey: FieldValue
                       Properties:
                         BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                         Default: =Datosvar3.Cantidad
@@ -3740,6 +4226,7 @@ Screens:
                         Y: =10
                   - ErrorMessage35_3:
                       Control: Label@2.5.1
+                      MetadataKey: ErrorMessage
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -3760,6 +4247,7 @@ Screens:
                         Y: =DataCardValue35_3.Y + DataCardValue35_3.Height
                   - StarVisible35_3:
                       Control: Label@2.5.1
+                      MetadataKey: FieldRequired
                       Properties:
                         Align: =Align.Center
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -3772,7 +4260,7 @@ Screens:
                         Wrap: =false
                         Y: =DataCardKey39_3.Y
             - Descripcion_DataCard5_3:
-                Control: TypedDataCard@1.0.6
+                Control: TypedDataCard@1.0.7
                 Variant: ClassicTextualEdit
                 Properties:
                   BorderColor: =RGBA(0, 18, 107, 1)
@@ -3785,10 +4273,12 @@ Screens:
                   Required: =false
                   Update: =DataCardValue36_3.Text
                   Width: =304
+                  X: =0
                   Y: =5
                 Children:
                   - DataCardKey42_3:
                       Control: Label@2.5.1
+                      MetadataKey: FieldName
                       Properties:
                         BorderColor: =RGBA(0, 0, 0, 1)
                         Color: =RGBA(0, 18, 107, 1)
@@ -3801,6 +4291,7 @@ Screens:
                         Y: =10 + (DataCardValue36_3.Height / 2) - (Self.Height / 2)
                   - DataCardValue36_3:
                       Control: Classic/TextInput@2.3.2
+                      MetadataKey: FieldValue
                       Properties:
                         BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                         Default: =Datosvar3.Descripcion
@@ -3823,6 +4314,7 @@ Screens:
                         Y: =10
                   - ErrorMessage38_3:
                       Control: Label@2.5.1
+                      MetadataKey: ErrorMessage
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -3843,6 +4335,7 @@ Screens:
                         Y: =DataCardValue36_3.Y + DataCardValue36_3.Height
                   - StarVisible38_3:
                       Control: Label@2.5.1
+                      MetadataKey: FieldRequired
                       Properties:
                         Align: =Align.Center
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -3855,7 +4348,7 @@ Screens:
                         Wrap: =false
                         Y: =DataCardKey42_3.Y
             - Observaciones_DataCard1_3:
-                Control: TypedDataCard@1.0.6
+                Control: TypedDataCard@1.0.7
                 Variant: ClassicTextualEdit
                 Properties:
                   BorderColor: =RGBA(0, 18, 107, 1)
@@ -3867,10 +4360,12 @@ Screens:
                   Required: =false
                   Update: =DataCardValue17_3.Text
                   Width: =304
+                  X: =0
                   Y: =6
                 Children:
                   - DataCardValue17_3:
                       Control: Classic/TextInput@2.3.2
+                      MetadataKey: FieldValue
                       Properties:
                         BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                         Default: =Parent.Default
@@ -3893,6 +4388,7 @@ Screens:
                         Y: =10
                   - ErrorMessage14_3:
                       Control: Label@2.5.1
+                      MetadataKey: ErrorMessage
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -3912,6 +4408,7 @@ Screens:
                         Y: =DataCardValue17_3.Y + DataCardValue17_3.Height
                   - StarVisible14_3:
                       Control: Label@2.5.1
+                      MetadataKey: FieldRequired
                       Properties:
                         Align: =Align.Center
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -3923,8 +4420,353 @@ Screens:
                         Width: =30
                         Wrap: =false
                         Y: =
+            - Sede_DataCard3_3:
+                Control: TypedDataCard@1.0.7
+                Variant: ClassicTextualEdit
+                Properties:
+                  BorderColor: =RGBA(0, 18, 107, 1)
+                  DataField: ="field_4"
+                  Default: =ThisItem.Sede
+                  DisplayName: =DataSourceInfo([@ListaPrestamoHerramientas],DataSourceInfo.DisplayName,Sede)
+                  MaxLength: =DataSourceInfo([@ListaPrestamoHerramientas], DataSourceInfo.MaxLength, Sede)
+                  Required: =false
+                  Update: =DataCardValue25_3.Text
+                  Visible: =false
+                  Width: =304
+                  X: =0
+                  Y: =7
+                Children:
+                  - DataCardKey28_3:
+                      Control: Label@2.5.1
+                      MetadataKey: FieldName
+                      Properties:
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        Color: =RGBA(0, 18, 107, 1)
+                        Font: =Font.'Open Sans'
+                        Height: =48
+                        Text: =Parent.DisplayName
+                        Width: =(Parent.Width - 60) * 0.4
+                        Wrap: =false
+                        X: =30
+                        Y: =10 + (DataCardValue25_3.Height / 2) - (Self.Height / 2)
+                  - DataCardValue25_3:
+                      Control: Classic/TextInput@2.3.2
+                      MetadataKey: FieldValue
+                      Properties:
+                        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                        Default: =Datosvar3.Sede.Value
+                        DelayOutput: =true
+                        DisplayMode: =Parent.DisplayMode
+                        Font: =Font.'Open Sans'
+                        HoverBorderColor: =RGBA(0, 18, 107, 1)
+                        HoverFill: =RGBA(186, 202, 226, 1)
+                        MaxLength: =Parent.MaxLength
+                        PaddingLeft: =5
+                        RadiusBottomLeft: =0
+                        RadiusBottomRight: =0
+                        RadiusTopLeft: =0
+                        RadiusTopRight: =0
+                        Tooltip: =Parent.DisplayName
+                        Width: =(Parent.Width - 60) * 0.6
+                        X: =DataCardKey28_3.X + DataCardKey28_3.Width
+                        Y: =10
+                  - ErrorMessage22_3:
+                      Control: Label@2.5.1
+                      MetadataKey: ErrorMessage
+                      Properties:
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        Color: =RGBA(168, 0, 0, 1)
+                        Font: =Font.'Open Sans'
+                        FontWeight: =FontWeight.Semibold
+                        Height: =10
+                        Live: =Live.Assertive
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Size: =24
+                        Text: =Parent.Error
+                        Visible: =Parent.DisplayMode=DisplayMode.Edit
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardValue25_3.Y + DataCardValue25_3.Height
+                  - StarVisible22_3:
+                      Control: Label@2.5.1
+                      MetadataKey: FieldRequired
+                      Properties:
+                        Align: =Align.Center
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        Color: =RGBA(0, 18, 107, 1)
+                        Font: =Font.'Open Sans'
+                        Height: =DataCardKey28_3.Height
+                        Text: ="*"
+                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =30
+                        Wrap: =false
+                        Y: =DataCardKey28_3.Y
+            - Ubicacion_DataCard3_3:
+                Control: TypedDataCard@1.0.7
+                Variant: ClassicTextualEdit
+                Properties:
+                  BorderColor: =RGBA(0, 18, 107, 1)
+                  DataField: ="field_5"
+                  Default: =ThisItem.Ubicacion
+                  DisplayName: =DataSourceInfo([@ListaPrestamoHerramientas],DataSourceInfo.DisplayName,Ubicacion)
+                  Height: =69
+                  MaxLength: =DataSourceInfo([@ListaPrestamoHerramientas], DataSourceInfo.MaxLength, Ubicacion)
+                  Required: =false
+                  Update: =DataCardValue26_3.Text
+                  Visible: =false
+                  Width: =304
+                  X: =0
+                  Y: =8
+                Children:
+                  - DataCardKey29_3:
+                      Control: Label@2.5.1
+                      MetadataKey: FieldName
+                      Properties:
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        Color: =RGBA(0, 18, 107, 1)
+                        Font: =Font.'Open Sans'
+                        Height: =48
+                        Text: =Parent.DisplayName
+                        Width: =(Parent.Width - 60) * 0.4
+                        Wrap: =false
+                        X: =30
+                        Y: =10 + (DataCardValue26_3.Height / 2) - (Self.Height / 2)
+                  - DataCardValue26_3:
+                      Control: Classic/TextInput@2.3.2
+                      MetadataKey: FieldValue
+                      Properties:
+                        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                        Default: =Datosvar3.Ubicacion.Value
+                        DelayOutput: =true
+                        DisplayMode: =Parent.DisplayMode
+                        Font: =Font.'Open Sans'
+                        HoverBorderColor: =RGBA(0, 18, 107, 1)
+                        HoverFill: =RGBA(186, 202, 226, 1)
+                        MaxLength: =Parent.MaxLength
+                        PaddingLeft: =5
+                        RadiusBottomLeft: =0
+                        RadiusBottomRight: =0
+                        RadiusTopLeft: =0
+                        RadiusTopRight: =0
+                        Tooltip: =Parent.DisplayName
+                        Width: =(Parent.Width - 60) * 0.6
+                        X: =DataCardKey29_3.X + DataCardKey29_3.Width
+                        Y: =10
+                  - ErrorMessage23_3:
+                      Control: Label@2.5.1
+                      MetadataKey: ErrorMessage
+                      Properties:
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        Color: =RGBA(168, 0, 0, 1)
+                        Font: =Font.'Open Sans'
+                        FontWeight: =FontWeight.Semibold
+                        Height: =10
+                        Live: =Live.Assertive
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Size: =24
+                        Text: =Parent.Error
+                        Visible: =Parent.DisplayMode=DisplayMode.Edit
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardValue26_3.Y + DataCardValue26_3.Height
+                  - StarVisible23_3:
+                      Control: Label@2.5.1
+                      MetadataKey: FieldRequired
+                      Properties:
+                        Align: =Align.Center
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        Color: =RGBA(0, 18, 107, 1)
+                        Font: =Font.'Open Sans'
+                        Height: =DataCardKey29_3.Height
+                        Text: ="*"
+                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =30
+                        Wrap: =false
+                        Y: =DataCardKey29_3.Y
+            - Bodega_DataCard3_3:
+                Control: TypedDataCard@1.0.7
+                Variant: ClassicTextualEdit
+                Properties:
+                  BorderColor: =RGBA(0, 18, 107, 1)
+                  DataField: ="field_6"
+                  Default: =ThisItem.Bodega
+                  DisplayName: =DataSourceInfo([@ListaPrestamoHerramientas],DataSourceInfo.DisplayName,Bodega)
+                  MaxLength: =DataSourceInfo([@ListaPrestamoHerramientas], DataSourceInfo.MaxLength, Bodega)
+                  Required: =false
+                  Update: =DataCardValue27_3.Text
+                  Visible: =false
+                  Width: =304
+                  X: =0
+                  Y: =9
+                Children:
+                  - DataCardKey30_3:
+                      Control: Label@2.5.1
+                      MetadataKey: FieldName
+                      Properties:
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        Color: =RGBA(0, 18, 107, 1)
+                        Font: =Font.'Open Sans'
+                        Height: =48
+                        Text: =Parent.DisplayName
+                        Width: =(Parent.Width - 60) * 0.4
+                        Wrap: =false
+                        X: =30
+                        Y: =10 + (DataCardValue27_3.Height / 2) - (Self.Height / 2)
+                  - DataCardValue27_3:
+                      Control: Classic/TextInput@2.3.2
+                      MetadataKey: FieldValue
+                      Properties:
+                        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                        Default: =Datosvar3.Bodega.Value
+                        DelayOutput: =true
+                        DisplayMode: =Parent.DisplayMode
+                        Font: =Font.'Open Sans'
+                        HoverBorderColor: =RGBA(0, 18, 107, 1)
+                        HoverFill: =RGBA(186, 202, 226, 1)
+                        MaxLength: =Parent.MaxLength
+                        PaddingLeft: =5
+                        RadiusBottomLeft: =0
+                        RadiusBottomRight: =0
+                        RadiusTopLeft: =0
+                        RadiusTopRight: =0
+                        Tooltip: =Parent.DisplayName
+                        Width: =(Parent.Width - 60) * 0.6
+                        X: =DataCardKey30_3.X + DataCardKey30_3.Width
+                        Y: =10
+                  - ErrorMessage24_3:
+                      Control: Label@2.5.1
+                      MetadataKey: ErrorMessage
+                      Properties:
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        Color: =RGBA(168, 0, 0, 1)
+                        Font: =Font.'Open Sans'
+                        FontWeight: =FontWeight.Semibold
+                        Height: =10
+                        Live: =Live.Assertive
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Size: =24
+                        Text: =Parent.Error
+                        Visible: =Parent.DisplayMode=DisplayMode.Edit
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardValue27_3.Y + DataCardValue27_3.Height
+                  - StarVisible24_3:
+                      Control: Label@2.5.1
+                      MetadataKey: FieldRequired
+                      Properties:
+                        Align: =Align.Center
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        Color: =RGBA(0, 18, 107, 1)
+                        Font: =Font.'Open Sans'
+                        Height: =DataCardKey30_3.Height
+                        Text: ="*"
+                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =30
+                        Wrap: =false
+                        Y: =DataCardKey30_3.Y
+            - Estado_DataCard3_3:
+                Control: TypedDataCard@1.0.7
+                Variant: ClassicTextualEdit
+                Properties:
+                  BorderColor: =RGBA(0, 18, 107, 1)
+                  DataField: ="field_7"
+                  Default: =ThisItem.Estado
+                  DisplayName: =DataSourceInfo([@ListaPrestamoHerramientas],DataSourceInfo.DisplayName,Estado)
+                  MaxLength: =DataSourceInfo([@ListaPrestamoHerramientas], DataSourceInfo.MaxLength, Estado)
+                  Required: =false
+                  Update: =DataCardValue28_3.Text
+                  Visible: =false
+                  Width: =304
+                  X: =0
+                  Y: =10
+                Children:
+                  - DataCardKey31_3:
+                      Control: Label@2.5.1
+                      MetadataKey: FieldName
+                      Properties:
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        Color: =RGBA(0, 18, 107, 1)
+                        Font: =Font.'Open Sans'
+                        Height: =48
+                        Text: =Parent.DisplayName
+                        Width: =(Parent.Width - 60) * 0.4
+                        Wrap: =false
+                        X: =30
+                        Y: =10 + (DataCardValue28_3.Height / 2) - (Self.Height / 2)
+                  - DataCardValue28_3:
+                      Control: Classic/TextInput@2.3.2
+                      MetadataKey: FieldValue
+                      Properties:
+                        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                        Default: =Datosvar3.Estado.Value
+                        DelayOutput: =true
+                        DisplayMode: =Parent.DisplayMode
+                        Font: =Font.'Open Sans'
+                        HoverBorderColor: =RGBA(0, 18, 107, 1)
+                        HoverFill: =RGBA(186, 202, 226, 1)
+                        MaxLength: =Parent.MaxLength
+                        PaddingLeft: =5
+                        RadiusBottomLeft: =0
+                        RadiusBottomRight: =0
+                        RadiusTopLeft: =0
+                        RadiusTopRight: =0
+                        Tooltip: =Parent.DisplayName
+                        Width: =(Parent.Width - 60) * 0.6
+                        X: =DataCardKey31_3.X + DataCardKey31_3.Width
+                        Y: =10
+                  - ErrorMessage25_3:
+                      Control: Label@2.5.1
+                      MetadataKey: ErrorMessage
+                      Properties:
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        Color: =RGBA(168, 0, 0, 1)
+                        Font: =Font.'Open Sans'
+                        FontWeight: =FontWeight.Semibold
+                        Height: =10
+                        Live: =Live.Assertive
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Size: =24
+                        Text: =Parent.Error
+                        Visible: =Parent.DisplayMode=DisplayMode.Edit
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardValue28_3.Y + DataCardValue28_3.Height
+                  - StarVisible25_3:
+                      Control: Label@2.5.1
+                      MetadataKey: FieldRequired
+                      Properties:
+                        Align: =Align.Center
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        Color: =RGBA(0, 18, 107, 1)
+                        Font: =Font.'Open Sans'
+                        Height: =DataCardKey31_3.Height
+                        Text: ="*"
+                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =30
+                        Wrap: =false
+                        Y: =DataCardKey31_3.Y
             - Datos adjuntos_DataCard1_3:
-                Control: TypedDataCard@1.0.6
+                Control: TypedDataCard@1.0.7
                 Variant: ClassicAttachmentsEdit
                 Properties:
                   BorderColor: =RGBA(0, 18, 107, 1)
@@ -3935,10 +4777,12 @@ Screens:
                   Required: =false
                   Update: =DataCardValue20_3.Attachments
                   Width: =304
+                  X: =0
                   Y: =11
                 Children:
                   - DataCardValue20_3:
                       Control: Attachments@2.3.0
+                      MetadataKey: FieldValue
                       Properties:
                         BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                         DisplayMode: =Parent.DisplayMode
@@ -3962,6 +4806,7 @@ Screens:
                         Y: =10
                   - ErrorMessage30_3:
                       Control: Label@2.5.1
+                      MetadataKey: ErrorMessage
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -3982,6 +4827,7 @@ Screens:
                         Y: =DataCardValue20_3.Y + DataCardValue20_3.Height
                   - StarVisible30_3:
                       Control: Label@2.5.1
+                      MetadataKey: FieldRequired
                       Properties:
                         Align: =Align.Center
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -3993,333 +4839,8 @@ Screens:
                         Width: =30
                         Wrap: =false
                         Y: =
-            - Sede_DataCard3_3:
-                Control: TypedDataCard@1.0.6
-                Variant: ClassicTextualEdit
-                Properties:
-                  BorderColor: =RGBA(0, 18, 107, 1)
-                  DataField: ="field_4"
-                  Default: =ThisItem.Sede
-                  DisplayName: =DataSourceInfo([@ListaPrestamoHerramientas],DataSourceInfo.DisplayName,Sede)
-                  MaxLength: =DataSourceInfo([@ListaPrestamoHerramientas], DataSourceInfo.MaxLength, Sede)
-                  Required: =false
-                  Update: =DataCardValue25_3.Text
-                  Visible: =false
-                  Width: =304
-                  Y: =7
-                Children:
-                  - DataCardKey28_3:
-                      Control: Label@2.5.1
-                      Properties:
-                        AutoHeight: =true
-                        BorderColor: =RGBA(0, 0, 0, 1)
-                        Color: =RGBA(0, 18, 107, 1)
-                        Font: =Font.'Open Sans'
-                        Height: =48
-                        Text: =Parent.DisplayName
-                        Width: =(Parent.Width - 60) * 0.4
-                        Wrap: =false
-                        X: =30
-                        Y: =10 + (DataCardValue25_3.Height / 2) - (Self.Height / 2)
-                  - DataCardValue25_3:
-                      Control: Classic/TextInput@2.3.2
-                      Properties:
-                        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                        Default: =Datosvar3.Sede.Value
-                        DelayOutput: =true
-                        DisplayMode: =Parent.DisplayMode
-                        Font: =Font.'Open Sans'
-                        HoverBorderColor: =RGBA(0, 18, 107, 1)
-                        HoverFill: =RGBA(186, 202, 226, 1)
-                        MaxLength: =Parent.MaxLength
-                        PaddingLeft: =5
-                        RadiusBottomLeft: =0
-                        RadiusBottomRight: =0
-                        RadiusTopLeft: =0
-                        RadiusTopRight: =0
-                        Tooltip: =Parent.DisplayName
-                        Width: =(Parent.Width - 60) * 0.6
-                        X: =DataCardKey28_3.X + DataCardKey28_3.Width
-                        Y: =10
-                  - ErrorMessage22_3:
-                      Control: Label@2.5.1
-                      Properties:
-                        AutoHeight: =true
-                        BorderColor: =RGBA(0, 0, 0, 1)
-                        Color: =RGBA(168, 0, 0, 1)
-                        Font: =Font.'Open Sans'
-                        FontWeight: =FontWeight.Semibold
-                        Height: =10
-                        Live: =Live.Assertive
-                        PaddingBottom: =0
-                        PaddingLeft: =0
-                        PaddingRight: =0
-                        PaddingTop: =0
-                        Size: =24
-                        Text: =Parent.Error
-                        Visible: =Parent.DisplayMode=DisplayMode.Edit
-                        Width: =Parent.Width - 60
-                        X: =30
-                        Y: =DataCardValue25_3.Y + DataCardValue25_3.Height
-                  - StarVisible22_3:
-                      Control: Label@2.5.1
-                      Properties:
-                        Align: =Align.Center
-                        BorderColor: =RGBA(0, 0, 0, 1)
-                        Color: =RGBA(0, 18, 107, 1)
-                        Font: =Font.'Open Sans'
-                        Height: =DataCardKey28_3.Height
-                        Text: ="*"
-                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                        Width: =30
-                        Wrap: =false
-                        Y: =DataCardKey28_3.Y
-            - Ubicacion_DataCard3_3:
-                Control: TypedDataCard@1.0.6
-                Variant: ClassicTextualEdit
-                Properties:
-                  BorderColor: =RGBA(0, 18, 107, 1)
-                  DataField: ="field_5"
-                  Default: =ThisItem.Ubicacion
-                  DisplayName: =DataSourceInfo([@ListaPrestamoHerramientas],DataSourceInfo.DisplayName,Ubicacion)
-                  Height: =69
-                  MaxLength: =DataSourceInfo([@ListaPrestamoHerramientas], DataSourceInfo.MaxLength, Ubicacion)
-                  Required: =false
-                  Update: =DataCardValue26_3.Text
-                  Visible: =false
-                  Width: =304
-                  Y: =8
-                Children:
-                  - DataCardKey29_3:
-                      Control: Label@2.5.1
-                      Properties:
-                        AutoHeight: =true
-                        BorderColor: =RGBA(0, 0, 0, 1)
-                        Color: =RGBA(0, 18, 107, 1)
-                        Font: =Font.'Open Sans'
-                        Height: =48
-                        Text: =Parent.DisplayName
-                        Width: =(Parent.Width - 60) * 0.4
-                        Wrap: =false
-                        X: =30
-                        Y: =10 + (DataCardValue26_3.Height / 2) - (Self.Height / 2)
-                  - DataCardValue26_3:
-                      Control: Classic/TextInput@2.3.2
-                      Properties:
-                        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                        Default: =Datosvar3.Ubicacion.Value
-                        DelayOutput: =true
-                        DisplayMode: =Parent.DisplayMode
-                        Font: =Font.'Open Sans'
-                        HoverBorderColor: =RGBA(0, 18, 107, 1)
-                        HoverFill: =RGBA(186, 202, 226, 1)
-                        MaxLength: =Parent.MaxLength
-                        PaddingLeft: =5
-                        RadiusBottomLeft: =0
-                        RadiusBottomRight: =0
-                        RadiusTopLeft: =0
-                        RadiusTopRight: =0
-                        Tooltip: =Parent.DisplayName
-                        Width: =(Parent.Width - 60) * 0.6
-                        X: =DataCardKey29_3.X + DataCardKey29_3.Width
-                        Y: =10
-                  - ErrorMessage23_3:
-                      Control: Label@2.5.1
-                      Properties:
-                        AutoHeight: =true
-                        BorderColor: =RGBA(0, 0, 0, 1)
-                        Color: =RGBA(168, 0, 0, 1)
-                        Font: =Font.'Open Sans'
-                        FontWeight: =FontWeight.Semibold
-                        Height: =10
-                        Live: =Live.Assertive
-                        PaddingBottom: =0
-                        PaddingLeft: =0
-                        PaddingRight: =0
-                        PaddingTop: =0
-                        Size: =24
-                        Text: =Parent.Error
-                        Visible: =Parent.DisplayMode=DisplayMode.Edit
-                        Width: =Parent.Width - 60
-                        X: =30
-                        Y: =DataCardValue26_3.Y + DataCardValue26_3.Height
-                  - StarVisible23_3:
-                      Control: Label@2.5.1
-                      Properties:
-                        Align: =Align.Center
-                        BorderColor: =RGBA(0, 0, 0, 1)
-                        Color: =RGBA(0, 18, 107, 1)
-                        Font: =Font.'Open Sans'
-                        Height: =DataCardKey29_3.Height
-                        Text: ="*"
-                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                        Width: =30
-                        Wrap: =false
-                        Y: =DataCardKey29_3.Y
-            - Bodega_DataCard3_3:
-                Control: TypedDataCard@1.0.6
-                Variant: ClassicTextualEdit
-                Properties:
-                  BorderColor: =RGBA(0, 18, 107, 1)
-                  DataField: ="field_6"
-                  Default: =ThisItem.Bodega
-                  DisplayName: =DataSourceInfo([@ListaPrestamoHerramientas],DataSourceInfo.DisplayName,Bodega)
-                  MaxLength: =DataSourceInfo([@ListaPrestamoHerramientas], DataSourceInfo.MaxLength, Bodega)
-                  Required: =false
-                  Update: =DataCardValue27_3.Text
-                  Visible: =false
-                  Width: =304
-                  Y: =9
-                Children:
-                  - DataCardKey30_3:
-                      Control: Label@2.5.1
-                      Properties:
-                        AutoHeight: =true
-                        BorderColor: =RGBA(0, 0, 0, 1)
-                        Color: =RGBA(0, 18, 107, 1)
-                        Font: =Font.'Open Sans'
-                        Height: =48
-                        Text: =Parent.DisplayName
-                        Width: =(Parent.Width - 60) * 0.4
-                        Wrap: =false
-                        X: =30
-                        Y: =10 + (DataCardValue27_3.Height / 2) - (Self.Height / 2)
-                  - DataCardValue27_3:
-                      Control: Classic/TextInput@2.3.2
-                      Properties:
-                        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                        Default: =Datosvar3.Bodega.Value
-                        DelayOutput: =true
-                        DisplayMode: =Parent.DisplayMode
-                        Font: =Font.'Open Sans'
-                        HoverBorderColor: =RGBA(0, 18, 107, 1)
-                        HoverFill: =RGBA(186, 202, 226, 1)
-                        MaxLength: =Parent.MaxLength
-                        PaddingLeft: =5
-                        RadiusBottomLeft: =0
-                        RadiusBottomRight: =0
-                        RadiusTopLeft: =0
-                        RadiusTopRight: =0
-                        Tooltip: =Parent.DisplayName
-                        Width: =(Parent.Width - 60) * 0.6
-                        X: =DataCardKey30_3.X + DataCardKey30_3.Width
-                        Y: =10
-                  - ErrorMessage24_3:
-                      Control: Label@2.5.1
-                      Properties:
-                        AutoHeight: =true
-                        BorderColor: =RGBA(0, 0, 0, 1)
-                        Color: =RGBA(168, 0, 0, 1)
-                        Font: =Font.'Open Sans'
-                        FontWeight: =FontWeight.Semibold
-                        Height: =10
-                        Live: =Live.Assertive
-                        PaddingBottom: =0
-                        PaddingLeft: =0
-                        PaddingRight: =0
-                        PaddingTop: =0
-                        Size: =24
-                        Text: =Parent.Error
-                        Visible: =Parent.DisplayMode=DisplayMode.Edit
-                        Width: =Parent.Width - 60
-                        X: =30
-                        Y: =DataCardValue27_3.Y + DataCardValue27_3.Height
-                  - StarVisible24_3:
-                      Control: Label@2.5.1
-                      Properties:
-                        Align: =Align.Center
-                        BorderColor: =RGBA(0, 0, 0, 1)
-                        Color: =RGBA(0, 18, 107, 1)
-                        Font: =Font.'Open Sans'
-                        Height: =DataCardKey30_3.Height
-                        Text: ="*"
-                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                        Width: =30
-                        Wrap: =false
-                        Y: =DataCardKey30_3.Y
-            - Estado_DataCard3_3:
-                Control: TypedDataCard@1.0.6
-                Variant: ClassicTextualEdit
-                Properties:
-                  BorderColor: =RGBA(0, 18, 107, 1)
-                  DataField: ="field_7"
-                  Default: =ThisItem.Estado
-                  DisplayName: =DataSourceInfo([@ListaPrestamoHerramientas],DataSourceInfo.DisplayName,Estado)
-                  MaxLength: =DataSourceInfo([@ListaPrestamoHerramientas], DataSourceInfo.MaxLength, Estado)
-                  Required: =false
-                  Update: =DataCardValue28_3.Text
-                  Visible: =false
-                  Width: =304
-                  Y: =10
-                Children:
-                  - DataCardKey31_3:
-                      Control: Label@2.5.1
-                      Properties:
-                        AutoHeight: =true
-                        BorderColor: =RGBA(0, 0, 0, 1)
-                        Color: =RGBA(0, 18, 107, 1)
-                        Font: =Font.'Open Sans'
-                        Height: =48
-                        Text: =Parent.DisplayName
-                        Width: =(Parent.Width - 60) * 0.4
-                        Wrap: =false
-                        X: =30
-                        Y: =10 + (DataCardValue28_3.Height / 2) - (Self.Height / 2)
-                  - DataCardValue28_3:
-                      Control: Classic/TextInput@2.3.2
-                      Properties:
-                        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                        Default: =Datosvar3.Estado.Value
-                        DelayOutput: =true
-                        DisplayMode: =Parent.DisplayMode
-                        Font: =Font.'Open Sans'
-                        HoverBorderColor: =RGBA(0, 18, 107, 1)
-                        HoverFill: =RGBA(186, 202, 226, 1)
-                        MaxLength: =Parent.MaxLength
-                        PaddingLeft: =5
-                        RadiusBottomLeft: =0
-                        RadiusBottomRight: =0
-                        RadiusTopLeft: =0
-                        RadiusTopRight: =0
-                        Tooltip: =Parent.DisplayName
-                        Width: =(Parent.Width - 60) * 0.6
-                        X: =DataCardKey31_3.X + DataCardKey31_3.Width
-                        Y: =10
-                  - ErrorMessage25_3:
-                      Control: Label@2.5.1
-                      Properties:
-                        AutoHeight: =true
-                        BorderColor: =RGBA(0, 0, 0, 1)
-                        Color: =RGBA(168, 0, 0, 1)
-                        Font: =Font.'Open Sans'
-                        FontWeight: =FontWeight.Semibold
-                        Height: =10
-                        Live: =Live.Assertive
-                        PaddingBottom: =0
-                        PaddingLeft: =0
-                        PaddingRight: =0
-                        PaddingTop: =0
-                        Size: =24
-                        Text: =Parent.Error
-                        Visible: =Parent.DisplayMode=DisplayMode.Edit
-                        Width: =Parent.Width - 60
-                        X: =30
-                        Y: =DataCardValue28_3.Y + DataCardValue28_3.Height
-                  - StarVisible25_3:
-                      Control: Label@2.5.1
-                      Properties:
-                        Align: =Align.Center
-                        BorderColor: =RGBA(0, 0, 0, 1)
-                        Color: =RGBA(0, 18, 107, 1)
-                        Font: =Font.'Open Sans'
-                        Height: =DataCardKey31_3.Height
-                        Text: ="*"
-                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                        Width: =30
-                        Wrap: =false
-                        Y: =DataCardKey31_3.Y
             - Tipo_DataCard3_3:
-                Control: TypedDataCard@1.0.6
+                Control: TypedDataCard@1.0.7
                 Variant: ClassicTextualEdit
                 Properties:
                   BorderColor: =RGBA(0, 18, 107, 1)
@@ -4331,10 +4852,12 @@ Screens:
                   Update: =DataCardValue24_3.Text
                   Visible: =false
                   Width: =304
+                  X: =0
                   Y: =12
                 Children:
                   - DataCardKey27_3:
                       Control: Label@2.5.1
+                      MetadataKey: FieldName
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -4348,6 +4871,7 @@ Screens:
                         Y: =10 + (DataCardValue24_3.Height / 2) - (Self.Height / 2)
                   - DataCardValue24_3:
                       Control: Classic/TextInput@2.3.2
+                      MetadataKey: FieldValue
                       Properties:
                         BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                         Default: =Datosvar3.Tipo.Value
@@ -4368,6 +4892,7 @@ Screens:
                         Y: =10
                   - ErrorMessage21_3:
                       Control: Label@2.5.1
+                      MetadataKey: ErrorMessage
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -4388,6 +4913,7 @@ Screens:
                         Y: =DataCardValue24_3.Y + DataCardValue24_3.Height
                   - StarVisible21_3:
                       Control: Label@2.5.1
+                      MetadataKey: FieldRequired
                       Properties:
                         Align: =Align.Center
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -4400,7 +4926,7 @@ Screens:
                         Wrap: =false
                         Y: =DataCardKey27_3.Y
             - Proveedor_DataCard3_3:
-                Control: TypedDataCard@1.0.6
+                Control: TypedDataCard@1.0.7
                 Variant: ClassicTextualEdit
                 Properties:
                   BorderColor: =RGBA(0, 18, 107, 1)
@@ -4412,10 +4938,12 @@ Screens:
                   Update: =DataCardValue29_3.Text
                   Visible: =false
                   Width: =304
+                  X: =0
                   Y: =13
                 Children:
                   - DataCardKey32_3:
                       Control: Label@2.5.1
+                      MetadataKey: FieldName
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -4429,6 +4957,7 @@ Screens:
                         Y: =10 + (DataCardValue29_3.Height / 2) - (Self.Height / 2)
                   - DataCardValue29_3:
                       Control: Classic/TextInput@2.3.2
+                      MetadataKey: FieldValue
                       Properties:
                         BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                         Default: =Datosvar3.Proveedor
@@ -4449,6 +4978,7 @@ Screens:
                         Y: =10
                   - ErrorMessage26_3:
                       Control: Label@2.5.1
+                      MetadataKey: ErrorMessage
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -4469,6 +4999,7 @@ Screens:
                         Y: =DataCardValue29_3.Y + DataCardValue29_3.Height
                   - StarVisible26_3:
                       Control: Label@2.5.1
+                      MetadataKey: FieldRequired
                       Properties:
                         Align: =Align.Center
                         BorderColor: =RGBA(0, 0, 0, 1)

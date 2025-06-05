@@ -71,46 +71,6 @@
         X: =Parent.Width - Self.Width
         ZIndex: =5
 
-    TextSearchBox1_2 As text:
-        BorderColor: =RGBA(127, 178, 57, 1)
-        Default: =""
-        DelayOutput: =true
-        DisabledBorderColor: =RGBA(232, 244, 217, 1)
-        HintText: ="Buscar por Código"
-        HoverBorderColor: =RGBA(232, 244, 217, 1)
-        HoverFill: =RGBA(232, 244, 217, 1)
-        PaddingLeft: =70
-        RadiusBottomLeft: =0
-        RadiusBottomRight: =7
-        RadiusTopLeft: =0
-        RadiusTopRight: =7
-        Size: =11
-        Tooltip: ="Buscar  por Nombre de Herramienta"
-        Width: =333
-        Y: =RectQuickActionBar1_2.Height
-        ZIndex: =6
-
-    SearchIcon1_2 As icon.Search:
-        Color: =RGBA(255, 255, 255, 1)
-        Fill: =RGBA(0, 0, 0, 1)
-        Height: =42
-        Icon: =Icon.Search
-        PaddingBottom: =14
-        PaddingLeft: =14
-        PaddingRight: =14
-        PaddingTop: =14
-        Tooltip: ="Buscar"
-        Width: =54
-        X: =278
-        Y: =86
-        ZIndex: =7
-
-    Rectangle11_2 As rectangle:
-        Height: =2
-        Width: =Parent.Width
-        Y: =TextSearchBox1_2.Y + TextSearchBox1_2.Height
-        ZIndex: =8
-
     "BrowseGallery1_2 As gallery.'BrowseLayout_Vertical_ThreeTextOneImageVariant_ver5.0'":
         '#CopilotOverlayLabel': ="Filtrada"
         BorderColor: =RGBA(99, 139, 44, 1)
@@ -350,56 +310,6 @@
         Y: =86
         ZIndex: =12
 
-    ComboBox2 As combobox:
-        AccessibleLabel: ="Seleccione Tipo"
-        BorderColor: =RGBA(127, 178, 57, 1)
-        ChevronBackground: =Color.Black
-        DisabledColor: =RGBA(0, 0, 0, 1)
-        DisabledFill: =RGBA(232, 244, 217, 1)
-        DisplayFields: =["Value"]
-        HoverFill: =RGBA(232, 244, 217, 1)
-        InputTextPlaceholder: ="Seleccione Tipo"
-        IsSearchable: =false
-        Items: =Choices(ListaPrestamoHerramientas.TipoDePrestamo)
-        NoSelectionText: ="Seleccionar Tipo de Gestión"
-        PressedColor: =RGBA(0, 0, 0, 1)
-        PressedFill: =RGBA(232, 244, 217, 1)
-        SearchFields: =["Value"]
-        SearchItems: =[]
-        SelectionColor: =RGBA(0, 0, 0, 1)
-        SelectionFill: =RGBA(237, 237, 237, 1)
-        SelectMultiple: =false
-        Size: =11
-        Tooltip: ="Seleccionar Tipo de Préstamo"
-        Width: =333
-        Y: =130
-        ZIndex: =13
-
-    ComboBox2_1 As combobox:
-        BorderColor: =RGBA(127, 178, 57, 1)
-        ChevronBackground: =Color.Black
-        DisabledColor: =RGBA(0, 0, 0, 1)
-        DisabledFill: =RGBA(232, 244, 217, 1)
-        DisplayFields: =["Value"]
-        HoverFill: =RGBA(232, 244, 217, 1)
-        InputTextPlaceholder: ="Seleccione Sede"
-        IsSearchable: =false
-        Items: =Choices(ListaMantenimientoHerramientas.Sede)
-        NoSelectionText: ="Seleccionar la Sede"
-        PressedColor: =RGBA(0, 0, 0, 1)
-        PressedFill: =RGBA(232, 244, 217, 1)
-        SearchFields: =["Value"]
-        SearchItems: =[]
-        SelectionColor: =RGBA(0, 0, 0, 1)
-        SelectionFill: =RGBA(255, 255, 255, 1)
-        SelectMultiple: =false
-        Size: =11
-        Tooltip: ="Seleccionar sede"
-        Width: =307
-        X: =333
-        Y: =130
-        ZIndex: =14
-
     Label5 As label:
         Align: =Align.Center
         Color: =RGBA(255, 255, 255, 1)
@@ -410,4 +320,117 @@
         Width: =640
         Y: =170
         ZIndex: =15
+
+    ContainerTipoGestion As groupContainer.manualLayoutContainer:
+        Height: =42
+        Width: =299
+        X: =3
+        Y: =128
+        ZIndex: =16
+
+        ComboBox2 As combobox:
+            AccessibleLabel: ="Seleccione Tipo"
+            BorderColor: =RGBA(127, 178, 57, 1)
+            ChevronBackground: =Color.Black
+            DisabledColor: =RGBA(0, 0, 0, 1)
+            DisabledFill: =RGBA(232, 244, 217, 1)
+            DisplayFields: =["Value"]
+            Height: =38
+            HoverFill: =RGBA(232, 244, 217, 1)
+            InputTextPlaceholder: ="Seleccione Tipo"
+            IsSearchable: =false
+            Items: =Choices(ListaPrestamoHerramientas.TipoDePrestamo)
+            NoSelectionText: ="Seleccionar Tipo de Gestión"
+            PaddingBottom: =10
+            PaddingLeft: =10
+            PaddingRight: =10
+            PaddingTop: =10
+            PressedColor: =RGBA(0, 0, 0, 1)
+            PressedFill: =RGBA(232, 244, 217, 1)
+            SearchFields: =["Value"]
+            SelectionColor: =RGBA(0, 0, 0, 1)
+            SelectionFill: =RGBA(237, 237, 237, 1)
+            SelectMultiple: =false
+            Size: =11
+            Tooltip: ="Seleccionar Tipo de Préstamo"
+            Width: =267
+            X: =8
+            Y: =2
+            ZIndex: =1
+
+    Container6 As groupContainer.manualLayoutContainer:
+        Height: =40
+        Width: =338
+        X: =302
+        Y: =130
+        ZIndex: =17
+
+        ComboBox2_1 As combobox:
+            BorderColor: =RGBA(127, 178, 57, 1)
+            ChevronBackground: =Color.Black
+            DisabledColor: =RGBA(0, 0, 0, 1)
+            DisabledFill: =RGBA(232, 244, 217, 1)
+            DisplayFields: =["Value"]
+            HoverFill: =RGBA(232, 244, 217, 1)
+            InputTextPlaceholder: ="Seleccione Sede"
+            IsSearchable: =false
+            Items: =Choices(ListaMantenimientoHerramientas.Sede)
+            NoSelectionText: ="Seleccionar la Sede"
+            PaddingBottom: =10
+            PaddingLeft: =10
+            PaddingRight: =10
+            PaddingTop: =10
+            PressedColor: =RGBA(0, 0, 0, 1)
+            PressedFill: =RGBA(232, 244, 217, 1)
+            SearchFields: =["Value"]
+            SelectionColor: =RGBA(0, 0, 0, 1)
+            SelectionFill: =RGBA(255, 255, 255, 1)
+            SelectMultiple: =false
+            Size: =11
+            Tooltip: ="Seleccionar sede"
+            Width: =333
+            X: =4
+            ZIndex: =1
+
+    Container7 As groupContainer.manualLayoutContainer:
+        Height: =40
+        Width: =333
+        Y: =88
+        ZIndex: =18
+
+        TextSearchBox1_2 As text:
+            BorderColor: =RGBA(127, 178, 57, 1)
+            BorderStyle: =BorderStyle.None
+            Default: =""
+            DelayOutput: =true
+            DisabledBorderColor: =RGBA(232, 244, 217, 1)
+            Height: =38
+            HintText: ="Buscar por Código"
+            HoverBorderColor: =RGBA(232, 244, 217, 1)
+            HoverFill: =RGBA(232, 244, 217, 1)
+            PaddingLeft: =70
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =7
+            RadiusTopLeft: =0
+            RadiusTopRight: =7
+            Size: =11
+            Tooltip: ="Buscar  por Nombre de Herramienta"
+            Width: =268
+            X: =6
+            Y: =2
+            ZIndex: =1
+
+        SearchIcon1_2 As icon:
+            Color: =RGBA(255, 255, 255, 1)
+            Fill: =RGBA(0, 0, 0, 1)
+            Height: =40
+            Icon: =Icon.Search
+            PaddingBottom: =1
+            PaddingLeft: =1
+            PaddingRight: =1
+            PaddingTop: =1
+            Tooltip: ="Buscar"
+            Width: =54
+            X: =275
+            ZIndex: =2
 

@@ -494,36 +494,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "Inicio_1.Container1.Container4.ButtonCanvas3.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "Inicio_1.Container1.Container4.ButtonCanvas3.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "Inicio_1",
-                "type": "Inicio_1.Container1.Container4.ButtonCanvas3"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "EditScreen2_1.Form2_1.Codigodebarra_DataCard2_1.DataCardValue33_1.AccessibleLabel"
                 }
               ],
@@ -3044,6 +3014,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "Inicio_1.Container1.Container4.ButtonCanvas3.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Inicio_1.Container1.Container4.ButtonCanvas3.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "Inicio_1",
+                "type": "Inicio_1.Container1.Container4.ButtonCanvas3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "BrowseScreen1_1.ComboBox3.AccessibleLabel"
                 }
               ],
@@ -3224,19 +3224,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "BrowseScreen1_2.TextSearchBox1_2.AccessibleLabel"
+                  "fullyQualifiedName": "BrowseScreen1_2.Container7.TextSearchBox1_2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "BrowseScreen1_2.TextSearchBox1_2.AccessibleLabel",
+                  "fullyQualifiedName": "BrowseScreen1_2.Container7.TextSearchBox1_2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "BrowseScreen1_2",
-                "type": "BrowseScreen1_2.TextSearchBox1_2"
+                "type": "BrowseScreen1_2.Container7.TextSearchBox1_2"
               }
             }
           ],
@@ -3254,19 +3254,79 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "BrowseScreen1_2.ComboBox2_1.AccessibleLabel"
+                  "fullyQualifiedName": "BrowseScreen1_2.Container7.SearchIcon1_2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "BrowseScreen1_2.ComboBox2_1.AccessibleLabel",
+                  "fullyQualifiedName": "BrowseScreen1_2.Container7.SearchIcon1_2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "BrowseScreen1_2",
-                "type": "BrowseScreen1_2.ComboBox2_1"
+                "type": "BrowseScreen1_2.Container7.SearchIcon1_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "BrowseScreen1_2.Container7.SearchIcon1_2.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "BrowseScreen1_2.Container7.SearchIcon1_2.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "BrowseScreen1_2",
+                "type": "BrowseScreen1_2.Container7.SearchIcon1_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "BrowseScreen1_2.Container6.ComboBox2_1.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "BrowseScreen1_2.Container6.ComboBox2_1.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "BrowseScreen1_2",
+                "type": "BrowseScreen1_2.Container6.ComboBox2_1"
               }
             }
           ],
@@ -5995,7 +6055,7 @@
               }
             }
           ],
-          "version": "1.345"
+          "version": "1.346"
         }
       }
     }

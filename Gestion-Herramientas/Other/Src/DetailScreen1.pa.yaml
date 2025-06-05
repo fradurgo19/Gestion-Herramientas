@@ -1,9 +1,8 @@
 # ************************************************************************************************
-# Warning: YAML source code for Canvas Apps is in preview. The schema is being actively developed.
-# Content may be incomplete and subject to change.
-# This file is read-only and should only be used to review changes made within Power Apps Studio.
-# This file isn't used when loading the app. External editing, merging and conflict resolution are
-# not supported.
+# Warning: YAML source code for Canvas Apps should only be used to review changes made within Power Apps Studio and for minor edits (Preview).
+# Use the maker portal to create and edit your Power Apps.
+# 
+# The schema file for Canvas Apps is available at https://go.microsoft.com/fwlink/?linkid=2304907
 # 
 # For more information, visit https://go.microsoft.com/fwlink/?linkid=2292623
 # ************************************************************************************************
@@ -94,6 +93,7 @@ Screens:
             X: =80
       - DetailForm1:
           Control: FormViewer@2.3.4
+          Layout: Vertical
           Properties:
             BorderColor: =RGBA(0, 18, 107, 1)
             DataSource: =[@ListaHerramientas]
@@ -103,7 +103,7 @@ Screens:
             Y: =RectQuickActionBar2.Y + RectQuickActionBar2.Height
           Children:
             - Codigo_DataCard1:
-                Control: TypedDataCard@1.0.6
+                Control: TypedDataCard@1.0.7
                 Variant: ClassicTextualView
                 IsLocked: true
                 Properties:
@@ -112,10 +112,12 @@ Screens:
                   Default: =ThisItem.Codigo
                   DisplayName: =DataSourceInfo([@ListaHerramientas],DataSourceInfo.DisplayName,Codigo)
                   Required: =false
+                  X: =0
                   Y: =0
                 Children:
                   - DataCardKey1:
                       Control: Label@2.5.1
+                      MetadataKey: FieldName
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -129,6 +131,7 @@ Screens:
                         Y: =10
                   - DataCardValue1:
                       Control: Label@2.5.1
+                      MetadataKey: FieldValue
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 18, 107, 1)
@@ -143,7 +146,7 @@ Screens:
                         X: =30
                         Y: =DataCardKey1.Y + DataCardKey1.Height + 5
             - Codigodebarra_DataCard5:
-                Control: TypedDataCard@1.0.6
+                Control: TypedDataCard@1.0.7
                 Variant: ClassicTextualView
                 IsLocked: true
                 Properties:
@@ -152,10 +155,12 @@ Screens:
                   Default: =ThisItem.Codigodebarra
                   DisplayName: =DataSourceInfo([@ListaHerramientas],DataSourceInfo.DisplayName,Codigodebarra)
                   Required: =false
+                  X: =0
                   Y: =1
                 Children:
                   - DataCardKey48:
                       Control: Label@2.5.1
+                      MetadataKey: FieldName
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -169,6 +174,7 @@ Screens:
                         Y: =10
                   - DataCardValue51:
                       Control: Label@2.5.1
+                      MetadataKey: FieldValue
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 18, 107, 1)
@@ -183,7 +189,7 @@ Screens:
                         X: =30
                         Y: =DataCardKey48.Y + DataCardKey48.Height + 5
             - CodigodeBarraAuto_DataCard2:
-                Control: TypedDataCard@1.0.6
+                Control: TypedDataCard@1.0.7
                 Variant: ClassicTextualView
                 IsLocked: true
                 Properties:
@@ -192,10 +198,12 @@ Screens:
                   Default: =ThisItem.CodigodeBarraAuto
                   DisplayName: =DataSourceInfo([@ListaHerramientas],DataSourceInfo.DisplayName,CodigodeBarraAuto)
                   Required: =false
+                  X: =0
                   Y: =2
                 Children:
                   - DataCardKey52:
                       Control: Label@2.5.1
+                      MetadataKey: FieldName
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -209,6 +217,7 @@ Screens:
                         Y: =10
                   - DataCardValue55:
                       Control: Label@2.5.1
+                      MetadataKey: FieldValue
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 18, 107, 1)
@@ -223,7 +232,7 @@ Screens:
                         X: =30
                         Y: =DataCardKey52.Y + DataCardKey52.Height + 5
             - Tipo_DataCard1:
-                Control: TypedDataCard@1.0.6
+                Control: TypedDataCard@1.0.7
                 Variant: ClassicComboBoxView
                 IsLocked: true
                 Properties:
@@ -233,10 +242,12 @@ Screens:
                   DisplayName: =DataSourceInfo([@ListaHerramientas],DataSourceInfo.DisplayName,Tipo)
                   Required: =false
                   Update: =DataCardValue2.Selected
+                  X: =0
                   Y: =3
                 Children:
                   - DataCardKey2:
                       Control: Label@2.5.1
+                      MetadataKey: FieldName
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -250,6 +261,7 @@ Screens:
                         Y: =10
                   - DataCardValue2:
                       Control: Classic/ComboBox@2.4.0
+                      MetadataKey: FieldValue
                       Properties:
                         BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                         ChevronBackground: =RGBA(56, 96, 178, 1)
@@ -277,6 +289,7 @@ Screens:
                         Y: =DataCardKey2.Y + DataCardKey2.Height + 5
                   - ErrorMessage1:
                       Control: Label@2.5.1
+                      MetadataKey: ErrorMessage
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -297,6 +310,7 @@ Screens:
                         Y: =DataCardValue2.Y + DataCardValue2.Height
                   - StarVisible1:
                       Control: Label@2.5.1
+                      MetadataKey: FieldRequired
                       Properties:
                         Align: =Align.Center
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -309,7 +323,7 @@ Screens:
                         Wrap: =false
                         Y: =DataCardKey2.Y
             - Sede_DataCard1:
-                Control: TypedDataCard@1.0.6
+                Control: TypedDataCard@1.0.7
                 Variant: ClassicComboBoxView
                 IsLocked: true
                 Properties:
@@ -319,10 +333,12 @@ Screens:
                   DisplayName: =DataSourceInfo([@ListaHerramientas],DataSourceInfo.DisplayName,Sede)
                   Required: =false
                   Update: =DataCardValue3.Selected
+                  X: =0
                   Y: =4
                 Children:
                   - DataCardKey3:
                       Control: Label@2.5.1
+                      MetadataKey: FieldName
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -336,6 +352,7 @@ Screens:
                         Y: =10
                   - DataCardValue3:
                       Control: Classic/ComboBox@2.4.0
+                      MetadataKey: FieldValue
                       Properties:
                         BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                         ChevronBackground: =RGBA(56, 96, 178, 1)
@@ -363,6 +380,7 @@ Screens:
                         Y: =DataCardKey3.Y + DataCardKey3.Height + 5
                   - ErrorMessage2:
                       Control: Label@2.5.1
+                      MetadataKey: ErrorMessage
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -383,6 +401,7 @@ Screens:
                         Y: =DataCardValue3.Y + DataCardValue3.Height
                   - StarVisible2:
                       Control: Label@2.5.1
+                      MetadataKey: FieldRequired
                       Properties:
                         Align: =Align.Center
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -395,7 +414,7 @@ Screens:
                         Wrap: =false
                         Y: =DataCardKey3.Y
             - Ubicacion_DataCard1:
-                Control: TypedDataCard@1.0.6
+                Control: TypedDataCard@1.0.7
                 Variant: ClassicComboBoxView
                 IsLocked: true
                 Properties:
@@ -405,10 +424,12 @@ Screens:
                   DisplayName: =DataSourceInfo([@ListaHerramientas],DataSourceInfo.DisplayName,Ubicacion)
                   Required: =false
                   Update: =DataCardValue4.Selected
+                  X: =0
                   Y: =5
                 Children:
                   - DataCardKey4:
                       Control: Label@2.5.1
+                      MetadataKey: FieldName
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -422,6 +443,7 @@ Screens:
                         Y: =10
                   - DataCardValue4:
                       Control: Classic/ComboBox@2.4.0
+                      MetadataKey: FieldValue
                       Properties:
                         BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                         ChevronBackground: =RGBA(56, 96, 178, 1)
@@ -449,6 +471,7 @@ Screens:
                         Y: =DataCardKey4.Y + DataCardKey4.Height + 5
                   - ErrorMessage3:
                       Control: Label@2.5.1
+                      MetadataKey: ErrorMessage
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -469,6 +492,7 @@ Screens:
                         Y: =DataCardValue4.Y + DataCardValue4.Height
                   - StarVisible3:
                       Control: Label@2.5.1
+                      MetadataKey: FieldRequired
                       Properties:
                         Align: =Align.Center
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -481,7 +505,7 @@ Screens:
                         Wrap: =false
                         Y: =DataCardKey4.Y
             - Bodega_DataCard1:
-                Control: TypedDataCard@1.0.6
+                Control: TypedDataCard@1.0.7
                 Variant: ClassicComboBoxView
                 IsLocked: true
                 Properties:
@@ -491,10 +515,12 @@ Screens:
                   DisplayName: =DataSourceInfo([@ListaHerramientas],DataSourceInfo.DisplayName,Bodega)
                   Required: =false
                   Update: =DataCardValue5.Selected
+                  X: =0
                   Y: =6
                 Children:
                   - DataCardKey5:
                       Control: Label@2.5.1
+                      MetadataKey: FieldName
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -508,6 +534,7 @@ Screens:
                         Y: =10
                   - DataCardValue5:
                       Control: Classic/ComboBox@2.4.0
+                      MetadataKey: FieldValue
                       Properties:
                         BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                         ChevronBackground: =RGBA(56, 96, 178, 1)
@@ -535,6 +562,7 @@ Screens:
                         Y: =DataCardKey5.Y + DataCardKey5.Height + 5
                   - ErrorMessage4:
                       Control: Label@2.5.1
+                      MetadataKey: ErrorMessage
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -555,6 +583,7 @@ Screens:
                         Y: =DataCardValue5.Y + DataCardValue5.Height
                   - StarVisible4:
                       Control: Label@2.5.1
+                      MetadataKey: FieldRequired
                       Properties:
                         Align: =Align.Center
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -567,7 +596,7 @@ Screens:
                         Wrap: =false
                         Y: =DataCardKey5.Y
             - Estado_DataCard1:
-                Control: TypedDataCard@1.0.6
+                Control: TypedDataCard@1.0.7
                 Variant: ClassicComboBoxView
                 IsLocked: true
                 Properties:
@@ -577,10 +606,12 @@ Screens:
                   DisplayName: =DataSourceInfo([@ListaHerramientas],DataSourceInfo.DisplayName,Estado)
                   Required: =false
                   Update: =DataCardValue6.Selected
+                  X: =0
                   Y: =7
                 Children:
                   - DataCardKey6:
                       Control: Label@2.5.1
+                      MetadataKey: FieldName
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -594,6 +625,7 @@ Screens:
                         Y: =10
                   - DataCardValue6:
                       Control: Classic/ComboBox@2.4.0
+                      MetadataKey: FieldValue
                       Properties:
                         BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                         ChevronBackground: =RGBA(56, 96, 178, 1)
@@ -621,6 +653,7 @@ Screens:
                         Y: =DataCardKey6.Y + DataCardKey6.Height + 5
                   - ErrorMessage5:
                       Control: Label@2.5.1
+                      MetadataKey: ErrorMessage
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -641,6 +674,7 @@ Screens:
                         Y: =DataCardValue6.Y + DataCardValue6.Height
                   - StarVisible5:
                       Control: Label@2.5.1
+                      MetadataKey: FieldRequired
                       Properties:
                         Align: =Align.Center
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -653,7 +687,7 @@ Screens:
                         Wrap: =false
                         Y: =DataCardKey6.Y
             - Descripcion_DataCard1:
-                Control: TypedDataCard@1.0.6
+                Control: TypedDataCard@1.0.7
                 Variant: ClassicTextualView
                 IsLocked: true
                 Properties:
@@ -662,10 +696,12 @@ Screens:
                   Default: =ThisItem.Descripcion
                   DisplayName: =DataSourceInfo([@ListaHerramientas],DataSourceInfo.DisplayName,Descripcion)
                   Required: =false
+                  X: =0
                   Y: =8
                 Children:
                   - DataCardKey7:
                       Control: Label@2.5.1
+                      MetadataKey: FieldName
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -679,6 +715,7 @@ Screens:
                         Y: =10
                   - DataCardValue7:
                       Control: Label@2.5.1
+                      MetadataKey: FieldValue
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 18, 107, 1)
@@ -693,7 +730,7 @@ Screens:
                         X: =30
                         Y: =DataCardKey7.Y + DataCardKey7.Height + 5
             - Proveedor_DataCard1:
-                Control: TypedDataCard@1.0.6
+                Control: TypedDataCard@1.0.7
                 Variant: ClassicTextualView
                 IsLocked: true
                 Properties:
@@ -702,10 +739,12 @@ Screens:
                   Default: =ThisItem.Proveedor
                   DisplayName: =DataSourceInfo([@ListaHerramientas],DataSourceInfo.DisplayName,Proveedor)
                   Required: =false
+                  X: =0
                   Y: =9
                 Children:
                   - DataCardKey8:
                       Control: Label@2.5.1
+                      MetadataKey: FieldName
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -719,6 +758,7 @@ Screens:
                         Y: =10
                   - DataCardValue8:
                       Control: Label@2.5.1
+                      MetadataKey: FieldValue
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 18, 107, 1)
@@ -733,7 +773,7 @@ Screens:
                         X: =30
                         Y: =DataCardKey8.Y + DataCardKey8.Height + 5
             - Fecha de Compra_DataCard1:
-                Control: TypedDataCard@1.0.6
+                Control: TypedDataCard@1.0.7
                 Variant: ClassicTextualView
                 IsLocked: true
                 Properties:
@@ -742,10 +782,12 @@ Screens:
                   Default: =ThisItem.'Fecha de Compra'
                   DisplayName: =DataSourceInfo([@ListaHerramientas],DataSourceInfo.DisplayName,'Fecha de Compra')
                   Required: =false
+                  X: =0
                   Y: =10
                 Children:
                   - DataCardKey23:
                       Control: Label@2.5.1
+                      MetadataKey: FieldName
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -759,6 +801,7 @@ Screens:
                         Y: =10
                   - DataCardValue32:
                       Control: Label@2.5.1
+                      MetadataKey: FieldValue
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 18, 107, 1)
@@ -773,7 +816,7 @@ Screens:
                         X: =30
                         Y: =DataCardKey23.Y + DataCardKey23.Height + 5
             - No. Factura_DataCard1:
-                Control: TypedDataCard@1.0.6
+                Control: TypedDataCard@1.0.7
                 Variant: ClassicTextualView
                 IsLocked: true
                 Properties:
@@ -782,10 +825,12 @@ Screens:
                   Default: =ThisItem.'No. Factura'
                   DisplayName: =DataSourceInfo([@ListaHerramientas],DataSourceInfo.DisplayName,'No. Factura')
                   Required: =false
+                  X: =0
                   Y: =11
                 Children:
                   - DataCardKey25:
                       Control: Label@2.5.1
+                      MetadataKey: FieldName
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -799,6 +844,7 @@ Screens:
                         Y: =10
                   - DataCardValue37:
                       Control: Label@2.5.1
+                      MetadataKey: FieldValue
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 18, 107, 1)
@@ -813,7 +859,7 @@ Screens:
                         X: =30
                         Y: =DataCardKey25.Y + DataCardKey25.Height + 5
             - Precio_DataCard1:
-                Control: TypedDataCard@1.0.6
+                Control: TypedDataCard@1.0.7
                 Variant: ClassicTextualView
                 IsLocked: true
                 Properties:
@@ -822,10 +868,12 @@ Screens:
                   Default: =ThisItem.Precio
                   DisplayName: =DataSourceInfo([@ListaHerramientas],DataSourceInfo.DisplayName,Precio)
                   Required: =false
+                  X: =0
                   Y: =12
                 Children:
                   - DataCardKey26:
                       Control: Label@2.5.1
+                      MetadataKey: FieldName
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -839,6 +887,7 @@ Screens:
                         Y: =10
                   - DataCardValue38:
                       Control: Label@2.5.1
+                      MetadataKey: FieldValue
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 18, 107, 1)
@@ -853,7 +902,7 @@ Screens:
                         X: =30
                         Y: =DataCardKey26.Y + DataCardKey26.Height + 5
             - Foto_DataCard1:
-                Control: TypedDataCard@1.0.6
+                Control: TypedDataCard@1.0.7
                 Variant: ClassicLargeImageView
                 IsLocked: true
                 Properties:
@@ -862,10 +911,12 @@ Screens:
                   Default: =ThisItem.Foto
                   DisplayName: =DataSourceInfo([@ListaHerramientas],DataSourceInfo.DisplayName,Foto)
                   Required: =false
+                  X: =0
                   Y: =13
                 Children:
                   - DataCardKey21:
                       Control: Label@2.5.1
+                      MetadataKey: FieldName
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -879,6 +930,7 @@ Screens:
                         Y: =10
                   - DataCardValue19:
                       Control: Image@2.2.3
+                      MetadataKey: FieldValue
                       Properties:
                         BorderColor: =RGBA(0, 18, 107, 1)
                         DisplayMode: =Parent.DisplayMode
