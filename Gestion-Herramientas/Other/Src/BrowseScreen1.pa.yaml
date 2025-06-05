@@ -160,6 +160,7 @@ Screens:
 
             OnSelect: =Navigate(DetailScreen1, ScreenTransition.None)
             ShowNavigation: =true
+            TemplateSize: =143
             Width: =Parent.Width
             Y: =TextSearchBox1.Y + TextSearchBox1.Height
           Children:
@@ -184,7 +185,7 @@ Screens:
                   Color: =RGBA(50, 49, 48, 1)
                   Font: =Font.'Open Sans'
                   FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-                  Height: =Self.Size * 1.8
+                  Height: =40
                   OnSelect: =Select(Parent)
                   PaddingBottom: =0
                   PaddingLeft: =0
@@ -194,7 +195,7 @@ Screens:
                   Text: =ThisItem.Descripcion
                   VerticalAlign: =VerticalAlign.Top
                   Width: =Parent.TemplateWidth - 185
-                  X: =115
+                  X: =139
                   Y: =16
             - Subtitle1:
                 Control: Label@2.5.1
@@ -202,7 +203,7 @@ Screens:
                   BorderColor: =RGBA(0, 0, 0, 1)
                   Font: =Font.'Open Sans'
                   FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-                  Height: =Self.Size * 1.8
+                  Height: =31
                   OnSelect: =Select(Parent)
                   PaddingBottom: =0
                   PaddingLeft: =0
@@ -213,14 +214,14 @@ Screens:
                   VerticalAlign: =VerticalAlign.Top
                   Width: =Title1.Width
                   X: =Title1.X
-                  Y: =48
+                  Y: =56
             - Body1:
                 Control: Label@2.5.1
                 Properties:
                   BorderColor: =RGBA(0, 0, 0, 1)
                   Font: =Font.'Open Sans'
                   FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
-                  Height: =Self.Size * 1.8
+                  Height: =35
                   OnSelect: =Select(Parent)
                   PaddingBottom: =0
                   PaddingLeft: =0
@@ -231,7 +232,7 @@ Screens:
                   VerticalAlign: =VerticalAlign.Top
                   Width: =Subtitle1.Width
                   X: =Title1.X
-                  Y: =79
+                  Y: =100
             - NextArrow1:
                 Control: Classic/Icon@2.5.0
                 Properties:
