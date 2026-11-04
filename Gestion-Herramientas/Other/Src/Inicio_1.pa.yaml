@@ -141,3 +141,13 @@ Screens:
                         Visible: =false
                         X: =189
                         Y: =163
+                  - Text1:
+                      Control: ModernText@1.0.0
+                      Properties:
+                        Align: =Align.Center
+                        FontWeight: =FontWeight.Bold
+                        Height: =112
+                        Text: ="ESTA APP SOLO PARA CONSULTAR USE NUEVA APP PARA GESTIONAR HERRAMIENTAS"
+                        Width: =585
+                        X: =40
+                        Y: =8
