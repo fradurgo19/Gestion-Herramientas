@@ -323,6 +323,10 @@
 
     ContainerTipoGestion As groupContainer.manualLayoutContainer:
         Height: =42
+        LayoutGridColumnMinWidth: =0
+        LayoutGridColumns: =6
+        LayoutGridRowMinHeight: =0
+        LayoutGridRows: =6
         Width: =299
         X: =3
         Y: =128
@@ -360,6 +364,10 @@
 
     Container6 As groupContainer.manualLayoutContainer:
         Height: =40
+        LayoutGridColumnMinWidth: =0
+        LayoutGridColumns: =6
+        LayoutGridRowMinHeight: =0
+        LayoutGridRows: =6
         Width: =338
         X: =302
         Y: =130
@@ -394,6 +402,10 @@
 
     Container7 As groupContainer.manualLayoutContainer:
         Height: =40
+        LayoutGridColumnMinWidth: =0
+        LayoutGridColumns: =6
+        LayoutGridRowMinHeight: =0
+        LayoutGridRows: =6
         Width: =333
         Y: =88
         ZIndex: =18

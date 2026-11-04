@@ -72,7 +72,7 @@ Screens:
             Wrap: =false
             X: =88
       - Form2_1:
-          Control: Form@2.4.3
+          Control: Form@2.4.4
           Variant: Classic
           Layout: Horizontal
           Properties:
@@ -183,7 +183,7 @@ Screens:
                         Wrap: =false
                         Y: =
                   - BarcodeReader1_1:
-                      Control: BarcodeReader@1.0.24
+                      Control: BarcodeReader@1.0.25
                       Properties:
                         BarcodeType: ='BarcodeReader.BarcodeType'.Auto
                         FillColor: =RGBA(127, 178, 57, 1)
@@ -1308,7 +1308,7 @@ Screens:
             Width: =88
             X: =551
       - Form2:
-          Control: Form@2.4.3
+          Control: Form@2.4.4
           Variant: Classic
           Layout: Horizontal
           Properties:
@@ -1421,7 +1421,7 @@ Screens:
                         Wrap: =false
                         Y: =
                   - BarcodeReader1:
-                      Control: BarcodeReader@1.0.24
+                      Control: BarcodeReader@1.0.25
                       Properties:
                         BarcodeType: ='BarcodeReader.BarcodeType'.Auto
                         FillColor: =RGBA(127, 178, 57, 1)
@@ -2569,7 +2569,7 @@ Screens:
             X: =390
             Y: =92
       - Form2_2:
-          Control: Form@2.4.3
+          Control: Form@2.4.4
           Variant: Classic
           Layout: Horizontal
           Properties:
@@ -2681,7 +2681,7 @@ Screens:
                         Wrap: =false
                         Y: =
                   - BarcodeReader1_2:
-                      Control: BarcodeReader@1.0.24
+                      Control: BarcodeReader@1.0.25
                       Properties:
                         BarcodeType: ='BarcodeReader.BarcodeType'.Auto
                         FillColor: =RGBA(127, 178, 57, 1)
@@ -3795,7 +3795,7 @@ Screens:
             X: =41
             Y: =512
       - Form2_3:
-          Control: Form@2.4.3
+          Control: Form@2.4.4
           Variant: Classic
           Layout: Horizontal
           Properties:
@@ -3909,7 +3909,7 @@ Screens:
                         Wrap: =false
                         Y: =
                   - BarcodeReader1_3:
-                      Control: BarcodeReader@1.0.24
+                      Control: BarcodeReader@1.0.25
                       Properties:
                         BarcodeType: ='BarcodeReader.BarcodeType'.Auto
                         FillColor: =RGBA(127, 178, 57, 1)

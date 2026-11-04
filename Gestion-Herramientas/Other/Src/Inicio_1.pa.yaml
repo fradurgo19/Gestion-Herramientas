@@ -12,14 +12,14 @@ Screens:
       LoadingSpinnerColor: =RGBA(56, 96, 178, 1)
     Children:
       - Container1:
-          Control: GroupContainer@1.3.0
+          Control: GroupContainer@1.5.0
           Variant: ManualLayout
           Properties:
             Height: =1130
             Width: =640
           Children:
             - Container2:
-                Control: GroupContainer@1.3.0
+                Control: GroupContainer@1.5.0
                 Variant: ManualLayout
                 Properties:
                   Height: =79
@@ -33,7 +33,7 @@ Screens:
                         Image: =Logo
                         Width: =640
             - Container3:
-                Control: GroupContainer@1.3.0
+                Control: GroupContainer@1.5.0
                 Variant: ManualLayout
                 Properties:
                   Height: =167
@@ -54,7 +54,7 @@ Screens:
                         Width: =600
                         Y: =20
             - Container4:
-                Control: GroupContainer@1.3.0
+                Control: GroupContainer@1.5.0
                 Variant: ManualLayout
                 Properties:
                   Height: =472
@@ -101,3 +101,43 @@ Screens:
                   Image: =giphy3
                   Visible: =varCargar
                   Width: =640
+            - Container4_1:
+                Control: GroupContainer@1.5.0
+                Variant: ManualLayout
+                Properties:
+                  Height: =449
+                  Width: =640
+                  Y: =79
+                Children:
+                  - ButtonCanvas3_1:
+                      Control: Button@0.0.45
+                      Properties:
+                        BasePaletteColor: =RGBA(156, 220, 79, 1)
+                        Height: =80
+                        OnSelect: =Launch("https://gestion-herramientas.vercel.app/dashboard")
+                        Text: ="INGRESAR NUEVA APP"
+                        Width: =208
+                        X: =206
+                        Y: =132
+                  - Timer1_1:
+                      Control: Timer@2.1.0
+                      Properties:
+                        AutoStart: =varTiempo
+                        BorderColor: =ColorFade(Self.Fill, -15%)
+                        Color: =RGBA(255,255,255,1)
+                        DisabledBorderColor: =ColorFade(Self.BorderColor, 70%)
+                        DisabledColor: =ColorFade(Self.Fill, 90%)
+                        DisabledFill: =ColorFade(Self.Fill, 70%)
+                        Duration: =6000
+                        Fill: =RGBA(62,96,170,1)
+                        Font: =Font.'Open Sans'
+                        HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+                        HoverColor: =Self.Color
+                        HoverFill: =ColorFade(Self.Fill, 20%)
+                        OnTimerEnd: =Set(varCargar,false);Navigate(Inicio,ScreenTransition.Fade)
+                        PressedBorderColor: =Self.Fill
+                        PressedColor: =Self.Fill
+                        PressedFill: =Self.Color
+                        Visible: =false
+                        X: =189
+                        Y: =163

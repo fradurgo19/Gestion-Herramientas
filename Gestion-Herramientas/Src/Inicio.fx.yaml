@@ -71,6 +71,7 @@ Inicio As screen:
         Size: =24
         Text: ="Préstamos"
         VerticalAlign: =VerticalAlign.Bottom
+        Visible: =false
         Width: =258
         X: =34
         Y: =553
@@ -185,6 +186,7 @@ Inicio As screen:
         ZIndex: =18
 
     Image14 As image:
+        AutoDisableOnSelect: =false
         Height: =116
         Image: ='codigo-de-barras'
         OnSelect: |-
@@ -192,6 +194,7 @@ Inicio As screen:
                 EditScreen2_1,
                 ScreenTransition.None
             )
+        Visible: =false
         Width: =139
         X: =93
         Y: =575
